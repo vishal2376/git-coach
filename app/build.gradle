@@ -53,6 +53,9 @@ dependencies {
     kapt "androidx.room:room-compiler:2.5.0"
     implementation "androidx.room:room-runtime:2.5.0"
 
+    //gson
+    implementation 'com.google.code.gson:gson:2.9.0'
+
     //navigation
     implementation "androidx.navigation:navigation-fragment-ktx:2.5.3"
     implementation "androidx.navigation:navigation-ui-ktx:2.5.3"
