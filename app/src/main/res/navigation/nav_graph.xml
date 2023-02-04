@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/exploreFragment"
-        android:name="com.vishal2376.gitcoach.ExploreFragment"
+        android:name="com.vishal2376.gitcoach.fragments.ExploreFragment"
         android:label="fragment_explore"
         tools:layout="@layout/fragment_explore" />
 </navigation>
