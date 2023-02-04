@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="@dimen/_10sdp"
@@ -25,7 +26,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_5sdp"
         android:fontFamily="@font/roboto_medium"
-        android:paddingHorizontal="@dimen/_10sdp"
         android:text="@string/git_desc"
         android:textColor="@color/colorGreyText"
         android:textSize="@dimen/_10ssp" />
@@ -37,11 +37,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_5sdp"
         android:background="@drawable/round_bg_dark"
+        android:drawablePadding="@dimen/_5sdp"
         android:fontFamily="@font/roboto_medium"
-        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingHorizontal="@dimen/_5sdp"
         android:paddingVertical="@dimen/_5sdp"
         android:text="@string/git_init"
         android:textColor="@color/colorYellow"
-        android:textSize="@dimen/_12ssp" />
+        android:textSize="@dimen/_12ssp"
+        app:drawableStartCompat="@drawable/ic_code"
+        app:drawableTint="@color/colorYellow" />
 
 </LinearLayout>
