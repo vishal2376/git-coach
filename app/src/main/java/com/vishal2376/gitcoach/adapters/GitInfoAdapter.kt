@@ -1,5 +1,6 @@
 package com.vishal2376.gitcoach.adapters
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -13,7 +14,7 @@ import com.vishal2376.gitcoach.models.GitCommandItem
 
 class GitInfoAdapter(
     private val context: Context,
-    private val gitCommandList: List<GitCommandItem>
+    private var gitCommandList: List<GitCommandItem>
 ) :
     Adapter<GitInfoAdapter.GitInfoViewHolder>() {
 
@@ -40,9 +41,16 @@ class GitInfoAdapter(
 
     }
 
+    @SuppressLint("NotifyDataSetChanged")
+    fun setFilteredList(newList: List<GitCommandItem>) {
+        gitCommandList = newList
+        notifyDataSetChanged()
+    }
+
     inner class GitInfoViewHolder(itemView: View) : ViewHolder(itemView) {
         val name: TextView = itemView.findViewById(R.id.tvGitName)
         val command: TextView = itemView.findViewById(R.id.tvGitCommand)
         val description: TextView = itemView.findViewById(R.id.tvGitDescription)
     }
+
 }
