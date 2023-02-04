@@ -9,9 +9,14 @@
     <color name="white">#FFFFFFFF</color>
 
     <!--    custom colors-->
-    <color name="colorYellow">#FFD369</color>
     <color name="colorGrey">#393E46</color>
-    <color name="colorBlack">#222831</color>
+    <color name="colorGreyLight">#484B50</color>
+    <color name="colorGreyDark">#222831</color>
+    <color name="colorYellow">#ffd369</color>
+    <color name="colorYellowLight">#ffff9a</color>
+    <color name="colorYellowDark">#c9a239</color>
+
     <color name="colorWhite">#EEEEEE</color>
+    <color name="colorBlack">#000000</color>
 
 </resources>
