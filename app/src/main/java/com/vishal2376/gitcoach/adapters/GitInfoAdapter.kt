@@ -25,11 +25,13 @@ class GitInfoAdapter(private val gitCommandList: List<GitCommandItem>) :
     override fun onBindViewHolder(holder: GitInfoViewHolder, position: Int) {
         val currentGitInfo = gitCommandList[position]
 
+        holder.name.text = currentGitInfo.name
         holder.command.text = currentGitInfo.command
         holder.description.text = currentGitInfo.description
     }
 
     inner class GitInfoViewHolder(itemView: View) : ViewHolder(itemView) {
+        val name: TextView = itemView.findViewById(R.id.tvGitName)
         val command: TextView = itemView.findViewById(R.id.tvGitCommand)
         val description: TextView = itemView.findViewById(R.id.tvGitDescription)
     }

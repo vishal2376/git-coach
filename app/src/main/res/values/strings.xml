@@ -2,4 +2,7 @@
     <string name="app_name">Git Coach</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="intialize_git">Intialize Git</string>
+    <string name="git_desc">Initialize a new Git repository in the current or specified directory.</string>
+    <string name="git_init">git init</string>
 </resources>

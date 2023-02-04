@@ -6,26 +6,42 @@
     android:background="@drawable/item_bg"
     android:orientation="vertical"
     android:paddingHorizontal="@dimen/_20sdp"
-    android:paddingVertical="@dimen/_15sdp">
+    android:paddingVertical="@dimen/_10sdp">
+
 
     <TextView
-        android:id="@+id/tvGitCommand"
+        android:id="@+id/tvGitName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/rubik_medium"
-        android:text="@string/app_name"
+        android:text="@string/intialize_git"
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/_14ssp" />
+
 
     <TextView
         android:id="@+id/tvGitDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
         android:fontFamily="@font/roboto_medium"
         android:paddingHorizontal="@dimen/_10sdp"
-        android:text="@string/app_name"
+        android:text="@string/git_desc"
         android:textColor="@color/colorGreyText"
         android:textSize="@dimen/_10ssp" />
+
+
+    <TextView
+        android:id="@+id/tvGitCommand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/round_bg_dark"
+        android:fontFamily="@font/roboto_medium"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_5sdp"
+        android:text="@string/git_init"
+        android:textColor="@color/colorYellow"
+        android:textSize="@dimen/_12ssp" />
 
 </LinearLayout>
