@@ -18,5 +18,6 @@
 
     <color name="colorWhite">#EEEEEE</color>
     <color name="colorBlack">#000000</color>
+    <color name="colorGreyText">#AAAAA5</color>
 
 </resources>
