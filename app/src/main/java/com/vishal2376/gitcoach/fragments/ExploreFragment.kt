@@ -38,7 +38,7 @@ class ExploreFragment : Fragment() {
         //set recycler view
         binding.rvGitInfo.apply {
             layoutManager = LinearLayoutManager(requireContext())
-            adapter = GitInfoAdapter(gitCommandList.git_info)
+            adapter = GitInfoAdapter(requireContext(), gitCommandList.git_info)
         }
 
     }
