@@ -42,9 +42,9 @@
         android:paddingHorizontal="@dimen/_5sdp"
         android:paddingVertical="@dimen/_5sdp"
         android:text="@string/git_init"
-        android:textColor="@color/colorYellow"
+        android:textColor="?attr/colorAccent"
         android:textSize="@dimen/_12ssp"
         app:drawableStartCompat="@drawable/ic_code"
-        app:drawableTint="@color/colorYellow" />
+        app:drawableTint="?attr/colorAccent" />
 
 </LinearLayout>
