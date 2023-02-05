@@ -5,7 +5,6 @@
         <ListPreference
             app:entries="@array/theme_enteries"
             app:entryValues="@array/theme_values"
-            app:icon="@drawable/ic_theme"
             app:key="user_theme"
             app:title="Theme"
             app:useSimpleSummaryProvider="true" />
