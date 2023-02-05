@@ -1,13 +1,12 @@
-<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:layout="@layout/git_info_item">
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <PreferenceCategory app:title="Appearance">
 
         <ListPreference
             app:entries="@array/theme_enteries"
             app:entryValues="@array/theme_values"
-            app:key="user_theme"
             app:icon="@drawable/ic_theme"
+            app:key="user_theme"
             app:title="Theme"
             app:useSimpleSummaryProvider="true" />
 
