@@ -11,8 +11,18 @@
     <!--    custom colors-->
     <color name="colorGrey">#393E46</color>
     <color name="colorGreyDark">#222831</color>
+
     <color name="colorYellow">#F6C90E</color>
     <color name="colorYellowDark">#F0A500</color>
+
+    <color name="colorRed">#f73859</color>
+    <color name="colorRedDark">#bd0030</color>
+
+    <color name="colorGreen">#4ECCA3</color>
+    <color name="colorGreenDark">#009a74</color>
+
+    <color name="colorBlue">#1976d2</color>
+    <color name="colorBlueDark">#004ba0</color>
 
     <color name="colorWhite">#EEEEEE</color>
     <color name="colorBlack">#000000</color>

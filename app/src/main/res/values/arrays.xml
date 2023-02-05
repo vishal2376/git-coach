@@ -1,0 +1,16 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="theme_enteries">
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Red</item>
+    </string-array>
+
+    <string-array name="theme_values">
+        <item>yellow</item>
+        <item>green</item>
+        <item>blue</item>
+        <item>red</item>
+    </string-array>
+</resources>

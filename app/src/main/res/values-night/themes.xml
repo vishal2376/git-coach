@@ -13,4 +13,51 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <!-- Theme RED -->
+    <style name="Theme.RED" parent="Theme.GitCoach">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorGrey</item>
+        <item name="colorPrimaryVariant">@color/colorGreyDark</item>
+        <item name="colorOnPrimary">@color/colorBlack</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorRed</item>
+        <item name="colorSecondaryVariant">@color/colorRedDark</item>
+        <item name="colorOnSecondary">@color/colorBlack</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Theme BLUE -->
+    <style name="Theme.BLUE" parent="Theme.GitCoach">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorGrey</item>
+        <item name="colorPrimaryVariant">@color/colorGreyDark</item>
+        <item name="colorOnPrimary">@color/colorBlack</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorBlue</item>
+        <item name="colorSecondaryVariant">@color/colorBlueDark</item>
+        <item name="colorOnSecondary">@color/colorBlack</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Theme GREEN -->
+    <style name="Theme.GREEN" parent="Theme.GitCoach">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorGrey</item>
+        <item name="colorPrimaryVariant">@color/colorGreyDark</item>
+        <item name="colorOnPrimary">@color/colorBlack</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorGreen</item>
+        <item name="colorSecondaryVariant">@color/colorGreenDark</item>
+        <item name="colorOnSecondary">@color/colorBlack</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
 </resources>

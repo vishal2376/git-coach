@@ -7,8 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.SearchView
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import androidx.preference.PreferenceManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.gson.Gson
+import com.vishal2376.gitcoach.R
 import com.vishal2376.gitcoach.adapters.GitInfoAdapter
 import com.vishal2376.gitcoach.databinding.FragmentExploreBinding
 import com.vishal2376.gitcoach.models.GitCommand
@@ -36,6 +39,9 @@ class ExploreFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        //load settings
+        loadSettings()
+
         //get data
         val gson = Gson()
         val jsonString = requireActivity().assets.readFile("git_commands.json")
@@ -48,6 +54,11 @@ class ExploreFragment : Fragment() {
             setHasFixedSize(true)
             layoutManager = LinearLayoutManager(requireContext())
             adapter = gitInfoAdapter
+        }
+
+        //settings
+        binding.ivSettings.setOnClickListener {
+            findNavController().navigate(R.id.action_exploreFragment_to_settingsFragment)
         }
 
         //search data
@@ -63,6 +74,32 @@ class ExploreFragment : Fragment() {
 
         })
 
+    }
+
+    private fun loadSettings() {
+        //load saved values
+        val sp = PreferenceManager.getDefaultSharedPreferences(requireContext())
+        val userTheme = sp.getString("user_theme", "yellow")
+
+        //set theme
+        setUserTheme(userTheme)
+    }
+
+    private fun setUserTheme(userTheme: String?) {
+        when (userTheme) {
+            "red" -> {
+                requireActivity().setTheme(R.style.Theme_RED)
+            }
+            "blue" -> {
+                requireActivity().setTheme(R.style.Theme_BLUE)
+            }
+            "green" -> {
+                requireActivity().setTheme(R.style.Theme_GREEN)
+            }
+            else -> {
+                requireActivity().setTheme(R.style.Theme_GitCoach)
+            }
+        }
     }
 
     private fun filterList(query: String?) {
