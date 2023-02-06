@@ -28,6 +28,10 @@ class LearnFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+
+        //load settings
+        loadSettings()
+
         // Inflate the layout for this fragment
         _binding = FragmentLearnBinding.inflate(inflater, container, false)
 
@@ -42,8 +46,6 @@ class LearnFragment : Fragment() {
             findNavController().navigate(R.id.action_learnFragment_to_exploreFragment)
         }
 
-        //load settings
-        loadSettings()
 
         //get data
         val gson = Gson()

@@ -30,6 +30,10 @@ class ExploreFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+
+        //load settings
+        loadSettings()
+
         // Inflate the layout for this fragment
         _binding = FragmentExploreBinding.inflate(inflater, container, false)
 
@@ -38,9 +42,6 @@ class ExploreFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        //load settings
-        loadSettings()
 
         //get data
         val gson = Gson()
