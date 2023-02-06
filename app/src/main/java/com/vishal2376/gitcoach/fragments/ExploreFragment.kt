@@ -47,7 +47,7 @@ class ExploreFragment : Fragment() {
         val jsonString = requireActivity().assets.readFile("git_commands.json")
         gitCommandList = gson.fromJson(jsonString, GitCommand::class.java)
 
-        gitInfoAdapter = GitInfoAdapter(requireContext(), gitCommandList.git_info)
+        gitInfoAdapter = GitInfoAdapter(requireContext(), gitCommandList.gitCommands)
 
         //set recycler view
         binding.rvGitInfo.apply {
@@ -105,7 +105,7 @@ class ExploreFragment : Fragment() {
     private fun filterList(query: String?) {
         if (query != null) {
             val filteredList = ArrayList<GitCommandItem>()
-            for (i in gitCommandList.git_info) {
+            for (i in gitCommandList.gitCommands) {
                 if (i.command.lowercase(Locale.ROOT).contains(query)) {
                     filteredList.add(i)
                 }
