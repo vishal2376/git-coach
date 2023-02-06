@@ -31,7 +31,7 @@ class GitLessonAdapter(
 
         //set data
         val currentGitLesson = gitLessonList[position]
-        holder.lessonCount.text = (position+1).toString()
+        holder.lessonCount.text = (position + 1).toString()
         holder.lessonTitle.text = currentGitLesson.LessonTitle
 
         //animation
