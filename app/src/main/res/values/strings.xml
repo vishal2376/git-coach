@@ -6,4 +6,6 @@
     <string name="git_desc">Initialize a new Git repository in the current or specified directory.</string>
     <string name="git_init">git init</string>
     <string name="search_command">Search command...</string>
+    <string name="tagline">Easy way to learn Git</string>
+    <string name="one">1</string>
 </resources>

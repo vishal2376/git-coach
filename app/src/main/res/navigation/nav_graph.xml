@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/exploreFragment">
+    app:startDestination="@id/learnFragment">
 
     <fragment
         android:id="@+id/exploreFragment"
@@ -18,4 +18,13 @@
         android:id="@+id/settingsFragment"
         android:name="com.vishal2376.gitcoach.fragments.SettingsFragment"
         android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/learnFragment"
+        android:name="com.vishal2376.gitcoach.fragments.LearnFragment"
+        android:label="fragment_learn"
+        tools:layout="@layout/fragment_learn" >
+        <action
+            android:id="@+id/action_learnFragment_to_exploreFragment"
+            app:destination="@id/exploreFragment" />
+    </fragment>
 </navigation>
