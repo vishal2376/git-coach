@@ -8,4 +8,7 @@
     <string name="search_command">Search command...</string>
     <string name="tagline">Easy way to learn Git</string>
     <string name="one">1</string>
+    <string name="lesson_description">What is Git and why is it used</string>
+    <string name="lesson_explanation">Git is a distributed version control system used to manage and track changes to source code. It helps developers collaborate on projects and maintain a history of all changes made to the code.</string>
+    <string name="lesson_example">git config --global user.name \'John Doe\'\ngit config --global user.email \'johndoe@example.com\'</string>
 </resources>

@@ -11,43 +11,40 @@ import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.vishal2376.gitcoach.R
 import com.vishal2376.gitcoach.models.lesson.GitLessonItem
 
-class GitLessonAdapter(
+class GitLessonStepAdapter(
     private val context: Context,
-    private var gitLessonList: List<GitLessonItem>,
-    private val onLessonItemClicked: (Int) -> Unit
+    private var gitLesson: GitLessonItem
 ) :
-    Adapter<GitLessonAdapter.GitLessonViewHolder>() {
+    Adapter<GitLessonStepAdapter.GitLessonViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GitLessonViewHolder {
         val view =
-            LayoutInflater.from(parent.context).inflate(R.layout.git_lesson_item, parent, false)
+            LayoutInflater.from(parent.context)
+                .inflate(R.layout.git_lesson_step_item, parent, false)
         return GitLessonViewHolder(view)
     }
 
     override fun getItemCount(): Int {
-        return gitLessonList.size
+        return gitLesson.Steps.size
     }
 
     override fun onBindViewHolder(holder: GitLessonViewHolder, position: Int) {
 
         //set data
-        val currentGitLesson = gitLessonList[position]
-        holder.lessonCount.text = (position + 1).toString()
-        holder.lessonTitle.text = currentGitLesson.LessonTitle
+        val currentLessonStep = gitLesson.Steps[position]
+        holder.lessonDescription.text = currentLessonStep.Description
+        holder.lessonExplanation.text = currentLessonStep.Explanation
+        holder.lessonExample.text = currentLessonStep.Example
 
         //animation
         holder.itemView.animation = AnimationUtils.loadAnimation(context, R.anim.popup_anim)
 
-        //on click
-        holder.itemView.setOnClickListener {
-            onLessonItemClicked(position)
-        }
-
     }
 
     inner class GitLessonViewHolder(itemView: View) : ViewHolder(itemView) {
-        val lessonTitle: TextView = itemView.findViewById(R.id.tvLessonTitle)
-        val lessonCount: TextView = itemView.findViewById(R.id.tvLessonCount)
+        val lessonDescription: TextView = itemView.findViewById(R.id.tvLessonDescription)
+        val lessonExplanation: TextView = itemView.findViewById(R.id.tvLessonExplanation)
+        val lessonExample: TextView = itemView.findViewById(R.id.tvLessonExample)
     }
 
 }
