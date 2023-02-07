@@ -6,7 +6,7 @@
     <string name="git_desc">Initialize a new Git repository in the current or specified directory.</string>
     <string name="git_init">git init</string>
     <string name="search_command">Search command...</string>
-    <string name="tagline">Easy way to learn Git</string>
+    <string name="tagline">Grow your Git knowledge</string>
     <string name="one">1</string>
     <string name="lesson_description">What is Git and why is it used</string>
     <string name="lesson_explanation">Git is a distributed version control system used to manage and track changes to source code. It helps developers collaborate on projects and maintain a history of all changes made to the code.</string>
