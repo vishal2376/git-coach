@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="@dimen/_10sdp"
+    android:background="@drawable/item_bg"
     android:orientation="vertical"
     android:paddingHorizontal="@dimen/_20sdp"
     android:paddingVertical="@dimen/_10sdp">
@@ -29,12 +30,11 @@
         android:textColor="@color/colorGreyText"
         android:textSize="@dimen/_10ssp" />
 
-
     <TextView
         android:id="@+id/tvLessonExample"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
         android:background="@drawable/round_bg_dark"
         android:drawablePadding="@dimen/_5sdp"
         android:fontFamily="@font/roboto_medium"
@@ -46,11 +46,5 @@
         app:drawableStartCompat="@drawable/ic_code"
         app:drawableTint="?attr/colorAccent" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_2sdp"
-        android:layout_gravity="center"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:background="?attr/colorAccent" />
 
 </LinearLayout>
