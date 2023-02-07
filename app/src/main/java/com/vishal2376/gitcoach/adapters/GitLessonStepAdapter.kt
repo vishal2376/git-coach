@@ -34,7 +34,12 @@ class GitLessonStepAdapter(
         val currentLessonStep = gitLesson.Steps[position]
         holder.lessonDescription.text = currentLessonStep.Description
         holder.lessonExplanation.text = currentLessonStep.Explanation
-        holder.lessonExample.text = currentLessonStep.Example
+
+        if (currentLessonStep.Example.isEmpty())
+            holder.lessonExample.visibility = View.GONE
+        else
+            holder.lessonExample.text = currentLessonStep.Example
+
 
         //animation
         holder.itemView.animation = AnimationUtils.loadAnimation(context, R.anim.popup_anim)
