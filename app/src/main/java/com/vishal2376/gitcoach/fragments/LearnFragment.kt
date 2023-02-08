@@ -10,6 +10,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.preference.PreferenceManager
 import androidx.recyclerview.widget.GridLayoutManager
 import com.google.gson.Gson
+import com.vishal2376.gitcoach.MainFragmentDirections
 import com.vishal2376.gitcoach.R
 import com.vishal2376.gitcoach.adapters.GitLessonAdapter
 import com.vishal2376.gitcoach.databinding.FragmentLearnBinding
@@ -89,7 +90,7 @@ class LearnFragment : Fragment() {
         .use { it.readText() }
 
     private fun onLessonItemClicked(currentLesson: Int) {
-        val action = LearnFragmentDirections.actionLearnFragmentToLessonFragment(currentLesson)
+        val action = MainFragmentDirections.actionMainFragmentToLessonFragment(currentLesson)
         findNavController().navigate(action)
     }
 
