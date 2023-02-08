@@ -57,11 +57,6 @@ class ExploreFragment : Fragment() {
             adapter = gitInfoAdapter
         }
 
-        //settings
-        binding.ivSettings.setOnClickListener {
-            findNavController().navigate(R.id.action_exploreFragment_to_settingsFragment)
-        }
-
         //search data
         binding.searchBar.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
