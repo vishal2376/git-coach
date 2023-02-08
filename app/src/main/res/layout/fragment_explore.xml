@@ -7,46 +7,30 @@
     android:background="?attr/colorPrimaryVariant"
     tools:context=".fragments.ExploreFragment">
 
-    <LinearLayout
+    <androidx.cardview.widget.CardView
         android:id="@+id/searchBarCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_10sdp"
-        android:orientation="horizontal"
+        android:layout_weight="1"
+        app:cardBackgroundColor="?attr/colorPrimary"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_10sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
+        <SearchView
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_5sdp"
-            android:layout_weight="1"
-            app:cardBackgroundColor="?attr/colorPrimary"
-            app:cardCornerRadius="@dimen/_10sdp"
-            app:cardElevation="@dimen/_10sdp">
+            android:iconifiedByDefault="false"
+            android:queryBackground="@android:color/transparent"
+            android:queryHint="@string/search_command"
+            android:searchIcon="@drawable/ic_search" />
 
-            <SearchView
-                android:id="@+id/searchBar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:iconifiedByDefault="false"
-                android:queryBackground="@android:color/transparent"
-                android:queryHint="@string/search_command"
-                android:searchIcon="@drawable/ic_search" />
-
-        </androidx.cardview.widget.CardView>
-
-        <ImageView
-            android:id="@+id/ivSettings"
-            android:layout_width="@dimen/_35sdp"
-            android:layout_height="@dimen/_35sdp"
-            android:layout_marginStart="@dimen/_5sdp"
-            android:padding="@dimen/_5sdp"
-            android:src="@drawable/ic_settings" />
-
-    </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 
     <androidx.recyclerview.widget.RecyclerView

@@ -13,8 +13,8 @@
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:paddingHorizontal="@dimen/_20sdp"
-        android:paddingVertical="@dimen/_20sdp"
+        android:paddingHorizontal="@dimen/_30sdp"
+        android:paddingVertical="@dimen/_10sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -24,7 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_medium"
-            android:text="@string/app_name"
+            android:text="@string/git_progress"
             android:textColor="?attr/colorAccent"
             android:textSize="@dimen/_25sdp" />
 
@@ -33,9 +33,9 @@
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/text_learn_git"
             android:layout_marginStart="@dimen/_5sdp"
-            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_35sdp"
             android:fontFamily="@font/roboto_medium"
-            android:text="@string/tagline"
+            android:text="@string/tagline2"
             android:textColor="@color/colorGreyText"
             android:textSize="@dimen/_10sdp" />
 
@@ -44,7 +44,7 @@
             android:layout_width="@dimen/_60sdp"
             android:layout_height="@dimen/_60sdp"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
             app:cpb_background_progressbar_color="?attr/colorPrimary"
             app:cpb_background_progressbar_width="@dimen/_5sdp"
             app:cpb_progress="20"

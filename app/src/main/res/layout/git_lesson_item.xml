@@ -3,6 +3,7 @@
     android:layout_width="@dimen/_120sdp"
     android:layout_height="@dimen/_150sdp"
     android:layout_marginBottom="@dimen/_15sdp"
+    android:layout_marginStart="@dimen/_5sdp"
     android:background="@drawable/item_lesson_bg">
 
     <TextView
