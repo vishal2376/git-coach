@@ -41,12 +41,6 @@ class LearnFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // move to explore fragment
-        binding.fabExplore.setOnClickListener {
-            findNavController().navigate(R.id.action_learnFragment_to_exploreFragment)
-        }
-
-
         //get data
         val gson = Gson()
         val jsonString = requireActivity().assets.readFile("git_lessons.json")
