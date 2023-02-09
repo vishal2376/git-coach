@@ -65,12 +65,30 @@ class MainFragment : Fragment() {
     }
 
     private fun changeUserTheme() {
-        val themes = listOf("red", "blue", "yellow", "green")
+        val themes = listOf("yellow", "red", "green", "blue")
+        var newThemeIndex = 0
 
-        val randNumber = (0..3).random()
+        //get current theme
+        val sp = requireContext().getSharedPreferences("SETTINGS", MODE_PRIVATE)
+            .getString("user_theme", "yellow")
+
+        newThemeIndex = when (sp.toString()) {
+            "red" -> {
+                1
+            }
+            "green" -> {
+                2
+            }
+            "blue" -> {
+                3
+            }
+            else -> {
+                0
+            }
+        }
 
         requireContext().getSharedPreferences("SETTINGS", MODE_PRIVATE).edit()
-            .putString("user_theme", themes[randNumber]).apply();
+            .putString("user_theme", themes[++newThemeIndex % themes.size]).apply();
     }
 
 }
