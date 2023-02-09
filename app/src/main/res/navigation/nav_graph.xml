@@ -42,7 +42,7 @@
     </fragment>
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.vishal2376.gitcoach.MainFragment"
+        android:name="com.vishal2376.gitcoach.fragments.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main">
         <action

@@ -7,14 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import androidx.preference.PreferenceManager
 import androidx.recyclerview.widget.GridLayoutManager
 import com.google.gson.Gson
 import com.vishal2376.gitcoach.MainFragmentDirections
-import com.vishal2376.gitcoach.R
 import com.vishal2376.gitcoach.adapters.GitLessonAdapter
 import com.vishal2376.gitcoach.databinding.FragmentLearnBinding
 import com.vishal2376.gitcoach.models.lesson.GitLesson
+import com.vishal2376.gitcoach.utils.LoadSettings
 
 class LearnFragment : Fragment() {
 
@@ -31,7 +30,7 @@ class LearnFragment : Fragment() {
     ): View {
 
         //load settings
-        loadSettings()
+        LoadSettings.loadTheme(requireContext())
 
         // Inflate the layout for this fragment
         _binding = FragmentLearnBinding.inflate(inflater, container, false)
@@ -57,32 +56,6 @@ class LearnFragment : Fragment() {
             adapter = gitLessonAdapter
         }
 
-    }
-
-    private fun loadSettings() {
-        //load saved values
-        val sp = PreferenceManager.getDefaultSharedPreferences(requireContext())
-        val userTheme = sp.getString("user_theme", "yellow")
-
-        //set theme
-        setUserTheme(userTheme)
-    }
-
-    private fun setUserTheme(userTheme: String?) {
-        when (userTheme) {
-            "red" -> {
-                requireActivity().setTheme(R.style.Theme_RED)
-            }
-            "blue" -> {
-                requireActivity().setTheme(R.style.Theme_BLUE)
-            }
-            "green" -> {
-                requireActivity().setTheme(R.style.Theme_GREEN)
-            }
-            else -> {
-                requireActivity().setTheme(R.style.Theme_GitCoach)
-            }
-        }
     }
 
     private fun AssetManager.readFile(fileName: String) = open(fileName)

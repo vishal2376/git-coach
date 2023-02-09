@@ -7,15 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.SearchView
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
-import androidx.preference.PreferenceManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.gson.Gson
-import com.vishal2376.gitcoach.R
 import com.vishal2376.gitcoach.adapters.GitInfoAdapter
 import com.vishal2376.gitcoach.databinding.FragmentExploreBinding
 import com.vishal2376.gitcoach.models.GitCommand
 import com.vishal2376.gitcoach.models.GitCommandItem
+import com.vishal2376.gitcoach.utils.LoadSettings
 import java.util.*
 
 class ExploreFragment : Fragment() {
@@ -32,7 +30,7 @@ class ExploreFragment : Fragment() {
     ): View {
 
         //load settings
-        loadSettings()
+        LoadSettings.loadTheme(requireContext())
 
         // Inflate the layout for this fragment
         _binding = FragmentExploreBinding.inflate(inflater, container, false)
@@ -70,32 +68,6 @@ class ExploreFragment : Fragment() {
 
         })
 
-    }
-
-    private fun loadSettings() {
-        //load saved values
-        val sp = PreferenceManager.getDefaultSharedPreferences(requireContext())
-        val userTheme = sp.getString("user_theme", "yellow")
-
-        //set theme
-        setUserTheme(userTheme)
-    }
-
-    private fun setUserTheme(userTheme: String?) {
-        when (userTheme) {
-            "red" -> {
-                requireActivity().setTheme(R.style.Theme_RED)
-            }
-            "blue" -> {
-                requireActivity().setTheme(R.style.Theme_BLUE)
-            }
-            "green" -> {
-                requireActivity().setTheme(R.style.Theme_GREEN)
-            }
-            else -> {
-                requireActivity().setTheme(R.style.Theme_GitCoach)
-            }
-        }
     }
 
     private fun filterList(query: String?) {

@@ -1,14 +1,14 @@
-package com.vishal2376.gitcoach
+package com.vishal2376.gitcoach.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.preference.PreferenceManager
 import com.google.android.material.tabs.TabLayoutMediator
 import com.vishal2376.gitcoach.adapters.ViewPagerAdapter
 import com.vishal2376.gitcoach.databinding.FragmentMainBinding
+import com.vishal2376.gitcoach.utils.LoadSettings
 
 class MainFragment : Fragment() {
 
@@ -20,7 +20,7 @@ class MainFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         //load settings
-        loadSettings()
+        LoadSettings.loadTheme(requireContext())
 
         // Inflate the layout for this fragment
         _binding = FragmentMainBinding.inflate(inflater, container, false)
@@ -49,30 +49,4 @@ class MainFragment : Fragment() {
 
     }
 
-
-    private fun loadSettings() {
-        //load saved values
-        val sp = PreferenceManager.getDefaultSharedPreferences(requireContext())
-        val userTheme = sp.getString("user_theme", "yellow")
-
-        //set theme
-        setUserTheme(userTheme)
-    }
-
-    private fun setUserTheme(userTheme: String?) {
-        when (userTheme) {
-            "red" -> {
-                requireActivity().setTheme(R.style.Theme_RED)
-            }
-            "blue" -> {
-                requireActivity().setTheme(R.style.Theme_BLUE)
-            }
-            "green" -> {
-                requireActivity().setTheme(R.style.Theme_GREEN)
-            }
-            else -> {
-                requireActivity().setTheme(R.style.Theme_GitCoach)
-            }
-        }
-    }
 }

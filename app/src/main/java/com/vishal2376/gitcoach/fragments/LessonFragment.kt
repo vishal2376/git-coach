@@ -7,13 +7,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
-import androidx.preference.PreferenceManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.gson.Gson
-import com.vishal2376.gitcoach.R
 import com.vishal2376.gitcoach.adapters.GitLessonStepAdapter
 import com.vishal2376.gitcoach.databinding.FragmentLessonBinding
 import com.vishal2376.gitcoach.models.lesson.GitLesson
+import com.vishal2376.gitcoach.utils.LoadSettings
 
 class LessonFragment : Fragment() {
 
@@ -30,7 +29,7 @@ class LessonFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         //load settings
-        loadSettings()
+        LoadSettings.loadTheme(requireContext())
 
         // Inflate the layout for this fragment
         _binding = FragmentLessonBinding.inflate(inflater, container, false)
@@ -54,32 +53,6 @@ class LessonFragment : Fragment() {
             setHasFixedSize(true)
             layoutManager = LinearLayoutManager(requireContext())
             adapter = gitLessonStepAdapter
-        }
-    }
-
-    private fun loadSettings() {
-        //load saved values
-        val sp = PreferenceManager.getDefaultSharedPreferences(requireContext())
-        val userTheme = sp.getString("user_theme", "yellow")
-
-        //set theme
-        setUserTheme(userTheme)
-    }
-
-    private fun setUserTheme(userTheme: String?) {
-        when (userTheme) {
-            "red" -> {
-                requireActivity().setTheme(R.style.Theme_RED)
-            }
-            "blue" -> {
-                requireActivity().setTheme(R.style.Theme_BLUE)
-            }
-            "green" -> {
-                requireActivity().setTheme(R.style.Theme_GREEN)
-            }
-            else -> {
-                requireActivity().setTheme(R.style.Theme_GitCoach)
-            }
         }
     }
 
