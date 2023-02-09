@@ -8,7 +8,6 @@ object LoadSettings {
 
     fun loadTheme(context: Context) {
         //load saved values
-//        val sp = PreferenceManager.getDefaultSharedPreferences(context)
         val sp = context.getSharedPreferences("SETTINGS", MODE_PRIVATE)
             .getString("user_theme", "yellow")
 
