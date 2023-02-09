@@ -8,11 +8,11 @@ import android.view.ViewGroup
 import android.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.google.gson.Gson
 import com.vishal2376.gitcoach.adapters.GitInfoAdapter
 import com.vishal2376.gitcoach.databinding.FragmentExploreBinding
 import com.vishal2376.gitcoach.models.GitCommand
 import com.vishal2376.gitcoach.models.GitCommandItem
+import com.vishal2376.gitcoach.utils.LoadData
 import com.vishal2376.gitcoach.utils.LoadSettings
 import java.util.*
 
@@ -42,9 +42,7 @@ class ExploreFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         //get data
-        val gson = Gson()
-        val jsonString = requireActivity().assets.readFile("git_commands.json")
-        gitCommandList = gson.fromJson(jsonString, GitCommand::class.java)
+        gitCommandList = LoadData.getGitCommandData(requireContext())!!
 
         gitInfoAdapter = GitInfoAdapter(requireContext(), gitCommandList.gitCommands)
 

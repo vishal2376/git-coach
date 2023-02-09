@@ -8,11 +8,10 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
-import com.google.gson.Gson
-import com.vishal2376.gitcoach.MainFragmentDirections
 import com.vishal2376.gitcoach.adapters.GitLessonAdapter
 import com.vishal2376.gitcoach.databinding.FragmentLearnBinding
 import com.vishal2376.gitcoach.models.lesson.GitLesson
+import com.vishal2376.gitcoach.utils.LoadData
 import com.vishal2376.gitcoach.utils.LoadSettings
 
 class LearnFragment : Fragment() {
@@ -41,10 +40,8 @@ class LearnFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //get data
-        val gson = Gson()
-        val jsonString = requireActivity().assets.readFile("git_lessons.json")
-        gitLessonList = gson.fromJson(jsonString, GitLesson::class.java)
+        //get json data
+        gitLessonList = LoadData.getGitLessonData(requireContext())!!
 
         gitLessonAdapter =
             GitLessonAdapter(requireContext(), gitLessonList.gitLessons, ::onLessonItemClicked)
