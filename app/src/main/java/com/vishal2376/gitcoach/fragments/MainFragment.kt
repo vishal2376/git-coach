@@ -1,5 +1,6 @@
 package com.vishal2376.gitcoach.fragments
 
+import android.content.Context.MODE_PRIVATE
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -47,6 +48,29 @@ class MainFragment : Fragment() {
             }
         }.attach()
 
+        binding.btnChangeTheme.setOnClickListener {
+            changeUserTheme()
+            restartApp()
+        }
+
+    }
+
+    private fun restartApp() {
+        val intent = requireActivity().intent
+        requireActivity().let {
+            it.finish()
+            it.startActivity(intent)
+        }
+
+    }
+
+    private fun changeUserTheme() {
+        val themes = listOf("red", "blue", "yellow", "green")
+
+        val randNumber = (0..3).random()
+
+        requireContext().getSharedPreferences("SETTINGS", MODE_PRIVATE).edit()
+            .putString("user_theme", themes[randNumber]).apply();
     }
 
 }
