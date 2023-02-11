@@ -3,48 +3,65 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="@dimen/_10sdp"
-    android:background="@drawable/item_bg"
-    android:orientation="vertical"
-    android:paddingHorizontal="@dimen/_20sdp"
-    android:paddingVertical="@dimen/_10sdp">
+    android:orientation="vertical">
 
-
-    <TextView
-        android:id="@+id/tvLessonDescription"
+    <LinearLayout
+        android:id="@+id/lessonCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/roboto_medium"
-        android:text="@string/lesson_description"
-        android:textColor="@color/colorWhite"
-        android:textSize="@dimen/_14ssp" />
+        android:background="@drawable/item_bg"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_20sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvLessonDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/lesson_description"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14ssp" />
 
 
-    <TextView
-        android:id="@+id/tvLessonExplanation"
-        android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/tvLessonExplanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/lesson_explanation"
+            android:textColor="@color/colorGreyText"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/tvLessonExample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/round_bg_dark"
+            android:drawablePadding="@dimen/_5sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:text="@string/lesson_example"
+            android:textColor="?attr/colorAccent"
+            android:textSize="@dimen/_12ssp"
+            app:drawableStartCompat="@drawable/ic_code"
+            app:drawableTint="?attr/colorAccent" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_5sdp"
-        android:fontFamily="@font/roboto_medium"
-        android:text="@string/lesson_explanation"
-        android:textColor="@color/colorGreyText"
-        android:textSize="@dimen/_10ssp" />
-
-    <TextView
-        android:id="@+id/tvLessonExample"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:background="@drawable/round_bg_dark"
-        android:drawablePadding="@dimen/_5sdp"
-        android:fontFamily="@font/roboto_medium"
-        android:paddingHorizontal="@dimen/_5sdp"
-        android:paddingVertical="@dimen/_5sdp"
-        android:text="@string/lesson_example"
-        android:textColor="?attr/colorAccent"
-        android:textSize="@dimen/_12ssp"
-        app:drawableStartCompat="@drawable/ic_code"
-        app:drawableTint="?attr/colorAccent" />
-
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/line_circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lessonCard" />
 
 </LinearLayout>
