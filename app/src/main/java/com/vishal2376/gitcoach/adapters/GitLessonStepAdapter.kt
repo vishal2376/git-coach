@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
@@ -40,6 +41,9 @@ class GitLessonStepAdapter(
         else
             holder.lessonExample.text = currentLessonStep.Example
 
+        //hide vertical line of last element
+        if (position == gitLesson.Steps.size - 1)
+            holder.verticalLine.visibility = View.GONE
 
         //animation
         holder.itemView.animation = AnimationUtils.loadAnimation(context, R.anim.popup_anim)
@@ -50,6 +54,7 @@ class GitLessonStepAdapter(
         val lessonDescription: TextView = itemView.findViewById(R.id.tvLessonDescription)
         val lessonExplanation: TextView = itemView.findViewById(R.id.tvLessonExplanation)
         val lessonExample: TextView = itemView.findViewById(R.id.tvLessonExample)
+        val verticalLine: ImageView = itemView.findViewById(R.id.ivVerticalLine)
     }
 
 }
