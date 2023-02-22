@@ -1,6 +1,6 @@
 package com.vishal2376.gitcoach.fragments
 
-import android.content.res.AssetManager
+import android.content.Context.MODE_PRIVATE
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -52,11 +52,18 @@ class LessonFragment : Fragment() {
             layoutManager = LinearLayoutManager(requireContext())
             adapter = gitLessonStepAdapter
         }
+
+        //save progress
+        binding.btnComplete.setOnClickListener {
+            saveLessonProgress()
+        }
     }
 
-    private fun AssetManager.readFile(fileName: String) = open(fileName)
-        .bufferedReader()
-        .use { it.readText() }
+    private fun saveLessonProgress() {
+        requireContext().getSharedPreferences("PROGRESS", MODE_PRIVATE).edit()
+            .putInt("LESSON", args.position + 1).apply();
+    }
+
 
     override fun onDestroyView() {
         super.onDestroyView()

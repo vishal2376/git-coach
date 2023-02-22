@@ -1,6 +1,7 @@
 package com.vishal2376.gitcoach.fragments
 
-import android.content.res.AssetManager
+import android.annotation.SuppressLint
+import android.content.Context.MODE_PRIVATE
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -21,6 +22,7 @@ class LearnFragment : Fragment() {
 
     private lateinit var gitLessonAdapter: GitLessonAdapter
     private lateinit var gitLessonList: GitLesson
+    private var lessonProgress: Int = 0
 
     override fun onCreateView(
 
@@ -37,14 +39,28 @@ class LearnFragment : Fragment() {
         return binding.root
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        //get progress
+        lessonProgress = getLessonProgress()
 
         //get json data
         gitLessonList = LoadData.getGitLessonData(requireContext())!!
 
+        //set progress bar
+        val progressValue = (lessonProgress / gitLessonList.gitLessons.size) * 100
+        binding.circularProgressBar.progress = progressValue.toFloat()
+        binding.tvProgress.text = "${progressValue}%"
+
         gitLessonAdapter =
-            GitLessonAdapter(requireContext(), gitLessonList.gitLessons, ::onLessonItemClicked)
+            GitLessonAdapter(
+                requireContext(),
+                gitLessonList.gitLessons,
+                lessonProgress,
+                ::onLessonItemClicked
+            )
 
         //set recycler view
         binding.rvGitInfo.apply {
@@ -55,13 +71,16 @@ class LearnFragment : Fragment() {
 
     }
 
-    private fun AssetManager.readFile(fileName: String) = open(fileName)
-        .bufferedReader()
-        .use { it.readText() }
-
     private fun onLessonItemClicked(currentLesson: Int) {
         val action = MainFragmentDirections.actionMainFragmentToLessonFragment(currentLesson)
         findNavController().navigate(action)
+    }
+
+    private fun getLessonProgress(): Int {
+        //load saved progress
+        return requireContext().getSharedPreferences("PROGRESS", MODE_PRIVATE)
+            .getInt("LESSON", 0)
+
     }
 
     override fun onDestroyView() {
