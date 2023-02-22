@@ -13,4 +13,5 @@
     <string name="lesson_example">git config --global user.name \'John Doe\'\ngit config --global user.email \'johndoe@example.com\'</string>
     <string name="git_progress">Git Progress</string>
     <string name="tagline2">Transform your Git skills</string>
+    <string name="complete_lesson">Complete Lesson</string>
 </resources>
