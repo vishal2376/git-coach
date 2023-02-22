@@ -2,9 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="@dimen/_120sdp"
     android:layout_height="@dimen/_150sdp"
-    android:layout_marginBottom="@dimen/_15sdp"
     android:layout_marginStart="@dimen/_5sdp"
-    android:background="@drawable/item_lesson_bg">
+    android:layout_marginBottom="@dimen/_15sdp"
+    android:background="@drawable/item_lesson_bg_unlocked">
 
     <TextView
         android:id="@+id/tvLessonCount"
@@ -23,6 +23,13 @@
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/_14ssp" />
 
+    <ImageView
+        android:id="@+id/ivLock"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_lock"
+        android:visibility="gone" />
 
     <TextView
         android:id="@+id/tvLessonTitle"
