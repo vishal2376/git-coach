@@ -25,10 +25,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@id/ivAppLogo"
-        android:fontFamily="@font/rubik_medium"
+        android:fontFamily="@font/roboto_medium"
         android:text="@string/app_name"
         android:textColor="@color/colorWhite"
-        android:textSize="@dimen/_25ssp"
+        android:textSize="@dimen/_30ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivAppLogo" />
