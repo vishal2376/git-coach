@@ -20,6 +20,8 @@ class GitLessonAdapter(
 ) :
     Adapter<GitLessonAdapter.GitLessonViewHolder>() {
 
+    private var isLessonLock: Boolean = true
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GitLessonViewHolder {
         val view =
             LayoutInflater.from(parent.context).inflate(R.layout.git_lesson_item, parent, false)
@@ -39,21 +41,23 @@ class GitLessonAdapter(
 
         //check lesson state
         if (position <= lessonProgress) {
+            isLessonLock = false
             holder.lessonTitle.visibility = View.VISIBLE
             holder.lessonState.visibility = View.GONE
         } else {
+            isLessonLock = true
             holder.lessonState.visibility = View.VISIBLE
             holder.lessonTitle.visibility = View.GONE
-
         }
 
         //animation
         holder.itemView.animation = AnimationUtils.loadAnimation(context, R.anim.popup_anim)
 
         //on click
-        holder.itemView.setOnClickListener {
-            onLessonItemClicked(position)
-        }
+        if (!isLessonLock)
+            holder.itemView.setOnClickListener {
+                onLessonItemClicked(position)
+            }
 
     }
 
