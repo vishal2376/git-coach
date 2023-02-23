@@ -59,6 +59,9 @@ class LessonFragment : Fragment() {
             saveLessonProgress()
             findNavController().popBackStack()
         }
+
+        //update title
+        binding.tvLessonTitle.text = gitLessonList.gitLessons[args.position].LessonTitle
     }
 
     private fun saveLessonProgress() {
