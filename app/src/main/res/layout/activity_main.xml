@@ -67,6 +67,7 @@
         android:layout_gravity="start"
         android:background="?attr/colorPrimaryVariant"
         app:headerLayout="@layout/nav_header"
+        app:itemIconTint="?attr/colorAccent"
         app:itemIconPadding="@dimen/_15sdp"
         app:itemIconSize="@dimen/_25sdp"
         app:itemVerticalPadding="@dimen/_10sdp"
