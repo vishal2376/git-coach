@@ -14,4 +14,9 @@
     <string name="git_progress">Git Progress</string>
     <string name="tagline2">Transform your Git skills</string>
     <string name="complete_lesson">Complete Lesson</string>
+    <string name="report_bug">Report Bug</string>
+    <string name="suggestions">Suggestions</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="share_app">Share App</string>
+    <string name="v0_1">v0.1</string>
 </resources>

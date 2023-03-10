@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemReportBug"
+        android:icon="@drawable/bug_report"
+        android:title="@string/report_bug" />
+
+    <item
+        android:id="@+id/itemSuggestions"
+        android:icon="@drawable/ic_suggestions"
+        android:title="@string/suggestions" />
+
+    <item
+        android:id="@+id/itemRateUs"
+        android:icon="@drawable/ic_rate_start"
+        android:title="@string/rate_us" />
+
+    <item
+        android:id="@+id/itemShareApp"
+        android:icon="@drawable/ic_share"
+        android:title="@string/share_app" />
+
+
+</menu>
