@@ -54,20 +54,11 @@ class LessonFragment : Fragment() {
             adapter = gitLessonStepAdapter
         }
 
-        //save progress
-        binding.btnComplete.setOnClickListener {
-            saveLessonProgress()
-            findNavController().popBackStack()
-        }
 
         //update title
         binding.tvLessonTitle.text = gitLessonList.gitLessons[args.position].LessonTitle
     }
 
-    private fun saveLessonProgress() {
-        requireContext().getSharedPreferences("PROGRESS", MODE_PRIVATE).edit()
-            .putInt("LESSON", args.position + 1).apply();
-    }
 
 
     override fun onDestroyView() {

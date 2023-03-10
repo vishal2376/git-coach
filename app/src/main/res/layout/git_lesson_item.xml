@@ -25,14 +25,6 @@
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/_14ssp" />
 
-    <ImageView
-        android:id="@+id/ivLock"
-        android:layout_width="@dimen/_30sdp"
-        android:layout_height="@dimen/_30sdp"
-        android:layout_centerInParent="true"
-        android:src="@drawable/ic_lock"
-        android:visibility="gone"
-        app:tint="@color/colorGreyText" />
 
     <TextView
         android:id="@+id/tvLessonTitle"

@@ -38,24 +38,10 @@
         android:layout_marginHorizontal="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_10sdp"
         android:paddingVertical="@dimen/_10ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/btnComplete"
         app:layout_constraintTop_toBottomOf="@+id/tvLessonTitle"
         tools:listitem="@layout/git_lesson_step_item" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnComplete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="@dimen/_10sdp"
-        android:background="@drawable/round_bg_dark"
-        android:fontFamily="@font/rubik_medium"
-        android:paddingHorizontal="@dimen/_20sdp"
-        android:text="@string/complete_lesson"
-        android:textColor="@color/colorWhite"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
