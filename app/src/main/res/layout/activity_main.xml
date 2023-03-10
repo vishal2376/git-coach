@@ -12,17 +12,39 @@
         tools:context=".MainActivity">
 
         <!--    app bar-->
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/appBarLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingHorizontal="@dimen/_20sdp"
+            android:background="?attr/colorPrimaryVariant"
+            android:paddingHorizontal="@dimen/_10sdp"
             android:paddingTop="@dimen/_15sdp"
             android:paddingBottom="@dimen/_10sdp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
+            <TextView
+                android:id="@+id/tvLessonTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/rubik_medium"
+                android:text="@string/app_name"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_18ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivNavMenu"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivNavMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_menu" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -35,7 +57,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appBarLayout"
             app:navGraph="@navigation/nav_graph" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
