@@ -1,12 +1,10 @@
 package com.vishal2376.gitcoach.fragments
 
-import android.content.Context.MODE_PRIVATE
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.vishal2376.gitcoach.adapters.GitLessonStepAdapter
@@ -54,19 +52,9 @@ class LessonFragment : Fragment() {
             adapter = gitLessonStepAdapter
         }
 
-        //save progress
-        binding.btnComplete.setOnClickListener {
-            saveLessonProgress()
-            findNavController().popBackStack()
-        }
 
         //update title
         binding.tvLessonTitle.text = gitLessonList.gitLessons[args.position].LessonTitle
-    }
-
-    private fun saveLessonProgress() {
-        requireContext().getSharedPreferences("PROGRESS", MODE_PRIVATE).edit()
-            .putInt("LESSON", args.position + 1).apply();
     }
 
 
