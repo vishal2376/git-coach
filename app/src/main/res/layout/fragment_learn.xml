@@ -7,69 +7,6 @@
     android:background="?attr/colorPrimaryVariant"
     tools:context=".fragments.LearnFragment">
 
-    <RelativeLayout
-        android:id="@+id/headLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:paddingHorizontal="@dimen/_20sdp"
-        android:paddingVertical="@dimen/_10sdp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/text_learn_git"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/roboto_medium"
-            android:text="@string/git_progress"
-            android:textColor="?attr/colorAccent"
-            android:textSize="@dimen/_25sdp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/text_learn_git"
-            android:layout_marginStart="@dimen/_5sdp"
-            android:layout_marginTop="@dimen/_35sdp"
-            android:fontFamily="@font/roboto_medium"
-            android:text="@string/tagline2"
-            android:textColor="@color/colorGreyText"
-            android:textSize="@dimen/_10sdp" />
-
-        <com.mikhaellopez.circularprogressbar.CircularProgressBar
-            android:id="@+id/circularProgressBar"
-            android:layout_width="@dimen/_60sdp"
-            android:layout_height="@dimen/_60sdp"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="@dimen/_20sdp"
-            app:cpb_background_progressbar_color="?attr/colorPrimary"
-            app:cpb_background_progressbar_width="@dimen/_5sdp"
-            app:cpb_progress="20"
-            app:cpb_progress_direction="to_right"
-            app:cpb_progressbar_color="?attr/colorAccent"
-            app:cpb_progressbar_width="@dimen/_7sdp"
-            app:cpb_round_border="true" />
-
-
-        <TextView
-            android:id="@+id/tvProgress"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@id/circularProgressBar"
-            android:layout_alignTop="@id/circularProgressBar"
-            android:layout_alignEnd="@+id/circularProgressBar"
-            android:layout_alignBottom="@id/circularProgressBar"
-            android:fontFamily="@font/roboto_medium"
-            android:gravity="center"
-            android:text="20%"
-            android:textAlignment="center"
-            android:textColor="?attr/colorAccent"
-            android:textSize="@dimen/_15sdp" />
-
-    </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvGitInfo"
@@ -79,7 +16,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/headLayout"
+        app:layout_constraintTop_toTopOf="parent"
         tools:listitem="@layout/git_lesson_item" />
 
 
