@@ -30,21 +30,36 @@
         android:textColor="@color/colorGreyText"
         android:textSize="@dimen/_10ssp" />
 
-
-    <TextView
-        android:id="@+id/tvGitCommand"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_5sdp"
         android:background="@drawable/round_bg_dark"
-        android:drawablePadding="@dimen/_5sdp"
-        android:fontFamily="@font/roboto_medium"
+        android:gravity="center_vertical"
         android:paddingHorizontal="@dimen/_5sdp"
-        android:paddingVertical="@dimen/_5sdp"
-        android:text="@string/git_init"
-        android:textColor="?attr/colorAccent"
-        android:textSize="@dimen/_12ssp"
-        app:drawableStartCompat="@drawable/ic_code"
-        app:drawableTint="?attr/colorAccent" />
+        android:paddingVertical="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/tvGitCommand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/ivShareCommand"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/git_init"
+            android:textColor="?attr/colorAccent"
+            android:textSize="@dimen/_12ssp"
+            app:drawableStartCompat="@drawable/ic_code"
+            app:drawableTint="?attr/colorAccent" />
+
+        <ImageView
+            android:id="@+id/ivShareCommand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:src="@drawable/ic_share" />
+
+    </RelativeLayout>
 
 </LinearLayout>

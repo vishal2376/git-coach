@@ -6,11 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.vishal2376.gitcoach.R
 import com.vishal2376.gitcoach.models.GitCommandItem
+import com.vishal2376.gitcoach.utils.shareCommand
 
 class GitInfoAdapter(
     private val context: Context,
@@ -36,6 +38,12 @@ class GitInfoAdapter(
         holder.command.text = currentGitInfo.command
         holder.description.text = currentGitInfo.description
 
+        holder.shareBtn.setOnClickListener {
+            val message =
+                currentGitInfo.name + "\n\nDescription: " + currentGitInfo.description + "\n\nCommand: " + currentGitInfo.command
+            shareCommand(context, message)
+        }
+
         //animation
         holder.itemView.animation = AnimationUtils.loadAnimation(context, R.anim.popup_anim)
 
@@ -51,6 +59,7 @@ class GitInfoAdapter(
         val name: TextView = itemView.findViewById(R.id.tvGitName)
         val command: TextView = itemView.findViewById(R.id.tvGitCommand)
         val description: TextView = itemView.findViewById(R.id.tvGitDescription)
+        val shareBtn: ImageView = itemView.findViewById(R.id.ivShareCommand)
     }
 
 }
