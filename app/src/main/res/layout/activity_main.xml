@@ -62,14 +62,15 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:background="?attr/colorPrimaryVariant"
         app:headerLayout="@layout/nav_header"
-        app:itemIconTint="?attr/colorAccent"
         app:itemIconPadding="@dimen/_15sdp"
         app:itemIconSize="@dimen/_25sdp"
+        app:itemIconTint="?attr/colorAccent"
         app:itemVerticalPadding="@dimen/_10sdp"
         app:menu="@menu/nav_menu">
 
