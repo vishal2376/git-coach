@@ -12,17 +12,17 @@
     <color name="colorGrey">#393E46</color>
     <color name="colorGreyDark">#222831</color>
 
-    <color name="colorYellow">#F6C90E</color>
-    <color name="colorYellowDark">#F0A500</color>
+    <color name="colorYellow">#FDD52E</color>
+    <color name="colorYellowDark">#FBB51B</color>
 
-    <color name="colorRed">#ff6659</color>
-    <color name="colorRedDark">#d32f2f</color>
+    <color name="colorRed">#F67D73</color>
+    <color name="colorRedDark">#ED5B5B</color>
 
     <color name="colorGreen">#4ECCA3</color>
-    <color name="colorGreenDark">#009a74</color>
+    <color name="colorGreenDark">#09AF86</color>
 
-    <color name="colorBlue">#63a4ff</color>
-    <color name="colorBlueDark">#1976d2</color>
+    <color name="colorBlue">#72ADFF</color>
+    <color name="colorBlueDark">#599EFD</color>
 
     <color name="colorWhite">#EEEEEE</color>
     <color name="colorBlack">#000000</color>
