@@ -6,8 +6,8 @@
         <item name="colorPrimaryVariant">@color/colorGreyDark</item>
         <item name="colorOnPrimary">@color/colorBlack</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/colorYellow</item>
-        <item name="colorSecondaryVariant">@color/colorYellowDark</item>
+        <item name="colorSecondary">@color/colorBlue</item>
+        <item name="colorSecondaryVariant">@color/colorBlueDark</item>
         <item name="colorOnSecondary">@color/colorBlack</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
@@ -30,14 +30,14 @@
     </style>
 
     <!-- Theme BLUE -->
-    <style name="Theme.BLUE" parent="Theme.GitCoach">
+    <style name="Theme.YELLOW" parent="Theme.GitCoach">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/colorGrey</item>
         <item name="colorPrimaryVariant">@color/colorGreyDark</item>
         <item name="colorOnPrimary">@color/colorBlack</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/colorBlue</item>
-        <item name="colorSecondaryVariant">@color/colorBlueDark</item>
+        <item name="colorSecondary">@color/colorYellow</item>
+        <item name="colorSecondaryVariant">@color/colorYellowDark</item>
         <item name="colorOnSecondary">@color/colorBlack</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>

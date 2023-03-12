@@ -16,7 +16,7 @@ object LoadSettings {
                 context.setTheme(R.style.Theme_RED)
             }
             "blue" -> {
-                context.setTheme(R.style.Theme_BLUE)
+                context.setTheme(R.style.Theme_YELLOW)
             }
             "green" -> {
                 context.setTheme(R.style.Theme_GREEN)
