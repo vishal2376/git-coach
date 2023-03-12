@@ -5,6 +5,7 @@ import android.net.Uri
 import android.os.Bundle
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
 import com.vishal2376.gitcoach.databinding.ActivityMainBinding
 import com.vishal2376.gitcoach.utils.Constants
 import com.vishal2376.gitcoach.utils.Constants.shareMessage
@@ -26,9 +27,9 @@ class MainActivity : AppCompatActivity() {
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        toggle = ActionBarDrawerToggle(this, binding.drawerLayout, R.string.open, R.string.close)
-        binding.drawerLayout.addDrawerListener(toggle)
-        toggle.syncState()
+        binding.ivNavMenu.setOnClickListener {
+            handleNavDrawer()
+        }
 
         binding.navView.setNavigationItemSelectedListener {
             when (it.itemId) {
@@ -48,6 +49,10 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
+    }
+
+    private fun handleNavDrawer() {
+        binding.drawerLayout.openDrawer(GravityCompat.START)
     }
 
     private fun shareApp() {
