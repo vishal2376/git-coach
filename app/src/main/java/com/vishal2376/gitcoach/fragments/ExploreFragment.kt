@@ -83,10 +83,6 @@ class ExploreFragment : Fragment() {
         }
     }
 
-    private fun AssetManager.readFile(fileName: String) = open(fileName)
-        .bufferedReader()
-        .use { it.readText() }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
