@@ -2,7 +2,7 @@
 
 Git Coach is a free education app designed to help users learn Git and its commands. With an easy-to-use interface and smooth animations, the app provides an enjoyable user experience without any ads to distract from the learning process.
 
-<a href='https://play.google.com/store/apps/details?id=com.vishal2376.gitcoach&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+<a href='https://play.google.com/store/apps/details?id=com.vishal2376.gitcoach&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' style="width:150px"></a>
 
 ## Features
 
@@ -14,7 +14,7 @@ Git Coach is a free education app designed to help users learn Git and its comma
 
 ## Screenshots
 
-| <img src="screenshots/splashscreen.jpg" width="200px"> | <img src="screenshots/lesson.jpg" width="200px"> | <img src="screenshots/nav.jpg" width="200px"> | <img src="screenshots/search.jpg" width="200px"> |
+| <img src="screenshots/splashscreen.jpg" width="200px"> | <img src="screenshots/lesson.jpg" width="200px"> | <img src="screenshots/nav.jpg" width="200px"> | <img src="screenshots/serach.jpg" width="200px"> |
 |:---:|:---:|:---:|:---:|
 | <img src="screenshots/cmdB.jpg" width="200px"> | <img src="screenshots/cmdR.jpg" width="200px"> | <img src="screenshots/cmdG.jpg" width="200px"> | <img src="screenshots/cmdY.jpg" width="200px"> |
 
