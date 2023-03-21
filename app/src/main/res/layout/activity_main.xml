@@ -70,6 +70,7 @@
         app:headerLayout="@layout/nav_header"
         app:itemIconPadding="@dimen/_15sdp"
         app:itemIconSize="@dimen/_25sdp"
+        app:itemTextColor="@color/colorWhite"
         app:itemIconTint="?attr/colorAccent"
         app:itemVerticalPadding="@dimen/_10sdp"
         app:menu="@menu/nav_menu">
