@@ -5,6 +5,7 @@ import android.net.Uri
 import android.os.Bundle
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.GravityCompat
 import com.vishal2376.gitcoach.databinding.ActivityMainBinding
 import com.vishal2376.gitcoach.utils.Constants
@@ -23,6 +24,9 @@ class MainActivity : AppCompatActivity() {
 
         //load settings
         LoadSettings.loadTheme(this)
+
+        // force dark mode
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
 
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
