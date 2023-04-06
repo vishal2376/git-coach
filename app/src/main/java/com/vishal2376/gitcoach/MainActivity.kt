@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
     private fun shareApp() {
         val shareIntent = Intent(Intent.ACTION_SEND);
         shareIntent.type = "text/plain";
-        Constants.shareMessage += "https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID + "\n\n";
+        Constants.shareMessage += "https://play.google.com/store/apps/details?id=" + applicationContext.packageName + "\n\n";
         shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Git Coach");
         shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
         startActivity(Intent.createChooser(shareIntent, "Share This App"));
