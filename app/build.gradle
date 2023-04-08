@@ -72,6 +72,9 @@ dependencies {
     //circular progress bar
     implementation 'com.mikhaellopez:circularprogressbar:3.1.0'
 
+    //in-app updates
+    implementation("com.google.android.play:app-update-ktx:2.0.1")
+
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
