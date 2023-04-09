@@ -18,7 +18,7 @@
     <string name="suggestions">Suggestions</string>
     <string name="rate_us">Rate Us</string>
     <string name="share_app">Share App</string>
-    <string name="v0_1">v0.1</string>
+    <string name="app_version">v%1$s</string>
     <string name="open">open</string>
     <string name="close">close</string>
 </resources>

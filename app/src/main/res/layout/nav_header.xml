@@ -39,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto_medium"
-        android:text="@string/v0_1"
+        android:text="@string/app_version"
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/_11sdp" />
 

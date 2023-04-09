@@ -3,6 +3,7 @@ package com.vishal2376.gitcoach
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.widget.TextView
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
@@ -37,6 +38,10 @@ class MainActivity : AppCompatActivity() {
 
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        //update app version in nav drawer
+        val appVersion = binding.navView.getHeaderView(0).findViewById<TextView>(R.id.tvAppVersion)
+        appVersion.text = getString(R.string.app_version, BuildConfig.VERSION_NAME)
 
         //check in-app updates
         appUpdateManager = AppUpdateManagerFactory.create(this)
