@@ -9,15 +9,7 @@
         android:id="@+id/exploreFragment"
         android:name="com.vishal2376.gitcoach.fragments.ExploreFragment"
         android:label="fragment_explore"
-        tools:layout="@layout/fragment_explore">
-        <action
-            android:id="@+id/action_exploreFragment_to_settingsFragment"
-            app:destination="@id/settingsFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/settingsFragment"
-        android:name="com.vishal2376.gitcoach.fragments.SettingsFragment"
-        android:label="SettingsFragment" />
+        tools:layout="@layout/fragment_explore" />
     <fragment
         android:id="@+id/learnFragment"
         android:name="com.vishal2376.gitcoach.fragments.LearnFragment"
