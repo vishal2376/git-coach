@@ -7,6 +7,10 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.GravityCompat
+import com.google.android.play.core.appupdate.AppUpdateManager
+import com.google.android.play.core.appupdate.AppUpdateManagerFactory
+import com.google.android.play.core.install.model.AppUpdateType.IMMEDIATE
+import com.google.android.play.core.install.model.UpdateAvailability
 import com.vishal2376.gitcoach.databinding.ActivityMainBinding
 import com.vishal2376.gitcoach.utils.Constants
 import com.vishal2376.gitcoach.utils.Constants.shareMessage
@@ -16,6 +20,9 @@ class MainActivity : AppCompatActivity() {
 
     private var _binding: ActivityMainBinding? = null
     private val binding get() = _binding!!
+
+    private lateinit var appUpdateManager: AppUpdateManager
+    private val REQUEST_CODE_UPDATE = 100
 
     lateinit var toggle: ActionBarDrawerToggle
 
@@ -30,6 +37,10 @@ class MainActivity : AppCompatActivity() {
 
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        //check in-app updates
+        appUpdateManager = AppUpdateManagerFactory.create(this)
+        checkUpdate()
 
         binding.ivNavMenu.setOnClickListener {
             handleNavDrawer()
@@ -55,17 +66,46 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    override fun onResume() {
+        super.onResume()
+        inProgressUpdate()
+    }
+
+    private fun inProgressUpdate() {
+        appUpdateManager.appUpdateInfo.addOnSuccessListener { appUpdateInfo ->
+            if (appUpdateInfo.updateAvailability() == UpdateAvailability.DEVELOPER_TRIGGERED_UPDATE_IN_PROGRESS) {
+                // If an in-app update is already running, resume the update.
+                appUpdateManager.startUpdateFlowForResult(
+                    appUpdateInfo, IMMEDIATE, this, REQUEST_CODE_UPDATE
+                )
+            }
+        }
+    }
+
+    private fun checkUpdate() {
+        appUpdateManager.appUpdateInfo.addOnSuccessListener { appUpdateInfo ->
+            if (appUpdateInfo.updateAvailability() == UpdateAvailability.UPDATE_AVAILABLE && appUpdateInfo.isUpdateTypeAllowed(
+                    IMMEDIATE
+                )
+            ) {
+                appUpdateManager.startUpdateFlowForResult(
+                    appUpdateInfo, IMMEDIATE, this, REQUEST_CODE_UPDATE
+                )
+            }
+        }
+    }
+
     private fun handleNavDrawer() {
         binding.drawerLayout.openDrawer(GravityCompat.START)
     }
 
     private fun shareApp() {
-        val shareIntent = Intent(Intent.ACTION_SEND);
-        shareIntent.type = "text/plain";
-        Constants.shareMessage += "https://play.google.com/store/apps/details?id=" + applicationContext.packageName + "\n\n";
-        shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Git Coach");
-        shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
-        startActivity(Intent.createChooser(shareIntent, "Share This App"));
+        val shareIntent = Intent(Intent.ACTION_SEND)
+        shareIntent.type = "text/plain"
+        shareMessage += "https://play.google.com/store/apps/details?id=" + applicationContext.packageName + "\n\n"
+        shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Git Coach")
+        shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage)
+        startActivity(Intent.createChooser(shareIntent, "Share This App"))
     }
 
     private fun reportBug() {
