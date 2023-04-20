@@ -15,10 +15,8 @@ import com.vishal2376.gitcoach.models.GitCommandItem
 import com.vishal2376.gitcoach.utils.shareCommand
 
 class GitInfoAdapter(
-    private val context: Context,
-    private var gitCommandList: List<GitCommandItem>
-) :
-    Adapter<GitInfoAdapter.GitInfoViewHolder>() {
+    private val context: Context, private var gitCommandList: List<GitCommandItem>
+) : Adapter<GitInfoAdapter.GitInfoViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GitInfoViewHolder {
         val view =
@@ -37,6 +35,7 @@ class GitInfoAdapter(
         holder.name.text = currentGitInfo.name
         holder.command.text = currentGitInfo.command
         holder.description.text = currentGitInfo.description
+        holder.example.text = currentGitInfo.example
 
         holder.shareBtn.setOnClickListener {
             val message =
@@ -59,6 +58,8 @@ class GitInfoAdapter(
         val name: TextView = itemView.findViewById(R.id.tvGitName)
         val command: TextView = itemView.findViewById(R.id.tvGitCommand)
         val description: TextView = itemView.findViewById(R.id.tvGitDescription)
+        val example: TextView = itemView.findViewById(R.id.tvGitExample)
+
         val shareBtn: ImageView = itemView.findViewById(R.id.ivShareCommand)
     }
 

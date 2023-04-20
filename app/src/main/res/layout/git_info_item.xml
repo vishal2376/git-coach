@@ -62,4 +62,16 @@
 
     </RelativeLayout>
 
+
+    <TextView
+        android:id="@+id/tvGitExample"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/lesson_example"
+        android:textColor="@color/colorGreyText"
+        android:textSize="@dimen/_10ssp" />
+
+
 </LinearLayout>
