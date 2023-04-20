@@ -7,7 +7,7 @@
     android:background="?attr/colorPrimaryVariant"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:paddingVertical="@dimen/_30sdp">
+    android:paddingVertical="@dimen/_20sdp">
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
@@ -42,5 +42,20 @@
         android:text="@string/app_version"
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/_11sdp" />
+
+    <!--    notification option-->
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/notificationSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:drawableStart="@drawable/ic_notification"
+        android:drawableTint="?attr/colorAccent"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/daily_notification"
+        android:textColor="@color/colorWhite"
+        app:switchPadding="@dimen/_10sdp"
+        app:thumbTint="?attr/colorAccent" />
 
 </LinearLayout>
