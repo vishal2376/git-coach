@@ -37,6 +37,9 @@ class GitInfoAdapter(
         holder.description.text = currentGitInfo.description
         holder.example.text = currentGitInfo.example
 
+        //enable marquee effect
+        holder.command.isSelected = true
+
         holder.shareBtn.setOnClickListener {
             val message =
                 currentGitInfo.name + "\n\nDescription: " + currentGitInfo.description + "\n\nCommand: " + currentGitInfo.command

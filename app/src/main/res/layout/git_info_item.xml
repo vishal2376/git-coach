@@ -36,29 +36,24 @@
         android:layout_marginTop="@dimen/_5sdp"
         android:background="@drawable/round_bg_dark"
         android:gravity="center_vertical"
-        android:paddingHorizontal="@dimen/_5sdp">
+        android:paddingHorizontal="@dimen/_5sdp"
+        android:paddingVertical="@dimen/_8sdp">
 
-        <HorizontalScrollView
+        <TextView
+            android:id="@+id/tvGitCommand"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:paddingHorizontal="@dimen/_5sdp"
-            android:paddingVertical="@dimen/_10sdp"
-            android:scrollbarThumbHorizontal="?attr/colorAccent">
-
-
-            <TextView
-                android:id="@+id/tvGitCommand"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:fontFamily="@font/roboto_medium"
-                android:text="@string/git_init"
-                android:textColor="?attr/colorAccent"
-                android:textSize="@dimen/_12ssp"
-                app:drawableStartCompat="@drawable/ic_code"
-                app:drawableTint="?attr/colorAccent" />
-
-        </HorizontalScrollView>
+            android:drawablePadding="@dimen/_2sdp"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/roboto_medium"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/git_init"
+            android:textColor="?attr/colorAccent"
+            android:textSize="@dimen/_12ssp"
+            app:drawableStartCompat="@drawable/ic_code"
+            app:drawableTint="?attr/colorAccent" />
 
         <ImageView
             android:id="@+id/ivShareCommand"
