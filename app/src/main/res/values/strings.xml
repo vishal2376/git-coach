@@ -21,4 +21,5 @@
     <string name="app_version">v%1$s</string>
     <string name="open">open</string>
     <string name="close">close</string>
+    <string name="example">Example</string>
 </resources>

@@ -30,44 +30,60 @@
         android:textColor="@color/colorGreyText"
         android:textSize="@dimen/_10ssp" />
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_5sdp"
         android:background="@drawable/round_bg_dark"
         android:gravity="center_vertical"
-        android:paddingHorizontal="@dimen/_5sdp"
-        android:paddingVertical="@dimen/_5sdp">
+        android:paddingHorizontal="@dimen/_5sdp">
 
-        <TextView
-            android:id="@+id/tvGitCommand"
-            android:layout_width="match_parent"
+        <HorizontalScrollView
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_toStartOf="@+id/ivShareCommand"
-            android:fontFamily="@font/roboto_medium"
-            android:text="@string/git_init"
-            android:textColor="?attr/colorAccent"
-            android:textSize="@dimen/_12ssp"
-            app:drawableStartCompat="@drawable/ic_code"
-            app:drawableTint="?attr/colorAccent" />
+            android:layout_weight="1"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            android:scrollbarThumbHorizontal="?attr/colorAccent">
+
+
+            <TextView
+                android:id="@+id/tvGitCommand"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/git_init"
+                android:textColor="?attr/colorAccent"
+                android:textSize="@dimen/_12ssp"
+                app:drawableStartCompat="@drawable/ic_code"
+                app:drawableTint="?attr/colorAccent" />
+
+        </HorizontalScrollView>
 
         <ImageView
             android:id="@+id/ivShareCommand"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_gravity="end"
             android:layout_marginEnd="@dimen/_5sdp"
             android:src="@drawable/ic_share" />
 
-    </RelativeLayout>
+    </LinearLayout>
 
+
+    <TextView
+        android:id="@+id/text_example"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/example"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_11ssp" />
 
     <TextView
         android:id="@+id/tvGitExample"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_5sdp"
         android:fontFamily="@font/roboto_medium"
         android:text="@string/lesson_example"
         android:textColor="@color/colorGreyText"
