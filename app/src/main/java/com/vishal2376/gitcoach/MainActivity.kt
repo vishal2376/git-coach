@@ -4,10 +4,12 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.GravityCompat
+import com.google.android.material.switchmaterial.SwitchMaterial
 import com.google.android.play.core.appupdate.AppUpdateManager
 import com.google.android.play.core.appupdate.AppUpdateManagerFactory
 import com.google.android.play.core.install.model.AppUpdateType.IMMEDIATE
@@ -49,6 +51,16 @@ class MainActivity : AppCompatActivity() {
 
         binding.ivNavMenu.setOnClickListener {
             handleNavDrawer()
+        }
+
+        val notificationSwitch =
+            binding.navView.getHeaderView(0).findViewById<SwitchMaterial>(R.id.swNotification)
+        notificationSwitch.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) {
+                Toast.makeText(this, "Notification Enabled", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "Notification Disabled", Toast.LENGTH_SHORT).show()
+            }
         }
 
         binding.navView.setNavigationItemSelectedListener {
