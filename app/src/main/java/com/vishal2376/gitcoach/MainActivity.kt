@@ -18,6 +18,8 @@ import com.vishal2376.gitcoach.databinding.ActivityMainBinding
 import com.vishal2376.gitcoach.utils.Constants
 import com.vishal2376.gitcoach.utils.Constants.shareMessage
 import com.vishal2376.gitcoach.utils.LoadSettings
+import com.vishal2376.gitcoach.utils.cancelNotification
+import com.vishal2376.gitcoach.utils.scheduleNotification
 
 class MainActivity : AppCompatActivity() {
 
@@ -34,6 +36,7 @@ class MainActivity : AppCompatActivity() {
 
         //load settings
         LoadSettings.loadTheme(this)
+        val isNotificationEnabled = LoadSettings.checkNotification(this)
 
         // force dark mode
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
@@ -55,11 +58,26 @@ class MainActivity : AppCompatActivity() {
 
         val notificationSwitch =
             binding.navView.getHeaderView(0).findViewById<SwitchMaterial>(R.id.swNotification)
+
+        notificationSwitch.isChecked = isNotificationEnabled != 0
+
         notificationSwitch.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
-                Toast.makeText(this, "Notification Enabled", Toast.LENGTH_SHORT).show()
+                getSharedPreferences("NOTIFICATION", MODE_PRIVATE).edit()
+                    .putInt("daily_notification", 1).apply()
+                Toast.makeText(
+                    this,
+                    "Please disable battery optimization for daily notifications",
+                    Toast.LENGTH_LONG
+                ).show()
+
+                scheduleNotification(this)
+
             } else {
-                Toast.makeText(this, "Notification Disabled", Toast.LENGTH_SHORT).show()
+                getSharedPreferences("NOTIFICATION", MODE_PRIVATE).edit()
+                    .putInt("daily_notification", 0).apply()
+
+                cancelNotification(this)
             }
         }
 

@@ -22,5 +22,5 @@
     <string name="open">open</string>
     <string name="close">close</string>
     <string name="example">Example</string>
-    <string name="daily_notification">Daily Notification</string>
+    <string name="daily_notification">Daily Notification (9:00 AM)</string>
 </resources>

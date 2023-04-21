@@ -6,10 +6,21 @@ import com.vishal2376.gitcoach.R
 
 object LoadSettings {
 
+    fun checkNotification(context: Context): Int {
+        val switch = context.getSharedPreferences("NOTIFICATION", MODE_PRIVATE)
+            .getInt("daily_notification", 0)
+
+        if (switch == 1) {
+            scheduleNotification(context)
+        }
+
+        return switch
+    }
+
     fun loadTheme(context: Context) {
         //load saved values
-        val sp = context.getSharedPreferences("SETTINGS", MODE_PRIVATE)
-            .getString("user_theme", "yellow")
+        val sp =
+            context.getSharedPreferences("SETTINGS", MODE_PRIVATE).getString("user_theme", "yellow")
 
         when (sp.toString()) {
             "red" -> {

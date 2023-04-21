@@ -88,7 +88,7 @@ class MainFragment : Fragment() {
         }
 
         requireContext().getSharedPreferences("SETTINGS", MODE_PRIVATE).edit()
-            .putString("user_theme", themes[++newThemeIndex % themes.size]).apply();
+            .putString("user_theme", themes[++newThemeIndex % themes.size]).apply()
     }
 
 }
