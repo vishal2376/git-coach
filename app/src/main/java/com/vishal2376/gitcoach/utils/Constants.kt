@@ -5,4 +5,8 @@ object Constants {
     var shareMessage =
         "Become a Git expert with Git Coach! Learn Git and GitHub commands with ease. Download now\n";
 
+    // Daily Notification
+    const val CHANNEL_ID = "git-coach-notification"
+    const val CHANNEL_NAME = "Daily Notification"
+
 }
