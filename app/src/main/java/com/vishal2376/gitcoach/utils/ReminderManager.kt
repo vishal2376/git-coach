@@ -8,7 +8,7 @@ import android.icu.util.Calendar
 import com.vishal2376.gitcoach.services.AlarmReceiver
 import java.util.Locale
 
-private const val REMINDER_REQUEST_CODE = 100
+private const val REMINDER_REQUEST_CODE = 200
 
 object ReminderManager {
 
@@ -16,20 +16,21 @@ object ReminderManager {
         val alarmManager = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
 
         //get hours and minutes
-        val (hours, minutes) = reminderTime.split(":").map { it.toInt() }
+        val (hours, min) = reminderTime.split(":").map { it.toInt() }
 
-        val intent = Intent(context.applicationContext, AlarmManager::class.java).let { intent ->
+        val intent = Intent(context.applicationContext, AlarmReceiver::class.java).let {
             PendingIntent.getBroadcast(
                 context.applicationContext,
                 REMINDER_REQUEST_CODE,
-                intent,
+                it,
                 PendingIntent.FLAG_UPDATE_CURRENT
             )
         }
 
+
         val calendar: Calendar = Calendar.getInstance(Locale.ENGLISH).apply {
             set(Calendar.HOUR_OF_DAY, hours)
-            set(Calendar.MINUTE, minutes)
+            set(Calendar.MINUTE, min)
         }
 
         //schedule next day if user set current time

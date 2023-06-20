@@ -4,7 +4,6 @@ import android.app.NotificationManager
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import android.util.Log
 import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat
 import com.vishal2376.gitcoach.R
@@ -16,8 +15,6 @@ import com.vishal2376.gitcoach.utils.ReminderManager
 class AlarmReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context, intent: Intent) {
-
-        Log.e("@@@", "Notification Receiver called")
 
         val notificationManager = ContextCompat.getSystemService(
             context, NotificationManager::class.java
@@ -48,8 +45,7 @@ private fun NotificationManager.sendRandomNotification(context: Context) {
         NotificationCompat.Builder(context, Constants.CHANNEL_ID).setSmallIcon(R.drawable.app_logo)
             .setContentTitle(gitTitle)
             .setStyle(NotificationCompat.BigTextStyle().bigText(gitLongDesc))
-            .setContentText(gitCommand).setPriority(NotificationCompat.PRIORITY_HIGH)
-            .setAutoCancel(true).build()
+            .setContentText(gitCommand).setAutoCancel(true)
 
-    notify(Constants.NOTIFICATION_ID, randomGitNotification)
+    notify(Constants.NOTIFICATION_ID, randomGitNotification.build())
 }
