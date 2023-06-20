@@ -12,9 +12,7 @@ private const val REMINDER_REQUEST_CODE = 100
 
 object ReminderManager {
 
-    fun startReminder(
-        context: Context, reminderTime: String = Constants.DEFAULT_NOTIFICATION_TIME
-    ) {
+    fun startReminder(context: Context, reminderTime: String) {
         val alarmManager = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
 
         //get hours and minutes

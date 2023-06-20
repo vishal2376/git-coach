@@ -6,15 +6,14 @@ import com.vishal2376.gitcoach.R
 
 object LoadSettings {
 
-    fun checkNotification(context: Context): Int {
-        val switch = context.getSharedPreferences("NOTIFICATION", MODE_PRIVATE)
-            .getInt("daily_notification", 0)
+    fun checkNotificationSwitch(context: Context): Boolean {
+        return context.getSharedPreferences(Constants.NOTIFICATION, MODE_PRIVATE)
+            .getBoolean(Constants.NOTIFICATION_SWITCH, false)
+    }
 
-        if (switch == 1) {
-            scheduleNotification(context)
-        }
-
-        return switch
+    fun getNotificationTime(context: Context): String? {
+        return context.getSharedPreferences(Constants.NOTIFICATION, MODE_PRIVATE)
+            .getString(Constants.NOTIFICATION_TIME, "09:00")
     }
 
     fun loadTheme(context: Context) {

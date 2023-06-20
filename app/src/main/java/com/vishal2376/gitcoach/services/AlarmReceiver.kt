@@ -10,6 +10,8 @@ import androidx.core.content.ContextCompat
 import com.vishal2376.gitcoach.R
 import com.vishal2376.gitcoach.utils.Constants
 import com.vishal2376.gitcoach.utils.LoadData
+import com.vishal2376.gitcoach.utils.LoadSettings
+import com.vishal2376.gitcoach.utils.ReminderManager
 
 class AlarmReceiver : BroadcastReceiver() {
 
@@ -23,6 +25,9 @@ class AlarmReceiver : BroadcastReceiver() {
 
         notificationManager.sendRandomNotification(context)
 
+        //Schedule Next Notification
+        val notificationTime = LoadSettings.getNotificationTime(context)
+        ReminderManager.startReminder(context, notificationTime!!)
     }
 }
 
