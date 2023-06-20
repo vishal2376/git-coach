@@ -44,6 +44,7 @@ class MainActivity : AppCompatActivity() {
         //load settings
         LoadSettings.loadTheme(this)
         val checkNotificationSwitch = LoadSettings.checkNotificationSwitch(this)
+        val notificationTime = LoadSettings.getNotificationTime(this)
 
         //create new notification channel
         createNotificationChannel(this)
@@ -71,10 +72,12 @@ class MainActivity : AppCompatActivity() {
 
         // load default value of switch
         notificationSwitch.isChecked = checkNotificationSwitch
+        notificationSwitch.text = getString(R.string.daily_notification, notificationTime)
 
         notificationSwitch.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
                 showTimePickerDialog()
+                notificationSwitch.text = getString(R.string.daily_notification, notificationTime)
             } else {
                 ReminderManager.stopReminder(this)
                 Toast.makeText(this, "Notification Disabled", Toast.LENGTH_SHORT).show()

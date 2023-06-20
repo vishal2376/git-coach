@@ -54,6 +54,7 @@
         android:drawableTint="?attr/colorAccent"
         android:fontFamily="@font/roboto_medium"
         android:text="@string/daily_notification"
+        android:textAlignment="center"
         android:textColor="@color/colorWhite"
         app:switchPadding="@dimen/_10sdp"
         app:thumbTint="?attr/colorAccent" />
