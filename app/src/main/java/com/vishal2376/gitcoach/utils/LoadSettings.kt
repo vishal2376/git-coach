@@ -26,12 +26,15 @@ object LoadSettings {
             "red" -> {
                 context.setTheme(R.style.Theme_RED)
             }
+
             "blue" -> {
                 context.setTheme(R.style.Theme_YELLOW)
             }
+
             "green" -> {
                 context.setTheme(R.style.Theme_GREEN)
             }
+
             else -> {
                 context.setTheme(R.style.Theme_GitCoach)
             }

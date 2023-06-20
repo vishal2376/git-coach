@@ -86,12 +86,15 @@ class MainActivity : AppCompatActivity() {
                 R.id.itemReportBug -> {
                     reportBug()
                 }
+
                 R.id.itemSuggestions -> {
                     getSuggestions()
                 }
+
                 R.id.itemRateUs -> {
                     rateUs()
                 }
+
                 R.id.itemShareApp -> {
                     shareApp()
                 }

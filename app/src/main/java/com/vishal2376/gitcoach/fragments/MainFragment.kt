@@ -42,6 +42,7 @@ class MainFragment : Fragment() {
                 0 -> {
                     tab.text = "Learn"
                 }
+
                 1 -> {
                     tab.text = "Reference"
                 }
@@ -76,12 +77,15 @@ class MainFragment : Fragment() {
             "red" -> {
                 1
             }
+
             "green" -> {
                 2
             }
+
             "blue" -> {
                 3
             }
+
             else -> {
                 0
             }

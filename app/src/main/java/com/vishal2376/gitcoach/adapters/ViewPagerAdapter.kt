@@ -19,9 +19,11 @@ class ViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle) :
             0 -> {
                 LearnFragment()
             }
+
             1 -> {
                 ExploreFragment()
             }
+
             else -> {
                 LearnFragment()
             }

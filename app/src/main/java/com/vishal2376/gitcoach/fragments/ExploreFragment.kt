@@ -1,6 +1,5 @@
 package com.vishal2376.gitcoach.fragments
 
-import android.content.res.AssetManager
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -14,7 +13,7 @@ import com.vishal2376.gitcoach.models.GitCommand
 import com.vishal2376.gitcoach.models.GitCommandItem
 import com.vishal2376.gitcoach.utils.LoadData
 import com.vishal2376.gitcoach.utils.LoadSettings
-import java.util.*
+import java.util.Locale
 
 class ExploreFragment : Fragment() {
 
