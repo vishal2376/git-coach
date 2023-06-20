@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
     private var _binding: ActivityMainBinding? = null
     private val binding get() = _binding!!
 
+    private lateinit var notificationSwitch: SwitchMaterial
     private lateinit var appUpdateManager: AppUpdateManager
     private val REQUEST_CODE_UPDATE = 100
 
@@ -67,7 +68,7 @@ class MainActivity : AppCompatActivity() {
             handleNavDrawer()
         }
 
-        val notificationSwitch =
+        notificationSwitch =
             binding.navView.getHeaderView(0).findViewById<SwitchMaterial>(R.id.swNotification)
 
         // load default value of switch
@@ -77,7 +78,6 @@ class MainActivity : AppCompatActivity() {
         notificationSwitch.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
                 showTimePickerDialog()
-                notificationSwitch.text = getString(R.string.daily_notification, notificationTime)
             } else {
                 ReminderManager.stopReminder(this)
                 Toast.makeText(this, "Notification Disabled", Toast.LENGTH_SHORT).show()
@@ -138,7 +138,9 @@ class MainActivity : AppCompatActivity() {
                 ReminderManager.stopReminder(this)
                 ReminderManager.startReminder(this, reminderTime)
 
-                Toast.makeText(this, "Notification Enabled : $reminderTime", Toast.LENGTH_SHORT)
+                notificationSwitch.text = getString(R.string.daily_notification, reminderTime)
+
+                Toast.makeText(this, "Notification Enabled", Toast.LENGTH_SHORT)
                     .show()
             }, currentHour, currentMinute, false
         )
