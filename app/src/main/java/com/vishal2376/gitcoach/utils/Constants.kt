@@ -9,4 +9,6 @@ object Constants {
     const val CHANNEL_ID = "git-coach-notification"
     const val CHANNEL_NAME = "Daily Notification"
     const val NOTIFICATION_ID = 10
+
+    const val DEFAULT_NOTIFICATION_TIME = "09:00"
 }
