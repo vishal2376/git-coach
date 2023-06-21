@@ -22,6 +22,7 @@ Git Coach is a free education app designed to help users learn Git and its comma
 
 ## Features
 - Browse through different categories of Git commands
+- Get Daily notification of a random command
 - Search for any Git command
 - Share Git commands with others
 - Clear explanations and examples of each command
