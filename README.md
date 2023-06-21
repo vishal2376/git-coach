@@ -30,7 +30,7 @@ Git Coach is a free education app designed to help users learn Git and its comma
 
 ## Screenshots
 
-| <img src="screenshots/splashscreen.jpg" width="200px"> | <img src="screenshots/lesson.jpg" width="200px"> | <img src="screenshots/nav.jpg" width="200px"> | <img src="screenshots/serach.jpg" width="200px"> |
+| <img src="screenshots/lesson.jpg" width="200px"> | <img src="screenshots/lesson_detail.jpg" width="200px"> | <img src="screenshots/nav.jpg" width="200px"> | <img src="screenshots/search.jpg" width="200px"> |
 |:---:|:---:|:---:|:---:|
 | <img src="screenshots/cmdB.jpg" width="200px"> | <img src="screenshots/cmdR.jpg" width="200px"> | <img src="screenshots/cmdG.jpg" width="200px"> | <img src="screenshots/cmdY.jpg" width="200px"> |
 
