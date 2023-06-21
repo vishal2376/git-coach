@@ -21,5 +21,10 @@
         android:icon="@drawable/ic_share"
         android:title="@string/share_app" />
 
+    <item
+        android:id="@+id/itemSourceCode"
+        android:icon="@drawable/ic_code"
+        android:title="@string/source_code" />
+
 
 </menu>

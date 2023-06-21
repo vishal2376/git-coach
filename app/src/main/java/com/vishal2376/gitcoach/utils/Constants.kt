@@ -5,6 +5,7 @@ object Constants {
     var shareMessage =
         "Become a Git expert with Git Coach! Learn Git and GitHub commands with ease. Download now\n"
 
+    const val GITHUB_LINK = "https://github.com/vishal2376/git-coach"
 
     // Daily Notification
     const val NOTIFICATION = "Notification"

@@ -105,6 +105,10 @@ class MainActivity : AppCompatActivity() {
                 R.id.itemShareApp -> {
                     shareApp()
                 }
+
+                R.id.itemSourceCode -> {
+                    sourceCode()
+                }
             }
             true
         }
@@ -140,8 +144,7 @@ class MainActivity : AppCompatActivity() {
 
                 notificationSwitch.text = getString(R.string.daily_notification, reminderTime)
 
-                Toast.makeText(this, "Notification Enabled", Toast.LENGTH_SHORT)
-                    .show()
+                Toast.makeText(this, "Notification Enabled", Toast.LENGTH_SHORT).show()
             }, currentHour, currentMinute, false
         )
 
@@ -221,4 +224,11 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    private fun sourceCode() {
+        val intent = Intent(
+            Intent.ACTION_VIEW, Uri.parse(Constants.GITHUB_LINK)
+        )
+        startActivity(intent)
+
+    }
 }
