@@ -15,7 +15,7 @@ android {
         applicationId "com.vishal2376.gitcoach"
         minSdk 24
         targetSdk 33
-        versionCode 6
+        versionCode 7
         versionName "3.3"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -66,7 +66,7 @@ dependencies {
     implementation 'com.mikhaellopez:circularprogressbar:3.1.0'
 
     //in-app updates
-    implementation("com.google.android.play:app-update-ktx:2.0.1")
+//    implementation("com.google.android.play:app-update-ktx:2.0.1")
     implementation 'com.google.firebase:firebase-crashlytics-ktx:18.3.2'
     implementation 'com.google.firebase:firebase-analytics-ktx:21.2.0'
 
