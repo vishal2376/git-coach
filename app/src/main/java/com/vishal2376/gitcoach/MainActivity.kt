@@ -16,6 +16,10 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
 import com.google.android.material.switchmaterial.SwitchMaterial
+import com.google.android.play.core.appupdate.AppUpdateManager
+import com.google.android.play.core.appupdate.AppUpdateManagerFactory
+import com.google.android.play.core.install.model.AppUpdateType.IMMEDIATE
+import com.google.android.play.core.install.model.UpdateAvailability
 import com.vishal2376.gitcoach.databinding.ActivityMainBinding
 import com.vishal2376.gitcoach.utils.Constants
 import com.vishal2376.gitcoach.utils.Constants.shareMessage
@@ -31,8 +35,8 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var notificationSwitch: SwitchMaterial
 
-//    private lateinit var appUpdateManager: AppUpdateManager
-//    private val REQUEST_CODE_UPDATE = 100
+    private lateinit var appUpdateManager: AppUpdateManager
+    private val REQUEST_CODE_UPDATE = 100
 
     lateinit var toggle: ActionBarDrawerToggle
 
@@ -58,8 +62,8 @@ class MainActivity : AppCompatActivity() {
         appVersion.text = getString(R.string.app_version, BuildConfig.VERSION_NAME)
 
         //check in-app updates
-        //appUpdateManager = AppUpdateManagerFactory.create(this)
-        //checkUpdate()
+        appUpdateManager = AppUpdateManagerFactory.create(this)
+        checkUpdate()
 
         binding.ivNavMenu.setOnClickListener {
             handleNavDrawer()
@@ -149,34 +153,34 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-//    override fun onResume() {
-//        super.onResume()
-//        inProgressUpdate()
-//    }
-//
-//    private fun inProgressUpdate() {
-//        appUpdateManager.appUpdateInfo.addOnSuccessListener { appUpdateInfo ->
-//            if (appUpdateInfo.updateAvailability() == UpdateAvailability.DEVELOPER_TRIGGERED_UPDATE_IN_PROGRESS) {
-//                // If an in-app update is already running, resume the update.
-//                appUpdateManager.startUpdateFlowForResult(
-//                    appUpdateInfo, IMMEDIATE, this, REQUEST_CODE_UPDATE
-//                )
-//            }
-//        }
-//    }
-//
-//    private fun checkUpdate() {
-//        appUpdateManager.appUpdateInfo.addOnSuccessListener { appUpdateInfo ->
-//            if (appUpdateInfo.updateAvailability() == UpdateAvailability.UPDATE_AVAILABLE && appUpdateInfo.isUpdateTypeAllowed(
-//                    IMMEDIATE
-//                )
-//            ) {
-//                appUpdateManager.startUpdateFlowForResult(
-//                    appUpdateInfo, IMMEDIATE, this, REQUEST_CODE_UPDATE
-//                )
-//            }
-//        }
-//    }
+    override fun onResume() {
+        super.onResume()
+        inProgressUpdate()
+    }
+
+    private fun inProgressUpdate() {
+        appUpdateManager.appUpdateInfo.addOnSuccessListener { appUpdateInfo ->
+            if (appUpdateInfo.updateAvailability() == UpdateAvailability.DEVELOPER_TRIGGERED_UPDATE_IN_PROGRESS) {
+                // If an in-app update is already running, resume the update.
+                appUpdateManager.startUpdateFlowForResult(
+                    appUpdateInfo, IMMEDIATE, this, REQUEST_CODE_UPDATE
+                )
+            }
+        }
+    }
+
+    private fun checkUpdate() {
+        appUpdateManager.appUpdateInfo.addOnSuccessListener { appUpdateInfo ->
+            if (appUpdateInfo.updateAvailability() == UpdateAvailability.UPDATE_AVAILABLE && appUpdateInfo.isUpdateTypeAllowed(
+                    IMMEDIATE
+                )
+            ) {
+                appUpdateManager.startUpdateFlowForResult(
+                    appUpdateInfo, IMMEDIATE, this, REQUEST_CODE_UPDATE
+                )
+            }
+        }
+    }
 
     private fun handleNavDrawer() {
         binding.drawerLayout.openDrawer(GravityCompat.START)
