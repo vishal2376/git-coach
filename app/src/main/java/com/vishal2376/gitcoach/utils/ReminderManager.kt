@@ -23,7 +23,7 @@ object ReminderManager {
                 context.applicationContext,
                 REMINDER_REQUEST_CODE,
                 it,
-                PendingIntent.FLAG_UPDATE_CURRENT
+                PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
             )
         }
 
