@@ -17,8 +17,7 @@ class MainFragment : Fragment() {
     private val binding get() = _binding!!
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
         //load settings
         LoadSettings.loadTheme(requireContext())
@@ -33,11 +32,10 @@ class MainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-        val viewPagerAdapter = ViewPagerAdapter(requireActivity().supportFragmentManager, lifecycle)
+        val viewPagerAdapter = ViewPagerAdapter(childFragmentManager, lifecycle)
         binding.viewPager.adapter = viewPagerAdapter
 
-        TabLayoutMediator(binding.tabLayout, binding.viewPager)
-        { tab, position ->
+        TabLayoutMediator(binding.tabLayout, binding.viewPager) { tab, position ->
             when (position) {
                 0 -> {
                     tab.text = "Learn"
