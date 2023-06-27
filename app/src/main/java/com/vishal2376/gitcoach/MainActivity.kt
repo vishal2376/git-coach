@@ -10,7 +10,6 @@ import android.os.Build
 import android.os.Bundle
 import android.widget.TextView
 import android.widget.Toast
-import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.ContextCompat
@@ -28,6 +27,8 @@ import com.vishal2376.gitcoach.utils.ReminderManager
 import java.util.Calendar
 import java.util.Locale
 
+private const val REQUEST_CODE_UPDATE = 100
+
 class MainActivity : AppCompatActivity() {
 
     private var _binding: ActivityMainBinding? = null
@@ -36,9 +37,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var notificationSwitch: SwitchMaterial
 
     private lateinit var appUpdateManager: AppUpdateManager
-    private val REQUEST_CODE_UPDATE = 100
-
-    lateinit var toggle: ActionBarDrawerToggle
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -155,7 +153,6 @@ class MainActivity : AppCompatActivity() {
 
         timePickerDialog.show()
     }
-
 
     override fun onResume() {
         super.onResume()
