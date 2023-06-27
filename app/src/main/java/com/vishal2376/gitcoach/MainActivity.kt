@@ -110,6 +110,10 @@ class MainActivity : AppCompatActivity() {
                 R.id.itemSourceCode -> {
                     sourceCode()
                 }
+
+                R.id.itemDeveloper -> {
+                    developerProfile()
+                }
             }
             true
         }
@@ -228,6 +232,14 @@ class MainActivity : AppCompatActivity() {
     private fun sourceCode() {
         val intent = Intent(
             Intent.ACTION_VIEW, Uri.parse(Constants.GITHUB_LINK)
+        )
+        startActivity(intent)
+
+    }
+
+    private fun developerProfile() {
+        val intent = Intent(
+            Intent.ACTION_VIEW, Uri.parse(Constants.LINKEDIN_LINK)
         )
         startActivity(intent)
 

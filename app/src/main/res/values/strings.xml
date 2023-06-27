@@ -24,4 +24,5 @@
     <string name="example">Example</string>
     <string name="daily_notification">Daily Notification (%1$s)</string>
     <string name="source_code">Source Code</string>
+    <string name="developer">Contact Developer</string>
 </resources>

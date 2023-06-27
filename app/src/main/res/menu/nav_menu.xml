@@ -26,5 +26,10 @@
         android:icon="@drawable/ic_code"
         android:title="@string/source_code" />
 
+    <item
+        android:id="@+id/itemDeveloper"
+        android:icon="@drawable/ic_developer"
+        android:title="@string/developer" />
+
 
 </menu>
