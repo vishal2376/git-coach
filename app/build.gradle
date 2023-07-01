@@ -7,12 +7,12 @@ plugins {
 
 android {
     namespace 'com.vishal2376.gitcoach'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.vishal2376.gitcoach"
         minSdk 24
-        targetSdk 33
+        targetSdk 34
         versionCode 8
         versionName "3.4"
 
@@ -42,19 +42,19 @@ dependencies {
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.6.0'
-    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'com.google.android.material:material:1.9.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     //ViewModal and livedata
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
-    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.1'
 
     //gson
     implementation 'com.google.code.gson:gson:2.9.0'
 
     //navigation
-    implementation "androidx.navigation:navigation-fragment-ktx:2.5.3"
-    implementation "androidx.navigation:navigation-ui-ktx:2.5.3"
+    implementation "androidx.navigation:navigation-fragment-ktx:2.6.0"
+    implementation "androidx.navigation:navigation-ui-ktx:2.6.0"
 
     //scalable unit & text size
     implementation 'com.intuit.ssp:ssp-android:1.0.6'
