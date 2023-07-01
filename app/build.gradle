@@ -3,8 +3,6 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
     id 'androidx.navigation.safeargs.kotlin'
-    id 'com.google.gms.google-services'
-    id 'com.google.firebase.crashlytics'
 }
 
 android {
@@ -61,14 +59,6 @@ dependencies {
     //scalable unit & text size
     implementation 'com.intuit.ssp:ssp-android:1.0.6'
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
-
-    //circular progress bar
-    implementation 'com.mikhaellopez:circularprogressbar:3.1.0'
-
-    //in-app updates
-    implementation("com.google.android.play:app-update-ktx:2.0.1")
-    implementation 'com.google.firebase:firebase-crashlytics-ktx:18.3.2'
-    implementation 'com.google.firebase:firebase-analytics-ktx:21.2.0'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
