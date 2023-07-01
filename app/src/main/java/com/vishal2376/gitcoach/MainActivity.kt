@@ -15,10 +15,6 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
 import com.google.android.material.switchmaterial.SwitchMaterial
-import com.google.android.play.core.appupdate.AppUpdateManager
-import com.google.android.play.core.appupdate.AppUpdateManagerFactory
-import com.google.android.play.core.install.model.AppUpdateType.IMMEDIATE
-import com.google.android.play.core.install.model.UpdateAvailability
 import com.vishal2376.gitcoach.databinding.ActivityMainBinding
 import com.vishal2376.gitcoach.utils.Constants
 import com.vishal2376.gitcoach.utils.Constants.shareMessage
@@ -27,16 +23,12 @@ import com.vishal2376.gitcoach.utils.ReminderManager
 import java.util.Calendar
 import java.util.Locale
 
-private const val REQUEST_CODE_UPDATE = 100
-
 class MainActivity : AppCompatActivity() {
 
     private var _binding: ActivityMainBinding? = null
     private val binding get() = _binding!!
 
     private lateinit var notificationSwitch: SwitchMaterial
-
-    private lateinit var appUpdateManager: AppUpdateManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -59,16 +51,12 @@ class MainActivity : AppCompatActivity() {
         val appVersion = binding.navView.getHeaderView(0).findViewById<TextView>(R.id.tvAppVersion)
         appVersion.text = getString(R.string.app_version, BuildConfig.VERSION_NAME)
 
-        //check in-app updates
-        appUpdateManager = AppUpdateManagerFactory.create(this)
-        checkUpdate()
-
         binding.ivNavMenu.setOnClickListener {
             handleNavDrawer()
         }
 
         notificationSwitch =
-            binding.navView.getHeaderView(0).findViewById<SwitchMaterial>(R.id.swNotification)
+            binding.navView.getHeaderView(0).findViewById(R.id.swNotification)
 
         // load default value of switch
         notificationSwitch.isChecked = checkNotificationSwitch
@@ -152,35 +140,6 @@ class MainActivity : AppCompatActivity() {
         )
 
         timePickerDialog.show()
-    }
-
-    override fun onResume() {
-        super.onResume()
-        inProgressUpdate()
-    }
-
-    private fun inProgressUpdate() {
-        appUpdateManager.appUpdateInfo.addOnSuccessListener { appUpdateInfo ->
-            if (appUpdateInfo.updateAvailability() == UpdateAvailability.DEVELOPER_TRIGGERED_UPDATE_IN_PROGRESS) {
-                // If an in-app update is already running, resume the update.
-                appUpdateManager.startUpdateFlowForResult(
-                    appUpdateInfo, IMMEDIATE, this, REQUEST_CODE_UPDATE
-                )
-            }
-        }
-    }
-
-    private fun checkUpdate() {
-        appUpdateManager.appUpdateInfo.addOnSuccessListener { appUpdateInfo ->
-            if (appUpdateInfo.updateAvailability() == UpdateAvailability.UPDATE_AVAILABLE && appUpdateInfo.isUpdateTypeAllowed(
-                    IMMEDIATE
-                )
-            ) {
-                appUpdateManager.startUpdateFlowForResult(
-                    appUpdateInfo, IMMEDIATE, this, REQUEST_CODE_UPDATE
-                )
-            }
-        }
     }
 
     private fun handleNavDrawer() {
