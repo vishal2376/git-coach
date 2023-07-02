@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.Dialog" parent="Theme.AppCompat.DayNight.Dialog">
+        <item name="android:background">@drawable/round_bg_dark</item>
+        <item name="android:textColorPrimary">@color/colorGreyText</item>
+        <item name="android:textColorSecondary">?attr/colorAccent</item>
+        <item name="android:buttonStyle">@style/AppTheme.Dialog.Button</item>
+    </style>
+
+    <style name="AppTheme.Dialog.Button" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">?attr/colorAccent</item>
+    </style>
+
+</resources>
