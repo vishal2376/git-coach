@@ -25,4 +25,8 @@
     <string name="daily_notification">Daily Notification (%1$s)</string>
     <string name="source_code">Source Code</string>
     <string name="developer">Contact Developer</string>
+    <string name="dialog_text">Sorry, An unexpected error occurred.\n\nDo you want to send a crash report to the developer?</string>
+    <string name="dialog_title">Crash Report</string>
+    <string name="dialog_positive">Send</string>
+    <string name="dialog_negative">Cancel</string>
 </resources>
