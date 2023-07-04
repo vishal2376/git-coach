@@ -1,14 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/colorPrimaryVariant"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/_40sdp"
     tools:context=".fragments.CommunityFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <ImageView
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_gravity="center"
+        android:src="@drawable/app_logo"
+        app:tint="?attr/colorAccent" />
 
-</FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Coming Soon"
+        android:textColor="?attr/colorAccent"
+        android:textSize="@dimen/_25ssp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="What you can expect here:"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_14ssp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="* Allow users to ask questions and have other community members provide answers and solutions"
+        android:textColor="@color/colorGreyText"
+        android:textSize="@dimen/_12ssp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="* Search functionality to easily find relevant questions and answers"
+        android:textColor="@color/colorGreyText"
+        android:textSize="@dimen/_12ssp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:drawablePadding="@dimen/_5sdp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Have more Ideas?"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp" />
+
+    <Button
+        android:id="@+id/tvDiscussionLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/roboto_medium"
+        android:backgroundTint="?attr/colorPrimary"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Join Discussion"
+        android:textAllCaps="false"
+        android:textColor="?attr/colorAccent"
+        android:textSize="@dimen/_12ssp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="This feature will most likely available in v4.0"
+        android:textAlignment="center"
+        android:textColor="?attr/colorAccent"
+        android:textSize="@dimen/_12ssp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Stay Tuned 😊"
+        android:textColor="?attr/colorAccent"
+        android:textSize="@dimen/_12ssp" />
+
+
+</LinearLayout>
