@@ -43,5 +43,13 @@
         <action
             android:id="@+id/action_mainFragment_to_lessonFragment"
             app:destination="@id/lessonFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_communityFragment"
+            app:destination="@id/communityFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/communityFragment"
+        android:name="com.vishal2376.gitcoach.fragments.CommunityFragment"
+        android:label="fragment_community"
+        tools:layout="@layout/fragment_community" />
 </navigation>

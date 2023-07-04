@@ -44,6 +44,10 @@ class MainFragment : Fragment() {
                 1 -> {
                     tab.text = "Reference"
                 }
+
+                2 -> {
+                    tab.text = "Community"
+                }
             }
         }.attach()
 
