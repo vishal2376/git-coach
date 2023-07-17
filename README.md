@@ -1,7 +1,7 @@
 
 <div align="center">
 
-<img src="https://user-images.githubusercontent.com/38159691/230711994-2f91e88b-44d6-46c2-83de-e65a2b141487.png" width="100px"/>
+<img src="https://github.com/vishal2376/git-coach/assets/38159691/8d8d19cb-188b-40db-80c3-8c53e973b3b2" width="100px"/>
 
 # **Git Coach**
 
