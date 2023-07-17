@@ -3,9 +3,9 @@
 
 <img src="https://github.com/vishal2376/git-coach/assets/38159691/8d8d19cb-188b-40db-80c3-8c53e973b3b2" width="100px"/>
 
-# **Git Coach**
+# **Git+ Coach**
 
-Git Coach is a free education app designed to help users learn Git and its commands. With an easy-to-use interface and smooth animations, the app provides an enjoyable user experience without any ads to distract from the learning process.
+Git+ Coach is a free education app designed to help users learn Git and its commands. With an easy-to-use interface and smooth animations, the app provides an enjoyable user experience without any ads to distract from the learning process.
 
 <br/>
 
@@ -37,7 +37,7 @@ Git Coach is a free education app designed to help users learn Git and its comma
 
 ## Getting Started
 
-To get started with Git Coach, simply download the app from the Google Play Store or download the source code and build it yourself.
+To get started with Git+ Coach, simply download the app from the Google Play Store or download the source code and build it yourself.
 
 ### Prerequisites
 
@@ -53,7 +53,7 @@ To get started with Git Coach, simply download the app from the Google Play Stor
 
 ## Contributing
 
-We welcome contributions from anyone interested in helping to improve Git Coach! Feel free to submit a pull request or open an issue if you notice any bugs or have suggestions for new features.
+We welcome contributions from anyone interested in helping to improve Git+ Coach! Feel free to submit a pull request or open an issue if you notice any bugs or have suggestions for new features.
 
 ## License
 
