@@ -42,7 +42,7 @@ private fun NotificationManager.sendRandomNotification(context: Context) {
     val gitLongDesc = gitCommand + "\n\n" + gitDescription
 
     val randomGitNotification =
-        NotificationCompat.Builder(context, Constants.CHANNEL_ID).setSmallIcon(R.drawable.app_logo)
+        NotificationCompat.Builder(context, Constants.CHANNEL_ID).setSmallIcon(R.drawable.app_logo_svg)
             .setContentTitle(gitTitle)
             .setStyle(NotificationCompat.BigTextStyle().bigText(gitLongDesc))
             .setContentText(gitCommand).setAutoCancel(true)

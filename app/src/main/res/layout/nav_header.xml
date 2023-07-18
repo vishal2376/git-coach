@@ -9,25 +9,18 @@
     android:orientation="vertical"
     android:paddingVertical="@dimen/_20sdp">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:cardBackgroundColor="@color/colorWhite"
-        app:cardCornerRadius="@dimen/_100sdp">
-
-        <ImageView
-            android:layout_width="@dimen/_50sdp"
-            android:layout_height="@dimen/_50sdp"
-            android:layout_margin="@dimen/_10sdp"
-            android:src="@drawable/app_logo" />
-    </androidx.cardview.widget.CardView>
+    <ImageView
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/app_logo" />
 
     <!--  Name -->
     <TextView
         android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
         android:fontFamily="@font/rubik_medium"
         android:text="@string/app_name"
         android:textColor="@color/white"
