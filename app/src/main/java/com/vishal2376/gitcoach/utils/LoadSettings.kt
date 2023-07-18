@@ -19,14 +19,14 @@ object LoadSettings {
     fun loadTheme(context: Context) {
         //load saved values
         val sp =
-            context.getSharedPreferences("SETTINGS", MODE_PRIVATE).getString("user_theme", "yellow")
+            context.getSharedPreferences("SETTINGS", MODE_PRIVATE).getString("user_theme", "blue")
 
         when (sp.toString()) {
             "red" -> {
                 context.setTheme(R.style.Theme_RED)
             }
 
-            "blue" -> {
+            "yellow" -> {
                 context.setTheme(R.style.Theme_YELLOW)
             }
 
