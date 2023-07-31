@@ -7,7 +7,7 @@
     android:background="@drawable/item_bg"
     android:orientation="vertical"
     android:paddingHorizontal="@dimen/_20sdp"
-    android:paddingVertical="@dimen/_10sdp">
+    android:paddingVertical="@dimen/_8sdp">
 
 
     <TextView
@@ -24,7 +24,6 @@
         android:id="@+id/tvGitDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_5sdp"
         android:fontFamily="@font/roboto_medium"
         android:text="@string/git_desc"
         android:textColor="@color/colorGreyText"
@@ -37,7 +36,7 @@
         android:background="@drawable/round_bg_dark"
         android:gravity="center_vertical"
         android:paddingHorizontal="@dimen/_5sdp"
-        android:paddingVertical="@dimen/_8sdp">
+        android:paddingVertical="@dimen/_6sdp">
 
         <TextView
             android:id="@+id/tvGitCommand"

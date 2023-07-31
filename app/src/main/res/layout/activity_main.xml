@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:background="?attr/colorPrimaryVariant"
             android:paddingHorizontal="@dimen/_10sdp"
-            android:paddingVertical="@dimen/_8sdp"
+            android:paddingTop="@dimen/_8sdp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -70,8 +70,8 @@
         app:headerLayout="@layout/nav_header"
         app:itemIconPadding="@dimen/_15sdp"
         app:itemIconSize="@dimen/_25sdp"
-        app:itemTextColor="@color/colorWhite"
         app:itemIconTint="?attr/colorAccent"
+        app:itemTextColor="@color/colorWhite"
         app:itemVerticalPadding="@dimen/_10sdp"
         app:menu="@menu/nav_menu">
 
