@@ -45,6 +45,15 @@
                 android:padding="@dimen/_5sdp"
                 android:src="@drawable/ic_menu" />
 
+            <ImageView
+                android:id="@+id/ivFontSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_font_size"
+                app:tint="@color/colorWhite" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.fragment.app.FragmentContainerView

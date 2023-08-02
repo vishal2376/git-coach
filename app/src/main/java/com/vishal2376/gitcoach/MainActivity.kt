@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
+import androidx.navigation.fragment.NavHostFragment
 import com.google.android.material.switchmaterial.SwitchMaterial
 import com.vishal2376.gitcoach.databinding.ActivityMainBinding
 import com.vishal2376.gitcoach.utils.Constants
@@ -103,6 +104,15 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+
+        binding.ivFontSize.setOnClickListener {
+            val navHostFragment =
+                supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
+            val navController = navHostFragment.navController
+            navController.navigateUp()
+            navController.navigate(R.id.fontSettingFragment)
+        }
+
 
     }
 
