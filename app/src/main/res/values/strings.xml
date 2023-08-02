@@ -29,4 +29,9 @@
     <string name="dialog_title">Crash Report</string>
     <string name="dialog_positive">Send</string>
     <string name="dialog_negative">Cancel</string>
+    <string name="font_size_setting">Font Size Setting</string>
+    <string name="preview">Preview</string>
+    <string name="title">Title</string>
+    <string name="command">Command</string>
+    <string name="description">Description</string>
 </resources>

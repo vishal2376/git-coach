@@ -52,4 +52,9 @@
         android:name="com.vishal2376.gitcoach.fragments.CommunityFragment"
         android:label="fragment_community"
         tools:layout="@layout/fragment_community" />
+    <fragment
+        android:id="@+id/fontSettingFragment"
+        android:name="com.vishal2376.gitcoach.fragments.FontSettingFragment"
+        android:label="fragment_font_setting"
+        tools:layout="@layout/fragment_font_setting" />
 </navigation>
