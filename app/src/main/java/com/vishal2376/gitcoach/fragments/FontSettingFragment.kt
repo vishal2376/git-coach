@@ -5,6 +5,7 @@ import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.vishal2376.gitcoach.MainActivity
 import com.vishal2376.gitcoach.databinding.FragmentFontSettingBinding
@@ -33,7 +34,22 @@ class FontSettingFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         handleInputs()
+        handleButtons()
 
+    }
+
+    private fun handleButtons() {
+        binding.btnReset.setOnClickListener {
+
+            binding.apply {
+                sliderTitle.value = 0f
+                sliderDescription.value = 0f
+                sliderCommand.value = 0f
+            }
+
+            Toast.makeText(requireContext(), "Font Size Reset to Default", Toast.LENGTH_SHORT)
+                .show()
+        }
     }
 
     private fun handleInputs() {
