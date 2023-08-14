@@ -88,6 +88,7 @@
                 android:layout_weight="1"
                 android:drawablePadding="@dimen/_2sdp"
                 android:ellipsize="marquee"
+                android:gravity="center_vertical"
                 android:fontFamily="@font/roboto_medium"
                 android:marqueeRepeatLimit="marquee_forever"
                 android:singleLine="true"
@@ -146,9 +147,9 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_20sdp"
         android:stepSize="1"
-        android:value="3"
-        android:valueFrom="1"
-        android:valueTo="5"
+        android:value="0"
+        android:valueFrom="-2"
+        android:valueTo="2"
         app:thumbColor="?attr/colorAccent"
         app:tickColor="?attr/colorAccent" />
 
@@ -170,9 +171,9 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_20sdp"
         android:stepSize="1"
-        android:value="3"
-        android:valueFrom="1"
-        android:valueTo="5"
+        android:value="0"
+        android:valueFrom="-2"
+        android:valueTo="2"
         app:thumbColor="?attr/colorAccent"
         app:tickColor="?attr/colorAccent" />
 
@@ -194,9 +195,9 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_20sdp"
         android:stepSize="1"
-        android:value="3"
-        android:valueFrom="1"
-        android:valueTo="5"
+        android:value="0"
+        android:valueFrom="-2"
+        android:valueTo="2"
         app:thumbColor="?attr/colorAccent"
         app:tickColor="?attr/colorAccent" />
 
