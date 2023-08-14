@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,17 +8,29 @@
     android:orientation="vertical"
     tools:context=".fragments.FontSettingFragment">
 
-    <TextView
-        android:id="@+id/tvLessonTitle"
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimaryVariant"
-        android:fontFamily="@font/rubik_medium"
-        android:paddingHorizontal="@dimen/_20sdp"
-        android:paddingVertical="@dimen/_10sdp"
-        android:text="@string/font_size_setting"
-        android:textColor="@color/colorWhite"
-        android:textSize="@dimen/_16ssp" />
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvLessonTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimaryVariant"
+            android:fontFamily="@font/rubik_medium"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            android:text="@string/font_size_setting"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_16ssp" />
+
+    </LinearLayout>
 
     <View
         android:id="@+id/view"
@@ -27,179 +39,231 @@
         android:background="?attr/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvLessonTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:layout_marginBottom="@dimen/_10sdp"
-        android:fontFamily="@font/rubik_medium"
-        android:text="@string/preview"
-        android:textColor="?attr/colorAccent"
-        android:textSize="@dimen/_16ssp" />
-
-    <LinearLayout
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_15sdp"
-        android:background="@drawable/item_bg"
+        android:layout_height="0dp"
+        android:fillViewport="true"
         android:orientation="vertical"
-        android:paddingHorizontal="@dimen/_20sdp"
-        android:paddingVertical="@dimen/_8sdp"
+        app:layout_constraintBottom_toTopOf="@+id/layoutFooter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-
-        <TextView
-            android:id="@+id/tvGitName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/rubik_medium"
-            android:text="@string/intialize_git"
-            android:textColor="@color/colorWhite"
-            android:textSize="19sp" />
-
-
-        <TextView
-            android:id="@+id/tvGitDescription"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/roboto_medium"
-            android:text="@string/git_desc"
-            android:textColor="@color/colorGreyText"
-            android:textSize="13sp" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_5sdp"
-            android:background="@drawable/round_bg_dark"
-            android:gravity="center_vertical"
-            android:paddingHorizontal="@dimen/_5sdp"
-            android:paddingVertical="@dimen/_6sdp">
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tvGitCommand"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:drawablePadding="@dimen/_2sdp"
-                android:ellipsize="marquee"
-                android:fontFamily="@font/roboto_medium"
-                android:gravity="center_vertical"
-                android:marqueeRepeatLimit="marquee_forever"
-                android:singleLine="true"
-                android:text="@string/git_init"
-                android:textColor="?attr/colorAccent"
-                android:textSize="16sp"
-                app:drawableStartCompat="@drawable/ic_code"
-                app:drawableTint="?attr/colorAccent" />
-
-            <ImageView
-                android:id="@+id/ivShareCommand"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_5sdp"
-                android:src="@drawable/ic_share" />
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/rubik_medium"
+                android:text="@string/preview"
+                android:textColor="?attr/colorAccent"
+                android:textSize="@dimen/_16ssp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:background="@drawable/item_bg"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_8sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:id="@+id/tvGitName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="@string/intialize_git"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="19sp" />
+
+
+                <TextView
+                    android:id="@+id/tvGitDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/git_desc"
+                    android:textColor="@color/colorGreyText"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/round_bg_dark"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="@dimen/_5sdp"
+                    android:paddingVertical="@dimen/_6sdp">
+
+                    <TextView
+                        android:id="@+id/tvGitCommand"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/_2sdp"
+                        android:ellipsize="marquee"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:text="@string/git_init"
+                        android:textColor="?attr/colorAccent"
+                        android:textSize="16sp"
+                        app:drawableStartCompat="@drawable/ic_code"
+                        app:drawableTint="?attr/colorAccent" />
+
+                    <ImageView
+                        android:id="@+id/ivShareCommand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:src="@drawable/ic_share" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/text_example"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/example"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvGitExample"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/lesson_example"
+                    android:textColor="@color/colorGreyText"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+            <!--    title slider-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:fontFamily="@font/rubik_medium"
+                android:text="@string/title"
+                android:textColor="@color/colorGreyText"
+                android:textSize="@dimen/_14ssp" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:stepSize="1"
+                android:value="0"
+                android:valueFrom="-2"
+                android:valueTo="2"
+                app:thumbColor="?attr/colorAccent"
+                app:tickColor="?attr/colorAccent" />
+
+
+            <!--    description size slider-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/rubik_medium"
+                android:text="@string/description"
+                android:textColor="@color/colorGreyText"
+                android:textSize="@dimen/_14ssp" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:stepSize="1"
+                android:value="0"
+                android:valueFrom="-2"
+                android:valueTo="2"
+                app:thumbColor="?attr/colorAccent"
+                app:tickColor="?attr/colorAccent" />
+
+
+            <!--    command size slider-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/rubik_medium"
+                android:text="@string/command"
+                android:textColor="@color/colorGreyText"
+                android:textSize="@dimen/_14ssp" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderCommand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:stepSize="1"
+                android:value="0"
+                android:valueFrom="-2"
+                android:valueTo="2"
+                app:thumbColor="?attr/colorAccent"
+                app:tickColor="?attr/colorAccent" />
 
         </LinearLayout>
 
+    </androidx.core.widget.NestedScrollView>
+
+    <!--    footer-->
+    <RelativeLayout
+        android:id="@+id/layoutFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:paddingHorizontal="@dimen/_30sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:id="@+id/text_example"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_centerVertical="true"
             android:fontFamily="@font/roboto_medium"
-            android:text="@string/example"
-            android:textColor="@color/colorWhite"
-            android:textSize="14sp" />
+            android:gravity="center_vertical"
+            android:text="@string/reset_to_default"
+            android:textColor="?attr/colorAccent"
+            android:textSize="@dimen/_13ssp" />
 
-        <TextView
-            android:id="@+id/tvGitExample"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/roboto_medium"
-            android:text="@string/lesson_example"
-            android:textColor="@color/colorGreyText"
-            android:textSize="13sp" />
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="?attr/colorAccent"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textColor="?attr/colorPrimaryVariant" />
 
+    </RelativeLayout>
 
-    </LinearLayout>
-
-    <!--    title slider-->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_40sdp"
-        android:fontFamily="@font/rubik_medium"
-        android:text="@string/title"
-        android:textColor="@color/colorGreyText"
-        android:textSize="@dimen/_14ssp" />
-
-    <com.google.android.material.slider.Slider
-        android:id="@+id/sliderTitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_20sdp"
-        android:stepSize="1"
-        android:value="0"
-        android:valueFrom="-2"
-        android:valueTo="2"
-        app:thumbColor="?attr/colorAccent"
-        app:tickColor="?attr/colorAccent" />
-
-
-    <!--    description size slider-->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:fontFamily="@font/rubik_medium"
-        android:text="@string/description"
-        android:textColor="@color/colorGreyText"
-        android:textSize="@dimen/_14ssp" />
-
-    <com.google.android.material.slider.Slider
-        android:id="@+id/sliderDescription"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_20sdp"
-        android:stepSize="1"
-        android:value="0"
-        android:valueFrom="-2"
-        android:valueTo="2"
-        app:thumbColor="?attr/colorAccent"
-        app:tickColor="?attr/colorAccent" />
-
-
-    <!--    command size slider-->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:fontFamily="@font/rubik_medium"
-        android:text="@string/command"
-        android:textColor="@color/colorGreyText"
-        android:textSize="@dimen/_14ssp" />
-
-    <com.google.android.material.slider.Slider
-        android:id="@+id/sliderCommand"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_20sdp"
-        android:stepSize="1"
-        android:value="0"
-        android:valueFrom="-2"
-        android:valueTo="2"
-        app:thumbColor="?attr/colorAccent"
-        app:tickColor="?attr/colorAccent" />
-
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
