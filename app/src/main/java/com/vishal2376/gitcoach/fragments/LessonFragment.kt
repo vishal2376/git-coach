@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.vishal2376.gitcoach.MainActivity
 import com.vishal2376.gitcoach.adapters.GitLessonStepAdapter
 import com.vishal2376.gitcoach.databinding.FragmentLessonBinding
 import com.vishal2376.gitcoach.models.lesson.GitLesson
@@ -57,9 +58,14 @@ class LessonFragment : Fragment() {
         binding.tvLessonTitle.text = gitLessonList.gitLessons[args.position].LessonTitle
     }
 
+    override fun onResume() {
+        super.onResume()
+        MainActivity.appBarLayout.visibility = View.GONE
+    }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
+    override fun onDestroy() {
+        super.onDestroy()
+        MainActivity.appBarLayout.visibility = View.VISIBLE
         _binding = null
     }
 

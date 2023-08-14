@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.vishal2376.gitcoach.MainActivity
 import com.vishal2376.gitcoach.databinding.FragmentFontSettingBinding
 import com.vishal2376.gitcoach.utils.Constants
 
@@ -52,6 +53,17 @@ class FontSettingFragment : Fragment() {
             commandSize = Constants.FONT_SIZE_COMMAND + value
             binding.tvGitCommand.setTextSize(TypedValue.COMPLEX_UNIT_SP, commandSize)
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        MainActivity.appBarLayout.visibility = View.GONE
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        MainActivity.appBarLayout.visibility = View.VISIBLE
+        _binding = null
     }
 
 }

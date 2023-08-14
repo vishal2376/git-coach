@@ -12,6 +12,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
 import androidx.navigation.fragment.NavHostFragment
@@ -47,6 +48,8 @@ class MainActivity : AppCompatActivity() {
 
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        appBarLayout = binding.appBarLayout
 
         //update app version in nav drawer
         val appVersion = binding.navView.getHeaderView(0).findViewById<TextView>(R.id.tvAppVersion)
@@ -209,5 +212,9 @@ class MainActivity : AppCompatActivity() {
         )
         startActivity(intent)
 
+    }
+
+    companion object {
+        lateinit var appBarLayout: ConstraintLayout
     }
 }
