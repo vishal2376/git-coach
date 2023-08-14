@@ -68,6 +68,7 @@
                 android:textSize="@dimen/_16ssp" />
 
             <LinearLayout
+                android:id="@+id/layoutGitPreview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_15sdp"

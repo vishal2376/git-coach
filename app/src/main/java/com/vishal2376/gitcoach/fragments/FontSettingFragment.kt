@@ -5,9 +5,11 @@ import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.vishal2376.gitcoach.MainActivity
+import com.vishal2376.gitcoach.R
 import com.vishal2376.gitcoach.databinding.FragmentFontSettingBinding
 import com.vishal2376.gitcoach.utils.Constants
 
@@ -33,9 +35,18 @@ class FontSettingFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        initUI()
         handleInputs()
         handleButtons()
 
+    }
+
+    private fun initUI() {
+        binding.tvLessonTitle.animation =
+            AnimationUtils.loadAnimation(requireContext(), R.anim.slide_down_anim)
+
+        binding.layoutGitPreview.animation =
+            AnimationUtils.loadAnimation(requireContext(), R.anim.alpha_anim)
     }
 
     private fun handleButtons() {
