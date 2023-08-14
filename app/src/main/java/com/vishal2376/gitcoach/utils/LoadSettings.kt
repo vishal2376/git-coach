@@ -39,4 +39,9 @@ object LoadSettings {
             }
         }
     }
+
+    fun getFontSize(context: Context, category: String): Float {
+        return context.getSharedPreferences("SETTINGS", MODE_PRIVATE)
+            .getFloat(category, 0f)
+    }
 }

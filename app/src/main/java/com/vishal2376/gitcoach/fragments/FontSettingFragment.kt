@@ -1,5 +1,6 @@
 package com.vishal2376.gitcoach.fragments
 
+import android.content.Context.MODE_PRIVATE
 import android.os.Bundle
 import android.util.TypedValue
 import android.view.LayoutInflater
@@ -12,7 +13,9 @@ import androidx.navigation.fragment.findNavController
 import com.vishal2376.gitcoach.MainActivity
 import com.vishal2376.gitcoach.R
 import com.vishal2376.gitcoach.databinding.FragmentFontSettingBinding
+import com.vishal2376.gitcoach.utils.Category
 import com.vishal2376.gitcoach.utils.Constants
+import com.vishal2376.gitcoach.utils.LoadSettings
 
 class FontSettingFragment : Fragment() {
 
@@ -23,6 +26,10 @@ class FontSettingFragment : Fragment() {
     private var subTitleSize: Float = Constants.FONT_SIZE_SUB_TITLE
     private var descriptionSize: Float = Constants.FONT_SIZE_DESCRIPTION
     private var commandSize: Float = Constants.FONT_SIZE_COMMAND
+
+    private var sliderTitleValue = 0f
+    private var sliderDescriptionValue = 0f
+    private var sliderCommandValue = 0f
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -56,23 +63,56 @@ class FontSettingFragment : Fragment() {
     }
 
     private fun initFontSize() {
+        //load font size from local
+        sliderTitleValue = LoadSettings.getFontSize(requireContext(), Category.FS_TITLE)
+        sliderDescriptionValue = LoadSettings.getFontSize(requireContext(), Category.FS_DESCRIPTION)
+        sliderCommandValue = LoadSettings.getFontSize(requireContext(), Category.FS_COMMAND)
+
+        //update sliders
+        binding.sliderTitle.value = sliderTitleValue
+        binding.sliderDescription.value = sliderDescriptionValue
+        binding.sliderCommand.value = sliderCommandValue
+
+        //update UI font
+        titleSize = Constants.FONT_SIZE_TITLE + sliderTitleValue
+        binding.tvGitName.setTextSize(TypedValue.COMPLEX_UNIT_SP, titleSize)
+
+        subTitleSize = Constants.FONT_SIZE_SUB_TITLE + sliderDescriptionValue
+        binding.textExample.setTextSize(TypedValue.COMPLEX_UNIT_SP, subTitleSize)
+
+        descriptionSize = Constants.FONT_SIZE_DESCRIPTION + sliderDescriptionValue
+        binding.tvGitDescription.setTextSize(TypedValue.COMPLEX_UNIT_SP, descriptionSize)
+        binding.tvGitExample.setTextSize(TypedValue.COMPLEX_UNIT_SP, descriptionSize)
+
+        commandSize = Constants.FONT_SIZE_COMMAND + sliderCommandValue
+        binding.tvGitCommand.setTextSize(TypedValue.COMPLEX_UNIT_SP, commandSize)
 
     }
 
     private fun handleButtons() {
         binding.btnReset.setOnClickListener {
-
             binding.apply {
                 sliderTitle.value = 0f
                 sliderDescription.value = 0f
                 sliderCommand.value = 0f
             }
-
-            Toast.makeText(requireContext(), "Font Size Reset to Default", Toast.LENGTH_SHORT)
-                .show()
         }
 
         binding.tvLessonTitle.setOnClickListener {
+            findNavController().popBackStack()
+        }
+
+        binding.btnSave.setOnClickListener {
+            val sharedPreferences =
+                requireContext().getSharedPreferences("SETTINGS", MODE_PRIVATE)
+            val editor = sharedPreferences.edit()
+            editor.apply {
+                putFloat(Category.FS_TITLE, binding.sliderTitle.value)
+                putFloat(Category.FS_DESCRIPTION, binding.sliderDescription.value)
+                putFloat(Category.FS_COMMAND, binding.sliderCommand.value)
+            }.apply()
+
+            Toast.makeText(requireContext(), "Font Setting Saved", Toast.LENGTH_SHORT).show()
             findNavController().popBackStack()
         }
     }
