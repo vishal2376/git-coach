@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.view.animation.AnimationUtils
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.vishal2376.gitcoach.MainActivity
 import com.vishal2376.gitcoach.R
 import com.vishal2376.gitcoach.databinding.FragmentFontSettingBinding
@@ -42,11 +43,20 @@ class FontSettingFragment : Fragment() {
     }
 
     private fun initUI() {
+        initFontSize()
+        initAnimation()
+    }
+
+    private fun initAnimation() {
         binding.tvLessonTitle.animation =
             AnimationUtils.loadAnimation(requireContext(), R.anim.slide_down_anim)
 
         binding.layoutGitPreview.animation =
             AnimationUtils.loadAnimation(requireContext(), R.anim.alpha_anim)
+    }
+
+    private fun initFontSize() {
+
     }
 
     private fun handleButtons() {
@@ -60,6 +70,10 @@ class FontSettingFragment : Fragment() {
 
             Toast.makeText(requireContext(), "Font Size Reset to Default", Toast.LENGTH_SHORT)
                 .show()
+        }
+
+        binding.tvLessonTitle.setOnClickListener {
+            findNavController().popBackStack()
         }
     }
 

@@ -9,16 +9,18 @@
 
     <TextView
         android:id="@+id/tvLessonTitle"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimaryVariant"
+        android:drawablePadding="@dimen/_5sdp"
         android:fontFamily="@font/rubik_medium"
-        android:paddingHorizontal="@dimen/_20sdp"
+        android:paddingHorizontal="@dimen/_10sdp"
         android:paddingVertical="@dimen/_10sdp"
         android:text="@string/intialize_git"
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/_16ssp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:drawableStartCompat="@drawable/ic_left_arrow"
+        app:drawableTint="@color/colorWhite"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

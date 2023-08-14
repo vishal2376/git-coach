@@ -9,28 +9,23 @@
     tools:context=".fragments.FontSettingFragment">
 
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/tvLessonTitle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:background="?attr/colorPrimaryVariant"
+        android:drawablePadding="@dimen/_5sdp"
+        android:fontFamily="@font/rubik_medium"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:text="@string/font_size_setting"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_16ssp"
+        app:drawableStartCompat="@drawable/ic_left_arrow"
+        app:drawableTint="@color/colorWhite"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/tvLessonTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/colorPrimaryVariant"
-            android:fontFamily="@font/rubik_medium"
-            android:paddingHorizontal="@dimen/_20sdp"
-            android:paddingVertical="@dimen/_10sdp"
-            android:text="@string/font_size_setting"
-            android:textColor="@color/colorWhite"
-            android:textSize="@dimen/_16ssp" />
-
-    </LinearLayout>
 
     <View
         android:id="@+id/view"
@@ -39,7 +34,7 @@
         android:background="?attr/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/tvLessonTitle" />
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -49,7 +44,7 @@
         app:layout_constraintBottom_toTopOf="@+id/layoutFooter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toBottomOf="@+id/tvLessonTitle">
 
         <LinearLayout
             android:layout_width="match_parent"
