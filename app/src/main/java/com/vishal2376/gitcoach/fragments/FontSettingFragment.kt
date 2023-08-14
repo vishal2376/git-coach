@@ -15,6 +15,7 @@ class FontSettingFragment : Fragment() {
     private val binding get() = _binding!!
 
     private var titleSize: Float = Constants.FONT_SIZE_TITLE
+    private var subTitleSize: Float = Constants.FONT_SIZE_SUB_TITLE
     private var descriptionSize: Float = Constants.FONT_SIZE_DESCRIPTION
     private var commandSize: Float = Constants.FONT_SIZE_COMMAND
 
@@ -40,6 +41,9 @@ class FontSettingFragment : Fragment() {
             binding.tvGitName.setTextSize(TypedValue.COMPLEX_UNIT_SP, titleSize)
         }
         binding.sliderDescription.addOnChangeListener { _, value, _ ->
+            subTitleSize = Constants.FONT_SIZE_SUB_TITLE + value
+            binding.textExample.setTextSize(TypedValue.COMPLEX_UNIT_SP, subTitleSize)
+
             descriptionSize = Constants.FONT_SIZE_DESCRIPTION + value
             binding.tvGitDescription.setTextSize(TypedValue.COMPLEX_UNIT_SP, descriptionSize)
             binding.tvGitExample.setTextSize(TypedValue.COMPLEX_UNIT_SP, descriptionSize)

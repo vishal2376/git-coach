@@ -60,7 +60,7 @@
             android:fontFamily="@font/rubik_medium"
             android:text="@string/intialize_git"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/_14ssp" />
+            android:textSize="19sp" />
 
 
         <TextView
@@ -70,7 +70,7 @@
             android:fontFamily="@font/roboto_medium"
             android:text="@string/git_desc"
             android:textColor="@color/colorGreyText"
-            android:textSize="@dimen/_10ssp" />
+            android:textSize="13sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -88,13 +88,13 @@
                 android:layout_weight="1"
                 android:drawablePadding="@dimen/_2sdp"
                 android:ellipsize="marquee"
-                android:gravity="center_vertical"
                 android:fontFamily="@font/roboto_medium"
+                android:gravity="center_vertical"
                 android:marqueeRepeatLimit="marquee_forever"
                 android:singleLine="true"
                 android:text="@string/git_init"
                 android:textColor="?attr/colorAccent"
-                android:textSize="@dimen/_12ssp"
+                android:textSize="16sp"
                 app:drawableStartCompat="@drawable/ic_code"
                 app:drawableTint="?attr/colorAccent" />
 
@@ -116,7 +116,7 @@
             android:fontFamily="@font/roboto_medium"
             android:text="@string/example"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/_11ssp" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tvGitExample"
@@ -125,7 +125,7 @@
             android:fontFamily="@font/roboto_medium"
             android:text="@string/lesson_example"
             android:textColor="@color/colorGreyText"
-            android:textSize="@dimen/_10ssp" />
+            android:textSize="13sp" />
 
 
     </LinearLayout>
