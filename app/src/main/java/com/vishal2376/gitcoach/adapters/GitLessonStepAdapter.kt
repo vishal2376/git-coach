@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.vishal2376.gitcoach.R
@@ -15,6 +16,7 @@ import com.vishal2376.gitcoach.models.lesson.GitLessonItem
 import com.vishal2376.gitcoach.utils.Category
 import com.vishal2376.gitcoach.utils.Constants
 import com.vishal2376.gitcoach.utils.LoadSettings
+import com.vishal2376.gitcoach.utils.copyToClipboard
 
 class GitLessonStepAdapter(
     private val context: Context,
@@ -59,6 +61,11 @@ class GitLessonStepAdapter(
         else
             holder.lessonExample.text = currentLessonStep.Example
 
+        //copy to clipboard
+        holder.lessonExample.setOnClickListener {
+            copyToClipboard(context, holder.lessonExample.text.toString())
+            Toast.makeText(context, "Command Copied", Toast.LENGTH_SHORT).show()
+        }
         //hide vertical line of last element
         if (position == gitLesson.Steps.size - 1)
             holder.verticalLine.visibility = View.GONE

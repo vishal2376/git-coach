@@ -120,14 +120,6 @@
                         android:textSize="16sp"
                         app:drawableStartCompat="@drawable/ic_code"
                         app:drawableTint="?attr/colorAccent" />
-
-                    <ImageView
-                        android:id="@+id/ivShareCommand"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="@dimen/_5sdp"
-                        android:src="@drawable/ic_share" />
-
                 </LinearLayout>
 
 

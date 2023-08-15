@@ -35,8 +35,7 @@
         android:layout_marginTop="@dimen/_5sdp"
         android:background="@drawable/round_bg_dark"
         android:gravity="center_vertical"
-        android:paddingHorizontal="@dimen/_5sdp"
-        android:paddingVertical="@dimen/_6sdp">
+        android:paddingHorizontal="@dimen/_5sdp">
 
         <TextView
             android:id="@+id/tvGitCommand"
@@ -47,19 +46,13 @@
             android:ellipsize="marquee"
             android:fontFamily="@font/roboto_medium"
             android:marqueeRepeatLimit="marquee_forever"
+            android:paddingVertical="@dimen/_6sdp"
             android:singleLine="true"
             android:text="@string/git_init"
             android:textColor="?attr/colorAccent"
             android:textSize="@dimen/_12ssp"
             app:drawableStartCompat="@drawable/ic_code"
             app:drawableTint="?attr/colorAccent" />
-
-        <ImageView
-            android:id="@+id/ivShareCommand"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/_5sdp"
-            android:src="@drawable/ic_share" />
 
     </LinearLayout>
 

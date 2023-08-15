@@ -7,8 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
-import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.vishal2376.gitcoach.R
@@ -16,7 +16,7 @@ import com.vishal2376.gitcoach.models.GitCommandItem
 import com.vishal2376.gitcoach.utils.Category
 import com.vishal2376.gitcoach.utils.Constants
 import com.vishal2376.gitcoach.utils.LoadSettings
-import com.vishal2376.gitcoach.utils.shareCommand
+import com.vishal2376.gitcoach.utils.copyToClipboard
 
 class GitInfoAdapter(
     private val context: Context, private var gitCommandList: List<GitCommandItem>
@@ -60,10 +60,10 @@ class GitInfoAdapter(
         //enable marquee effect
         holder.command.isSelected = true
 
-        holder.shareBtn.setOnClickListener {
-            val message =
-                currentGitInfo.name + "\n\nDescription: " + currentGitInfo.description + "\n\nCommand: " + currentGitInfo.command
-            shareCommand(context, message)
+        //copy to clipboard
+        holder.command.setOnClickListener {
+            copyToClipboard(context, holder.command.text.toString())
+            Toast.makeText(context, "Command Copied", Toast.LENGTH_SHORT).show()
         }
 
         //animation
@@ -83,8 +83,6 @@ class GitInfoAdapter(
         val description: TextView = itemView.findViewById(R.id.tvGitDescription)
         val example: TextView = itemView.findViewById(R.id.tvGitExample)
         val exampleText: TextView = itemView.findViewById(R.id.text_example)
-
-        val shareBtn: ImageView = itemView.findViewById(R.id.ivShareCommand)
     }
 
     private fun initFontSize() {
