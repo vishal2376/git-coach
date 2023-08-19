@@ -5,21 +5,33 @@
       "Steps": [
         {
           "StepNumber": 1,
-          "Description": "What is Git and why is it used",
+          "Description": "What is Git?",
           "Example": "",
-          "Explanation": "Git is a distributed version control system used to manage and track changes to source code. It helps developers collaborate on projects and maintain a history of all changes made to the code."
+          "Explanation": "Git is a type of computer software known as a version control system. It helps people keep track of changes made to their computer code or other text-based files over time.\n\nIt's like a history book for your files, allowing you to see who made changes, what changes were made, and when they happened."
         },
         {
           "StepNumber": 2,
-          "Description": "Setting up Git on your computer",
-          "Example": "git config --global user.name 'John Doe'\ngit config --global user.email 'johndoe@example.com'",
-          "Explanation": "To use Git, you first need to configure it on your computer by setting your username and email address. This information will be attached to every commit you make in Git."
+          "Description": "Why it is Used?",
+          "Example": "",
+          "Explanation": "Git is used to make working on projects with other people much easier. It helps multiple people collaborate on the same files without accidentally overwriting each other's work.\n\nIt also allows you to experiment with new ideas without worrying about ruining what you've already done.\n\nAdditionally, Git is great for keeping backups and managing different versions of your files so you can always go back to a previous state if needed"
         },
         {
           "StepNumber": 3,
-          "Description": "Creating a new Git repository",
-          "Example": "git init my-new-project",
-          "Explanation": "To start using Git for a new project, you need to create a new Git repository. You can do this by running the `git init` command followed by the name of your project."
+          "Description": "Installing Git",
+          "Example": "git --version",
+          "Explanation": "Go to the official Git website (https://git-scm.com/) and find the download section.\n\nChoose the version of Git that matches your computer's operating system (like Windows, macOS, or Linux).\n\nOnce the download is complete, open the downloaded file and follow the installation instructions.\n\nAfter the installation is done, you can verify that Git is installed by opening a terminal or command prompt and typing"
+        },
+        {
+          "StepNumber": 4,
+          "Description": "Setting up Git on your computer",
+          "Example": "git config --global user.name 'Your Name'\ngit config --global user.email 'Your Email ID'",
+          "Explanation": "To use Git, you first need to configure it on your computer by setting your username and email address. This information will be attached to every commit you make in Git."
+        },
+        {
+          "StepNumber": 5,
+          "Description": "Git vs Github",
+          "Example": "",
+          "Explanation": "Git and GitHub are not the same, but they are related concepts \n\n Git is the core technology that manages version control locally.\n\nGitHub is a platform that makes it easy to store, share, and collaborate on Git repositories over the internet. Other similar platforms include GitLab and Bitbucket."
         }
       ]
     },
