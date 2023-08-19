@@ -29,9 +29,9 @@
         },
         {
           "StepNumber": 5,
-          "Description": "Git vs Github",
+          "Description": "😕 Are Git and Github same?",
           "Example": "",
-          "Explanation": "Git and GitHub are not the same, but they are related concepts \n\n Git is the core technology that manages version control locally.\n\nGitHub is a platform that makes it easy to store, share, and collaborate on Git repositories over the internet. Other similar platforms include GitLab and Bitbucket."
+          "Explanation": "No, Git and GitHub are not the same, but they are related concepts \n\nGit is the core technology that manages version control locally.\n\nGitHub is a platform that makes it easy to store, share, and collaborate on Git repositories over the internet. Other similar platforms include GitLab and Bitbucket."
         }
       ]
     },
@@ -40,33 +40,39 @@
       "Steps": [
         {
           "StepNumber": 1,
-          "Description": "What is Git and why is it used",
-          "Example": "",
-          "Explanation": "Git is a distributed version control system used to manage and track changes to source code. It helps developers collaborate on projects and maintain a history of all changes made to the code."
+          "Description": "Initializing a Project",
+          "Example": "git init",
+          "Explanation": "After installing Git, the first step is to set up version control for your project.\n\nOpen your command-line terminal or Git Bash (if you're on Windows) and navigate to the directory where you want to start your project.\n\nUse the following command to initialize a new Git repository"
         },
         {
           "StepNumber": 2,
-          "Description": "Setting up Git on your computer",
-          "Example": "git config --global user.name 'John Doe'\ngit config --global user.email 'johndoe@example.com'",
-          "Explanation": "To use Git, you first need to configure it on your computer by setting your username and email address. This information will be attached to every commit you make in Git."
+          "Description": "Creating Files and Adding Text",
+          "Example": "Hello, This is my first file",
+          "Explanation": "You can use any text editor you prefer, such as Notepad,Vim,Sublime or Visual Studio Code\n\nCreate a new file 'hello.txt' and then write the following text and save the file"
         },
         {
           "StepNumber": 3,
-          "Description": "Creating a new Git repository",
-          "Example": "git init my-new-project",
-          "Explanation": "To start using Git for a new project, you need to create a new Git repository. You can do this by running the `git init` command followed by the name of your project."
+          "Description": "Adding and Tracking Files",
+          "Example": "git add hello.txt",
+          "Explanation": "Once you've created and edited your file, it's time to start tracking it with Git.\n\nTo do this, use the 'git add <file name>' command."
         },
         {
           "StepNumber": 4,
-          "Description": "Adding files to the Git repository",
-          "Example": "git add file1.txt file2.txt\ngit commit -m 'Initial commit'",
-          "Explanation": "To add files to a Git repository, you first need to run the `git add` command followed by the names of the files you want to add. You can then commit the changes to the repository by running the `git commit` command followed by a commit message, e.g. `git commit -m 'Initial commit'`."
+          "Description": "Checking Status",
+          "Example": "git status",
+          "Explanation": "At any point, you can check the status of your repository to see which files are tracked, modified, or staged for the next commit.\n\nThe 'git status' command provides you with this information."
         },
         {
           "StepNumber": 5,
-          "Description": "Viewing the Git log",
-          "Example": "git log",
-          "Explanation": "To view the history of commits in a Git repository, use the `git log` command. This will display a list of all the commits made to the repository along with their authors, dates, and commit messages."
+          "Description": "Making Commits",
+          "Example": "git commit -m \"my first commit\"",
+          "Explanation": "A commit in Git represents a snapshot of your project at a certain point in time.\n\nIt's a way to record your changes and provide a meaningful description of what you've done.\n\nTo make a commit, you use the following command"
+        },
+        {
+          "StepNumber": 6,
+          "Description": "What Next?",
+          "Example": "",
+          "Explanation": "🎉 Congratulations! You've covered the basics of Git.\n\nAs you continue your journey with Git, you'll learn more about branching, merging,etc.\n\nAnd don't forget that the Git documentation and online tutorials are excellent resources to deepen your understanding."
         }
       ]
     },
