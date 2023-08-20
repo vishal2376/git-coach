@@ -77,36 +77,48 @@
       ]
     },
     {
-      "LessonTitle": "Git Branching Basics",
+      "LessonTitle": "Git Branches",
       "Steps": [
         {
           "StepNumber": 1,
-          "Description": "What is a Git Branch",
+          "Description": "What is a Git Branch?",
           "Example": "",
-          "Explanation": "A branch in Git is a separate line of development within a repository. Branches allow multiple developers to work on different parts of a project simultaneously without affecting the main branch."
+          "Explanation": "A Git branch is a separate line of development that allows you to work on different parts of your project without affecting the main codebase.\n\nThis is particularly useful for collaboration and managing multiple features, bug fixes, or experiments simultaneously.\n\nBranches help isolate changes, making it easier to review, test, and integrate them back into the main codebase."
         },
         {
           "StepNumber": 2,
           "Description": "Creating a Branch",
-          "Example": "git branch new-feature\ngit checkout new-feature",
-          "Explanation": "To create a new branch, use the `git branch` command followed by the name of the branch you want to create. For example, `git branch new-feature`. To switch to the new branch, use the `git checkout` command followed by the name of the branch, e.g. `git checkout new-feature`."
+          "Example": "git branch feature-login",
+          "Explanation": "To create a new branch, use the `git branch` command followed by the name of the branch you want to create."
         },
         {
           "StepNumber": 3,
-          "Description": "Merging Branches",
-          "Example": "git checkout main-branch\ngit merge new-feature",
-          "Explanation": "To merge changes from one branch into another, first checkout the branch you want to merge into and then use the `git merge` command followed by the name of the branch you want to merge. For example, `git checkout main-branch` followed by `git merge new-feature`. This will bring in the changes from the `new-feature` branch into the `main-branch`."
+          "Description": "Switching Branch",
+          "Example": "git checkout feature-login",
+          "Explanation": "To switch to the new branch, use the `git checkout` or `git switch` command followed by the name of the branch."
         },
         {
           "StepNumber": 4,
+          "Description": "[Shortcut] Create and Switch Branch",
+          "Example": "git checkout -b feature-signup",
+          "Explanation": "To create and switch to the new branch in one command, use the `git checkout -b <branch-name>`."
+        },
+        {
+          "StepNumber": 5,
+          "Description": "Merging Branch",
+          "Example": "git checkout main\ngit merge feature-login",
+          "Explanation": "Once you're satisfied with the changes you've made on your branch, it's time to merge those changes back into the main codebase.\n\nTo do this, switch to the main/master branch and use the `git merge` command."
+        },
+        {
+          "StepNumber": 6,
           "Description": "Deleting a Branch",
-          "Example": "git branch -d new-feature",
-          "Explanation": "To delete a branch, use the `git branch` command followed by the `-d` option and the name of the branch. For example, `git branch -d new-feature`. Make sure you have merged all the changes from the branch you want to delete before running this command."
+          "Example": "git branch -d feature-login",
+          "Explanation": "Make sure you have merged all the changes from the branch you want to delete before running this command.\n\nTo delete a branch, use the `git branch` command followed by the `-d` option .\n\nIf you need to forcefully delete a branch, use the `-D` flag instead of `-d`."
         }
       ]
     },
     {
-      "LessonTitle": "Git Staging",
+      "LessonTitle": "Collaboration",
       "Steps": [
         {
           "StepNumber": 1,
@@ -141,7 +153,7 @@
       ]
     },
     {
-      "LessonTitle": "GitHub",
+      "LessonTitle": "Advanced Git and GitHub",
       "Steps": [
         {
           "StepNumber": 1,
