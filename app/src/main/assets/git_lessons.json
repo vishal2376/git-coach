@@ -118,48 +118,48 @@
       ]
     },
     {
-      "LessonTitle": "Collaboration",
+      "LessonTitle": "Git Staging",
       "Steps": [
         {
           "StepNumber": 1,
           "Description": "What is Git Staging",
           "Example": "",
-          "Explanation": "Git staging is the process of preparing a set of changes to be committed to the Git repository. It allows you to select only the changes you want to include in the next commit, rather than committing all changes made to the repository."
+          "Explanation": "Git staging is the process of preparing a set of changes to be committed to the Git repository.\n\nIt allows you to select only the changes you want to include in the next commit, rather than committing all changes made to the repository."
         },
         {
           "StepNumber": 2,
           "Description": "Adding changes to the Git Staging Area",
           "Example": "git add file1.txt file2.txt",
-          "Explanation": "To add changes to the Git Staging Area, use the `git add` command followed by the names of the files you want to add. This will stage the changes, which means they will be included in the next commit."
+          "Explanation": "To add changes to the Git Staging Area, use the `git add` command followed by the names of the files you want to add.\n\nThis will stage the changes, which means they will be included in the next commit."
         },
         {
           "StepNumber": 3,
           "Description": "Viewing Staged and Unstaged Changes",
           "Example": "git diff\ngit diff --staged",
-          "Explanation": "To view the changes you have made to the Git repository, use the `git diff` command. To view only the staged changes, use the `git diff --staged` command. This will display a list of the changes that have been staged and are ready to be committed."
+          "Explanation": "To view the changes you have made to the Git repository, use the `git diff` command.\n\nTo view only the staged changes, use the `git diff --staged` command. This will display a list of the changes that have been staged and are ready to be committed."
         },
         {
           "StepNumber": 4,
           "Description": "Removing Changes from the Staging Area",
           "Example": "git reset file1.txt",
-          "Explanation": "To remove changes from the Git Staging Area, use the `git reset` command followed by the name of the file you want to remove. This will remove the changes from the Staging Area, but they will still exist in the working tree."
+          "Explanation": "To remove changes from the Git Staging Area, use the `git reset` command followed by the name of the file you want to remove.\n\nThis will remove the changes from the Staging Area, but they will still exist in the working tree."
         },
         {
           "StepNumber": 5,
           "Description": "Committing Staged Changes",
           "Example": "git commit -m 'Commit message'",
-          "Explanation": "To commit the changes in the Git Staging Area to the Git repository, use the `git commit` command followed by a commit message. This will create a new commit in the Git log with the changes you have staged."
+          "Explanation": "To commit the changes in the Git Staging Area to the Git repository, use the `git commit` command followed by a commit message.\n\nThis will create a new commit in the Git log with the changes you have staged."
         }
       ]
     },
     {
-      "LessonTitle": "Advanced Git and GitHub",
+      "LessonTitle": "GitHub",
       "Steps": [
         {
           "StepNumber": 1,
-          "Description": "What is GitHub",
+          "Description": "What is GitHub?",
           "Example": "",
-          "Explanation": "GitHub is a web-based platform for version control and collaboration that uses Git. It provides a centralized repository for projects, making it easier for teams to collaborate on code and track changes."
+          "Explanation": "GitHub is a web-based platform for version control and collaboration that uses Git.\n\nIt provides a centralized repository for projects, making it easier for teams to collaborate on code and track changes."
         },
         {
           "StepNumber": 2,
@@ -171,19 +171,19 @@
           "StepNumber": 3,
           "Description": "Creating a New GitHub Repository",
           "Example": "",
-          "Explanation": "To create a new GitHub repository, log in to your GitHub account and click on the 'New repository' button. You will be asked to provide a repository name, description, and select the repository's visibility (public or private)."
+          "Explanation": "1. Log in to your GitHub account.\n\n2. Click the \"+\" icon in the top-right corner and select \"New repository\"\n\n3. Provide a name for your repository, a brief description, and choose whether it's public (visible to anyone) or private (visible only to collaborators)\n\n4. Select additional options if needed, such as initializing the repository with a README file\n\n5. Click \"Create repository\""
         },
         {
           "StepNumber": 4,
           "Description": "Cloning a GitHub Repository",
-          "Example": "git clone https://github.com/user/repo.git",
-          "Explanation": "To clone a GitHub repository to your local machine, use the `git clone` command followed by the URL of the GitHub repository. This will download a copy of the repository to your computer, allowing you to work with the code locally."
+          "Example": "git clone <repository_link>",
+          "Explanation": "Cloning a repository means copying its contents to your local machine.\n\nThis allows you to make changes, track them with Git, and push those changes back to the repository.\n\nTo clone a GitHub repository to your local machine, use the `git clone` command followed by the URL of the GitHub repository.\n\n For Example: \"git clone https://github.com/firstcontributions/first-contributions.git\""
         },
         {
           "StepNumber": 5,
-          "Description": "Pushing Changes to a GitHub Repository",
-          "Example": "git push origin branch-name",
-          "Explanation": "To push changes to a GitHub repository, you need to have made the changes locally and committed them using Git. Then use the `git push` command followed by the name of the branch you want to push the changes to. This will upload the changes to the GitHub repository."
+          "Description": "Making Changes and Pushing to GitHub",
+          "Example": "git add .\ngit commit -m \"message\"\n\ngit push origin main",
+          "Explanation": "Once you've cloned a repository, you can make changes to the files just like you would with any other Git repository.\n\nAfter making changes, follow these steps to push your changes to GitHub.\n\nThen use the `git push` command followed by the name of the branch you want to push the changes to. This will upload the changes to the GitHub repository."
         }
       ]
     },
