@@ -32,6 +32,7 @@ Git+ Coach is a free education app designed to help users learn Git and its comm
 - Copy Git command on single tap
 - Clear explanations and examples of each command
 - Smooth animations for a great user experience
+- Cool Themes: Blue,Green, Red, and Yellow
 - No ADS or In-App Subscription
 
 ## Screenshots
