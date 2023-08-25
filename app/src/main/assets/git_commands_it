@@ -21,7 +21,7 @@
     {
       "name": "Commit Changes",
       "command": "git commit -m [message]",
-      "description": "Save changes made to the Git repository to the history with a specified commit message.",
+      "description": "Salva le modifiche apportate al repository Git nella cronologia con un messaggio di commit specificato.",
       "example": "git commit -m 'Adding important files'"
     },
     {
