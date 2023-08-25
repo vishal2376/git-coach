@@ -1,0 +1,3 @@
+files:
+  - source: /app/src/main/assets/*
+    translation: /app/src/main/assets/%file_name%_%two_letters_code%
