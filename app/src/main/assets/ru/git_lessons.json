@@ -1,154 +1,154 @@
 {
   "gitLessons": [
     {
-      "LessonTitle": "Introduction to Git",
+      "LessonTitle": "Введение в Git",
       "Steps": [
         {
           "StepNumber": 1,
-          "Description": "What is Git?",
+          "Description": "Что такое Git?",
           "Example": "",
-          "Explanation": "Git is a type of computer software known as a version control system. It helps people keep track of changes made to their computer code or other text-based files over time.\n\nIt's like a history book for your files, allowing you to see who made changes, what changes were made, and when they happened."
+          "Explanation": "Git - это компьютерное программное обеспечение, известное как система контроля версий. Это помогает людям отслеживать изменения в компьютерном коде или других текстовых файлах со временем.\n\nЭто похожа на историческую книгу для ваших файлов, позволяющую вам видеть, кто вносил изменения, какие изменения были внесены и когда они произошли."
         },
         {
           "StepNumber": 2,
-          "Description": "Why it is Used?",
+          "Description": "Почему он используется?",
           "Example": "",
-          "Explanation": "Git is used to make working on projects with other people much easier. It helps multiple people collaborate on the same files without accidentally overwriting each other's work.\n\nIt also allows you to experiment with new ideas without worrying about ruining what you've already done.\n\nAdditionally, Git is great for keeping backups and managing different versions of your files so you can always go back to a previous state if needed"
+          "Explanation": "Git используется для облегчения работы над проектами с другими людьми. Это помогает нескольким людям взаимодействовать в одном и том же файле, не случайно перезаписывая работу друг друга.\n\nЭто также позволяет экспериментировать с новыми идеями, не беспокоясь о том, что вы уже сделали.\n\nКроме того, Git отлично подходит для сохранения резервных копий и управления различными версиями ваших файлов, так что вы всегда можете вернуться в предыдущее состояние при необходимости"
         },
         {
           "StepNumber": 3,
           "Description": "Installing Git",
           "Example": "git --version",
-          "Explanation": "Go to the official Git website (https://git-scm.com/) and find the download section.\n\nChoose the version of Git that matches your computer's operating system (like Windows, macOS, or Linux).\n\nOnce the download is complete, open the downloaded file and follow the installation instructions.\n\nAfter the installation is done, you can verify that Git is installed by opening a terminal or command prompt and typing"
+          "Explanation": "Перейдите на официальный Git сайт (https://git-scm.com/) и найдите раздел загрузки .\n\nВыберите версию Git, которая соответствует операционной системе вашего компьютера (например, Windows, macOS или Linux).\n\nПосле завершения загрузки откройте скачанный файл и следуйте инструкциям по установке.\n\nПосле установки вы можете проверить, установлен ли Git, открыв терминал или командную строку и набрав"
         },
         {
           "StepNumber": 4,
-          "Description": "Setting up Git on your computer",
+          "Description": "Настройка Git на вашем компьютере",
           "Example": "git config --global user.name 'Your Name'\ngit config --global user.email 'Your Email ID'",
-          "Explanation": "To use Git, you first need to configure it on your computer by setting your username and email address. This information will be attached to every commit you make in Git."
+          "Explanation": "Чтобы использовать Git, необходимо сначала настроить его на вашем компьютере, установив имя пользователя и адрес электронной почты. Эта информация будет прикреплена к каждому коммиту, который вы делаете в Git."
         },
         {
           "StepNumber": 5,
-          "Description": "😕 Are Git and Github same?",
+          "Description": "😕 Является ли Git и Github одинаковым?",
           "Example": "",
-          "Explanation": "No, Git and GitHub are not the same, but they are related concepts \n\nGit is the core technology that manages version control locally.\n\nGitHub is a platform that makes it easy to store, share, and collaborate on Git repositories over the internet. Other similar platforms include GitLab and Bitbucket."
+          "Explanation": "Нет, Git и GitHub не одинаковы, но они связаны с понятиями \n\nGit является базовой технологией, которая управляет версией управления локально.\n\nGitHub — это платформа, которая позволяет легко хранить, делиться и сотрудничать в репозиториях Git через интернет. Другие подобные платформы включают GitLab и Bitbucket."
         }
       ]
     },
     {
-      "LessonTitle": "Git Basics",
+      "LessonTitle": "Основы Git",
       "Steps": [
         {
           "StepNumber": 1,
-          "Description": "Initializing a Project",
+          "Description": "Инициализация проекта",
           "Example": "git init",
-          "Explanation": "After installing Git, the first step is to set up version control for your project.\n\nOpen your command-line terminal or Git Bash (if you're on Windows) and navigate to the directory where you want to start your project.\n\nUse the following command to initialize a new Git repository"
+          "Explanation": "После установки Git первым шагом является настройка контроля версий для вашего проекта.\n\nОткройте терминал командной строки или Git Bash (если вы в Windows) и перейдите в каталог, где вы хотите запустить ваш проект.\n\nИспользуйте следующую команду для инициализации нового Git-репозитория"
         },
         {
           "StepNumber": 2,
-          "Description": "Creating Files and Adding Text",
-          "Example": "Hello, This is my first file",
-          "Explanation": "You can use any text editor you prefer, such as Notepad,Vim,Sublime or Visual Studio Code\n\nCreate a new file 'hello.txt' and then write the following text and save the file"
+          "Description": "Создание файлов и добавление текста",
+          "Example": "Здравствуйте, это мой первый файл",
+          "Explanation": "Вы можете использовать любой текстовый редактор, который вы предпочитаете, например, блокнот,Vim,Sublime или Visual Studio Code\n\nСоздайте новый файл 'привет. xt' и затем записать следующий текст и сохранить файл"
         },
         {
           "StepNumber": 3,
-          "Description": "Adding and Tracking Files",
-          "Example": "git add hello.txt",
-          "Explanation": "Once you've created and edited your file, it's time to start tracking it with Git.\n\nTo do this, use the 'git add <file name>' command."
+          "Description": "Добавление и отслеживание файлов",
+          "Example": "git добавить hello.txt",
+          "Explanation": "Как только вы создаете и редактируете файл, пришло время начать отслеживать его с помощью Git.\n\nДля этого используйте команду git add <file name>."
         },
         {
           "StepNumber": 4,
-          "Description": "Checking Status",
+          "Description": "Проверка статуса",
           "Example": "git status",
-          "Explanation": "At any point, you can check the status of your repository to see which files are tracked, modified, or staged for the next commit.\n\nThe 'git status' command provides you with this information."
+          "Explanation": "В любой момент вы можете проверить статус вашего репозитория, чтобы увидеть, какие файлы отслеживаются, изменяются или поставлены для следующего коммита.\n\nКоманда git status' предоставляет вам эту информацию."
         },
         {
           "StepNumber": 5,
-          "Description": "Making Commits",
-          "Example": "git commit -m \"my first commit\"",
+          "Description": "Создание коммитов",
+          "Example": "git commit -m \"мои первые коммиты\"",
           "Explanation": "A commit in Git represents a snapshot of your project at a certain point in time.\n\nIt's a way to record your changes and provide a meaningful description of what you've done.\n\nTo make a commit, you use the following command"
         },
         {
           "StepNumber": 6,
-          "Description": "What Next?",
+          "Description": "Что дальше?",
           "Example": "",
-          "Explanation": "🎉 Congratulations! You've covered the basics of Git.\n\nAs you continue your journey with Git, you'll learn more about branching, merging,etc.\n\nAnd don't forget that the Git documentation and online tutorials are excellent resources to deepen your understanding."
+          "Explanation": "🎉 Поздравляем! Вы покрыли основы Git.\n\nКак только вы продолжите свое путешествие с Git, вы узнаете больше о ветке, слиянии и т.д.\n\nИ не забывайте, что документация по Git и онлайн-учебники являются отличными ресурсами для углубления вашего понимания."
         }
       ]
     },
     {
-      "LessonTitle": "Git Branches",
+      "LessonTitle": "Git ветки",
       "Steps": [
         {
           "StepNumber": 1,
-          "Description": "What is a Git Branch?",
+          "Description": "Что такое Git Филиал?",
           "Example": "",
-          "Explanation": "A Git branch is a separate line of development that allows you to work on different parts of your project without affecting the main codebase.\n\nThis is particularly useful for collaboration and managing multiple features, bug fixes, or experiments simultaneously.\n\nBranches help isolate changes, making it easier to review, test, and integrate them back into the main codebase."
+          "Explanation": "Ветка Git - это отдельная линия разработки, позволяющая работать с различными частями вашего проекта, не затрагивая основной кодовой базы.\n\nЭто особенно полезно для совместной работы и управления множественными функциями, исправления ошибок или эксперименты одновременно.\n\nВетки помогают изолировать изменения, облегчая проверку и интеграцию их в базовую кодовую базу."
         },
         {
           "StepNumber": 2,
-          "Description": "Creating a Branch",
-          "Example": "git branch feature-login",
-          "Explanation": "To create a new branch, use the `git branch` command followed by the name of the branch you want to create."
+          "Description": "Создание ветки",
+          "Example": "Вход в Git ветку",
+          "Explanation": "Чтобы создать новую ветку, используйте команду `git branch`, а затем название ветки, которую вы хотите создать."
         },
         {
           "StepNumber": 3,
-          "Description": "Switching Branch",
-          "Example": "git checkout feature-login",
-          "Explanation": "To switch to the new branch, use the `git checkout` or `git switch` command followed by the name of the branch."
+          "Description": "Переключение ветки",
+          "Example": "Вход в систему git",
+          "Explanation": "Чтобы переключиться на новую ветку, используйте команду `git checkout` или `git switch` с именем ветки."
         },
         {
           "StepNumber": 4,
-          "Description": "[Shortcut] Create and Switch Branch",
-          "Example": "git checkout -b feature-signup",
-          "Explanation": "To create and switch to the new branch in one command, use the `git checkout -b <branch-name>`."
+          "Description": "[Shortcut] Создание и Переключение ветки",
+          "Example": "git checkout -b функции регистрации",
+          "Explanation": "Чтобы создать и переключиться на новую ветку в одной команде, используйте `git checkout -b <branch-name>`."
         },
         {
           "StepNumber": 5,
-          "Description": "Merging Branch",
+          "Description": "Объединение ветки",
           "Example": "git checkout main\ngit merge feature-login",
-          "Explanation": "Once you're satisfied with the changes you've made on your branch, it's time to merge those changes back into the main codebase.\n\nTo do this, switch to the main/master branch and use the `git merge` command."
+          "Explanation": "Как только вы удовлетворены изменениями, сделанными в вашей ветке, пришло время объединить эти изменения обратно в основную базу кода.\n\nДля этого переключитесь на главную / главную ветку и используйте команду `git merge`."
         },
         {
           "StepNumber": 6,
-          "Description": "Deleting a Branch",
-          "Example": "git branch -d feature-login",
-          "Explanation": "Make sure you have merged all the changes from the branch you want to delete before running this command.\n\nTo delete a branch, use the `git branch` command followed by the `-d` option .\n\nIf you need to forcefully delete a branch, use the `-D` flag instead of `-d`."
+          "Description": "Удаление ветки",
+          "Example": "git ветка -d логин",
+          "Explanation": "Убедитесь, что вы объединили все изменения из ветки, которую вы хотите удалить, перед запуском этой команды.\n\nДля удаления ветки, используйте команду `git branch` после опции `-d` .\n\nЕсли вам нужно принудительно удалить ветку, используйте флаг `-D` вместо `-d`."
         }
       ]
     },
     {
-      "LessonTitle": "Git Staging",
+      "LessonTitle": "Постановка Git",
       "Steps": [
         {
           "StepNumber": 1,
-          "Description": "What is Git Staging",
+          "Description": "Что такое Git отладки",
           "Example": "",
-          "Explanation": "Git staging is the process of preparing a set of changes to be committed to the Git repository.\n\nIt allows you to select only the changes you want to include in the next commit, rather than committing all changes made to the repository."
+          "Explanation": "Git staging - это процесс подготовки набора изменений, которые должны быть сделаны в Git репозиторий.\n\nЭто позволяет выбрать только изменения, которые вы хотите включить в следующий коммит, вместо того, чтобы вносить все изменения, внесенные в репозиторий."
         },
         {
           "StepNumber": 2,
-          "Description": "Adding changes to the Git Staging Area",
-          "Example": "git add file1.txt file2.txt",
-          "Explanation": "To add changes to the Git Staging Area, use the `git add` command followed by the names of the files you want to add.\n\nThis will stage the changes, which means they will be included in the next commit."
+          "Description": "Добавление изменений в область разбивки Git",
+          "Example": "git добавить file1.txt file2.txt",
+          "Explanation": "Чтобы добавить изменения в Git Staging Area, используйте команду `git add` с именами файлов, которые вы хотите добавить.\n\nЭто сделает этап изменений, что означает, что они будут включены в следующий коммит."
         },
         {
           "StepNumber": 3,
-          "Description": "Viewing Staged and Unstaged Changes",
-          "Example": "git diff\ngit diff --staged",
-          "Explanation": "To view the changes you have made to the Git repository, use the `git diff` command.\n\nTo view only the staged changes, use the `git diff --staged` command. This will display a list of the changes that have been staged and are ready to be committed."
+          "Description": "Просмотр этапов и непредвиденных изменений",
+          "Example": "diff git\ngit diff --staged",
+          "Explanation": "Для просмотра изменений, внесенных в Git репозиторий, используйте команду `git diff`.\n\nЧтобы просмотреть только сделанные изменения, используйте команду `git diff --staged`. Отображается список изменений, которые были спланированы и готовы к исполнению."
         },
         {
           "StepNumber": 4,
-          "Description": "Removing Changes from the Staging Area",
+          "Description": "Удаление изменений из промежуточной зоны",
           "Example": "git reset file1.txt",
           "Explanation": "To remove changes from the Git Staging Area, use the `git reset` command followed by the name of the file you want to remove.\n\nThis will remove the changes from the Staging Area, but they will still exist in the working tree."
         },
         {
           "StepNumber": 5,
-          "Description": "Committing Staged Changes",
-          "Example": "git commit -m 'Commit message'",
-          "Explanation": "To commit the changes in the Git Staging Area to the Git repository, use the `git commit` command followed by a commit message.\n\nThis will create a new commit in the Git log with the changes you have staged."
+          "Description": "Фиксация изменений",
+          "Example": "git commit -m 'Сообщение коммита'",
+          "Explanation": "Чтобы зафиксировать изменения в Git Staging Area в Git repository, используйте команду `git commit` после сообщения коммита.\n\nЭто создаст новый коммит в журнале Git с изменениями, которые вы отредактировали."
         }
       ]
     },
@@ -157,33 +157,33 @@
       "Steps": [
         {
           "StepNumber": 1,
-          "Description": "What is GitHub?",
+          "Description": "Что такое GitHub?",
           "Example": "",
-          "Explanation": "GitHub is a web-based platform for version control and collaboration that uses Git.\n\nIt provides a centralized repository for projects, making it easier for teams to collaborate on code and track changes."
+          "Explanation": "GitHub — это веб-платформа для управления версиями и взаимодействия с Git.\n\nЭто обеспечивает централизованный репозиторий для проектов, что облегчает взаимодействие команд по коду и отслеживанию изменений."
         },
         {
           "StepNumber": 2,
-          "Description": "Creating a GitHub Account",
+          "Description": "Создание учетной записи GitHub",
           "Example": "",
-          "Explanation": "To start using GitHub, you need to create a GitHub account by visiting the GitHub website and following the sign-up process. You will be asked to provide your username, email address, and password."
+          "Explanation": "Чтобы начать использовать GitHub, вам нужно создать учетную запись GitHub, посетив веб-сайт GitHub и следуя за процессом регистрации. Вам будет предложено указать имя пользователя, адрес электронной почты и пароль."
         },
         {
           "StepNumber": 3,
-          "Description": "Creating a New GitHub Repository",
+          "Description": "Создание нового репозитория GitHub",
           "Example": "",
           "Explanation": "1. Log in to your GitHub account.\n\n2. Click the \"+\" icon in the top-right corner and select \"New repository\"\n\n3. Provide a name for your repository, a brief description, and choose whether it's public (visible to anyone) or private (visible only to collaborators)\n\n4. Select additional options if needed, such as initializing the repository with a README file\n\n5. Click \"Create repository\""
         },
         {
           "StepNumber": 4,
-          "Description": "Cloning a GitHub Repository",
+          "Description": "Клонирование GitHub репозитория",
           "Example": "git clone <repository_link>",
-          "Explanation": "Cloning a repository means copying its contents to your local machine.\n\nThis allows you to make changes, track them with Git, and push those changes back to the repository.\n\nTo clone a GitHub repository to your local machine, use the `git clone` command followed by the URL of the GitHub repository.\n\n For Example: \"git clone https://github.com/firstcontributions/first-contributions.git\""
+          "Explanation": "Клонирование репозитория означает копирование его содержимого на локальную машину.\n\nЭто позволяет вносить изменения, отслеживать их Git и отправлять эти изменения обратно в репозиторий.\n\nЧтобы скопировать GitHub репозиторий на локальную машину, используйте команду `git clone` с URL-адресом репозитория GitHub.\n\n Для примера: \"git clone https://github.com/firstcontributions/first-contributions.git\""
         },
         {
           "StepNumber": 5,
-          "Description": "Making Changes and Pushing to GitHub",
+          "Description": "Создание изменений и отправка на GitHub",
           "Example": "git add .\ngit commit -m \"message\"\n\ngit push origin main",
-          "Explanation": "Once you've cloned a repository, you can make changes to the files just like you would with any other Git repository.\n\nAfter making changes, follow these steps to push your changes to GitHub.\n\nThen use the `git push` command followed by the name of the branch you want to push the changes to. This will upload the changes to the GitHub repository."
+          "Explanation": "После клонирования репозитория, вы можете вносить изменения в файлы так же, как и в любом другом Git репозитории.\n\nПосле внесения изменений выполните следующие шаги, чтобы отправить свои изменения на GitHub.\n\nЗатем используйте команду `git push` после названия ветки, в которую вы хотите внести изменения. Это загрузит изменения в GitHub."
         }
       ]
     },
@@ -192,33 +192,33 @@
       "Steps": [
         {
           "StepNumber": 1,
-          "Description": "Creating a new Git repository locally",
+          "Description": "Создание нового Git-репозитория локально",
           "Example": "git init my-new-project",
-          "Explanation": "To start using Git for a new project, you need to create a new Git repository. You can do this by navigating to your project's directory in the terminal and running the `git init` command."
+          "Explanation": "Чтобы начать использовать Git для нового проекта, необходимо создать Git репозиторий. Вы можете сделать это, перейдя в директорию проекта в терминале и запустив команду `git init`."
         },
         {
           "StepNumber": 2,
-          "Description": "Adding files to the Git repository",
+          "Description": "Добавление файлов в Git-репозиторий",
           "Example": "git add .\ngit commit -m 'Initial commit'",
-          "Explanation": "To add files to the Git repository, use the `git add` command followed by the file names or `.` to add all files in the directory. Then use the `git commit` command to create a new commit with a message describing the changes you've made."
+          "Explanation": "Чтобы добавить файлы в Git репозиторий, используйте команду `git add` после имени файла или `. , чтобы добавить все файлы в каталог. Затем используйте команду `git commit` для создания нового коммита с сообщением, описывающим внесенные изменения."
         },
         {
           "StepNumber": 3,
-          "Description": "Creating a new GitHub repository",
+          "Description": "Создание нового GitHub репозитория",
           "Example": "",
-          "Explanation": "To create a new GitHub repository, log in to your GitHub account and click on the 'New repository' button. You will be asked to provide a repository name, description, and select the repository's visibility (public or private)."
+          "Explanation": "Чтобы создать новый репозиторий GitHub, войдите в вашу учетную запись на GitHub и нажмите кнопку «Новый репозиторий». Вам будет предложено предоставить имя репозитория, описание и выбрать видимость репозитория (публичная или частная)."
         },
         {
           "StepNumber": 4,
-          "Description": "Adding the GitHub repository as a remote",
+          "Description": "Добавление GitHub репозитория в качестве пульта",
           "Example": "git remote add origin https://github.com/user/repo.git",
-          "Explanation": "To link the local Git repository with the GitHub repository, you need to add the GitHub repository as a remote in Git. You can do this using the `git remote add` command followed by the name you want to give the remote (typically `origin`) and the URL of the GitHub repository."
+          "Explanation": "Чтобы связать локальный Git-репозиторий с GitHub, вам нужно добавить GitHub репозиторий в Git. Вы можете сделать это, используя команду `git remote add` после имени вы хотите дать пульт (обычно `origin`) и URL-адрес репозитория GitHub."
         },
         {
           "StepNumber": 5,
-          "Description": "Pushing the changes to the GitHub repository",
-          "Example": "git push -u origin master",
-          "Explanation": "To push the changes in the local Git repository to the GitHub repository, use the `git push` command followed by the name of the remote (`origin`) and the branch you want to push the changes to (`master`). The `-u` option sets the remote and branch as the default for future `git push` commands."
+          "Description": "Отправка изменений в GitHub репозиторий",
+          "Example": "git push -u мастер происхождения",
+          "Explanation": "Для переноса изменений в локальный Git репозиторий в GitHub репозиторий, используйте команду `git push` после имени пульта (`origin`) и ветки, на которую вы хотите нажать изменения (`master`). Параметр `-u` устанавливает удаленную и ветку по умолчанию для будущих команд `git push`."
         }
       ]
     }
