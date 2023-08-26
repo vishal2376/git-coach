@@ -1,0 +1,226 @@
+{
+  "gitLessons": [
+    {
+      "LessonTitle": "Introduction to Git",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "What is Git?",
+          "Example": "",
+          "Explanation": "Git is a type of computer software known as a version control system. It helps people keep track of changes made to their computer code or other text-based files over time.\n\nIt's like a history book for your files, allowing you to see who made changes, what changes were made, and when they happened."
+        },
+        {
+          "StepNumber": 2,
+          "Description": "Why it is Used?",
+          "Example": "",
+          "Explanation": "Git is used to make working on projects with other people much easier. It helps multiple people collaborate on the same files without accidentally overwriting each other's work.\n\nIt also allows you to experiment with new ideas without worrying about ruining what you've already done.\n\nAdditionally, Git is great for keeping backups and managing different versions of your files so you can always go back to a previous state if needed"
+        },
+        {
+          "StepNumber": 3,
+          "Description": "Installing Git",
+          "Example": "git --version",
+          "Explanation": "Go to the official Git website (https://git-scm.com/) and find the download section.\n\nChoose the version of Git that matches your computer's operating system (like Windows, macOS, or Linux).\n\nOnce the download is complete, open the downloaded file and follow the installation instructions.\n\nAfter the installation is done, you can verify that Git is installed by opening a terminal or command prompt and typing"
+        },
+        {
+          "StepNumber": 4,
+          "Description": "Setting up Git on your computer",
+          "Example": "git config --global user.name 'Your Name'\ngit config --global user.email 'Your Email ID'",
+          "Explanation": "To use Git, you first need to configure it on your computer by setting your username and email address. This information will be attached to every commit you make in Git."
+        },
+        {
+          "StepNumber": 5,
+          "Description": "😕 Are Git and Github same?",
+          "Example": "",
+          "Explanation": "No, Git and GitHub are not the same, but they are related concepts \n\nGit is the core technology that manages version control locally.\n\nGitHub is a platform that makes it easy to store, share, and collaborate on Git repositories over the internet. Other similar platforms include GitLab and Bitbucket."
+        }
+      ]
+    },
+    {
+      "LessonTitle": "Git Basics",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "Initializing a Project",
+          "Example": "git init",
+          "Explanation": "After installing Git, the first step is to set up version control for your project.\n\nOpen your command-line terminal or Git Bash (if you're on Windows) and navigate to the directory where you want to start your project.\n\nUse the following command to initialize a new Git repository"
+        },
+        {
+          "StepNumber": 2,
+          "Description": "Creating Files and Adding Text",
+          "Example": "Hello, This is my first file",
+          "Explanation": "You can use any text editor you prefer, such as Notepad,Vim,Sublime or Visual Studio Code\n\nCreate a new file 'hello.txt' and then write the following text and save the file"
+        },
+        {
+          "StepNumber": 3,
+          "Description": "Adding and Tracking Files",
+          "Example": "git add hello.txt",
+          "Explanation": "Once you've created and edited your file, it's time to start tracking it with Git.\n\nTo do this, use the 'git add <file name>' command."
+        },
+        {
+          "StepNumber": 4,
+          "Description": "Checking Status",
+          "Example": "git status",
+          "Explanation": "At any point, you can check the status of your repository to see which files are tracked, modified, or staged for the next commit.\n\nThe 'git status' command provides you with this information."
+        },
+        {
+          "StepNumber": 5,
+          "Description": "Making Commits",
+          "Example": "git commit -m \"my first commit\"",
+          "Explanation": "A commit in Git represents a snapshot of your project at a certain point in time.\n\nIt's a way to record your changes and provide a meaningful description of what you've done.\n\nTo make a commit, you use the following command"
+        },
+        {
+          "StepNumber": 6,
+          "Description": "What Next?",
+          "Example": "",
+          "Explanation": "🎉 Congratulations! You've covered the basics of Git.\n\nAs you continue your journey with Git, you'll learn more about branching, merging,etc.\n\nAnd don't forget that the Git documentation and online tutorials are excellent resources to deepen your understanding."
+        }
+      ]
+    },
+    {
+      "LessonTitle": "Git Branches",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "What is a Git Branch?",
+          "Example": "",
+          "Explanation": "A Git branch is a separate line of development that allows you to work on different parts of your project without affecting the main codebase.\n\nThis is particularly useful for collaboration and managing multiple features, bug fixes, or experiments simultaneously.\n\nBranches help isolate changes, making it easier to review, test, and integrate them back into the main codebase."
+        },
+        {
+          "StepNumber": 2,
+          "Description": "Creating a Branch",
+          "Example": "git branch feature-login",
+          "Explanation": "To create a new branch, use the `git branch` command followed by the name of the branch you want to create."
+        },
+        {
+          "StepNumber": 3,
+          "Description": "Switching Branch",
+          "Example": "git checkout feature-login",
+          "Explanation": "To switch to the new branch, use the `git checkout` or `git switch` command followed by the name of the branch."
+        },
+        {
+          "StepNumber": 4,
+          "Description": "[Shortcut] Create and Switch Branch",
+          "Example": "git checkout -b feature-signup",
+          "Explanation": "To create and switch to the new branch in one command, use the `git checkout -b <branch-name>`."
+        },
+        {
+          "StepNumber": 5,
+          "Description": "Merging Branch",
+          "Example": "git checkout main\ngit merge feature-login",
+          "Explanation": "Once you're satisfied with the changes you've made on your branch, it's time to merge those changes back into the main codebase.\n\nTo do this, switch to the main/master branch and use the `git merge` command."
+        },
+        {
+          "StepNumber": 6,
+          "Description": "Deleting a Branch",
+          "Example": "git branch -d feature-login",
+          "Explanation": "Make sure you have merged all the changes from the branch you want to delete before running this command.\n\nTo delete a branch, use the `git branch` command followed by the `-d` option .\n\nIf you need to forcefully delete a branch, use the `-D` flag instead of `-d`."
+        }
+      ]
+    },
+    {
+      "LessonTitle": "Git Staging",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "What is Git Staging",
+          "Example": "",
+          "Explanation": "Git staging is the process of preparing a set of changes to be committed to the Git repository.\n\nIt allows you to select only the changes you want to include in the next commit, rather than committing all changes made to the repository."
+        },
+        {
+          "StepNumber": 2,
+          "Description": "Adding changes to the Git Staging Area",
+          "Example": "git add file1.txt file2.txt",
+          "Explanation": "To add changes to the Git Staging Area, use the `git add` command followed by the names of the files you want to add.\n\nThis will stage the changes, which means they will be included in the next commit."
+        },
+        {
+          "StepNumber": 3,
+          "Description": "Viewing Staged and Unstaged Changes",
+          "Example": "git diff\ngit diff --staged",
+          "Explanation": "To view the changes you have made to the Git repository, use the `git diff` command.\n\nTo view only the staged changes, use the `git diff --staged` command. This will display a list of the changes that have been staged and are ready to be committed."
+        },
+        {
+          "StepNumber": 4,
+          "Description": "Removing Changes from the Staging Area",
+          "Example": "git reset file1.txt",
+          "Explanation": "To remove changes from the Git Staging Area, use the `git reset` command followed by the name of the file you want to remove.\n\nThis will remove the changes from the Staging Area, but they will still exist in the working tree."
+        },
+        {
+          "StepNumber": 5,
+          "Description": "Committing Staged Changes",
+          "Example": "git commit -m 'Commit message'",
+          "Explanation": "To commit the changes in the Git Staging Area to the Git repository, use the `git commit` command followed by a commit message.\n\nThis will create a new commit in the Git log with the changes you have staged."
+        }
+      ]
+    },
+    {
+      "LessonTitle": "GitHub",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "What is GitHub?",
+          "Example": "",
+          "Explanation": "GitHub is a web-based platform for version control and collaboration that uses Git.\n\nIt provides a centralized repository for projects, making it easier for teams to collaborate on code and track changes."
+        },
+        {
+          "StepNumber": 2,
+          "Description": "Creating a GitHub Account",
+          "Example": "",
+          "Explanation": "To start using GitHub, you need to create a GitHub account by visiting the GitHub website and following the sign-up process. You will be asked to provide your username, email address, and password."
+        },
+        {
+          "StepNumber": 3,
+          "Description": "Creating a New GitHub Repository",
+          "Example": "",
+          "Explanation": "1. Log in to your GitHub account.\n\n2. Click the \"+\" icon in the top-right corner and select \"New repository\"\n\n3. Provide a name for your repository, a brief description, and choose whether it's public (visible to anyone) or private (visible only to collaborators)\n\n4. Select additional options if needed, such as initializing the repository with a README file\n\n5. Click \"Create repository\""
+        },
+        {
+          "StepNumber": 4,
+          "Description": "Cloning a GitHub Repository",
+          "Example": "git clone <repository_link>",
+          "Explanation": "Cloning a repository means copying its contents to your local machine.\n\nThis allows you to make changes, track them with Git, and push those changes back to the repository.\n\nTo clone a GitHub repository to your local machine, use the `git clone` command followed by the URL of the GitHub repository.\n\n For Example: \"git clone https://github.com/firstcontributions/first-contributions.git\""
+        },
+        {
+          "StepNumber": 5,
+          "Description": "Making Changes and Pushing to GitHub",
+          "Example": "git add .\ngit commit -m \"message\"\n\ngit push origin main",
+          "Explanation": "Once you've cloned a repository, you can make changes to the files just like you would with any other Git repository.\n\nAfter making changes, follow these steps to push your changes to GitHub.\n\nThen use the `git push` command followed by the name of the branch you want to push the changes to. This will upload the changes to the GitHub repository."
+        }
+      ]
+    },
+    {
+      "LessonTitle": "Git to GitHub Workflow using Terminal",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "Creating a new Git repository locally",
+          "Example": "git init my-new-project",
+          "Explanation": "To start using Git for a new project, you need to create a new Git repository. You can do this by navigating to your project's directory in the terminal and running the `git init` command."
+        },
+        {
+          "StepNumber": 2,
+          "Description": "Adding files to the Git repository",
+          "Example": "git add .\ngit commit -m 'Initial commit'",
+          "Explanation": "To add files to the Git repository, use the `git add` command followed by the file names or `.` to add all files in the directory. Then use the `git commit` command to create a new commit with a message describing the changes you've made."
+        },
+        {
+          "StepNumber": 3,
+          "Description": "Creating a new GitHub repository",
+          "Example": "",
+          "Explanation": "To create a new GitHub repository, log in to your GitHub account and click on the 'New repository' button. You will be asked to provide a repository name, description, and select the repository's visibility (public or private)."
+        },
+        {
+          "StepNumber": 4,
+          "Description": "Adding the GitHub repository as a remote",
+          "Example": "git remote add origin https://github.com/user/repo.git",
+          "Explanation": "To link the local Git repository with the GitHub repository, you need to add the GitHub repository as a remote in Git. You can do this using the `git remote add` command followed by the name you want to give the remote (typically `origin`) and the URL of the GitHub repository."
+        },
+        {
+          "StepNumber": 5,
+          "Description": "Pushing the changes to the GitHub repository",
+          "Example": "git push -u origin master",
+          "Explanation": "To push the changes in the local Git repository to the GitHub repository, use the `git push` command followed by the name of the remote (`origin`) and the branch you want to push the changes to (`master`). The `-u` option sets the remote and branch as the default for future `git push` commands."
+        }
+      ]
+    }
+  ]
+}
