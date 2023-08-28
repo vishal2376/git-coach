@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Git+ Coach</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Ciao frammento vuoto</string>
+    <string name="intialize_git">Intializza Git</string>
+    <string name="git_desc">Inizializza un nuovo repository Git nella directory corrente o specificata.</string>
+    <string name="git_init">git init</string>
+    <string name="search_command">Comando di ricerca...</string>
+    <string name="tagline">Aumenta la tua conoscenza di Git</string>
+    <string name="one">1</string>
+    <string name="lesson_description">Che cos’è Git e perché è usato</string>
+    <string name="lesson_explanation">Git è un sistema di controllo di versione distribuito utilizzato per gestire e monitorare le modifiche al codice sorgente. Aiuta gli sviluppatori a collaborare ai progetti e a mantenere una cronologia di tutte le modifiche apportate al codice.</string>
+    <string name="lesson_example">git config --global user.name \'John Doe\'\ngit config --global user.email \'johndoe@example.com\'</string>
+    <string name="git_progress">Progresso Git</string>
+    <string name="tagline2">Trasforma le tue abilità Git</string>
+    <string name="complete_lesson">Completa La Lezione</string>
+    <string name="report_bug">Segnala Un Bug</string>
+    <string name="suggestions">Suggerimenti</string>
+    <string name="rate_us">Votaci</string>
+    <string name="share_app">Condividi App</string>
+    <string name="app_version">v%1$s</string>
+    <string name="open">apri</string>
+    <string name="close">chiudi</string>
+    <string name="example">Esempio</string>
+    <string name="daily_notification">Notifica Giornaliera (%1$s)</string>
+    <string name="source_code">Codice Sorgente</string>
+    <string name="developer">Contatta Sviluppatore</string>
+    <string name="dialog_text">Siamo spiacenti, si è verificato un errore imprevisto.\n\nVuoi inviare un rapporto di crash allo sviluppatore?</string>
+    <string name="dialog_title">Rapporto Crash</string>
+    <string name="dialog_positive">Invia</string>
+    <string name="dialog_negative">Annulla</string>
+    <string name="font_size_setting">Impostazioni Dimensione Carattere</string>
+    <string name="preview">Anteprima</string>
+    <string name="title">Titolo</string>
+    <string name="command">Comando</string>
+    <string name="description">Descrizione</string>
+    <string name="save">Salva</string>
+    <string name="reset_to_default">Reset to default</string>
+</resources>

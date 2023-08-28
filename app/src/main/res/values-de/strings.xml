@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Git+ Coach</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hallo blank fragment</string>
+    <string name="intialize_git">Git intialisieren</string>
+    <string name="git_desc">Initialisieren Sie ein neues Git-Repository im aktuellen oder angegebenen Verzeichnis.</string>
+    <string name="git_init">git init</string>
+    <string name="search_command">Befehl suchen...</string>
+    <string name="tagline">Vergrößern Sie Ihr Git-Wissen</string>
+    <string name="one">1</string>
+    <string name="lesson_description">Was ist Git und warum wird es verwendet</string>
+    <string name="lesson_explanation">Git ist ein verteiltes Versionskontrollsystem, das zur Verwaltung und Verfolgung von Änderungen am Quelltext verwendet wird. Es hilft Entwicklern bei der Zusammenarbeit an Projekten und der Historie aller Änderungen am Code.</string>
+    <string name="lesson_example">git config --global user.name \'John Doe\'\ngit config --global user.email \'johndoe@example.com\'</string>
+    <string name="git_progress">Git Fortschritt</string>
+    <string name="tagline2">Verwandeln Sie Ihre Git-Fähigkeiten</string>
+    <string name="complete_lesson">Absolviere Lektion</string>
+    <string name="report_bug">Fehler melden</string>
+    <string name="suggestions">Vorschläge</string>
+    <string name="rate_us">Bewerte uns</string>
+    <string name="share_app">App teilen</string>
+    <string name="app_version">v%1$s</string>
+    <string name="open">öffnen</string>
+    <string name="close">schließen</string>
+    <string name="example">Beispiel</string>
+    <string name="daily_notification">Tägliche Benachrichtigung (%1$s)</string>
+    <string name="source_code">Quellcode</string>
+    <string name="developer">Entwickler kontaktieren</string>
+    <string name="dialog_text">Leider ist ein unerwarteter Fehler aufgetreten.\n\nMöchten Sie einen Absturzbericht an den Entwickler senden?</string>
+    <string name="dialog_title">Absturzbericht</string>
+    <string name="dialog_positive">Senden</string>
+    <string name="dialog_negative">Abbrechen</string>
+    <string name="font_size_setting">Schriftgrößeneinstellung</string>
+    <string name="preview">Vorschau</string>
+    <string name="title">Titel</string>
+    <string name="command">Befehl</string>
+    <string name="description">Beschreibung</string>
+    <string name="save">Speichern</string>
+    <string name="reset_to_default">Reset to default</string>
+</resources>
