@@ -13,7 +13,7 @@
           "StepNumber": 2,
           "Description": "Por que é usado?",
           "Example": "",
-          "Explanation": "Git is used to make working on projects with other people much easier. It helps multiple people collaborate on the same files without accidentally overwriting each other's work.\n\nIt also allows you to experiment with new ideas without worrying about ruining what you've already done.\n\nAdditionally, Git is great for keeping backups and managing different versions of your files so you can always go back to a previous state if needed"
+          "Explanation": "Git é usado para facilitar muito mais o trabalho em projetos com outras pessoas. Ele ajuda várias pessoas a colaborar nos mesmos arquivos sem substituir acidentalmente o trabalho umas das outras.\n\nIsso também permite que você experimente novas idéias sem se preocupar em arruinar o que você já fez.\n\nAlém disso, Git é ótimo para manter backups e gerenciar diferentes versões de seus arquivos para que você sempre possa voltar ao estado anterior, se necessário"
         },
         {
           "StepNumber": 3,
@@ -54,7 +54,7 @@
           "StepNumber": 3,
           "Description": "Adicionar e Rastrear Arquivos",
           "Example": "git add hello.txt",
-          "Explanation": "Once you've created and edited your file, it's time to start tracking it with Git.\n\nTo do this, use the 'git add <file name>' command."
+          "Explanation": "Depois de criar e editar o seu arquivo, é hora de começar a rastreá-lo com Git. U\n\nPara fazer isso, use o comando 'git add <file name>'."
         },
         {
           "StepNumber": 4,
@@ -72,7 +72,7 @@
           "StepNumber": 6,
           "Description": "E agora?",
           "Example": "",
-          "Explanation": "🎉 Congratulations! You've covered the basics of Git.\n\nAs you continue your journey with Git, you'll learn more about branching, merging,etc.\n\nAnd don't forget that the Git documentation and online tutorials are excellent resources to deepen your understanding."
+          "Explanation": "🎉 Parabéns! Você cobriu o básico do Git.\n\nÀ medida que você continua sua jornada com o Git, você vai aprender mais sobre ramificação, fusão, etc.\n\nE não se esqueça de que a documentação do Git e os tutoriais on-line são excelentes recursos para aprofundar seu entendimento."
         }
       ]
     },
@@ -94,7 +94,7 @@
         {
           "StepNumber": 3,
           "Description": "Trocar branch",
-          "Example": "Git check-out de recursos",
+          "Example": "git checkout feature-login",
           "Explanation": "Para mudar para o novo branch, use o comando `git checkout` ou `git switch` seguido pelo nome do branch."
         },
         {
@@ -106,14 +106,14 @@
         {
           "StepNumber": 5,
           "Description": "Mesclando filial",
-          "Example": "Git checkout principal\ngit merge feature-login",
-          "Explanation": "Once you're satisfied with the changes you've made on your branch, it's time to merge those changes back into the main codebase.\n\nTo do this, switch to the main/master branch and use the `git merge` command."
+          "Example": "git checkout main\ngit merge feature-login",
+          "Explanation": "Quando estiver satisfeito com as alterações que fez em seu branch, é hora de mesclar essas mudanças de volta na base de código principal.\n\nPara fazer isso, mude para o branch principal/mestre e use o comando `git merge`."
         },
         {
           "StepNumber": 6,
           "Description": "Excluindo uma filial",
           "Example": "git branch -d feature-login",
-          "Explanation": "Make sure you have merged all the changes from the branch you want to delete before running this command.\n\nTo delete a branch, use the `git branch` command followed by the `-d` option .\n\nIf you need to forcefully delete a branch, use the `-D` flag instead of `-d`."
+          "Explanation": "Certifique-se de ter feito merge de todas as alterações do branch que deseja excluir antes de executar esse comando.\n\nPara excluir um branch, use o comando `git branch` seguido da opção `-d`.\n\nSe você precisar excluir um branch, use a flag `-D` em vez de `-d`."
         }
       ]
     },
@@ -124,7 +124,7 @@
           "StepNumber": 1,
           "Description": "O que é Git Staging",
           "Example": "",
-          "Explanation": "Git staging is the process of preparing a set of changes to be committed to the Git repository.\n\nIt allows you to select only the changes you want to include in the next commit, rather than committing all changes made to the repository."
+          "Explanation": "O staging do Git é o processo de preparação de um conjunto de alterações a serem confirmadas no repositório Git. U\n\nEle permite que você selecione apenas as mudanças que deseja incluir no próximo commit, em vez de fazer commit de todas as alterações feitas no repositório."
         },
         {
           "StepNumber": 2,
@@ -193,7 +193,7 @@
         {
           "StepNumber": 1,
           "Description": "Criando um novo repositório Git localmente",
-          "Example": "git no meu-novo-projeto",
+          "Example": "git init my-new-project",
           "Explanation": "Para começar a usar Git para um novo projeto, você precisa criar um novo repositório Git. Você pode fazer isso navegando até o diretório do seu projeto no terminal e executando o comando `git init`."
         },
         {
