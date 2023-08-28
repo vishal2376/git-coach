@@ -53,7 +53,7 @@
         {
           "StepNumber": 3,
           "Description": "Añadir y rastrear archivos",
-          "Example": "git añadir hola.txt",
+          "Example": "git add hello.txt",
           "Explanation": "Once you've created and edited your file, it's time to start tracking it with Git.\n\nTo do this, use the 'git add <file name>' command."
         },
         {
@@ -66,7 +66,7 @@
           "StepNumber": 5,
           "Description": "Haciendo Compromisos",
           "Example": "git commit -m \"mi primer commit\"",
-          "Explanation": "A commit in Git represents a snapshot of your project at a certain point in time.\n\nIt's a way to record your changes and provide a meaningful description of what you've done.\n\nTo make a commit, you use the following command"
+          "Explanation": "Un compromiso en Git representa una instantánea de tu proyecto en un momento determinado.\n\nEs una forma de grabar tus cambios y proporcionar una descripción significativa de lo que has hecho.\n\nPara hacer un commit, utiliza el siguiente comando"
         },
         {
           "StepNumber": 6,
@@ -88,7 +88,7 @@
         {
           "StepNumber": 2,
           "Description": "Creando una rama",
-          "Example": "git rama característica-login",
+          "Example": "git branch feature-login",
           "Explanation": "Para crear una nueva rama, utilice el comando `git branch` seguido por el nombre de la rama que desea crear."
         },
         {
@@ -106,7 +106,7 @@
         {
           "StepNumber": 5,
           "Description": "Fusionando rama",
-          "Example": "git checkout principal\ngit merge feature-login",
+          "Example": "git checkout main\ngit merge feature-login",
           "Explanation": "Una vez que estés satisfecho con los cambios que has hecho en tu rama, es el momento de combinar esos cambios de nuevo en el código base principal.\n\nPara hacer esto, cambia a la rama principal/maestra y usa el comando `git merge`."
         },
         {
@@ -142,7 +142,7 @@
           "StepNumber": 4,
           "Description": "Eliminar los cambios del área de Staging",
           "Example": "git reset file1.txt",
-          "Explanation": "To remove changes from the Git Staging Area, use the `git reset` command followed by the name of the file you want to remove.\n\nThis will remove the changes from the Staging Area, but they will still exist in the working tree."
+          "Explanation": "Para eliminar cambios del área de Staging de Git, utiliza el comando `git reset` seguido por el nombre del archivo que quieres eliminar.\n\nEsto eliminará los cambios del Área de Escenia, pero seguirán existiendo en el árbol de trabajo."
         },
         {
           "StepNumber": 5,
