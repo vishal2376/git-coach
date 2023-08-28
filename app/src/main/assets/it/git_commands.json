@@ -116,15 +116,15 @@
     },
     {
       "name": "Elenco Modifiche In Recesso",
-      "command": "lista di recesso git",
+      "command": "git stash list",
       "description": "Elenca tutte le modifiche di recesso nel repository Git.",
-      "example": "lista di recesso git"
+      "example": "git stash list"
     },
     {
       "name": "Rimuovi Modifiche In Recesso",
-      "command": "git recesso",
+      "command": "git stash drop",
       "description": "Rimuovere le modifiche di recesso dal repository Git.",
-      "example": "git recesso"
+      "example": "git stash drop"
     },
     {
       "name": "Mostra Registro Di Commit",
@@ -170,9 +170,9 @@
     },
     {
       "name": "Mostra Depositi Remoti",
-      "command": "git spettacolo remoto [remote_name]",
+      "command": "git remote show [remote_name]",
       "description": "Mostra informazioni su un repository remoto nel repository locale.",
-      "example": "git origine mostra remota"
+      "example": "git remote show origin"
     },
     {
       "name": "Git Rebase",
@@ -194,21 +194,21 @@
     },
     {
       "name": "Salva Temporaneamente",
-      "command": "git stash [save <unk> push] [-p<unk> --patch] [-k<unk> --keep-index] [-u<unk> --include-untracked] [-a<unk> --all] [-q<unk> --quiet] [<message>]",
+      "command": "git stash [save | push] [-p|--patch] [-k|--keep-index] [-u|--include-untracked] [-a|--all] [-q|--quiet] [<message>]",
       "description": "Salva temporaneamente le modifiche che non sono ancora pronte per essere effettuate.",
-      "example": "git stash salva \"lavoro in corso\""
+      "example": "git stash save \"work in progress\""
     },
     {
       "name": "Sottomodulo Git",
-      "command": "git sottomodulo [options] [submodule]",
+      "command": "git submodule [options] [submodule]",
       "description": "Gestisci i sub-repository all'interno del tuo repository Git principale.",
-      "example": "git aggiornamento sottomodulo --init"
+      "example": "git submodule update --init"
     },
     {
       "name": "Registro Riferimenti",
       "command": "git reflog [options] [show]",
       "description": "Visualizza un registro di tutti i riferimenti a Git nel tuo repository, anche se sono stati eliminati o persi.",
-      "example": "git reflog mostra HEAD"
+      "example": "git reflog show HEAD"
     },
     {
       "name": "Combina Commit",
