@@ -53,7 +53,7 @@
         {
           "StepNumber": 3,
           "Description": "Добавление и отслеживание файлов",
-          "Example": "git добавить hello.txt",
+          "Example": "git add hello.txt",
           "Explanation": "Как только вы создаете и редактируете файл, пришло время начать отслеживать его с помощью Git.\n\nДля этого используйте команду git add <file name>."
         },
         {
@@ -66,7 +66,7 @@
           "StepNumber": 5,
           "Description": "Создание коммитов",
           "Example": "git commit -m \"мои первые коммиты\"",
-          "Explanation": "A commit in Git represents a snapshot of your project at a certain point in time.\n\nIt's a way to record your changes and provide a meaningful description of what you've done.\n\nTo make a commit, you use the following command"
+          "Explanation": "Зафиксировать Git представляет собой снимок вашего проекта в определенный момент времени.\n\nЭто способ записать ваши изменения и дать реальное описание того, что вы сделали.\n\nДля фиксации вы используете следующую команду"
         },
         {
           "StepNumber": 6,
@@ -88,19 +88,19 @@
         {
           "StepNumber": 2,
           "Description": "Создание ветки",
-          "Example": "Вход в Git ветку",
+          "Example": "git branch feature-login",
           "Explanation": "Чтобы создать новую ветку, используйте команду `git branch`, а затем название ветки, которую вы хотите создать."
         },
         {
           "StepNumber": 3,
           "Description": "Переключение ветки",
-          "Example": "Вход в систему git",
+          "Example": "git checkout feature-login",
           "Explanation": "Чтобы переключиться на новую ветку, используйте команду `git checkout` или `git switch` с именем ветки."
         },
         {
           "StepNumber": 4,
           "Description": "[Shortcut] Создание и Переключение ветки",
-          "Example": "git checkout -b функции регистрации",
+          "Example": "git checkout -b feature-signup",
           "Explanation": "Чтобы создать и переключиться на новую ветку в одной команде, используйте `git checkout -b <branch-name>`."
         },
         {
@@ -112,7 +112,7 @@
         {
           "StepNumber": 6,
           "Description": "Удаление ветки",
-          "Example": "git ветка -d логин",
+          "Example": "git branch -d feature-login",
           "Explanation": "Убедитесь, что вы объединили все изменения из ветки, которую вы хотите удалить, перед запуском этой команды.\n\nДля удаления ветки, используйте команду `git branch` после опции `-d` .\n\nЕсли вам нужно принудительно удалить ветку, используйте флаг `-D` вместо `-d`."
         }
       ]
@@ -129,7 +129,7 @@
         {
           "StepNumber": 2,
           "Description": "Добавление изменений в область разбивки Git",
-          "Example": "git добавить file1.txt file2.txt",
+          "Example": "git add file1.txt file2.txt",
           "Explanation": "Чтобы добавить изменения в Git Staging Area, используйте команду `git add` с именами файлов, которые вы хотите добавить.\n\nЭто сделает этап изменений, что означает, что они будут включены в следующий коммит."
         },
         {
@@ -142,7 +142,7 @@
           "StepNumber": 4,
           "Description": "Удаление изменений из промежуточной зоны",
           "Example": "git reset file1.txt",
-          "Explanation": "To remove changes from the Git Staging Area, use the `git reset` command followed by the name of the file you want to remove.\n\nThis will remove the changes from the Staging Area, but they will still exist in the working tree."
+          "Explanation": "Чтобы удалить изменения из Git Staging Area, используйте команду `git reset`, а затем имя файла, который вы хотите удалить.\n\nЭто удалит изменения из промежуточной области, но они все еще будут существовать в рабочем дереве."
         },
         {
           "StepNumber": 5,
@@ -182,7 +182,7 @@
         {
           "StepNumber": 5,
           "Description": "Создание изменений и отправка на GitHub",
-          "Example": "git add .\ngit commit -m \"message\"\n\ngit push origin main",
+          "Example": "git add .\ngit commit -m \"message\"\n\ngit push main",
           "Explanation": "После клонирования репозитория, вы можете вносить изменения в файлы так же, как и в любом другом Git репозитории.\n\nПосле внесения изменений выполните следующие шаги, чтобы отправить свои изменения на GitHub.\n\nЗатем используйте команду `git push` после названия ветки, в которую вы хотите внести изменения. Это загрузит изменения в GitHub."
         }
       ]
@@ -217,7 +217,7 @@
         {
           "StepNumber": 5,
           "Description": "Отправка изменений в GitHub репозиторий",
-          "Example": "git push -u мастер происхождения",
+          "Example": "git push -u origin master",
           "Explanation": "Для переноса изменений в локальный Git репозиторий в GitHub репозиторий, используйте команду `git push` после имени пульта (`origin`) и ветки, на которую вы хотите нажать изменения (`master`). Параметр `-u` устанавливает удаленную и ветку по умолчанию для будущих команд `git push`."
         }
       ]
