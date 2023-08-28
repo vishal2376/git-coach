@@ -36,5 +36,5 @@
     <string name="command">Befehl</string>
     <string name="description">Beschreibung</string>
     <string name="save">Speichern</string>
-    <string name="reset_to_default">Auf Standard zurücksetzen</string>
+    <string name="reset_to_default">Reset to default</string>
 </resources>
