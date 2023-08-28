@@ -88,19 +88,19 @@
         {
           "StepNumber": 2,
           "Description": "Einen Zweig erstellen",
-          "Example": "git Branch-Feature-Login",
+          "Example": "git branch feature-login",
           "Explanation": "Um einen neuen Branch zu erstellen, benutze den `git branch` Befehl gefolgt von dem Namen des Branches den du erstellen möchtest."
         },
         {
           "StepNumber": 3,
           "Description": "Zweig wechseln",
-          "Example": "git Checkout Feature-Login",
+          "Example": "git checkout feature-login",
           "Explanation": "Um zum neuen Zweig zu wechseln, benutze den Befehl `git checkout` oder `git switch` gefolgt von dem Namen des Zweigs."
         },
         {
           "StepNumber": 4,
           "Description": "[Shortcut] Branch erstellen und wechseln",
-          "Example": "git checkout -b Feature Anmeldung",
+          "Example": "git checkout -b feature-signup",
           "Explanation": "Um den neuen Zweig in einem Befehl zu erstellen und zu wechseln, benutze `git checkout -b <branch-name>`."
         },
         {
@@ -112,7 +112,7 @@
         {
           "StepNumber": 6,
           "Description": "Einen Zweig löschen",
-          "Example": "git Branch -d Feature-login",
+          "Example": "git branch -d feature-login",
           "Explanation": "Stellen Sie sicher, dass Sie alle Änderungen aus dem Zweig zusammengeführt haben, den Sie löschen möchten, bevor Sie diesen Befehl ausführen.\n\nUm einen Branch zu löschen, benutze den `git branch` Befehl gefolgt von der `-d` Option.\n\nWenn du einen Branch zwangsweise löschen musst, benutze das `-D` Flag anstelle von `-d`."
         }
       ]
@@ -135,7 +135,7 @@
         {
           "StepNumber": 3,
           "Description": "Stagierte und ungeplante Änderungen anzeigen",
-          "Example": "git diff\ngit diff --insged",
+          "Example": "git diff\ngit diff --staged",
           "Explanation": "Um die Änderungen, die du am Git-Repository vorgenommen hast, zu sehen, benutze den Befehl `git diff`.\n\nUm nur die vorgenommenen Änderungen anzuzeigen, benutze den `git diff --staged` Befehl. Dies zeigt eine Liste der vorgenommenen Änderungen an und ist bereit für Commit."
         },
         {
@@ -217,7 +217,7 @@
         {
           "StepNumber": 5,
           "Description": "Änderungen in das GitHub Repository schieben",
-          "Example": "git Push-u Ursprung Master",
+          "Example": "git push -u origin master",
           "Explanation": "Um die Änderungen im lokalen Git-Repository in das GitHub Repository zu schieben, benutze den Befehl `git push` gefolgt von dem Namen der entfernten (`origin`) und dem Zweig, in den du die Änderungen verschieben möchtest (`master`). Die `-u` Option legt die Remote und den Branch als Standard für zukünftige `git push` Befehle fest."
         }
       ]
