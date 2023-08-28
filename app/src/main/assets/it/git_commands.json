@@ -110,9 +110,9 @@
     },
     {
       "name": "Applica Modifiche In Recesso",
-      "command": "applicazione git stash",
+      "command": "git stash apply",
       "description": "Applica i cambiamenti che sono stati recessi nel repository Git.",
-      "example": "applicazione git stash"
+      "example": "git stash apply"
     },
     {
       "name": "Elenco Modifiche In Recesso",
