@@ -36,5 +36,5 @@
     <string name="command">Команда</string>
     <string name="description">Описание</string>
     <string name="save">Сохранить</string>
-    <string name="reset_to_default">Сброс по умолчанию</string>
+    <string name="reset_to_default">Reset to default</string>
 </resources>
