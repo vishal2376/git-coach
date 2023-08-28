@@ -4,7 +4,7 @@
       "name": "Repository initialisieren",
       "command": "git init [directory]",
       "description": "Initialisieren Sie ein neues Git-Repository im aktuellen oder angegebenen Verzeichnis.",
-      "example": "git init mein Projekt"
+      "example": "git init mein_projekt"
     },
     {
       "name": "Repository klonen",
@@ -28,7 +28,7 @@
       "name": "Push-Änderungen",
       "command": "git push [remote_name] [branch_name]",
       "description": "Push übertragene Änderungen in ein entferntes Repository.",
-      "example": "git Push-Ursprung Master"
+      "example": "git push origin master"
     },
     {
       "name": "Änderungen ziehen",
@@ -44,19 +44,19 @@
     },
     {
       "name": "Commit History anzeigen",
-      "command": "git Log",
+      "command": "git log",
       "description": "Zeigt die Historie der Commits im Git-Repository an.",
-      "example": "git Log"
+      "example": "git log"
     },
     {
       "name": "Einen Zweig erstellen",
       "command": "git branch [Drang_name]",
       "description": "Erstellen Sie einen neuen Zweig im Git-Repository.",
-      "example": "git Branch new_feature"
+      "example": "git branch new_feature"
     },
     {
       "name": "Zu einem Zweig wechseln",
-      "command": "git Checkout [branch_name]",
+      "command": "git checkout [branch_name]",
       "description": "Wechseln Sie zu einem anderen Zweig im Git-Repository.",
       "example": "git checkout new_feature"
     },
@@ -74,15 +74,15 @@
     },
     {
       "name": "Branch umbenennen",
-      "command": "git Zweig -m [new_branch_name]",
+      "command": "git branch -m [new_branch_name]",
       "description": "Den aktuellen Branch im Git-Repository umbenennen.",
-      "example": "git Zweig -m updated_feature"
+      "example": "git branch -m updated_feature"
     },
     {
       "name": "Branch löschen",
-      "command": "git Zweig -d [branch_name]",
+      "command": "git branch -d [branch_name]",
       "description": "Löschen Sie einen Branch im Git-Repository.",
-      "example": "git Branch -d veraltet"
+      "example": "git branch -d outdated_feature"
     },
     {
       "name": "Änderungen zurücksetzen",
@@ -116,21 +116,21 @@
     },
     {
       "name": "Gesperrte Änderungen auflisten",
-      "command": "git stash-Liste",
+      "command": "git stash list",
       "description": "Listet alle eingelesenen Änderungen im Git-Repository auf.",
-      "example": "git stash-Liste"
+      "example": "git stash list"
     },
     {
       "name": "Stachelte Änderungen entfernen",
-      "command": "git Strümpfe",
+      "command": "git stash drop",
       "description": "Stachelte Änderungen aus dem Git-Repository entfernen.",
-      "example": "git Strümpfe"
+      "example": "git stash drop"
     },
     {
       "name": "Commit-Log anzeigen",
-      "command": "git Log",
+      "command": "git log",
       "description": "Zeigt den Commit-Verlauf des Git-Repositorys an.",
-      "example": "git Log"
+      "example": "git log"
     },
     {
       "name": "Zeige Übertragungsunterschiede",
@@ -140,9 +140,9 @@
     },
     {
       "name": "Entfernte Änderungen abrufen",
-      "command": "git holen",
+      "command": "git fetch",
       "description": "Holen Sie Aktualisierungen von einem Remote-Repository in das lokale Repository.",
-      "example": "git holen"
+      "example": "git fetch"
     },
     {
       "name": "Entfernte Änderungen ziehen",
@@ -154,7 +154,7 @@
       "name": "Lokale Änderungen pushen",
       "command": "git push [remote_name] [branch_name]",
       "description": "Lokale Änderungen in ein entferntes Repository schieben.",
-      "example": "git Push-Ursprung new_feature"
+      "example": "git push origin new_feature"
     },
     {
       "name": "Remote-Repository hinzufügen",
@@ -166,13 +166,13 @@
       "name": "Entferntes Repository entfernen",
       "command": "git remote remove [remote_name]",
       "description": "Entfernt ein entferntes Repository aus dem lokalen Repository.",
-      "example": "git Remote Entfernen von Upstream"
+      "example": "git remote remove upstream"
     },
     {
       "name": "Remote-Repositories anzeigen",
-      "command": "git Remote Show [remote_name]",
+      "command": "git remote show [remote_name]",
       "description": "Informationen über ein entferntes Repository im lokalen Repository anzeigen.",
-      "example": "git Remote Anzeige-Ursprung"
+      "example": "git remote show origin"
     },
     {
       "name": "Git Rebase",
@@ -182,7 +182,7 @@
     },
     {
       "name": "Git Cherry-pick",
-      "command": "git Kirschpick-Auswahl [options] <commit>",
+      "command": "git cherry-pick [options] <commit>",
       "description": "Änderungen übernehmen, die durch einige bestehende Commits eingeführt wurden.",
       "example": "git cherry-pick abcd123"
     },
@@ -196,13 +196,13 @@
       "name": "Vorübergehend speichern",
       "command": "git stash [save | push] [-p|--patch] [-k|--keep-index] [-u|--include-untracked] [-a|--all] [-q|--quiet] [<message>]",
       "description": "Speichern Sie temporär Änderungen, die noch nicht übertragen werden können.",
-      "example": "git stash speichern \"work in progress\""
+      "example": "git stash save \"work in progress\""
     },
     {
       "name": "Git Untermodul",
-      "command": "git Submodul [options] [submodule]",
+      "command": "git submodule [options] [submodule]",
       "description": "Verwalten Sie Sub-Repositories innerhalb Ihres Git-Projektarchivs.",
-      "example": "git Submodul Update --init"
+      "example": "git submodule update --init"
     },
     {
       "name": "Referenzprotokoll",
@@ -248,7 +248,7 @@
     },
     {
       "name": "Vorherigen Commit wiederherstellen",
-      "command": "git Checkout [commit]",
+      "command": "git checkout [commit]",
       "description": "Wechselt zu einem vorherigen Commit und stellt den Status des Projektarchivs wieder her",
       "example": "git checkout abc123"
     }
