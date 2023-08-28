@@ -16,7 +16,7 @@
       "name": "Добавить файлы",
       "command": "git add [file(s)]",
       "description": "Добавьте файлы в область отладки Git, готово к коммиту.",
-      "example": "git добавить file1.txt file2.txt"
+      "example": "git add file1.txt file2.txt"
     },
     {
       "name": "Зафиксировать изменения",
@@ -28,13 +28,13 @@
       "name": "Отправить изменения",
       "command": "git push [remote_name] [branch_name]",
       "description": "Отправить зафиксированные изменения в удаленный репозиторий.",
-      "example": "git push мастер-источник"
+      "example": "git push origin master"
     },
     {
       "name": "Потянуть изменения",
       "command": "git pull [remote_name] [branch_name]",
       "description": "Получить изменения из удаленного репозитория и объединить их с локальным репозиторием.",
-      "example": "мастер git pull origin"
+      "example": "git pull origin master"
     },
     {
       "name": "Проверить статус",
@@ -44,15 +44,15 @@
     },
     {
       "name": "Просмотр истории изменений",
-      "command": "журнал git",
+      "command": "git log",
       "description": "Просмотр истории коммитов в Git репозитории.",
-      "example": "журнал git"
+      "example": "git log"
     },
     {
       "name": "Создать ветку",
-      "command": "git ветка [branch_name]",
+      "command": "git branch [branch_name]",
       "description": "Создать новую ветку в Git-репозитории.",
-      "example": "git ветка new_feature"
+      "example": "git branch new_feature"
     },
     {
       "name": "Переключить на ветку",
@@ -68,21 +68,21 @@
     },
     {
       "name": "Объединить ветки",
-      "command": "Слияние git [branch_name]",
+      "command": "git merge [branch_name]",
       "description": "Объединить изменения из указанной ветки в текущую ветку в Git-репозитории.",
-      "example": "слияние new_feature"
+      "example": "git merge new_feature"
     },
     {
       "name": "Переименовать ветку",
-      "command": "git ветка -m [new_branch_name]",
+      "command": "git branch -m [new_branch_name]",
       "description": "Переименовать текущую ветку в Git-репозитории.",
       "example": "git ветка -m обновлена"
     },
     {
       "name": "Удалить ветку",
-      "command": "git ветка -d [branch_name]",
+      "command": "git branch -d [branch_name]",
       "description": "Удалить ветку в Git-репозитории.",
-      "example": "git ветка -d outdated_feature"
+      "example": "git branch -d outdated_feature"
     },
     {
       "name": "Сбросить изменения",
@@ -100,7 +100,7 @@
       "name": "Отметить коммит",
       "command": "git tag [tag_name] [commit_hash]",
       "description": "Добавить тег для определенного коммита в Git-репозиторий.",
-      "example": "git тег v1.0 abc123"
+      "example": "git tag v1.0 abc123"
     },
     {
       "name": "Тайник изменения",
@@ -110,27 +110,27 @@
     },
     {
       "name": "Применить изменения с тайником",
-      "command": "Применение git stash",
+      "command": "git stash apply",
       "description": "Применить изменения, которые были закрыты в Git-репозитории.",
-      "example": "Применение git stash"
+      "example": "git stash apply"
     },
     {
       "name": "Список с тайником изменений",
-      "command": "список тайников git",
+      "command": "git stash list",
       "description": "Список всех устаревших изменений в Git репозитории.",
-      "example": "список тайников git"
+      "example": "git stash list"
     },
     {
       "name": "Удалить кэшированные изменения",
-      "command": "капля сгиба",
+      "command": "git stash drop",
       "description": "Удалить устаревшие изменения из Git репозитория.",
-      "example": "капля сгиба"
+      "example": "git stash drop"
     },
     {
       "name": "Показать журнал коммитов",
-      "command": "журнал git",
+      "command": "git log",
       "description": "Показать историю фиксации репозитория Git.",
-      "example": "журнал git"
+      "example": "git log"
     },
     {
       "name": "Показать коммиты",
@@ -140,9 +140,9 @@
     },
     {
       "name": "Получить удаленные изменения",
-      "command": "загрузить git",
+      "command": "git fetch",
       "description": "Получить обновления из удаленного репозитория в локальный репозиторий.",
-      "example": "загрузить git"
+      "example": "git fetch"
     },
     {
       "name": "Пульт Пульт изменений",
@@ -158,21 +158,21 @@
     },
     {
       "name": "Добавить удаленный репозиторий",
-      "command": "удаленный git добавить [remote_name] [remote_url]",
+      "command": "git remote add [remote_name] [remote_url]",
       "description": "Добавить удаленный репозиторий в локальный репозиторий.",
-      "example": "git удаленное добавление вверх https://github.com/upstream_repo.git"
+      "example": "git remote add upstream https://github.com/upstream_repo.git"
     },
     {
       "name": "Удалить удаленный репозиторий",
-      "command": "удаленное извлечение Git [remote_name]",
+      "command": "git remote remove [remote_name]",
       "description": "Удалить удаленный репозиторий из локального репозитория.",
-      "example": "git удалённый удалять вверх"
+      "example": "git remote remove upstream"
     },
     {
       "name": "Показать удаленные репозитории",
-      "command": "git пульт показать [remote_name]",
+      "command": "git remote show [remote_name]",
       "description": "Показать информацию о удаленном репозитории в локальном репозитории.",
-      "example": "git пульт показывает начало"
+      "example": "git remote show origin"
     },
     {
       "name": "Git Rebase",
@@ -194,21 +194,21 @@
     },
     {
       "name": "Временно сохранить",
-      "command": "git stash [сохранить | push] [-p|--patch] [-k|--keep-index] [-u|--include-untracked] [-a|--all] [-q|--quiet] [<message>]",
+      "command": "git stash [save | push] [-p|--patch] [-k|--keep-index] [-u|--include-untracked] [-a|--all] [-q|--quiet] [<message>]",
       "description": "Временно сохранить изменения, которые еще не готовы к завершению.",
-      "example": "сохранение git тайника \"работа в процессе\""
+      "example": "git stash save \"work in progress\""
     },
     {
       "name": "Git Подмодуль",
-      "command": "git подмодуль [options] [submodule]",
+      "command": "git submodule [options] [submodule]",
       "description": "Управление дочерними репозиториями в вашем основном Git репозитории.",
-      "example": "git обновление подмодуля --init"
+      "example": "git submodule update --init"
     },
     {
       "name": "Журнал ссылок",
       "command": "git reflog [options] [show]",
       "description": "Просмотр журнала всех ссылок Git в вашем хранилище, даже если они были удалены или утеряны.",
-      "example": "reflog git показать HEAD"
+      "example": "git reflog show HEAD"
     },
     {
       "name": "Коммуникационные коммиты",
@@ -230,7 +230,7 @@
     },
     {
       "name": "Конфигурация Git",
-      "command": "git конфигурация [option]",
+      "command": "git config [option]",
       "description": "Настройка Git настроек",
       "example": "git config --global user.name 'Ваше имя'"
     },
@@ -242,7 +242,7 @@
     },
     {
       "name": "Зафиксировать тег",
-      "command": "git тег [имя тэга]",
+      "command": "git tag [tag name]",
       "description": "Добавляет тег к определенному коммиту",
       "example": "git tag v1.0.0"
     },
