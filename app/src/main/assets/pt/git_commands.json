@@ -58,7 +58,7 @@
       "name": "Mudar para Branch",
       "command": "git checkout [branch_name]",
       "description": "Alterne para um branch diferente no repositório Git.",
-      "example": "Git checkout nova_funcionalidade"
+      "example": "git checkout new_feature"
     },
     {
       "name": "Comparar filiais",
@@ -82,7 +82,7 @@
       "name": "Apagar um Branch",
       "command": "git branch -d [branch_name]",
       "description": "Excluir um branch no repositório Git.",
-      "example": "recurso git branch -d desatualizado_recurso"
+      "example": "git branch -d outdated_feature"
     },
     {
       "name": "Redefinir alterações",
@@ -112,7 +112,7 @@
       "name": "Aplicar alterações ocultas",
       "command": "aplicar stash do git",
       "description": "Aplicar alterações ocultas no repositório Git.",
-      "example": "aplicar stash do git"
+      "example": "git stash apply"
     },
     {
       "name": "Listar alterações ocultas",
@@ -142,7 +142,7 @@
       "name": "Buscar Alterações Remotas",
       "command": "git buscar",
       "description": "Obter atualizações de um repositório remoto para o repositório local.",
-      "example": "git buscar"
+      "example": "git fetch"
     },
     {
       "name": "Puxar Alterações Remotas",
@@ -158,21 +158,21 @@
     },
     {
       "name": "Adicionar repositório remoto",
-      "command": "git remoto adicionar [remote_name] [remote_url]",
+      "command": "git remote add [remote_name] [remote_url]",
       "description": "Adicionar um repositório remoto ao repositório local.",
-      "example": "adicione o git remotamente upstream https://github.com/upstream_repo.git"
+      "example": "git remote add upstream https://github.com/upstream_repo.git"
     },
     {
       "name": "Remover repositório remoto",
-      "command": "git remoto remover [remote_name]",
+      "command": "git remote remove [remote_name]",
       "description": "Remover um repositório remoto do repositório local.",
-      "example": "git remover remotamente upstream"
+      "example": "git remote remove upstream"
     },
     {
       "name": "Mostrar Repositórios Remotos",
       "command": "git remote show [remote_name]",
       "description": "Exibir informações sobre um repositório remoto no repositório local.",
-      "example": "mostrar origem do show remoto"
+      "example": "git remote show origin"
     },
     {
       "name": "Git Rebase",
@@ -190,7 +190,7 @@
       "name": "Git Bisect",
       "command": "git bisect [start] [end]",
       "description": "Encontre qual commit em um intervalo introduziu um bug executando uma pesquisa binária.",
-      "example": "biscoito do git começa HEAD HEAD~10"
+      "example": "git bisect start HEAD HEAD~10"
     },
     {
       "name": "Salvar temporariamente",
@@ -200,15 +200,15 @@
     },
     {
       "name": "Submódulo Git",
-      "command": "git submódulo [options] [submodule]",
+      "command": "git submodule [options] [submodule]",
       "description": "Gerenciar sub-repositórios dentro de seu repositório Git principal.",
-      "example": "git submodule atualizar --init"
+      "example": "git submodule update --init"
     },
     {
       "name": "Registro de Referências",
       "command": "git reflog [options] [show]",
       "description": "Veja um registro de todas as referências Git em seu repositório, mesmo se elas foram excluídas ou perdidas.",
-      "example": "git reflog mostrar HEAD"
+      "example": "git reflog show HEAD"
     },
     {
       "name": "Combinar Commits",
@@ -250,7 +250,7 @@
       "name": "Recuperar commit anterior",
       "command": "git checkout [commit]",
       "description": "Alterna para um commit anterior e restaura o estado do repositório",
-      "example": "Checkout do Git abc123"
+      "example": "git checkout abc123"
     }
   ]
 }
