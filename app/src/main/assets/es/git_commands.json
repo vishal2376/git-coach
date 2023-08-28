@@ -28,13 +28,13 @@
       "name": "Empujar cambios",
       "command": "git push [remote_name] [branch_name]",
       "description": "Cambios enviados a un repositorio remoto.",
-      "example": "git push origen maestro"
+      "example": "git push origin master"
     },
     {
       "name": "Tirar Cambios",
       "command": "git pull [remote_name] [branch_name]",
       "description": "Recuperar cambios desde un repositorio remoto y fusionarlos con el repositorio local.",
-      "example": "maestro de origen de git"
+      "example": "git pull origin master"
     },
     {
       "name": "Comprobar estado",
@@ -50,9 +50,9 @@
     },
     {
       "name": "Crear una rama",
-      "command": "rama de git [branch_name]",
+      "command": "git branch [branch_name]",
       "description": "Crear una nueva rama en el repositorio Git.",
-      "example": "nueva rama git"
+      "example": "git branch new_feature"
     },
     {
       "name": "Cambiar a una rama",
@@ -64,25 +64,25 @@
       "name": "Comparar ramas",
       "command": "git diff [branch1] [branch2]",
       "description": "Compara las diferencias entre dos ramas en el repositorio Git.",
-      "example": "nueva característica maestra de git diff"
+      "example": "git diff master new_feature"
     },
     {
       "name": "Fusionar ramas",
-      "command": "fusión de git [branch_name]",
+      "command": "git merge [branch_name]",
       "description": "Combinar cambios de una rama especificada en la rama actual en el repositorio Git.",
-      "example": "fusionar nueva función git"
+      "example": "git merge new_feature"
     },
     {
       "name": "Renombrar una rama",
-      "command": "git rama -m [new_branch_name]",
+      "command": "git branch -m [new_branch_name]",
       "description": "Renombrar la rama actual en el repositorio Git.",
-      "example": "rama git -m actualizado_característica"
+      "example": "git branch -m updated_feature"
     },
     {
       "name": "Eliminar una rama",
-      "command": "git rama -d [branch_name]",
+      "command": "git branch -d [branch_name]",
       "description": "Eliminar una rama en el repositorio Git.",
-      "example": "rama git -d característica desactualizada"
+      "example": "git branch -d outdated_feature"
     },
     {
       "name": "Restablecer Cambios",
@@ -110,15 +110,15 @@
     },
     {
       "name": "Aplicar cambios almacenados",
-      "command": "git stash aplicar",
+      "command": "git stash apply",
       "description": "Aplicar cambios que fueron almacenados en el repositorio Git.",
-      "example": "git stash aplicar"
+      "example": "git stash apply"
     },
     {
       "name": "Lista de Cambios Escondidos",
-      "command": "lista de almacenamiento git",
+      "command": "git stash list",
       "description": "Listar todos los cambios almacenados en el repositorio Git.",
-      "example": "lista de almacenamiento git"
+      "example": "git stash list"
     },
     {
       "name": "Eliminar Cambios Escondidos",
@@ -140,9 +140,9 @@
     },
     {
       "name": "Obtener Cambios Remotos",
-      "command": "obtener git",
+      "command": "git fetch",
       "description": "Obtener actualizaciones de un repositorio remoto al repositorio local.",
-      "example": "obtener git"
+      "example": "git fetch"
     },
     {
       "name": "Cambios remotos de Pull",
@@ -154,7 +154,7 @@
       "name": "Empujar cambios locales",
       "command": "git push [remote_name] [branch_name]",
       "description": "Push cambios locales a un repositorio remoto.",
-      "example": "git push origen nueva característica"
+      "example": "git push origin new_feature"
     },
     {
       "name": "Añadir repositorio remoto",
@@ -164,15 +164,15 @@
     },
     {
       "name": "Eliminar repositorio remoto",
-      "command": "git remover [remote_name]",
+      "command": "git remote remove [remote_name]",
       "description": "Eliminar un repositorio remoto del repositorio local.",
-      "example": "git remover aguas arriba"
+      "example": "git remote remove upstream"
     },
     {
       "name": "Mostrar repositorio remoto",
-      "command": "git remoto mostrar [remote_name]",
+      "command": "git remote show [remote_name]",
       "description": "Mostrar información sobre un repositorio remoto en el repositorio local.",
-      "example": "origen de la muestra remota git"
+      "example": "git remote show origin"
     },
     {
       "name": "Git Rebase",
@@ -196,19 +196,19 @@
       "name": "Guardar temporalmente",
       "command": "stash git [save | push] [-p|--patch] [-k|--keep-index] [-u|--include-untracked] [-a|--all] [-q|--quiet] [<message>",
       "description": "Guarda temporalmente cambios que aún no están listos para ser confirmados.",
-      "example": "guión git guardar \"trabajo en curso\""
+      "example": "git stash save \"work in progress\""
     },
     {
       "name": "Submódulo Git",
-      "command": "submódulo de git [options] [submodule]",
+      "command": "git submodule [options] [submodule]",
       "description": "Administrar sub-repositorios dentro de su repositorio Git principal.",
-      "example": "actualización de submódulo git --init"
+      "example": "git submodule update --init"
     },
     {
       "name": "Registro de referencias",
       "command": "git reflog [options] [show]",
       "description": "Ver un registro de todas las referencias de Git en su repositorio, incluso si han sido eliminadas o perdidas.",
-      "example": "mostrar reflog git HEAD"
+      "example": "git reflog show HEAD"
     },
     {
       "name": "Combinar Compromisos",
