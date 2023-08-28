@@ -36,5 +36,5 @@
     <string name="command">Comando</string>
     <string name="description">Descrizione</string>
     <string name="save">Salva</string>
-    <string name="reset_to_default">Ripristina impostazioni predefinite</string>
+    <string name="reset_to_default">Reset to default</string>
 </resources>
