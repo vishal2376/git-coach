@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="italian">Italian</string>
+    <string name="language_setting">Language Setting</string>
+    <string name="russian">Russian</string>
+    <string name="spanish">Spanish</string>
+    <string name="portuguese">Portuguese</string>
+    <string name="german">German</string>
+</resources>

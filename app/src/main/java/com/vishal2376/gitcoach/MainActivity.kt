@@ -116,6 +116,13 @@ class MainActivity : AppCompatActivity() {
             navController.navigate(R.id.fontSettingFragment)
         }
 
+        binding.ivLanguage.setOnClickListener {
+            val navHostFragment =
+                supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
+            val navController = navHostFragment.navController
+            navController.navigateUp()
+            navController.navigate(R.id.settingsFragment)
+        }
 
     }
 

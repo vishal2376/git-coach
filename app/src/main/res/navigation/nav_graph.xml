@@ -59,7 +59,7 @@
         tools:layout="@layout/fragment_font_setting" />
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.vishal2376.gitcoach.SettingsFragment"
+        android:name="com.vishal2376.gitcoach.fragments.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
 </navigation>

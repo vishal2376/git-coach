@@ -1,14 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SettingsFragment">
+    android:background="?attr/colorPrimaryVariant"
+    android:orientation="vertical"
+    tools:context=".fragments.SettingsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/tvSettingsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryVariant"
+        android:drawablePadding="@dimen/_5sdp"
+        android:fontFamily="@font/rubik_medium"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:text="@string/language_setting"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_16ssp"
+        app:drawableStartCompat="@drawable/ic_left_arrow"
+        app:drawableTint="@color/colorWhite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:background="?attr/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSettingsTitle" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/layoutFooter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSettingsTitle">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:paddingTop="@dimen/_20sdp">
+
+            <RadioButton
+                android:id="@+id/btnEnglish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/colorAccent"
+                android:checked="true"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:text="@string/english_default"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12ssp" />
+
+            <RadioButton
+                android:id="@+id/btnGerman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/colorAccent"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:text="@string/german"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12ssp" />
+
+            <RadioButton
+                android:id="@+id/btnItalian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/colorAccent"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:text="@string/italian"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12ssp" />
+
+            <RadioButton
+                android:id="@+id/btnPortuguese"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/colorAccent"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:text="@string/portuguese"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12ssp" />
+
+            <RadioButton
+                android:id="@+id/Russian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/colorAccent"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:text="@string/russian"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12ssp" />
+
+            <RadioButton
+                android:id="@+id/btnSpanish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/colorAccent"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:text="@string/spanish"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12ssp" />
+
+        </RadioGroup>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!--    footer-->
+    <RelativeLayout
+        android:id="@+id/layoutFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:elevation="10dp"
+        android:paddingHorizontal="@dimen/_30sdp"
+        android:paddingVertical="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/rubik_medium"
+            android:gravity="center_vertical"
+            android:text="@string/reset_to_default"
+            android:textColor="?attr/colorAccent"
+            android:textSize="@dimen/_13ssp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="?attr/colorSecondaryVariant"
+            android:fontFamily="@font/rubik_medium"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textColor="?attr/colorPrimaryVariant" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
