@@ -16,6 +16,8 @@ Git+ Coach is a free education app designed to help users learn Git and its comm
 <br/>
 <br/>
 
+*Now Available in English, German, Italian, Portuguese, Russian, and Spanish Language*
+
 <a href='https://play.google.com/store/apps/details?id=com.vishal2376.gitcoach&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' style="width:200px"></a>
 
 <a href='https://f-droid.org/en/packages/com.vishal2376.gitcoach/'><img alt='Get it on F-Droid' src='https://fdroid.gitlab.io/artwork/badge/get-it-on.png' style="width:200px"></a>
@@ -34,6 +36,7 @@ Git+ Coach is a free education app designed to help users learn Git and its comm
 - Smooth animations for a great user experience
 - Cool Themes: Blue,Green, Red, and Yellow
 - No ADS or In-App Subscription
+- Support 6 Languages (English,German,Italian,Portuguese,Russian,Spanish)
 
 ## Screenshots
 
