@@ -17,6 +17,7 @@ object Constants {
     const val NOTIFICATION_SWITCH = "Notification Switch"
 
     // Settings
+    const val LOCALE = "locale"
     const val FONT_SIZE_TITLE = 18f
     const val FONT_SIZE_SUB_TITLE = 14f
     const val FONT_SIZE_DESCRIPTION = 13f

@@ -44,4 +44,9 @@ object LoadSettings {
         return context.getSharedPreferences("SETTINGS", MODE_PRIVATE)
             .getFloat(category, 0f)
     }
+
+    fun getLocale(context: Context): String {
+        return context.getSharedPreferences("SETTINGS", MODE_PRIVATE)
+            .getString(Constants.LOCALE, "en").toString()
+    }
 }

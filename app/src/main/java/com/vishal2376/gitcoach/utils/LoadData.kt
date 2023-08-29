@@ -9,12 +9,14 @@ import com.vishal2376.gitcoach.models.lesson.GitLesson
 object LoadData {
 
     fun getGitCommandData(context: Context): GitCommand? {
-        val jsonString = context.assets.readFile("git_commands.json")
+        val locale = LoadSettings.getLocale(context)
+        val jsonString = context.assets.readFile("$locale/git_commands.json")
         return Gson().fromJson(jsonString, GitCommand::class.java)
     }
 
     fun getGitLessonData(context: Context): GitLesson? {
-        val jsonString = context.assets.readFile("git_lessons.json")
+        val locale = LoadSettings.getLocale(context)
+        val jsonString = context.assets.readFile("$locale/git_lessons.json")
         return Gson().fromJson(jsonString, GitLesson::class.java)
     }
 
