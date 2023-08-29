@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Professor Git+</string>
+    <string name="app_name">Git+ Coach</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Olá fragmento em branco</string>
     <string name="intialize_git">Intializar o Git</string>
@@ -35,8 +35,9 @@
     <string name="title">Título</string>
     <string name="command">Comando</string>
     <string name="description">Descrição:</string>
-    <string name="save">Guardar</string>
+    <string name="save">Save</string>
     <string name="reset_to_default">Reset to default</string>
+    <string name="english_default">English (Default)</string>
     <string name="italian">Italian</string>
     <string name="language_setting">Language Setting</string>
     <string name="russian">Russian</string>

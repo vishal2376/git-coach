@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Гит+ наставник</string>
+    <string name="app_name">Git+ Coach</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Здравствуйте, пустой фрагмент</string>
     <string name="intialize_git">Интиализовать Git</string>
@@ -35,8 +35,9 @@
     <string name="title">Заголовок</string>
     <string name="command">Команда</string>
     <string name="description">Описание</string>
-    <string name="save">Сохранить</string>
+    <string name="save">Save</string>
     <string name="reset_to_default">Reset to default</string>
+    <string name="english_default">English (Default)</string>
     <string name="italian">Italian</string>
     <string name="language_setting">Language Setting</string>
     <string name="russian">Russian</string>
