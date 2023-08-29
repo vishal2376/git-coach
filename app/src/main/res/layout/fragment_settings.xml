@@ -46,17 +46,17 @@
         app:layout_constraintTop_toBottomOf="@+id/tvSettingsTitle">
 
         <RadioGroup
+            android:id="@+id/rgLanguage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingHorizontal="@dimen/_20sdp"
             android:paddingTop="@dimen/_20sdp">
 
             <RadioButton
-                android:id="@+id/btnEnglish"
+                android:id="@+id/rgEnglish"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="?attr/colorAccent"
-                android:checked="true"
                 android:fontFamily="@font/roboto_medium"
                 android:paddingHorizontal="@dimen/_5sdp"
                 android:text="@string/english_default"
@@ -64,7 +64,7 @@
                 android:textSize="@dimen/_12ssp" />
 
             <RadioButton
-                android:id="@+id/btnGerman"
+                android:id="@+id/rgGerman"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="?attr/colorAccent"
@@ -75,7 +75,7 @@
                 android:textSize="@dimen/_12ssp" />
 
             <RadioButton
-                android:id="@+id/btnItalian"
+                android:id="@+id/rgItalian"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="?attr/colorAccent"
@@ -86,7 +86,7 @@
                 android:textSize="@dimen/_12ssp" />
 
             <RadioButton
-                android:id="@+id/btnPortuguese"
+                android:id="@+id/rgPortuguese"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="?attr/colorAccent"
@@ -97,7 +97,7 @@
                 android:textSize="@dimen/_12ssp" />
 
             <RadioButton
-                android:id="@+id/Russian"
+                android:id="@+id/rgRussian"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="?attr/colorAccent"
@@ -108,7 +108,7 @@
                 android:textSize="@dimen/_12ssp" />
 
             <RadioButton
-                android:id="@+id/btnSpanish"
+                android:id="@+id/rgSpanish"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="?attr/colorAccent"
