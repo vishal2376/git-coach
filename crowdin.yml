@@ -1,7 +1,7 @@
 files:
-  - source: /app/src/main/assets/git_commands.json
+  - source: /app/src/main/assets/en/git_commands.json
     translation: /app/src/main/assets/%two_letters_code%/%original_file_name%
   - source: /app/src/main/res/values/strings.xml
     translation: /app/src/main/res/values-%two_letters_code%/%original_file_name%
-  - source: /app/src/main/assets/git_lessons.json
+  - source: /app/src/main/assets/en/git_lessons.json
     translation: /app/src/main/assets/%two_letters_code%/%original_file_name%
