@@ -35,7 +35,7 @@
     <string name="title">Titolo</string>
     <string name="command">Comando</string>
     <string name="description">Descrizione</string>
-    <string name="save">Save</string>
+    <string name="save">Salva</string>
     <string name="reset_to_default">Reset to default</string>
     <string name="english_default">English (Default)</string>
     <string name="italian">Italian</string>
