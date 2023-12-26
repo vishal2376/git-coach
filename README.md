@@ -65,6 +65,11 @@ To get started with Git+ Coach, simply download the app from the Google Play Sto
 
 We welcome contributions from anyone interested in helping to improve Git+ Coach! Feel free to submit a pull request or open an issue if you notice any bugs or have suggestions for new features.
 
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=vishal2376/git-coach&type=Timeline)](https://star-history.com/#vishal2376/git-coach&Timeline)
+
 ## License
 
 This project is licensed under the GPL v3.0 License - see the [LICENSE](LICENSE) file for details.
