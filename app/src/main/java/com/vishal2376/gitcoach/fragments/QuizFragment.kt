@@ -1,4 +1,4 @@
-package com.vishal2376.gitcoach
+package com.vishal2376.gitcoach.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater

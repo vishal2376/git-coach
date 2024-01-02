@@ -68,7 +68,7 @@
         tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/quizFragment"
-        android:name="com.vishal2376.gitcoach.QuizFragment"
+        android:name="com.vishal2376.gitcoach.fragments.QuizFragment"
         android:label="fragment_quiz"
         tools:layout="@layout/fragment_quiz" />
 </navigation>
