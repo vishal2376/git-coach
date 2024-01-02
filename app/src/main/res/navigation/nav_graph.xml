@@ -51,7 +51,11 @@
         android:id="@+id/communityFragment"
         android:name="com.vishal2376.gitcoach.fragments.CommunityFragment"
         android:label="fragment_community"
-        tools:layout="@layout/fragment_community" />
+        tools:layout="@layout/fragment_community" >
+        <action
+            android:id="@+id/action_communityFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+    </fragment>
     <fragment
         android:id="@+id/fontSettingFragment"
         android:name="com.vishal2376.gitcoach.fragments.FontSettingFragment"
@@ -62,4 +66,9 @@
         android:name="com.vishal2376.gitcoach.fragments.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.vishal2376.gitcoach.QuizFragment"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" />
 </navigation>
