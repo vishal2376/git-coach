@@ -1,0 +1,904 @@
+{
+  "quiz": [
+    {
+      "id": 1,
+      "question": "What command is used to show the commit history for a specific file?",
+      "choices": ["git log", "git history", "git show", "git file-history"],
+      "correctAnswer": "git log"
+    },
+    {
+      "id": 2,
+      "question": "How can you undo the last commit that has not been pushed to a remote repository?",
+      "choices": ["git reset", "git revert", "git undo", "git rollback"],
+      "correctAnswer": "git reset"
+    },
+    {
+      "id": 3,
+      "question": "What does 'git pull' do?",
+      "choices": ["Upload changes to remote", "Download changes from remote", "Merge changes from remote", "Delete remote changes"],
+      "correctAnswer": "Download changes from remote"
+    },
+    {
+      "id": 4,
+      "question": "How can you resolve a merge conflict in Git?",
+      "choices": ["git accept", "git merge-conflict", "git resolve", "git mergetool"],
+      "correctAnswer": "git mergetool"
+    },
+    {
+      "id": 5,
+      "question": "What is the purpose of the 'git stash' command?",
+      "choices": ["Delete changes", "Temporarily save changes", "Rename a branch", "Create a new branch"],
+      "correctAnswer": "Temporarily save changes"
+    },
+    {
+      "id": 6,
+      "question": "How can you rename a local Git branch?",
+      "choices": ["git mv", "git branch-rename", "git rename-branch", "git branch -m"],
+      "correctAnswer": "git branch -m"
+    },
+    {
+      "id": 7,
+      "question": "What is a 'fork' in the context of Git and GitHub?",
+      "choices": ["Create a new branch", "Copy a repository to your GitHub account", "Merge two branches", "Delete a branch"],
+      "correctAnswer": "Copy a repository to your GitHub account"
+    },
+    {
+      "id": 8,
+      "question": "How can you see the changes between two Git branches?",
+      "choices": ["git diff", "git changes", "git compare", "git branch-diff"],
+      "correctAnswer": "git diff"
+    },
+    {
+      "id": 9,
+      "question": "What is the purpose of the '.gitattributes' file?",
+      "choices": ["Specify merge strategies", "Define repository settings", "Configure line endings and attributes per path", "Store Git credentials"],
+      "correctAnswer": "Configure line endings and attributes per path"
+    },
+    {
+      "id": 10,
+      "question": "How do you create a Git tag?",
+      "choices": ["git create-tag", "git tag -a", "git tag-create", "git new-tag"],
+      "correctAnswer": "git tag -a"
+    },
+    {
+      "id": 11,
+      "question": "What is the purpose of the '.gitkeep' file?",
+      "choices": ["Mark a directory as empty", "Exclude a file from tracking", "Preserve empty directories in Git", "Define repository settings"],
+      "correctAnswer": "Mark a directory as empty"
+    },
+    {
+      "id": 12,
+      "question": "How can you see a list of remote repositories associated with your local repository?",
+      "choices": ["git list-remotes", "git remotes", "git remote -v", "git show-remotes"],
+      "correctAnswer": "git remote -v"
+    },
+    {
+      "id": 13,
+      "question": "What is the purpose of the 'git bisect' command?",
+      "choices": ["View commit history", "Debugging tool for finding faulty commits", "Create a new branch", "Revert the last commit"],
+      "correctAnswer": "Debugging tool for finding faulty commits"
+    },
+    {
+      "id": 14,
+      "question": "How can you remove a file from Git without deleting it from your working directory?",
+      "choices": ["git delete", "git rm --cached", "git remove", "git exclude"],
+      "correctAnswer": "git rm --cached"
+    },
+    {
+      "id": 15,
+      "question": "What is the purpose of the 'git cherry-pick' command?",
+      "choices": ["Merge changes from one branch to another", "Create a new branch", "Undo the last commit", "Delete a branch"],
+      "correctAnswer": "Merge changes from one branch to another"
+    },
+    {
+      "id": 16,
+      "question": "How can you see the detailed information about a specific commit in Git?",
+      "choices": ["git show", "git info", "git commit-info", "git details"],
+      "correctAnswer": "git show"
+    },
+    {
+      "id": 17,
+      "question": "What does 'git rebase' do?",
+      "choices": ["Merge changes from one branch to another", "Move or combine a sequence of commits to a new base commit", "Delete a branch", "Create a new branch"],
+      "correctAnswer": "Move or combine a sequence of commits to a new base commit"
+    },
+    {
+      "id": 18,
+      "question": "How can you show the changes introduced by the last commit?",
+      "choices": ["git changes", "git diff HEAD^", "git show last", "git commit-changes"],
+      "correctAnswer": "git diff HEAD^"
+    },
+    {
+      "id": 19,
+      "question": "What is a Git hook?",
+      "choices": ["A type of branch", "A server on which Git repositories are hosted", "A program triggered by Git events", "A special commit"],
+      "correctAnswer": "A program triggered by Git events"
+    },
+    {
+      "id": 20,
+      "question": "How can you create a new branch and switch to it in one command?",
+      "choices": ["git branch -c", "git new-branch", "git checkout -b", "git switch"],
+      "correctAnswer": "git checkout -b"
+    },
+    {
+      "id": 21,
+      "question": "What is the purpose of the '.gitkeep' file?",
+      "choices": ["Mark a directory as empty", "Exclude a file from tracking", "Preserve empty directories in Git", "Define repository settings"],
+      "correctAnswer": "Mark a directory as empty"
+    },
+    {
+      "id": 22,
+      "question": "How do you remove a remote branch in Git?",
+      "choices": ["git branch -d remote-branch", "git delete-remote-branch", "git remove-remote-branch", "git push origin --delete remote-branch"],
+      "correctAnswer": "git push origin --delete remote-branch"
+    },
+    {
+      "id": 23,
+      "question": "What does 'git log --graph' show?",
+      "choices": ["A graphical representation of the commit history", "A list of remote branches", "A summary of changes", "A log of all commits"],
+      "correctAnswer": "A graphical representation of the commit history"
+    },
+    {
+      "id": 24,
+      "question": "How can you amend the last commit message in Git?",
+      "choices": ["git commit --amend", "git amend-commit", "git edit-commit", "git change-commit"],
+      "correctAnswer": "git commit --amend"
+    },
+    {
+      "id": 25,
+      "question": "What is the purpose of the 'git grep' command?",
+      "choices": ["Search for a string in the working directory", "Retrieve the latest changes from remote", "Create a new branch", "List all branches"],
+      "correctAnswer": "Search for a string in the working directory"
+    },
+    {
+      "id": 26,
+      "question": "How can you list all branches, including remote branches, in Git?",
+      "choices": ["git branches -a", "git list-branches", "git remote-branches", "git branch -a"],
+      "correctAnswer": "git branch -a"
+    },
+    {
+      "id": 27,
+      "question": "What is the purpose of the 'git reflog' command?",
+      "choices": ["List all remote references", "Show a log of changes to refs", "Remove a remote reference", "Create a new reference"],
+      "correctAnswer": "Show a log of changes to refs"
+    },
+    {
+      "id": 28,
+      "question": "How can you see the changes between two Git commits?",
+      "choices": ["git diff", "git changes", "git compare", "git commit-diff"],
+      "correctAnswer": "git diff"
+    },
+    {
+      "id": 29,
+      "question": "What is the purpose of the 'git submodule' command?",
+      "choices": ["Update all submodules", "Add a submodule to the repository", "Remove a submodule", "List all submodules"],
+      "correctAnswer": "Add a submodule to the repository"
+    },
+    {
+      "id": 30,
+      "question": "How can you unstage changes in Git?",
+      "choices": ["git unstage", "git reset", "git remove", "git revert"],
+      "correctAnswer": "git reset"
+    },
+    {
+      "id": 31,
+      "question": "What is a 'fast-forward' merge in Git?",
+      "choices": ["A merge that only considers changes on the target branch", "A merge that happens quickly", "A merge that deletes branches", "A merge that requires approval"],
+      "correctAnswer": "A merge that only considers changes on the target branch"
+    },
+    {
+      "id": 32,
+      "question": "How can you see the list of files changed in a specific commit?",
+      "choices": ["git changes", "git diff", "git show", "git commit-files"],
+      "correctAnswer": "git show"
+    },
+    {
+      "id": 33,
+      "question": "What is the purpose of the 'git log --oneline' command?",
+      "choices": ["Show a condensed log with each commit on a single line", "Show a detailed log with each commit on multiple lines", "Log only the first line of commit messages", "Log only the last line of commit messages"],
+      "correctAnswer": "Show a condensed log with each commit on a single line"
+    },
+    {
+      "id": 34,
+      "question": "How do you create a Git alias?",
+      "choices": ["git add-alias", "git alias", "git create-alias", "git config --global alias"],
+      "correctAnswer": "git config --global alias"
+    },
+    {
+      "id": 35,
+      "question": "What is the purpose of the 'git rebase -i' command?",
+      "choices": ["Rebase interactively, allowing you to modify commits", "Force push changes to a remote branch", "Rebase with the latest changes from remote", "Rebase without confirmation"],
+      "correctAnswer": "Rebase interactively, allowing you to modify commits"
+    },
+    {
+      "id": 36,
+      "question": "How can you show the commit history of a specific file, including changes made by renames?",
+      "choices": ["git log --follow", "git log --changes", "git history --follow", "git file-history"],
+      "correctAnswer": "git log --follow"
+    },
+    {
+      "id": 37,
+      "question": "What is the purpose of the 'git push --force' command?",
+      "choices": ["Push changes to a remote branch", "Force push changes to a remote branch", "Delete a remote branch", "Update local branches"],
+      "correctAnswer": "Force push changes to a remote branch"
+    },
+    {
+      "id": 38,
+      "question": "How can you delete a local Git branch?",
+      "choices": ["git remove-branch", "git branch -d branch-name", "git delete-branch", "git branch -D branch-name"],
+      "correctAnswer": "git branch -d branch-name"
+    },
+    {
+      "id": 39,
+      "question": "What does 'git log --since' do?",
+      "choices": ["Show commits since a specific date", "Show the commit history of a specific file", "Show a condensed log with each commit on a single line", "Show the commit history of a specific branch"],
+      "correctAnswer": "Show commits since a specific date"
+    },
+    {
+      "id": 40,
+      "question": "How can you undo the last commit without losing changes in your working directory?",
+      "choices": ["git revert", "git reset --soft", "git undo", "git rollback"],
+      "correctAnswer": "git reset --soft"
+    },
+    {
+      "id": 41,
+      "question": "What is the purpose of the 'git log --grep' command?",
+      "choices": ["Search for a string in commit messages", "List all branches", "Show a detailed log with each commit on multiple lines", "Show only the first line of commit messages"],
+      "correctAnswer": "Search for a string in commit messages"
+    },
+    {
+      "id": 42,
+      "question": "How can you rename a file in Git and maintain its history?",
+      "choices": ["git move", "git rename", "git mv", "git change"],
+      "correctAnswer": "git mv"
+    },
+    {
+      "id": 43,
+      "question": "What is the purpose of the 'git log --author' command?",
+      "choices": ["Show commits by a specific author", "Show a condensed log with each commit on a single line", "Show the commit history of a specific branch", "Show only the last line of commit messages"],
+      "correctAnswer": "Show commits by a specific author"
+    },
+        {
+      "id": 44,
+      "question": "How can you show the changes introduced by a specific commit in Git?",
+      "choices": ["git diff commit-hash", "git show commit-hash", "git changes commit-hash", "git commit-diff commit-hash"],
+      "correctAnswer": "git show commit-hash"
+    },
+    {
+      "id": 45,
+      "question": "What is the purpose of the 'git log --decorate' command?",
+      "choices": ["Show a decorated log with additional information", "Show a condensed log with each commit on a single line", "Show only the first line of commit messages", "Show a detailed log with each commit on multiple lines"],
+      "correctAnswer": "Show a decorated log with additional information"
+    },
+    {
+      "id": 46,
+      "question": "How can you squash multiple Git commits into a single commit?",
+      "choices": ["git merge --squash", "git rebase --squash", "git squash-commits", "git combine-commits"],
+      "correctAnswer": "git rebase --squash"
+    },
+    {
+      "id": 47,
+      "question": "What is the purpose of the 'git log --oneline --graph' command?",
+      "choices": ["Show a condensed log with each commit on a single line and a graphical representation", "Show a detailed log with each commit on multiple lines", "Show only the last line of commit messages", "Show only the first line of commit messages"],
+      "correctAnswer": "Show a condensed log with each commit on a single line and a graphical representation"
+    },
+    {
+      "id": 48,
+      "question": "How can you see the commit history of a specific branch in Git?",
+      "choices": ["git log branch-name", "git branch-log branch-name", "git history branch-name", "git show branch-name"],
+      "correctAnswer": "git log branch-name"
+    },
+    {
+      "id": 49,
+      "question": "What is the purpose of the 'git clean' command?",
+      "choices": ["Remove untracked files from the working directory", "Clean up the commit history", "Delete a branch", "Remove changes from the staging area"],
+      "correctAnswer": "Remove untracked files from the working directory"
+    },
+    {
+      "id": 50,
+      "question": "How can you create a new branch without switching to it in Git?",
+      "choices": ["git branch new-branch", "git create-branch new-branch", "git checkout -b new-branch", "git switch new-branch"],
+      "correctAnswer": "git branch new-branch"
+    },
+    {
+      "id": 51,
+      "question": "What command is used to check the status of your working directory in Git?",
+      "choices": ["git check", "git status", "git info", "git show"],
+      "correctAnswer": "git status"
+    },
+    {
+      "id": 52,
+      "question": "How do you create a new remote repository on GitHub?",
+      "choices": ["git create-repo", "git remote-create", "git init", "git new-remote"],
+      "correctAnswer": "git create-repo"
+    },
+    {
+      "id": 53,
+      "question": "What is the purpose of the 'git add' command?",
+      "choices": ["Commit changes", "Add changes to the staging area", "Create a new branch", "Remove files from the repository"],
+      "correctAnswer": "Add changes to the staging area"
+    },
+    {
+      "id": 54,
+      "question": "How can you see the changes between two branches in Git?",
+      "choices": ["git branch-diff", "git diff-branches", "git changes", "git diff branch1 branch2"],
+      "correctAnswer": "git diff branch1 branch2"
+    },
+    {
+      "id": 55,
+      "question": "What is the purpose of the 'git branch' command?",
+      "choices": ["Create a new branch", "Delete a branch", "Show a list of branches", "Merge branches"],
+      "correctAnswer": "Show a list of branches"
+    },
+    {
+      "id": 56,
+      "question": "How can you rename a remote in Git?",
+      "choices": ["git remote-rename", "git remote -mv", "git remote rename", "git rename-remote"],
+      "correctAnswer": "git remote rename"
+    },
+    {
+      "id": 57,
+      "question": "What is the purpose of the 'git log -n' command?",
+      "choices": ["Show the last n commits", "Show detailed commit information", "Show a condensed log", "Show commits since a specific date"],
+      "correctAnswer": "Show the last n commits"
+    },
+    {
+      "id": 58,
+      "question": "How can you discard changes in your working directory for a specific file?",
+      "choices": ["git remove", "git discard", "git reset", "git checkout -- file"],
+      "correctAnswer": "git checkout -- file"
+    },
+    {
+      "id": 59,
+      "question": "What is the purpose of the '.gitignore' file?",
+      "choices": ["List files to be ignored by Git", "Include files in the repository", "Track all files in the repository", "Backup repository history"],
+      "correctAnswer": "List files to be ignored by Git"
+    },
+    {
+      "id": 60,
+      "question": "How do you create a new branch and switch to it in Git?",
+      "choices": ["git branch new-branch", "git create-branch new-branch", "git checkout -b new-branch", "git switch new-branch"],
+      "correctAnswer": "git checkout -b new-branch"
+    },
+    {
+      "id": 61,
+      "question": "What does 'git pull origin main' do?",
+      "choices": ["Push changes to the main branch", "Fetch and merge changes from the main branch", "Delete the main branch", "Create a new branch named 'main'"],
+      "correctAnswer": "Fetch and merge changes from the main branch"
+    },
+    {
+      "id": 62,
+      "question": "How can you create and apply a patch in Git?",
+      "choices": ["git create-patch", "git patch-create", "git diff > patchfile", "git apply-patch"],
+      "correctAnswer": "git diff > patchfile"
+    },
+    {
+      "id": 63,
+      "question": "What is the purpose of the 'git fetch' command?",
+      "choices": ["Upload changes to remote", "Download changes from remote", "Merge changes from remote", "Delete remote changes"],
+      "correctAnswer": "Download changes from remote"
+    },
+    {
+      "id": 64,
+      "question": "How do you configure the username and email in Git globally?",
+      "choices": ["git config --global user.name/email", "git set-username/email", "git username/email", "git configure user.name/email"],
+      "correctAnswer": "git config --global user.name/email"
+    },
+    {
+      "id": 65,
+      "question": "What does 'git tag -l' show?",
+      "choices": ["List all tags", "Create a new tag", "Delete a tag", "Show detailed tag information"],
+      "correctAnswer": "List all tags"
+    },
+    {
+      "id": 66,
+      "question": "How can you see the changes introduced by the last commit?",
+      "choices": ["git changes", "git diff HEAD^", "git show last", "git commit-changes"],
+      "correctAnswer": "git diff HEAD^"
+    },
+    {
+      "id": 67,
+      "question": "What is the purpose of the 'git remote show' command?",
+      "choices": ["List remote branches", "Show detailed information about a remote", "Remove a remote", "Show remote changes"],
+      "correctAnswer": "Show detailed information about a remote"
+    },
+    {
+      "id": 68,
+      "question": "How can you create a Git branch without checking it out?",
+      "choices": ["git create-branch", "git branch -c", "git checkout -b", "git branch new-branch"],
+      "correctAnswer": "git branch new-branch"
+    },
+    {
+      "id": 69,
+      "question": "What is the purpose of the 'git merge --no-ff' command?",
+      "choices": ["Force a fast-forward merge", "Prevent a fast-forward merge", "Merge only non-fast-forward branches", "Delete a branch after merging"],
+      "correctAnswer": "Prevent a fast-forward merge"
+    },
+    {
+      "id": 70,
+      "question": "How can you revert a Git commit that has been pushed to a remote repository?",
+      "choices": ["git reset", "git revert", "git rollback", "git undo"],
+      "correctAnswer": "git revert"
+    },
+    {
+      "id": 71,
+      "question": "What is the purpose of the 'git log --since' command?",
+      "choices": ["Show commits since a specific date", "Show the commit history of a specific file", "Show a condensed log with each commit on a single line", "Show the commit history of a specific branch"],
+      "correctAnswer": "Show commits since a specific date"
+    },
+    {
+      "id": 72,
+      "question": "How can you amend the last commit without changing the commit message?",
+      "choices": ["git commit --amend", "git amend-commit", "git edit-commit", "git change-commit"],
+      "correctAnswer": "git commit --amend"
+    },
+    {
+      "id": 73,
+      "question": "What is the purpose of the 'git log --grep' command?",
+      "choices": ["Search for a string in commit messages", "List all branches", "Show a detailed log with each commit on multiple lines", "Show only the first line of commit messages"],
+      "correctAnswer": "Search for a string in commit messages"
+    },
+    {
+      "id": 74,
+      "question": "How can you remove a file from both the working directory and the Git repository?",
+      "choices": ["git delete-file", "git remove-file", "git rm file", "git exclude-file"],
+      "correctAnswer": "git rm file"
+    },
+    {
+      "id": 75,
+      "question": "What is the purpose of the 'git log --graph' command?",
+      "choices": ["Show a graphical representation of the commit history", "Show a condensed log with each commit on a single line", "Show only the last line of commit messages", "Show the commit history of a specific branch"],
+      "correctAnswer": "Show a graphical representation of the commit history"
+    },
+    {
+      "id": 76,
+      "question": "How can you create a Git branch based on a specific commit?",
+      "choices": ["git branch new-branch commit-hash", "git create-branch new-branch commit-hash", "git checkout -b new-branch commit-hash", "git switch new-branch commit-hash"],
+      "correctAnswer": "git branch new-branch commit-hash"
+    },
+    {
+      "id": 77,
+      "question": "What is the purpose of the 'git cherry-pick -n' command?",
+      "choices": ["Apply changes from a commit to the working directory without committing", "Apply changes from a commit to the working directory and commit", "Create a new branch with cherry-picked changes", "Remove changes from a commit"],
+      "correctAnswer": "Apply changes from a commit to the working directory without committing"
+    },
+    {
+      "id": 78,
+      "question": "How can you show the commit history of a specific file, including changes made by renames?",
+      "choices": ["git log --follow", "git log --changes", "git history --follow", "git file-history"],
+      "correctAnswer": "git log --follow"
+    },
+    {
+      "id": 79,
+      "question": "What is the purpose of the 'git log --oneline --graph' command?",
+      "choices": ["Show a condensed log with each commit on a single line and a graphical representation", "Show a detailed log with each commit on multiple lines", "Show only the last line of commit messages", "Show only the first line of commit messages"],
+      "correctAnswer": "Show a condensed log with each commit on a single line and a graphical representation"
+    },
+    {
+      "id": 80,
+      "question": "How do you revert a Git commit that has not been pushed to a remote repository?",
+      "choices": ["git reset", "git revert", "git rollback", "git undo"],
+      "correctAnswer": "git reset"
+    },
+        {
+      "id": 81,
+      "question": "What is the command to clone a remote repository to your local machine?",
+      "choices": ["git clone", "git fetch", "git pull", "git copy"],
+      "correctAnswer": "git clone"
+    },
+    {
+      "id": 82,
+      "question": "How do you create a new branch in Git?",
+      "choices": ["git new-branch", "git branch -n", "git branch new-branch", "git create-branch"],
+      "correctAnswer": "git branch new-branch"
+    },
+    {
+      "id": 83,
+      "question": "What command is used to stage changes for a commit in Git?",
+      "choices": ["git add", "git commit", "git stage", "git modify"],
+      "correctAnswer": "git add"
+    },
+    {
+      "id": 84,
+      "question": "How can you unstage changes in Git?",
+      "choices": ["git reset", "git unstage", "git revert", "git discard"],
+      "correctAnswer": "git reset"
+    },
+    {
+      "id": 85,
+      "question": "What does 'git pull' do?",
+      "choices": ["Push local changes to the remote repository", "Fetch and merge changes from the remote repository", "Clone a remote repository", "Delete a remote repository"],
+      "correctAnswer": "Fetch and merge changes from the remote repository"
+    },
+    {
+      "id": 86,
+      "question": "What is the command to view the commit history in Git?",
+      "choices": ["git history", "git show", "git log", "git commits"],
+      "correctAnswer": "git log"
+    },
+    {
+      "id": 87,
+      "question": "How do you create a new tag in Git?",
+      "choices": ["git tag -a", "git create-tag", "git new-tag", "git tag-create"],
+      "correctAnswer": "git tag -a"
+    },
+    {
+      "id": 88,
+      "question": "What is the purpose of the 'git push' command?",
+      "choices": ["Download changes from remote", "Push local changes to a remote repository", "Merge changes from remote", "Delete remote changes"],
+      "correctAnswer": "Push local changes to a remote repository"
+    },
+    {
+      "id": 89,
+      "question": "How can you view the changes between two commits in Git?",
+      "choices": ["git compare", "git changes", "git diff", "git commit-diff"],
+      "correctAnswer": "git diff"
+    },
+    {
+      "id": 90,
+      "question": "What is the purpose of the '.gitignore' file?",
+      "choices": ["Specify merge strategies", "Define repository settings", "Configure line endings and attributes per path", "List files to be ignored by Git"],
+      "correctAnswer": "List files to be ignored by Git"
+    },
+    {
+      "id": 91,
+      "question": "How can you discard changes in your working directory for a specific file?",
+      "choices": ["git remove", "git discard", "git reset", "git checkout -- file"],
+      "correctAnswer": "git checkout -- file"
+    },
+    {
+      "id": 92,
+      "question": "What command is used to create and switch to a new branch in Git?",
+      "choices": ["git branch -c", "git new-branch", "git checkout -b", "git switch"],
+      "correctAnswer": "git checkout -b"
+    },
+    {
+      "id": 93,
+      "question": "How can you see the detailed information about a specific commit in Git?",
+      "choices": ["git details", "git show", "git info", "git commit-info"],
+      "correctAnswer": "git show"
+    },
+    {
+      "id": 94,
+      "question": "What does 'git branch -d' do?",
+      "choices": ["Create a new branch", "Delete a branch", "Rename a branch", "Merge branches"],
+      "correctAnswer": "Delete a branch"
+    },
+    {
+      "id": 95,
+      "question": "How do you rename a local branch in Git?",
+      "choices": ["git branch -m", "git mv", "git rename-branch", "git move-branch"],
+      "correctAnswer": "git branch -m"
+    },
+    {
+      "id": 96,
+      "question": "What is the purpose of the 'git remote add' command?",
+      "choices": ["Add a new remote repository", "Remove a remote repository", "Rename a remote repository", "Show information about remote repositories"],
+      "correctAnswer": "Add a new remote repository"
+    },
+    {
+      "id": 97,
+      "question": "How can you see the changes introduced by the last commit?",
+      "choices": ["git changes", "git diff HEAD^", "git show last", "git commit-changes"],
+      "correctAnswer": "git diff HEAD^"
+    },
+    {
+      "id": 98,
+      "question": "What is the purpose of the 'git rebase' command?",
+      "choices": ["Merge changes from one branch to another", "Move or combine a sequence of commits to a new base commit", "Delete a branch", "Create a new branch"],
+      "correctAnswer": "Move or combine a sequence of commits to a new base commit"
+    },
+    {
+      "id": 99,
+      "question": "How can you remove a remote repository reference in Git?",
+      "choices": ["git remote -d", "git remove-remote", "git delete-remote", "git remote-delete"],
+      "correctAnswer": "git remote -d"
+    },
+    {
+      "id": 100,
+      "question": "What is the purpose of the 'git log --oneline' command?",
+      "choices": ["Show a condensed log with each commit on a single line", "Show a detailed log with each commit on multiple lines", "Log only the first line of commit messages", "Log only the last line of commit messages"],
+      "correctAnswer": "Show a condensed log with each commit on a single line"
+    },
+    {
+      "id": 101,
+      "question": "How can you create a new branch without switching to it in Git?",
+      "choices": ["git branch -c", "git new-branch", "git checkout -b", "git switch"],
+      "correctAnswer": "git branch -c new-branch"
+    },
+    {
+      "id": 102,
+      "question": "What does 'git log --graph' show?",
+      "choices": ["A graphical representation of the commit history", "A list of remote branches", "A summary of changes", "A log of all commits"],
+      "correctAnswer": "A graphical representation of the commit history"
+    },
+    {
+      "id": 103,
+      "question": "How can you see the changes between two Git branches?",
+      "choices": ["git diff", "git changes", "git compare", "git branch-diff"],
+      "correctAnswer": "git diff"
+    },
+    {
+      "id": 104,
+      "question": "What is the purpose of the 'git stash' command?",
+      "choices": ["Delete changes", "Temporarily save changes", "Rename a branch", "Create a new branch"],
+      "correctAnswer": "Temporarily save changes"
+    },
+    {
+      "id": 105,
+      "question": "How can you create a new branch based on a specific commit in Git?",
+      "choices": ["git checkout -b new-branch commit-hash", "git branch new-branch commit-hash", "git create-branch new-branch commit-hash", "git switch new-branch commit-hash"],
+      "correctAnswer": "git branch new-branch commit-hash"
+    },
+    {
+      "id": 106,
+      "question": "What is the purpose of the 'git log --grep' command?",
+      "choices": ["Search for a string in commit messages", "List all branches", "Show a detailed log with each commit on multiple lines", "Show only the first line of commit messages"],
+      "correctAnswer": "Search for a string in commit messages"
+    },
+    {
+      "id": 107,
+      "question": "How do you remove a file from Git without deleting it from your working directory?",
+      "choices": ["git delete", "git rm --cached", "git remove", "git exclude"],
+      "correctAnswer": "git rm --cached"
+    },
+    {
+      "id": 108,
+      "question": "What is the purpose of the 'git log --graph --oneline' command?",
+      "choices": ["Show a condensed log with each commit on a single line and a graphical representation", "Show a detailed log with each commit on multiple lines", "Show only the first line of commit messages", "Show only the last line of commit messages"],
+      "correctAnswer": "Show a condensed log with each commit on a single line and a graphical representation"
+    },
+    {
+      "id": 109,
+      "question": "How can you squash multiple Git commits into a single commit?",
+      "choices": ["git combine", "git squash", "git merge --squash", "git condense"],
+      "correctAnswer": "git squash"
+    },
+    {
+      "id": 110,
+      "question": "What does 'git log --since' do?",
+      "choices": ["Show commits since a specific date", "Show the commit history of a specific file", "Show a condensed log with each commit on a single line", "Show the commit history of a specific branch"],
+      "correctAnswer": "Show commits since a specific date"
+    },
+    {
+      "id": 111,
+      "question": "How do you revert a Git commit without creating a new commit?",
+      "choices": ["git undo", "git rollback", "git revert -n", "git reset --soft"],
+      "correctAnswer": "git reset --soft HEAD^"
+    },
+    {
+      "id": 112,
+      "question": "What is the purpose of the 'git log --author' command?",
+      "choices": ["Show commits by a specific author", "Show a condensed log with each commit on a single line", "Show the commit history of a specific branch", "Show only the last line of commit messages"],
+      "correctAnswer": "Show commits by a specific author"
+    },
+    {
+      "id": 113,
+      "question": "How can you list all remote branches in Git?",
+      "choices": ["git remote-branches", "git list-remotes", "git branches -r", "git remote -v"],
+      "correctAnswer": "git branches -r"
+    },
+    {
+      "id": 114,
+      "question": "What does 'git cherry-pick' do?",
+      "choices": ["Merge changes from one branch to another", "Create a new branch", "Undo the last commit", "Delete a branch"],
+      "correctAnswer": "Merge changes from one branch to another"
+    },
+    {
+      "id": 115,
+      "question": "How can you show the commit history of a specific file, including changes made by renames?",
+      "choices": ["git log --follow", "git log --changes", "git history --follow", "git file-history"],
+      "correctAnswer": "git log --follow"
+    },
+    {
+      "id": 116,
+      "question": "What is the purpose of the 'git log --oneline --graph' command?",
+      "choices": ["Show a condensed log with each commit on a single line and a graphical representation", "Show a detailed log with each commit on multiple lines", "Show only the last line of commit messages", "Show only the first line of commit messages"],
+      "correctAnswer": "Show a condensed log with each commit on a single line and a graphical representation"
+    },
+    {
+      "id": 117,
+      "question": "How do you amend the last commit message in Git?",
+      "choices": ["git commit --amend", "git amend-commit", "git edit-commit", "git change-commit"],
+      "correctAnswer": "git commit --amend"
+    },
+    {
+      "id": 118,
+      "question": "What is the purpose of the 'git reflog' command?",
+      "choices": ["List all remote references", "Show a log of changes to refs", "Remove a remote reference", "Create a new reference"],
+      "correctAnswer": "Show a log of changes to refs"
+    },
+    {
+      "id": 119,
+      "question": "How can you show the changes between two commits, including file names and content, in Git?",
+      "choices": ["git diff --name-only", "git changes --full", "git log --details", "git diff --full-index"],
+      "correctAnswer": "git diff --full-index"
+    },
+    {
+      "id": 120,
+      "question": "What is the purpose of the 'git submodule' command?",
+      "choices": ["Merge submodules", "Add a new submodule", "Remove a submodule", "Manage external project references"],
+      "correctAnswer": "Manage external project references"
+    },
+    {
+      "id": 121,
+      "question": "How do you cherry-pick a specific commit range in Git?",
+      "choices": ["git cherry-pick range", "git cherry-pick --range", "git cherry-pick -r", "git cherry-pick commit1^..commit2"],
+      "correctAnswer": "git cherry-pick commit1^..commit2"
+    },
+    {
+      "id": 122,
+      "question": "What does 'git log --since=2.weeks' show?",
+      "choices": ["Show commits in the last 2 weeks", "Show commits older than 2 weeks", "Show a log of the last 2 weeks", "Show commits since 2 weeks ago"],
+      "correctAnswer": "Show commits since 2 weeks ago"
+    },
+    {
+      "id": 123,
+      "question": "How can you delete a remote branch in Git?",
+      "choices": ["git delete-remote-branch", "git remove-branch -r", "git push origin --delete branch-name", "git remote-delete-branch"],
+      "correctAnswer": "git push origin --delete branch-name"
+    },
+    {
+      "id": 124,
+      "question": "What is the purpose of the 'git bisect' command?",
+      "choices": ["Find the differences between two branches", "Navigate between commits", "Find the commit that introduced a bug", "Create a bisected copy of a repository"],
+      "correctAnswer": "Find the commit that introduced a bug"
+    },
+    {
+      "id": 125,
+      "question": "How do you create a Git alias for a command?",
+      "choices": ["git alias", "git config --alias", "git alias add", "git config --global alias"],
+      "correctAnswer": "git config --global alias"
+    },
+    {
+      "id": 126,
+      "question": "What does 'git log --stat' show?",
+      "choices": ["Show a condensed log with each commit on a single line", "Show a detailed log with each commit on multiple lines", "Show the commit history of a specific branch", "Show the file changes and insertions/deletions for each commit"],
+      "correctAnswer": "Show the file changes and insertions/deletions for each commit"
+    },
+    {
+      "id": 127,
+      "question": "How can you rename a file in Git while preserving its history?",
+      "choices": ["git move", "git rename", "git mv", "git file-rename"],
+      "correctAnswer": "git mv"
+    },
+    {
+      "id": 128,
+      "question": "What is the purpose of the 'git clean' command?",
+      "choices": ["Clean up untracked files in the working directory", "Remove all commits from the repository", "Clean up ignored files", "Delete remote branches"],
+      "correctAnswer": "Clean up untracked files in the working directory"
+    },
+    {
+      "id": 129,
+      "question": "How do you apply only specific hunks from a Git patch?",
+      "choices": ["git apply --hunks", "git patch-apply", "git apply --selective", "git apply --check"],
+      "correctAnswer": "git apply --selective"
+    },
+    {
+      "id": 130,
+      "question": "What does 'git log --oneline --decorate' do?",
+      "choices": ["Show a condensed log with each commit on a single line and decorated", "Show a detailed log with each commit on multiple lines", "Show only the last line of commit messages", "Show only the first line of commit messages"],
+      "correctAnswer": "Show a condensed log with each commit on a single line and decorated"
+    },
+    {
+      "id": 131,
+      "question": "How can you change the last Git commit message?",
+      "choices": ["git commit --message", "git change-message", "git commit --amend -m", "git edit-commit-message"],
+      "correctAnswer": "git commit --amend -m"
+    },
+    {
+      "id": 132,
+      "question": "What is the purpose of the 'git log --cherry-pick' command?",
+      "choices": ["Show only cherry-picked commits", "Cherry-pick the last commit", "Create a new branch with cherry-picked changes", "Merge changes from one branch to another"],
+      "correctAnswer": "Show only cherry-picked commits"
+    },
+    {
+      "id": 133,
+      "question": "How can you show the changes introduced by a specific commit, including the file names and content?",
+      "choices": ["git show commit", "git diff commit", "git changes commit", "git log commit"],
+      "correctAnswer": "git show commit"
+    },
+    {
+      "id": 134,
+      "question": "What is the purpose of the 'git log --before' command?",
+      "choices": ["Show commits before a specific date", "Show the commit history of a specific file", "Show a condensed log with each commit on a single line", "Show commits since a specific date"],
+      "correctAnswer": "Show commits before a specific date"
+    },
+    {
+      "id": 135,
+      "question": "How do you stash changes in Git?",
+      "choices": ["git stash save", "git save-stash", "git stash", "git stash push"],
+      "correctAnswer": "git stash"
+    },
+    {
+      "id": 136,
+      "question": "What is the purpose of the 'git log --merges' command?",
+      "choices": ["Show only merge commits", "Show only non-merge commits", "Merge changes from one branch to another", "Create a new branch with merged changes"],
+      "correctAnswer": "Show only merge commits"
+    },
+    {
+      "id": 137,
+      "question": "How can you undo the last Git commit, keeping the changes in your working directory?",
+      "choices": ["git commit --undo", "git rollback", "git reset --soft HEAD^", "git revert --no-commit"],
+      "correctAnswer": "git reset --soft HEAD^"
+    },
+    {
+      "id": 138,
+      "question": "What does 'git remote -v' show?",
+      "choices": ["Show verbose output of remote branches", "List all remotes with their URLs", "Verify remote repository URLs", "Show only remote branch names"],
+      "correctAnswer": "List all remotes with their URLs"
+    },
+    {
+      "id": 139,
+      "question": "How can you list all tags in a Git repository?",
+      "choices": ["git list-tags", "git tags", "git show-tags", "git tag -l"],
+      "correctAnswer": "git tag -l"
+    },
+    {
+      "id": 140,
+      "question": "What is the purpose of the 'git log --pretty' command?",
+      "choices": ["Show a pretty-printed log with customizable formats", "Show a condensed log with each commit on a single line", "Show only the last line of commit messages", "Show a detailed log with each commit on multiple lines"],
+      "correctAnswer": "Show a pretty-printed log with customizable formats"
+    },
+    {
+      "id": 141,
+      "question": "How do you create a Git patch for specific commits?",
+      "choices": ["git create-patch", "git format-patch", "git commit-patch", "git patch-create"],
+      "correctAnswer": "git format-patch"
+    },
+    {
+      "id": 142,
+      "question": "What does 'git log --invert-grep' do?",
+      "choices": ["Invert the sense of matching for the grep pattern", "Show commits with grep pattern", "Exclude commits with grep pattern", "Show a condensed log with each commit on a single line"],
+      "correctAnswer": "Invert the sense of matching for the grep pattern"
+    },
+    {
+      "id": 143,
+      "question": "How can you amend the last commit without changing its message?",
+      "choices": ["git amend --no-edit", "git commit --amend --no-edit", "git edit-commit --no-change", "git modify --no-message"],
+      "correctAnswer": "git commit --amend --no-edit"
+    },
+    {
+      "id": 144,
+      "question": "What is the purpose of the 'git log --branches' command?",
+      "choices": ["Show commits from all branches", "Show only branch names", "Show a condensed log with each commit on a single line", "Show commits since the last branch"],
+      "correctAnswer": "Show commits from all branches"
+    },
+    {
+      "id": 145,
+      "question": "How can you see the changes introduced by a specific commit in a side-by-side view?",
+      "choices": ["git diff commit --side-by-side", "git show commit --side-by-side", "git changes commit --side-by-side", "git log commit --side-by-side"],
+      "correctAnswer": "git show commit --side-by-side"
+    },
+    {
+      "id": 146,
+      "question": "How can you create a Git branch and switch to it in a single command?",
+      "choices": ["git branch -s new-branch", "git switch -b new-branch", "git checkout --branch new-branch", "git create-switch new-branch"],
+      "correctAnswer": "git switch -b new-branch"
+    },
+    {
+      "id": 147,
+      "question": "What does 'git log --grep -i' do?",
+      "choices": ["Search for a case-sensitive string in commit messages", "Search for a string in commit messages with case-insensitivity", "Show a condensed log with each commit on a single line", "Exclude commits with a specified pattern"],
+      "correctAnswer": "Search for a string in commit messages with case-insensitivity"
+    },
+    {
+      "id": 148,
+      "question": "How do you remove untracked files and directories in Git?",
+      "choices": ["git clean -d -f", "git remove-untracked", "git delete-files", "git purge"],
+      "correctAnswer": "git clean -d -f"
+    },
+    {
+      "id": 149,
+      "question": "What is the purpose of the 'git log --graph --all' command?",
+      "choices": ["Show a graphical representation of the commit history for all branches", "Show a detailed log with each commit on multiple lines", "Show only the last line of commit messages", "Show a condensed log with each commit on a single line for all branches"],
+      "correctAnswer": "Show a graphical representation of the commit history for all branches"
+    },
+    {
+      "id": 150,
+      "question": "How do you tag a specific commit in Git?",
+      "choices": ["git create-tag commit-hash", "git tag -m 'tag message'", "git tag -a tag-name commit-hash", "git commit --tag tag-name"],
+      "correctAnswer": "git tag -a tag-name commit-hash"
+    }
+  ]
+}
