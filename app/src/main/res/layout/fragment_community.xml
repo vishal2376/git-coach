@@ -9,41 +9,12 @@
     android:paddingHorizontal="@dimen/_40sdp"
     tools:context=".fragments.CommunityFragment">
 
-    <ImageView
-        android:layout_width="@dimen/_60sdp"
-        android:layout_height="@dimen/_60sdp"
-        android:layout_gravity="center"
-        android:src="@drawable/app_logo" />
-
-
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:fontFamily="@font/roboto_medium"
-        android:text="Coming Soon"
-        android:textColor="?attr/colorAccent"
-        android:textSize="@dimen/_25ssp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:fontFamily="@font/roboto_medium"
-        android:text="(Markdown Articles)"
-        android:textColor="@color/colorWhite"
-        android:textSize="@dimen/_13ssp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="@dimen/_30sdp"
-        android:fontFamily="@font/roboto_medium"
-        android:text="Stay Tuned 😊"
-        android:textColor="?attr/colorAccent"
-        android:textSize="@dimen/_12ssp" />
+        android:backgroundTint="?attr/colorAccent"
+        android:text="Quiz" />
 
 
 </LinearLayout>
