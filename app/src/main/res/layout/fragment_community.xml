@@ -1,20 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="?attr/colorPrimaryVariant"
     android:gravity="center_vertical"
     android:orientation="vertical"
     android:paddingHorizontal="@dimen/_40sdp"
     tools:context=".fragments.CommunityFragment">
 
-    <Button
-        android:layout_width="wrap_content"
+       <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:backgroundTint="?attr/colorAccent"
-        android:text="Quiz" />
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:src="@drawable/app_logo" />
 
-</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/level_up_your_skill"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_medium"
+            android:text="@string/test_learn_excel"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_20ssp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="@dimen/_50sdp"
+            android:paddingHorizontal="@dimen/_25sdp"
+            android:textSize="@dimen/_12sdp"
+            android:background="@drawable/round_bg_dark"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:text="@string/start_quiz" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
