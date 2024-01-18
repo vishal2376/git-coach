@@ -46,7 +46,7 @@ class MainFragment : Fragment() {
                 }
 
                 2 -> {
-                    tab.text = "Community"
+                    tab.text = "Quiz"
                 }
             }
         }.attach()
