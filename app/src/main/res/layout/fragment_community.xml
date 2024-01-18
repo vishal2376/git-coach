@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="?attr/colorPrimaryVariant"
     android:gravity="center_vertical"
     android:orientation="vertical"
     android:paddingHorizontal="@dimen/_40sdp"
     tools:context=".fragments.CommunityFragment">
 
-       <LinearLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -43,16 +43,17 @@
             android:textSize="@dimen/_20ssp" />
 
         <Button
+            android:id="@+id/btnStartQuiz"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginVertical="@dimen/_50sdp"
-            android:paddingHorizontal="@dimen/_25sdp"
-            android:textSize="@dimen/_12sdp"
             android:background="@drawable/round_bg_dark"
+            android:paddingHorizontal="@dimen/_25sdp"
+            android:text="@string/start_quiz"
             android:textAllCaps="false"
             android:textColor="@color/colorWhite"
-            android:text="@string/start_quiz" />
+            android:textSize="@dimen/_12sdp" />
 
     </LinearLayout>
 

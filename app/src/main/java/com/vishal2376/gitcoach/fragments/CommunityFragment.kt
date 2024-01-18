@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.vishal2376.gitcoach.R
 import com.vishal2376.gitcoach.databinding.FragmentCommunityBinding
 
 class CommunityFragment : Fragment() {
@@ -24,6 +26,9 @@ class CommunityFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.btnStartQuiz.setOnClickListener {
+            findNavController().navigate(R.id.action_communityFragment_to_quizFragment)
+        }
     }
 
     override fun onDestroyView() {

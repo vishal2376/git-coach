@@ -11,31 +11,31 @@ import com.vishal2376.gitcoach.utils.LoadSettings
 
 class QuizFragment : Fragment() {
 
-	private var _binding: FragmentQuizBinding? = null
-	private val binding get() = _binding!!
+    private var _binding: FragmentQuizBinding? = null
+    private val binding get() = _binding!!
 
-	override fun onCreateView(
-		inflater: LayoutInflater,
-		container: ViewGroup?,
-		savedInstanceState: Bundle?
-	): View? {
-		//load settings
-		LoadSettings.loadTheme(requireContext())
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        //load settings
+        LoadSettings.loadTheme(requireContext())
 
-		// Inflate the layout for this fragment
-		_binding = FragmentQuizBinding.inflate(inflater, container, false)
-		return binding.root
-	}
+        // Inflate the layout for this fragment
+        _binding = FragmentQuizBinding.inflate(inflater, container, false)
+        return binding.root
+    }
 
-	override fun onViewCreated(
-		view: View,
-		savedInstanceState: Bundle?
-	) {
-		super.onViewCreated(view, savedInstanceState)
-	}
+    override fun onViewCreated(
+        view: View,
+        savedInstanceState: Bundle?
+    ) {
+        super.onViewCreated(view, savedInstanceState)
+    }
 
-	override fun onDestroyView() {
-		super.onDestroyView()
-		_binding = null
-	}
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }
