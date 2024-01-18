@@ -22,4 +22,6 @@ object Constants {
     const val FONT_SIZE_SUB_TITLE = 14f
     const val FONT_SIZE_DESCRIPTION = 13f
     const val FONT_SIZE_COMMAND = 16f
+
+    const val DEFAULT_QUIZ_TOTAL_QUESTIONS = 10
 }
