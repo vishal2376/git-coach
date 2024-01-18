@@ -47,4 +47,84 @@
         app:layout_constraintTop_toBottomOf="@+id/text_quiz" />
 
 
+    <TextView
+        android:id="@+id/tvQuestionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:fontFamily="@font/roboto_medium"
+        android:paddingHorizontal="@dimen/_30sdp"
+        android:text="@string/quiz_question"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvQuestionTitle">
+
+        <RadioGroup
+            android:id="@+id/rgQuizChoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/_30sdp">
+
+            <RadioButton
+                android:id="@+id/rbChoice1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quiz_choice1"
+                android:textColor="@color/colorWhite" />
+
+            <RadioButton
+                android:id="@+id/rbChoice2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quiz_choice1"
+                android:textColor="@color/colorWhite" />
+
+            <RadioButton
+                android:id="@+id/rbChoice3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quiz_choice1"
+                android:textColor="@color/colorWhite" />
+
+            <RadioButton
+                android:id="@+id/rbChoice4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quiz_choice1"
+                android:textColor="@color/colorWhite" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCheckAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:paddingVertical="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:backgroundTint="?attr/colorSecondaryVariant"
+        android:fontFamily="@font/rubik_medium"
+        android:text="@string/check_answer"
+        android:textAllCaps="false"
+        android:textColor="?attr/colorPrimaryVariant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

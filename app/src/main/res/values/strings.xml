@@ -47,4 +47,7 @@
     <string name="test_learn_excel">Test | Learn | Excel</string>
     <string name="level_up_your_skill">Level Up your skill</string>
     <string name="start_quiz">Start Quiz</string>
+    <string name="quiz_question">What command is used to the commit history for a specific file?</string>
+    <string name="quiz_choice1">git log</string>
+    <string name="check_answer">Check Answer</string>
 </resources>
