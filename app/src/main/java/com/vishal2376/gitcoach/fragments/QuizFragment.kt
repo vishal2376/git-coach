@@ -101,7 +101,7 @@ class QuizFragment : Fragment() {
         val correctAnswer = randomQuizList[currentQuestionNumber].correctAnswer
 
         // check answer and show result
-        if (userAnswer?.text.toString() != correctAnswer) {
+        if (userAnswer?.text.toString() == correctAnswer) {
             // correct user answer
             userAnswer?.setBackgroundResource(R.drawable.radio_correct_choice_bg)
             quizAnalysis.correctAnswers++
@@ -166,7 +166,7 @@ class QuizFragment : Fragment() {
         //show current/total questions
         binding.tvQuestionNumber.text = getString(
             R.string.remaining_questions,
-            currentQuestionNumber,
+            (currentQuestionNumber + 1),
             Constants.DEFAULT_QUIZ_TOTAL_QUESTIONS
         )
     }
