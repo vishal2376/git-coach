@@ -50,4 +50,6 @@
     <string name="quiz_question">What command is used to the commit history for a specific file?</string>
     <string name="quiz_choice1">git log</string>
     <string name="check_answer">Check Answer</string>
+    <string name="next_question">Next Question</string>
+    <string name="finish">Finish</string>
 </resources>

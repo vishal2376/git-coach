@@ -4,8 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.RadioButton
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.vishal2376.gitcoach.MainActivity
+import com.vishal2376.gitcoach.R
 import com.vishal2376.gitcoach.databinding.FragmentQuizBinding
 import com.vishal2376.gitcoach.models.quiz.GitQuiz
 import com.vishal2376.gitcoach.models.quiz.Quiz
@@ -21,7 +24,7 @@ class QuizFragment : Fragment() {
 
     private lateinit var gitQuizList: GitQuiz
     private lateinit var randomQuizList: List<Quiz>
-    var currentQuestionNumber: Int = 0
+    private var currentQuestionNumber: Int = 0
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -40,17 +43,47 @@ class QuizFragment : Fragment() {
     ) {
         super.onViewCreated(view, savedInstanceState)
 
-        //get data
+        //get quiz data and pick some random questions
         gitQuizList = LoadData.getGitQuizData(requireContext())!!
         randomQuizList = selectRandomQuestions()
 
-        updateUI()
-        checkAnswer()
+        if (currentQuestionNumber == 0) updateUI()
+
         handleButtons()
     }
 
     private fun checkAnswer() {
+        val radioButtonId = binding.rgQuizChoice.checkedRadioButtonId
+        val userAnswer =
+            binding.rgQuizChoice.findViewById<RadioButton>(radioButtonId)
+        val correctAnswer = randomQuizList[currentQuestionNumber].correctAnswer
 
+        // check answer and show result
+        if (userAnswer?.text.toString() != correctAnswer) {
+            // todo: find correct and change background
+            userAnswer?.setBackgroundResource(R.drawable.box_stroke_round_red)
+        } else {
+            userAnswer?.setBackgroundResource(R.drawable.radio_correct_choice_bg)
+        }
+
+        // update UI
+        updateRadioButtonClick(isClickable = false)
+        updateButtonText()
+    }
+
+    private fun updateButtonText() {
+        if (currentQuestionNumber < Constants.DEFAULT_QUIZ_TOTAL_QUESTIONS) {
+            binding.btnCheckAnswer.text = getString(R.string.next_question)
+        } else {
+            binding.btnCheckAnswer.text = getString(R.string.finish)
+        }
+    }
+
+    private fun updateRadioButtonClick(isClickable: Boolean) {
+        binding.rbChoice1.isClickable = isClickable
+        binding.rbChoice2.isClickable = isClickable
+        binding.rbChoice3.isClickable = isClickable
+        binding.rbChoice4.isClickable = isClickable
     }
 
     private fun selectRandomQuestions(): List<Quiz> {
@@ -59,6 +92,9 @@ class QuizFragment : Fragment() {
     }
 
     private fun updateUI() {
+        setDefaultUI()
+
+        // set question and its choices
         randomQuizList[currentQuestionNumber].let {
             binding.tvQuestionTitle.text = it.question
             binding.rbChoice1.text = it.choices[0]
@@ -68,8 +104,45 @@ class QuizFragment : Fragment() {
         }
     }
 
+    private fun setDefaultUI() {
+        // default button text
+        binding.btnCheckAnswer.text = getString(R.string.check_answer)
+
+        // set default radio button ui
+        setDefaultRadioButtons()
+    }
+
+    private fun setDefaultRadioButtons() {
+        binding.apply {
+            rgQuizChoice.clearCheck()
+            rbChoice1.setBackgroundResource(R.drawable.radio_bg_selector)
+            rbChoice2.setBackgroundResource(R.drawable.radio_bg_selector)
+            rbChoice3.setBackgroundResource(R.drawable.radio_bg_selector)
+            rbChoice4.setBackgroundResource(R.drawable.radio_bg_selector)
+
+            //enable radio buttons
+            updateRadioButtonClick(isClickable = true)
+        }
+    }
+
     private fun handleButtons() {
-        binding.btnCheckAnswer.setOnClickListener { checkAnswer() }
+        binding.btnCheckAnswer.setOnClickListener {
+            when (binding.btnCheckAnswer.text) {
+                getString(R.string.check_answer) -> {
+                    checkAnswer()
+                }
+
+                getString(R.string.next_question) -> {
+                    currentQuestionNumber++
+                    updateUI()
+                }
+
+                getString(R.string.finish) -> {
+                    //todo: show results and then exit
+                    findNavController().popBackStack()
+                }
+            }
+        }
     }
 
     override fun onResume() {
