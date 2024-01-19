@@ -7,7 +7,7 @@
           "StepNumber": 1,
           "Description": "¿Qué es Git?",
           "Example": "",
-          "Explanation": "Git is a type of computer software known as a version control system. It helps people keep track of changes made to their computer code or other text-based files over time.\n\nIt's like a history book for your files, allowing you to see who made changes, what changes were made, and when they happened."
+          "Explanation": "Git es un tipo de software informático conocido como sistema de control de versiones. Ayuda a las personas a realizar un seguimiento de los cambios realizados en su código informático u otros archivos basados en texto a lo largo del tiempo. Es como un libro de historia para sus archivos, lo que le permite ver quién hizo cambios, qué cambios se hicieron y cuándo sucedieron."
         },
         {
           "StepNumber": 2,
@@ -19,7 +19,7 @@
           "StepNumber": 3,
           "Description": "Installing Git",
           "Example": "git --version",
-          "Explanation": "Go to the official Git website (https://git-scm.com/) and find the download section.\n\nChoose the version of Git that matches your computer's operating system (like Windows, macOS, or Linux).\n\nOnce the download is complete, open the downloaded file and follow the installation instructions.\n\nAfter the installation is done, you can verify that Git is installed by opening a terminal or command prompt and typing"
+          "Explanation": "Vaya al sitio web oficial de Git (https://git-scm.com/) y busque la sección de descargas.\n\nElija la versión de Git que coincida con el sistema operativo de su computadora (como Windows, macOS o Linux).\n\nUna vez completada la descarga, abra el archivo descargado y siga las instrucciones de instalación.\n\nUna vez finalizada la instalación, puede verificar que Git está instalado abriendo un terminal o símbolo del sistema y escribiendo"
         },
         {
           "StepNumber": 4,
@@ -42,7 +42,7 @@
           "StepNumber": 1,
           "Description": "Inicializando un proyecto",
           "Example": "git init",
-          "Explanation": "After installing Git, the first step is to set up version control for your project.\n\nOpen your command-line terminal or Git Bash (if you're on Windows) and navigate to the directory where you want to start your project.\n\nUse the following command to initialize a new Git repository"
+          "Explanation": "Después de instalar Git, el primer paso es configurar el control de versiones para su proyecto.\n\nAbra su terminal de línea de comandos o Git Bash (si está en Windows) y navegue hasta el directorio donde desea iniciar su proyecto.\n\nUtilice el siguiente comando para inicializar un nuevo repositorio Git"
         },
         {
           "StepNumber": 2,
@@ -54,13 +54,13 @@
           "StepNumber": 3,
           "Description": "Añadir y rastrear archivos",
           "Example": "git add hello.txt",
-          "Explanation": "Once you've created and edited your file, it's time to start tracking it with Git.\n\nTo do this, use the 'git add <file name>' command."
+          "Explanation": "Una vez que haya creado y editado su archivo, es hora de comenzar a rastrearlo con Git.\n\nPara hacer esto, use el comando 'git add <nombre de archivo>'."
         },
         {
           "StepNumber": 4,
           "Description": "Comprobando estado",
           "Example": "git status",
-          "Explanation": "At any point, you can check the status of your repository to see which files are tracked, modified, or staged for the next commit.\n\nThe 'git status' command provides you with this information."
+          "Explanation": "En cualquier momento, puede comprobar el estado de su repositorio para ver qué archivos se rastrean, modifican o almacenan provisionalmente para la próxima confirmación.\n\nEl comando 'git status' le proporciona esta información."
         },
         {
           "StepNumber": 5,
@@ -113,7 +113,7 @@
           "StepNumber": 6,
           "Description": "Eliminando una rama",
           "Example": "git branch -d feature-login",
-          "Explanation": "Make sure you have merged all the changes from the branch you want to delete before running this command.\n\nTo delete a branch, use the `git branch` command followed by the `-d` option .\n\nIf you need to forcefully delete a branch, use the `-D` flag instead of `-d`."
+          "Explanation": "Asegúrese de haber combinado todos los cambios de la rama que desea eliminar antes de ejecutar este comando.\n\nPara eliminar una rama, utilice el comando 'git branch' seguido de la opción '-d' .\n\nSi necesita eliminar forzosamente una rama, use el indicador '-D' en lugar de '-d'."
         }
       ]
     },
@@ -124,19 +124,19 @@
           "StepNumber": 1,
           "Description": "Qué es Git Staging",
           "Example": "",
-          "Explanation": "Git staging is the process of preparing a set of changes to be committed to the Git repository.\n\nIt allows you to select only the changes you want to include in the next commit, rather than committing all changes made to the repository."
+          "Explanation": "El ensayo de Git es el proceso de preparar un conjunto de cambios que se confirmarán en el repositorio de Git.\n\nLe permite seleccionar solo los cambios que desea incluir en la siguiente confirmación, en lugar de confirmar todos los cambios realizados en el repositorio."
         },
         {
           "StepNumber": 2,
           "Description": "Añadiendo cambios al Área de Staging de Git",
           "Example": "git add file1.txt file2.txt",
-          "Explanation": "To add changes to the Git Staging Area, use the `git add` command followed by the names of the files you want to add.\n\nThis will stage the changes, which means they will be included in the next commit."
+          "Explanation": "Para agregar cambios al área de ensayo de Git, use el comando 'git add' seguido de los nombres de los archivos que desea agregar. Esto escalonará los cambios, lo que significa que se incluirán en la próxima confirmación."
         },
         {
           "StepNumber": 3,
           "Description": "Viendo los cambios escenificados y no escalonados",
           "Example": "git diff\ngit diff --staged",
-          "Explanation": "To view the changes you have made to the Git repository, use the `git diff` command.\n\nTo view only the staged changes, use the `git diff --staged` command. This will display a list of the changes that have been staged and are ready to be committed."
+          "Explanation": "Para ver los cambios que ha realizado en el repositorio Git, utilice el comando 'git diff'.\n\nPara ver solo los cambios pre-configurados, use el comando 'git diff --staged'. Esto mostrará una lista de los cambios que se han organizado y están listos para ser confirmados."
         },
         {
           "StepNumber": 4,
@@ -148,7 +148,7 @@
           "StepNumber": 5,
           "Description": "Compromiso de Cambios Escenarios",
           "Example": "git commit -m 'Mensaje de confirmación'",
-          "Explanation": "To commit the changes in the Git Staging Area to the Git repository, use the `git commit` command followed by a commit message.\n\nThis will create a new commit in the Git log with the changes you have staged."
+          "Explanation": "Para confirmar los cambios en el área de ensayo de Git en el repositorio de Git, use el comando 'git commit' seguido de un mensaje de confirmación.\n\nEsto creará una nueva confirmación en el registro de Git con los cambios que ha organizado."
         }
       ]
     },
@@ -177,13 +177,13 @@
           "StepNumber": 4,
           "Description": "Clonar un repositorio de GitHub",
           "Example": "git clone <repository_link>",
-          "Explanation": "Cloning a repository means copying its contents to your local machine.\n\nThis allows you to make changes, track them with Git, and push those changes back to the repository.\n\nTo clone a GitHub repository to your local machine, use the `git clone` command followed by the URL of the GitHub repository.\n\n For Example: \"git clone https://github.com/firstcontributions/first-contributions.git\""
+          "Explanation": "Clonar un repositorio significa copiar su contenido en su máquina local.\n\nEsto le permite realizar cambios, realizar un seguimiento de ellos con Git y enviar esos cambios al repositorio.\n\nPara clonar un repositorio de GitHub en tu máquina local, usa el comando 'git clone' seguido de la URL del repositorio de GitHub.\n\nPor ejemplo: \"git clone https://github.com/firstcontributions/first-contributions.git\""
         },
         {
           "StepNumber": 5,
           "Description": "Haciendo Cambios y Enviando a GitHub",
           "Example": "git add .\ngit commit -m \"message\"\n\ngit push origin main",
-          "Explanation": "Once you've cloned a repository, you can make changes to the files just like you would with any other Git repository.\n\nAfter making changes, follow these steps to push your changes to GitHub.\n\nThen use the `git push` command followed by the name of the branch you want to push the changes to. This will upload the changes to the GitHub repository."
+          "Explanation": "Una vez que haya clonado un repositorio, puede realizar cambios en los archivos como lo haría con cualquier otro repositorio Git.\n\nDespués de realizar cambios, sigue estos pasos para insertar los cambios en GitHub.\n\nLuego use el comando 'git push' seguido del nombre de la rama a la que desea enviar los cambios. Esto cargará los cambios en el repositorio de GitHub."
         }
       ]
     },
