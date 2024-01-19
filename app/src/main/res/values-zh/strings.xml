@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Git+ Coach</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="intialize_git">Intialize Git</string>
+    <string name="git_desc">Initialize a new Git repository in the current or specified directory.</string>
+    <string name="git_init">git init</string>
+    <string name="search_command">Search command...</string>
+    <string name="tagline">Grow your Git knowledge</string>
+    <string name="one">1</string>
+    <string name="lesson_description">What is Git and why is it used</string>
+    <string name="lesson_explanation">Git is a distributed version control system used to manage and track changes to source code. It helps developers collaborate on projects and maintain a history of all changes made to the code.</string>
+    <string name="lesson_example">git config --global user.name \'John Doe\'\ngit config --global user.email \'johndoe@example.com\'</string>
+    <string name="git_progress">Git Progress</string>
+    <string name="tagline2">Transform your Git skills</string>
+    <string name="complete_lesson">Complete Lesson</string>
+    <string name="report_bug">Report Bug</string>
+    <string name="suggestions">Suggestions</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="share_app">Share App</string>
+    <string name="app_version">v%1$s</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="example">Example</string>
+    <string name="daily_notification">Daily Notification (%1$s)</string>
+    <string name="source_code">Source Code</string>
+    <string name="developer">Contact Developer</string>
+    <string name="dialog_text">Sorry, An unexpected error occurred.\n\nDo you want to send a crash report to the developer?</string>
+    <string name="dialog_title">Crash Report</string>
+    <string name="dialog_positive">Send</string>
+    <string name="dialog_negative">Cancel</string>
+    <string name="font_size_setting">Font Size Setting</string>
+    <string name="preview">Preview</string>
+    <string name="title">Title</string>
+    <string name="command">Command</string>
+    <string name="description">Description</string>
+    <string name="save">Save</string>
+    <string name="reset_to_default">Reset to default</string>
+    <string name="english_default">English (Default)</string>
+    <string name="italian">Italian</string>
+    <string name="language_setting">Language Setting</string>
+    <string name="russian">Russian</string>
+    <string name="spanish">Spanish</string>
+    <string name="portuguese">Portuguese</string>
+    <string name="german">German</string>
+    <string name="quiz">Quiz</string>
+    <string name="test_learn_excel">Test | Learn | Excel</string>
+    <string name="level_up_your_skill">Level Up your skill</string>
+    <string name="start_quiz">Start Quiz</string>
+    <string name="quiz_question">What command is used to the commit history for a specific file?</string>
+    <string name="quiz_choice1">git log</string>
+    <string name="check_answer">Check Answer</string>
+    <string name="next_question">Next Question</string>
+    <string name="finish">Finish</string>
+    <string name="remaining_questions">%1$d/%2$d</string>
+</resources>
