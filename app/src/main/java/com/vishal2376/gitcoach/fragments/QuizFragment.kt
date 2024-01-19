@@ -32,7 +32,7 @@ class QuizFragment : Fragment() {
         var incorrectAnswers: Int = 0
     )
 
-    val quizAnalysis = QuizAnalysis()
+    private val quizAnalysis = QuizAnalysis()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
