@@ -53,4 +53,6 @@
     <string name="next_question">Next Question</string>
     <string name="finish">Finish</string>
     <string name="remaining_questions">%1$d/%2$d</string>
+    <string name="chinese_simplified">Chinese-Simplified</string>
+    <string name="turkish">Turkish</string>
 </resources>

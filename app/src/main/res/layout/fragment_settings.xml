@@ -64,6 +64,17 @@
                 android:textSize="@dimen/_12ssp" />
 
             <RadioButton
+                android:id="@+id/rbChinese"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/colorAccent"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:text="@string/chinese_simplified"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12ssp" />
+
+            <RadioButton
                 android:id="@+id/rgGerman"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -115,6 +126,17 @@
                 android:fontFamily="@font/roboto_medium"
                 android:paddingHorizontal="@dimen/_5sdp"
                 android:text="@string/spanish"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12ssp" />
+
+            <RadioButton
+                android:id="@+id/rbTurkish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/colorAccent"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:text="@string/turkish"
                 android:textColor="@color/colorWhite"
                 android:textSize="@dimen/_12ssp" />
 
