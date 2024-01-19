@@ -122,6 +122,13 @@ class QuizFragment : Fragment() {
             binding.rbChoice3.text = it.choices[2]
             binding.rbChoice4.text = it.choices[3]
         }
+
+        //show current/total questions
+        binding.tvQuestionNumber.text = getString(
+            R.string.remaining_questions,
+            currentQuestionNumber,
+            Constants.DEFAULT_QUIZ_TOTAL_QUESTIONS
+        )
     }
 
     private fun setDefaultUI() {
