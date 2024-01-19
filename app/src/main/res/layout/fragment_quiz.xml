@@ -7,15 +7,151 @@
     android:background="?attr/colorPrimaryVariant"
     tools:context=".fragments.QuizFragment">
 
+
     <TextView
+        android:id="@+id/text_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/_5sdp"
+        android:fontFamily="@font/rubik_medium"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:text="@string/quiz"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_16ssp"
+        app:drawableStartCompat="@drawable/ic_left_arrow"
+        app:drawableTint="@color/colorWhite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvQuestionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_medium"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1/10" />
+
+    <View
+        android:id="@+id/view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment"
+        android:layout_height="@dimen/_2sdp"
+        android:background="?attr/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_quiz" />
+
+
+    <TextView
+        android:id="@+id/tvQuestionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:fontFamily="@font/rubik_medium"
+        android:paddingHorizontal="@dimen/_30sdp"
+        android:text="@string/quiz_question"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvQuestionTitle">
+
+        <RadioGroup
+            android:id="@+id/rgQuizChoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/_30sdp">
+
+            <RadioButton
+                android:id="@+id/rbChoice1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/radio_bg_selector"
+                android:button="@null"
+                android:paddingVertical="@dimen/_12sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_25sdp"
+                android:text="@string/quiz_choice1"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp" />
+
+            <RadioButton
+                android:id="@+id/rbChoice2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/radio_bg_selector"
+                android:button="@null"
+                android:paddingVertical="@dimen/_12sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_25sdp"
+                android:text="@string/quiz_choice1"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp" />
+
+            <RadioButton
+                android:id="@+id/rbChoice3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/radio_bg_selector"
+                android:button="@null"
+                android:paddingVertical="@dimen/_12sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_25sdp"
+                android:text="@string/quiz_choice1"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp" />
+
+            <RadioButton
+                android:id="@+id/rbChoice4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/radio_bg_selector"
+                android:button="@null"
+                android:paddingVertical="@dimen/_12sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_25sdp"
+                android:text="@string/quiz_choice1"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCheckAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:backgroundTint="?attr/colorSecondaryVariant"
+        android:fontFamily="@font/rubik_medium"
+        android:paddingVertical="@dimen/_10sdp"
+        android:text="@string/check_answer"
+        android:textAllCaps="false"
+        android:textColor="?attr/colorPrimaryVariant"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

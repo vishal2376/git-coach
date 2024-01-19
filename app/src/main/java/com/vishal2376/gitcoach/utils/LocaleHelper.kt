@@ -2,7 +2,6 @@ package com.vishal2376.gitcoach.utils
 
 import android.content.Context
 import android.content.res.Configuration
-import android.os.Build
 import java.util.Locale
 
 object LocaleHelper {
