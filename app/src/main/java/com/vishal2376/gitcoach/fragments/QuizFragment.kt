@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.vishal2376.gitcoach.MainActivity
 import com.vishal2376.gitcoach.databinding.FragmentQuizBinding
 import com.vishal2376.gitcoach.models.quiz.GitQuiz
 import com.vishal2376.gitcoach.models.quiz.Quiz
@@ -57,6 +58,11 @@ class QuizFragment : Fragment() {
 
     private fun handleButtons() {
         binding.btnCheckAnswer.setOnClickListener {}
+    }
+
+    override fun onResume() {
+        super.onResume()
+        MainActivity.appBarLayout.visibility = View.GONE
     }
 
     override fun onDestroyView() {
