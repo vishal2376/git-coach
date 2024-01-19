@@ -48,11 +48,13 @@ class SettingsFragment : Fragment() {
         val locale = LoadSettings.getLocale(requireContext())
         val currentLanguage = when (locale) {
             "en" -> binding.rgEnglish
+            "zh" -> binding.rbChinese
             "de" -> binding.rgGerman
             "it" -> binding.rgItalian
             "pt" -> binding.rgPortuguese
             "ru" -> binding.rgRussian
             "es" -> binding.rgSpanish
+            "tr" -> binding.rbTurkish
             else -> binding.rgEnglish
         }
         currentLanguage.isChecked = true
@@ -75,11 +77,13 @@ class SettingsFragment : Fragment() {
 
             val selectedLanguageLocale = when (binding.rgLanguage.checkedRadioButtonId) {
                 R.id.rgEnglish -> "en"
+                R.id.rbChinese -> "zh"
                 R.id.rgGerman -> "de"
                 R.id.rgItalian -> "it"
                 R.id.rgPortuguese -> "pt"
                 R.id.rgRussian -> "ru"
                 R.id.rgSpanish -> "es"
+                R.id.rbTurkish -> "tr"
                 else -> "en"
             }
 
