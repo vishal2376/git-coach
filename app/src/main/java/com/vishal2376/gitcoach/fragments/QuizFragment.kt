@@ -77,18 +77,38 @@ class QuizFragment : Fragment() {
 
         // check answer and show result
         if (userAnswer?.text.toString() != correctAnswer) {
-            // todo: find correct and change background
+            // correct user answer
+            userAnswer?.setBackgroundResource(R.drawable.radio_correct_choice_bg)
+            quizAnalysis.correctAnswers++
+        } else {
+            //incorrect user answer
             userAnswer?.setBackgroundResource(R.drawable.box_stroke_round_red)
             quizAnalysis.incorrectAnswers++
 
-        } else {
-            userAnswer?.setBackgroundResource(R.drawable.radio_correct_choice_bg)
-            quizAnalysis.correctAnswers++
+            // actual answer
+            val correctAnswerRadioButton = getCorrectAnswerId()
+            correctAnswerRadioButton.setBackgroundResource(R.drawable.radio_correct_choice_bg)
         }
 
         // update UI
         updateRadioButtonClick(isClickable = false)
         updateButtonText()
+    }
+
+    private fun getCorrectAnswerId(): RadioButton {
+        var correctAnswer: RadioButton? = null
+        val radioGroup = binding.rgQuizChoice
+
+        // check all radio buttons
+        for (i in 0 until (radioGroup.childCount)) {
+            val id = radioGroup.getChildAt(i).id
+            correctAnswer = binding.rgQuizChoice.findViewById(id)
+            if (correctAnswer.text == randomQuizList[currentQuestionNumber].correctAnswer) {
+                break
+            }
+        }
+
+        return correctAnswer!!
     }
 
     private fun updateButtonText() {
