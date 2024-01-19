@@ -52,12 +52,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_40sdp"
-        android:fontFamily="@font/roboto_medium"
+        android:fontFamily="@font/rubik_medium"
         android:paddingHorizontal="@dimen/_30sdp"
         android:text="@string/quiz_question"
-        android:textAlignment="center"
         android:textColor="@color/colorWhite"
-        android:textSize="@dimen/_14ssp"
+        android:textSize="@dimen/_16ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view" />
@@ -65,7 +64,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_30sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvQuestionTitle">
@@ -83,9 +82,12 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/radio_bg_selector"
                 android:button="@null"
-                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_12sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_25sdp"
                 android:text="@string/quiz_choice1"
-                android:textColor="@color/colorWhite" />
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp" />
 
             <RadioButton
                 android:id="@+id/rbChoice2"
@@ -94,9 +96,12 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/radio_bg_selector"
                 android:button="@null"
-                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_12sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_25sdp"
                 android:text="@string/quiz_choice1"
-                android:textColor="@color/colorWhite" />
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp" />
 
             <RadioButton
                 android:id="@+id/rbChoice3"
@@ -105,9 +110,12 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/radio_bg_selector"
                 android:button="@null"
-                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_12sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_25sdp"
                 android:text="@string/quiz_choice1"
-                android:textColor="@color/colorWhite" />
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp" />
 
             <RadioButton
                 android:id="@+id/rbChoice4"
@@ -116,9 +124,12 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/radio_bg_selector"
                 android:button="@null"
-                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_12sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_25sdp"
                 android:text="@string/quiz_choice1"
-                android:textColor="@color/colorWhite" />
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp" />
 
         </RadioGroup>
 
