@@ -58,6 +58,15 @@ class QuizFragment : Fragment() {
         if (currentQuestionNumber == 0) updateUI()
 
         handleButtons()
+        handleInput()
+    }
+
+    private fun handleInput() {
+        binding.rgQuizChoice.setOnCheckedChangeListener { group, checkedId ->
+            if (binding.btnCheckAnswer.text == getString(R.string.check_answer)) {
+                binding.btnCheckAnswer.isEnabled = true
+            }
+        }
     }
 
     private fun checkAnswer() {
@@ -116,11 +125,12 @@ class QuizFragment : Fragment() {
     }
 
     private fun setDefaultUI() {
-        // default button text
-        binding.btnCheckAnswer.text = getString(R.string.check_answer)
-
         // set default radio button ui
         setDefaultRadioButtons()
+
+        // default button text
+        binding.btnCheckAnswer.text = getString(R.string.check_answer)
+        binding.btnCheckAnswer.isEnabled = false
     }
 
     private fun setDefaultRadioButtons() {
