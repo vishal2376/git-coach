@@ -21,6 +21,7 @@ class QuizFragment : Fragment() {
 
     private lateinit var gitQuizList: GitQuiz
     private lateinit var randomQuizList: List<Quiz>
+    var currentQuestionNumber: Int = 0
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -43,8 +44,13 @@ class QuizFragment : Fragment() {
         gitQuizList = LoadData.getGitQuizData(requireContext())!!
         randomQuizList = selectRandomQuestions()
 
-        handleQuiz()
+        updateUI()
+        checkAnswer()
         handleButtons()
+    }
+
+    private fun checkAnswer() {
+
     }
 
     private fun selectRandomQuestions(): List<Quiz> {
@@ -52,12 +58,18 @@ class QuizFragment : Fragment() {
         return shuffledQuestions.take(Constants.DEFAULT_QUIZ_TOTAL_QUESTIONS)
     }
 
-    private fun handleQuiz() {
-        binding.tvQuestionTitle.text = randomQuizList[0].question
+    private fun updateUI() {
+        randomQuizList[currentQuestionNumber].let {
+            binding.tvQuestionTitle.text = it.question
+            binding.rbChoice1.text = it.choices[0]
+            binding.rbChoice2.text = it.choices[1]
+            binding.rbChoice3.text = it.choices[2]
+            binding.rbChoice4.text = it.choices[3]
+        }
     }
 
     private fun handleButtons() {
-        binding.btnCheckAnswer.setOnClickListener {}
+        binding.btnCheckAnswer.setOnClickListener { checkAnswer() }
     }
 
     override fun onResume() {
