@@ -62,7 +62,7 @@ class QuizFragment : Fragment() {
     }
 
     private fun handleInput() {
-        binding.rgQuizChoice.setOnCheckedChangeListener { group, checkedId ->
+        binding.rgQuizChoice.setOnCheckedChangeListener { _, _ ->
             if (binding.btnCheckAnswer.text == getString(R.string.check_answer)) {
                 binding.btnCheckAnswer.isEnabled = true
             }
