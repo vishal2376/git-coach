@@ -1,6 +1,7 @@
 package com.vishal2376.gitcoach.fragments
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -25,6 +26,13 @@ class QuizFragment : Fragment() {
     private lateinit var gitQuizList: GitQuiz
     private lateinit var randomQuizList: List<Quiz>
     private var currentQuestionNumber: Int = 0
+
+    data class QuizAnalysis(
+        var correctAnswers: Int = 0,
+        var incorrectAnswers: Int = 0
+    )
+
+    val quizAnalysis = QuizAnalysis()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -62,8 +70,11 @@ class QuizFragment : Fragment() {
         if (userAnswer?.text.toString() != correctAnswer) {
             // todo: find correct and change background
             userAnswer?.setBackgroundResource(R.drawable.box_stroke_round_red)
+            quizAnalysis.incorrectAnswers++
+
         } else {
             userAnswer?.setBackgroundResource(R.drawable.radio_correct_choice_bg)
+            quizAnalysis.correctAnswers++
         }
 
         // update UI
@@ -72,7 +83,7 @@ class QuizFragment : Fragment() {
     }
 
     private fun updateButtonText() {
-        if (currentQuestionNumber < Constants.DEFAULT_QUIZ_TOTAL_QUESTIONS) {
+        if (currentQuestionNumber < Constants.DEFAULT_QUIZ_TOTAL_QUESTIONS - 1) {
             binding.btnCheckAnswer.text = getString(R.string.next_question)
         } else {
             binding.btnCheckAnswer.text = getString(R.string.finish)
@@ -139,6 +150,7 @@ class QuizFragment : Fragment() {
 
                 getString(R.string.finish) -> {
                     //todo: show results and then exit
+                    Log.e("@@@", "handleButtons: $quizAnalysis")
                     findNavController().popBackStack()
                 }
             }
