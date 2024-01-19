@@ -62,6 +62,10 @@ class QuizFragment : Fragment() {
     }
 
     private fun handleButtons() {
+        binding.textQuiz.setOnClickListener {
+            findNavController().popBackStack()
+        }
+
         binding.btnCheckAnswer.setOnClickListener {
             when (binding.btnCheckAnswer.text) {
                 getString(R.string.check_answer) -> {
