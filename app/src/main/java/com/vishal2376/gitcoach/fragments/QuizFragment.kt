@@ -61,6 +61,27 @@ class QuizFragment : Fragment() {
         handleInput()
     }
 
+    private fun handleButtons() {
+        binding.btnCheckAnswer.setOnClickListener {
+            when (binding.btnCheckAnswer.text) {
+                getString(R.string.check_answer) -> {
+                    checkAnswer()
+                }
+
+                getString(R.string.next_question) -> {
+                    currentQuestionNumber++
+                    updateUI()
+                }
+
+                getString(R.string.finish) -> {
+                    //todo: show results and then exit
+                    Log.e("@@@", "handleButtons: $quizAnalysis")
+                    findNavController().popBackStack()
+                }
+            }
+        }
+    }
+
     private fun handleInput() {
         binding.rgQuizChoice.setOnCheckedChangeListener { _, _ ->
             if (binding.btnCheckAnswer.text == getString(R.string.check_answer)) {
@@ -126,11 +147,6 @@ class QuizFragment : Fragment() {
         binding.rbChoice4.isClickable = isClickable
     }
 
-    private fun selectRandomQuestions(): List<Quiz> {
-        val shuffledQuestions = gitQuizList.quiz.shuffled()
-        return shuffledQuestions.take(Constants.DEFAULT_QUIZ_TOTAL_QUESTIONS)
-    }
-
     private fun updateUI() {
         setDefaultUI()
 
@@ -173,25 +189,9 @@ class QuizFragment : Fragment() {
         }
     }
 
-    private fun handleButtons() {
-        binding.btnCheckAnswer.setOnClickListener {
-            when (binding.btnCheckAnswer.text) {
-                getString(R.string.check_answer) -> {
-                    checkAnswer()
-                }
-
-                getString(R.string.next_question) -> {
-                    currentQuestionNumber++
-                    updateUI()
-                }
-
-                getString(R.string.finish) -> {
-                    //todo: show results and then exit
-                    Log.e("@@@", "handleButtons: $quizAnalysis")
-                    findNavController().popBackStack()
-                }
-            }
-        }
+    private fun selectRandomQuestions(): List<Quiz> {
+        val shuffledQuestions = gitQuizList.quiz.shuffled()
+        return shuffledQuestions.take(Constants.DEFAULT_QUIZ_TOTAL_QUESTIONS)
     }
 
     override fun onResume() {
