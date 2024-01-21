@@ -159,12 +159,12 @@
                 android:id="@+id/tvCredits"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
                 android:background="@drawable/box_stroke_round_gray"
                 android:fontFamily="@font/roboto_medium"
                 android:padding="@dimen/_10sdp"
                 android:text="Icons made by Freepik from www.flaticon.com"
-                android:textColor="@color/colorWhite"
+                android:textColor="#A8A8A8"
                 android:textSize="@dimen/_12ssp" />
 
         </LinearLayout>
