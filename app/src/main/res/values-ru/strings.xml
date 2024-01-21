@@ -25,7 +25,7 @@
     <string name="example">Пример</string>
     <string name="daily_notification">Ежедневное уведомление (%1$s)</string>
     <string name="source_code">Исходный код</string>
-    <string name="developer">Связаться с разработчиком</string>
+    <string name="developer">About Developer</string>
     <string name="dialog_text">Sorry, An unexpected error occurred.\n\nDo you want to send a crash report to the developer?</string>
     <string name="dialog_title">Отчет об ошибке</string>
     <string name="dialog_positive">Отправить</string>
@@ -56,4 +56,9 @@
     <string name="remaining_questions">%1$d/%2$d</string>
     <string name="chinese_simplified">Chinese-Simplified</string>
     <string name="turkish">Turkish</string>
+    <string name="about_developer">About Developer</string>
+    <string name="vishal_singh">Vishal Singh</string>
+    <string name="bio">A passionate developer from India with 3+ years experience in Android Development.Also skilled in Rust and Go for backend development</string>
+    <string name="follow_me">Follow Me</string>
+    <string name="credits">Credits</string>
 </resources>
