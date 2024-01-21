@@ -5,6 +5,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import android.widget.RadioButton
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -57,9 +58,22 @@ class QuizFragment : Fragment() {
 
         if (currentQuestionNumber == 0) updateUI()
 
+        initUI()
         handleButtons()
         handleInput()
     }
+
+    private fun initUI() {
+        initAnimation()
+    }
+
+    private fun initAnimation() {
+        binding.textQuiz.animation =
+            AnimationUtils.loadAnimation(requireContext(), R.anim.slide_down_anim)
+        binding.tvQuestionNumber.animation =
+            AnimationUtils.loadAnimation(requireContext(), R.anim.slide_down_anim)
+    }
+
 
     private fun handleButtons() {
         binding.textQuiz.setOnClickListener {
