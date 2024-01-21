@@ -61,4 +61,6 @@
     <string name="bio">A passionate developer from India with 3+ years experience in Android Development.Also skilled in Rust and Go for backend development</string>
     <string name="follow_me">Follow Me</string>
     <string name="credits">Credits</string>
+    <string name="last_quiz_result">Last Quiz Result</string>
+    <string name="_10">10</string>
 </resources>
