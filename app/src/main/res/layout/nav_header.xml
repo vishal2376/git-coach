@@ -36,20 +36,4 @@
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/_11sdp" />
 
-    <!--    notification option-->
-    <com.google.android.material.switchmaterial.SwitchMaterial
-        android:id="@+id/swNotification"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/_15sdp"
-        android:drawableStart="@drawable/ic_notification"
-        android:drawableTint="?attr/colorAccent"
-        android:fontFamily="@font/roboto_medium"
-        android:text="@string/daily_notification"
-        android:textAlignment="center"
-        android:textColor="@color/colorWhite"
-        app:switchPadding="@dimen/_10sdp"
-        app:thumbTint="?attr/colorAccent" />
-
 </LinearLayout>

@@ -8,14 +8,6 @@ object Constants {
     const val GITHUB_LINK = "https://github.com/vishal2376/git-coach"
     const val LINKEDIN_LINK = "https://www.linkedin.com/in/vishal2376/"
 
-    // Daily Notification
-    const val NOTIFICATION = "Notification"
-    const val CHANNEL_ID = "git-coach-notification"
-    const val CHANNEL_NAME = "Daily Notification"
-    const val NOTIFICATION_ID = 10
-    const val NOTIFICATION_TIME = "09:00"
-    const val NOTIFICATION_SWITCH = "Notification Switch"
-
     // Settings
     const val LOCALE = "locale"
     const val FONT_SIZE_TITLE = 18f
