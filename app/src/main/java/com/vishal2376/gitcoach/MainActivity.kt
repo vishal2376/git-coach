@@ -3,6 +3,7 @@ package com.vishal2376.gitcoach
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.view.Gravity
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
@@ -136,11 +137,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun developerProfile() {
-        val intent = Intent(
-            Intent.ACTION_VIEW, Uri.parse(Constants.LINKEDIN_LINK)
-        )
-        startActivity(intent)
+        //close nav drawer
+        binding.drawerLayout.close()
 
+        //open about us page
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
+        val navController = navHostFragment.navController
+        navController.navigateUp()
+        navController.navigate(R.id.aboutUsFragment)
     }
 
     companion object {
