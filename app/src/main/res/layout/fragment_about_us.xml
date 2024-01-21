@@ -30,7 +30,7 @@
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_2sdp"
-        android:background="?attr/colorAccent"
+        android:background="@color/colorGreen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvAboutDeveloper" />
@@ -48,9 +48,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
+            android:gravity="center_horizontal"
             android:orientation="vertical"
-            android:paddingVertical="@dimen/_30sdp">
+            android:paddingVertical="@dimen/_40sdp">
 
             <!--            profile pic-->
             <LinearLayout
@@ -92,8 +92,9 @@
                 android:fontFamily="@font/roboto_medium"
                 android:paddingHorizontal="@dimen/_20sdp"
                 android:text="@string/bio"
-                android:textColor="@color/colorWhite"
-                android:textSize="@dimen/_12ssp" />
+                android:textAlignment="center"
+                android:textColor="#A8A8A8"
+                android:textSize="@dimen/_11ssp" />
 
             <!--            follow me-->
             <TextView
