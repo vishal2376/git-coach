@@ -219,6 +219,7 @@ class QuizFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
+        MainActivity.appBarLayout.visibility = View.VISIBLE
         _binding = null
     }
 }
