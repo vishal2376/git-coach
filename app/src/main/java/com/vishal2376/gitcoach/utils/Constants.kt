@@ -5,8 +5,11 @@ object Constants {
     var shareMessage =
         "Become a Git expert with Git Coach! Learn Git and GitHub commands with ease. Download now\n"
 
-    const val GITHUB_LINK = "https://github.com/vishal2376/git-coach"
+    const val SOURCE_CODE_LINK = "https://github.com/vishal2376/git-coach"
+    const val GITHUB_LINK = "https://github.com/vishal2376/"
     const val LINKEDIN_LINK = "https://www.linkedin.com/in/vishal2376/"
+    const val INSTAGRAM_LINK = "https://www.instagram.com/vishal_2376/"
+    const val TWITTER_LINK = "https://twitter.com/vishal2376"
 
     // Settings
     const val LOCALE = "locale"

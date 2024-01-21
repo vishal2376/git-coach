@@ -1,5 +1,7 @@
 package com.vishal2376.gitcoach.fragments
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +9,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.vishal2376.gitcoach.MainActivity
 import com.vishal2376.gitcoach.databinding.FragmentAboutUsBinding
+import com.vishal2376.gitcoach.utils.Constants
 
 class AboutUsFragment : Fragment() {
 
@@ -20,6 +23,36 @@ class AboutUsFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentAboutUsBinding.inflate(inflater, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        handleButtons()
+    }
+
+    private fun handleButtons() {
+        binding.apply {
+            btnTwitter.setOnClickListener {
+                openUrl(Constants.TWITTER_LINK)
+            }
+            btnGithub.setOnClickListener {
+                openUrl(Constants.GITHUB_LINK)
+            }
+            btnInstagram.setOnClickListener {
+                openUrl(Constants.INSTAGRAM_LINK)
+            }
+            btnLinkedin.setOnClickListener {
+                openUrl(Constants.LINKEDIN_LINK)
+            }
+        }
+    }
+
+    private fun openUrl(url: String) {
+        val intent = Intent(
+            Intent.ACTION_VIEW, Uri.parse(url)
+        )
+        startActivity(intent)
     }
 
     override fun onResume() {

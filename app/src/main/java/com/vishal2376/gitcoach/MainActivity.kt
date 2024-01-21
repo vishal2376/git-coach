@@ -3,7 +3,6 @@ package com.vishal2376.gitcoach
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.view.Gravity
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
@@ -130,7 +129,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun sourceCode() {
         val intent = Intent(
-            Intent.ACTION_VIEW, Uri.parse(Constants.GITHUB_LINK)
+            Intent.ACTION_VIEW, Uri.parse(Constants.SOURCE_CODE_LINK)
         )
         startActivity(intent)
 
