@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.vishal2376.gitcoach.MainActivity
 import com.vishal2376.gitcoach.databinding.FragmentAboutUsBinding
 import com.vishal2376.gitcoach.utils.Constants
@@ -32,6 +33,10 @@ class AboutUsFragment : Fragment() {
     }
 
     private fun handleButtons() {
+        binding.tvAboutDeveloper.setOnClickListener {
+            findNavController().popBackStack()
+        }
+
         binding.apply {
             btnTwitter.setOnClickListener {
                 openUrl(Constants.TWITTER_LINK)
