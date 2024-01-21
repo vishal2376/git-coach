@@ -1,12 +1,13 @@
 package com.vishal2376.gitcoach.fragments
 
+import android.content.Context.MODE_PRIVATE
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
 import android.widget.RadioButton
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.vishal2376.gitcoach.MainActivity
@@ -28,12 +29,8 @@ class QuizFragment : Fragment() {
     private lateinit var randomQuizList: List<Quiz>
     private var currentQuestionNumber: Int = 0
 
-    data class QuizAnalysis(
-        var correctAnswers: Int = 0,
-        var incorrectAnswers: Int = 0
-    )
-
-    private val quizAnalysis = QuizAnalysis()
+    private var correctAnswers: Int = 0
+    private var incorrectAnswers: Int = 0
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -92,12 +89,21 @@ class QuizFragment : Fragment() {
                 }
 
                 getString(R.string.finish) -> {
-                    //todo: show results and then exit
-                    Log.e("@@@", "handleButtons: $quizAnalysis")
+                    saveResult()
                     findNavController().popBackStack()
                 }
             }
         }
+    }
+
+    private fun saveResult() {
+        val sharedPreferences =
+            requireContext().getSharedPreferences("SETTINGS", MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+        editor.apply {
+            putInt(Constants.CORRECT_ANSWERS, correctAnswers)
+            putInt(Constants.INCORRECT_ANSWERS, incorrectAnswers)
+        }.apply()
     }
 
     private fun handleInput() {
@@ -118,11 +124,11 @@ class QuizFragment : Fragment() {
         if (userAnswer?.text.toString() == correctAnswer) {
             // correct user answer
             userAnswer?.setBackgroundResource(R.drawable.radio_correct_choice_bg)
-            quizAnalysis.correctAnswers++
+            correctAnswers++
         } else {
             //incorrect user answer
             userAnswer?.setBackgroundResource(R.drawable.box_stroke_round_red)
-            quizAnalysis.incorrectAnswers++
+            incorrectAnswers++
 
             // actual answer
             val correctAnswerRadioButton = getCorrectAnswerId()

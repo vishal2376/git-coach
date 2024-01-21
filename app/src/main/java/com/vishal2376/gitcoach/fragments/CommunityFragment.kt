@@ -1,21 +1,24 @@
 package com.vishal2376.gitcoach.fragments
 
+import android.content.Context.MODE_PRIVATE
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.vishal2376.gitcoach.R
 import com.vishal2376.gitcoach.databinding.FragmentCommunityBinding
-import com.vishal2376.gitcoach.models.quiz.GitQuiz
-import com.vishal2376.gitcoach.utils.LoadData
-import com.vishal2376.gitcoach.utils.LoadSettings
+import com.vishal2376.gitcoach.utils.Constants
 
 class CommunityFragment : Fragment() {
 
     private var _binding: FragmentCommunityBinding? = null
     private val binding get() = _binding!!
+
+    private var correctAnswers = 0
+    private var incorrectAnswers = 0
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -30,8 +33,23 @@ class CommunityFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        initUI()
         handleButtons()
 
+    }
+
+    private fun initUI() {
+        loadData()
+
+        Toast.makeText(requireContext(), "$correctAnswers/$incorrectAnswers", Toast.LENGTH_SHORT)
+            .show()
+    }
+
+    private fun loadData() {
+        correctAnswers = requireContext().getSharedPreferences("SETTINGS", MODE_PRIVATE)
+            .getInt(Constants.CORRECT_ANSWERS, 0)
+        incorrectAnswers = requireContext().getSharedPreferences("SETTINGS", MODE_PRIVATE)
+            .getInt(Constants.INCORRECT_ANSWERS, 0)
     }
 
     private fun handleButtons() {
