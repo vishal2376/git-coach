@@ -27,7 +27,7 @@ Git+ Coach is a free education app designed to help users learn Git and its comm
 
 ## Features
 - Browse through different categories of Git commands
-- Get Daily notification of a random command
+- Test your Git knowledge with Quiz
 - Search for any Git command
 - Font Size Customization
 - Copy Git command on single tap
