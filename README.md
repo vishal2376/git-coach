@@ -41,6 +41,8 @@ Git+ Coach is a free education app designed to help users learn Git and its comm
 
 | <img src="screenshots/lesson.jpg" width="200px"> | <img src="screenshots/lesson_detail.jpg" width="200px"> | <img src="screenshots/font_settings.jpg" width="200px"> | <img src="screenshots/nav.jpg" width="200px"> |
 |:---:|:---:|:---:|:---:|
+| <img src="screenshots/quiz.jpg" width="200px"> | <img src="screenshots/quiz_result.jpg" width="200px"> | <img src="screenshots/search.jpg" width="200px"> | <img src="screenshots/about_us.jpg" width="200px"> |
+|:---:|:---:|:---:|:---:|
 | <img src="screenshots/cmdB.jpg" width="200px"> | <img src="screenshots/cmdR.jpg" width="200px"> | <img src="screenshots/cmdG.jpg" width="200px"> | <img src="screenshots/cmdY.jpg" width="200px"> |
 
 ## Getting Started
