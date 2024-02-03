@@ -35,7 +35,7 @@ Git+ Coach is a free education app designed to help users learn Git and its comm
 - Smooth animations for a great user experience
 - Cool Themes: Blue,Green, Red, and Yellow
 - No ADS or In-App Subscription
-- Support 6 Languages (English,German,Italian,Portuguese,Russian,Spanish)
+- Support 8 Languages (English,Chinese,German,Italian,Portuguese,Russian,Spanish,Turkish)
 
 ## Screenshots
 
