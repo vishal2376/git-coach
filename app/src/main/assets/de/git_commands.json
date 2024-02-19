@@ -46,7 +46,7 @@
       "name": "Commit History anzeigen",
       "command": "git log",
       "description": "Zeigt die Historie der Commits im Git-Repository an.",
-      "example": "git log"
+      "example": "git Log"
     },
     {
       "name": "Einen Zweig erstellen",
@@ -118,19 +118,19 @@
       "name": "Gesperrte Änderungen auflisten",
       "command": "git stash list",
       "description": "Listet alle eingelesenen Änderungen im Git-Repository auf.",
-      "example": "git stash list"
+      "example": "git stash-Liste"
     },
     {
       "name": "Stachelte Änderungen entfernen",
       "command": "git stash drop",
       "description": "Stachelte Änderungen aus dem Git-Repository entfernen.",
-      "example": "git stash drop"
+      "example": "git Strümpfe"
     },
     {
       "name": "Commit-Log anzeigen",
-      "command": "git log",
+      "command": "git Log",
       "description": "Zeigt den Commit-Verlauf des Git-Repositorys an.",
-      "example": "git log"
+      "example": "git Log"
     },
     {
       "name": "Zeige Übertragungsunterschiede",
@@ -142,7 +142,7 @@
       "name": "Entfernte Änderungen abrufen",
       "command": "git fetch",
       "description": "Holen Sie Aktualisierungen von einem Remote-Repository in das lokale Repository.",
-      "example": "git fetch"
+      "example": "git holen"
     },
     {
       "name": "Entfernte Änderungen ziehen",
@@ -251,6 +251,24 @@
       "command": "git checkout [commit]",
       "description": "Wechselt zu einem vorherigen Commit und stellt den Status des Projektarchivs wieder her",
       "example": "git checkout abc123"
+    },
+    {
+      "name": "Zu Branch wechseln",
+      "command": "git Switch <branch_name>",
+      "description": "Wechselt zum angegebenen Zweig.",
+      "example": "git switch feature_branch"
+    },
+    {
+      "name": "Erstellen und zu einem neuen Branch wechseln",
+      "command": "git switch -c <new_branch_name>",
+      "description": "Erstellt und wechselt zu einem neuen Zweig mit dem angegebenen Namen.",
+      "example": "git switch -c new_feature_branch"
+    },
+    {
+      "name": "Zum Branch wechseln erzwingen",
+      "command": "git switch -C <branch_name>",
+      "description": "Erzwingt den Wechsel zum angegebenen Zweig, verwirft lokale Änderungen.",
+      "example": "git switch -C feature_Branch"
     }
   ]
 }
