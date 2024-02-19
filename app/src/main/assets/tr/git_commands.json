@@ -1,57 +1,57 @@
 {
   "gitCommands": [
     {
-      "name": "Initialize Repository",
+      "name": "Depoyu Başlat",
       "command": "git init [directory]",
-      "description": "Initialize a new Git repository in the current or specified directory.",
+      "description": "Geçerli veya belirtilen dizinde yeni bir Git deposu başlatın.",
       "example": "git init my_project"
     },
     {
-      "name": "Clone Repository",
+      "name": "Depoyu Klonlama",
       "command": "git clone [repository_url] [directory]",
-      "description": "Clone an existing Git repository to a new directory on the local machine.",
+      "description": "Mevcut bir Git deposunu yerel makinedeki yeni bir dizine klonlayın.",
       "example": "git clone https://github.com/user/repo.git my_repo"
     },
     {
-      "name": "Add Files",
+      "name": "Dosyaları Ekleme",
       "command": "git add [file(s)]",
-      "description": "Add files to the Git staging area, ready for a commit.",
+      "description": "Kaydetmeye hazır olarak Git hazırlama alanına dosyalar ekleyin.",
       "example": "git add file1.txt file2.txt"
     },
     {
-      "name": "Commit Changes",
+      "name": "Değişiklikleri Kaydetme",
       "command": "git commit -m [message]",
-      "description": "Save changes made to the Git repository to the history with a specified commit message.",
+      "description": "Git deposunda yapılan değişiklikleri belirli bir taahhüt mesajıyla geçmişe kaydedin.",
       "example": "git commit -m 'Adding important files'"
     },
     {
-      "name": "Push Changes",
+      "name": "Değişiklikleri İt",
       "command": "git push [remote_name] [branch_name]",
-      "description": "Push committed changes to a remote repository.",
+      "description": "Taahhüt edilen değişiklikleri uzak bir depoya aktarın.",
       "example": "git push origin master"
     },
     {
-      "name": "Pull Changes",
+      "name": "Değişiklikleri Çek",
       "command": "git pull [remote_name] [branch_name]",
-      "description": "Retrieve changes from a remote repository and merge them with the local repository.",
+      "description": "Değişiklikleri uzak bir depodan alın ve bunları yerel depoyla birleştirin.",
       "example": "git pull origin master"
     },
     {
-      "name": "Check Status",
+      "name": "Durumu kontrol et",
       "command": "git status",
-      "description": "Check the status of the Git repository and view changes that haven't been committed yet.",
+      "description": "Git deposunun durumunu kontrol edin ve henüz gerçekleştirilmemiş değişiklikleri görüntüleyin.",
       "example": "git status"
     },
     {
-      "name": "View Commit History",
+      "name": "Taahhüt Geçmişini Görüntüle",
       "command": "git log",
-      "description": "View the history of commits in the Git repository.",
+      "description": "Git deposundaki taahhütlerin geçmişini görüntüleyin.",
       "example": "git log"
     },
     {
-      "name": "Create a Branch",
+      "name": "Şube Oluştur",
       "command": "git branch [branch_name]",
-      "description": "Create a new branch in the Git repository.",
+      "description": "Git deposunda yeni bir şube oluşturun.",
       "example": "git branch new_feature"
     },
     {
@@ -251,6 +251,24 @@
       "command": "git checkout [commit]",
       "description": "Switches to a previous commit and restores the state of the repository",
       "example": "git checkout abc123"
+    },
+    {
+      "name": "Switch to branch",
+      "command": "git switch <branch_name>",
+      "description": "Switches to the specified branch.",
+      "example": "git switch feature_branch"
+    },
+    {
+      "name": "Create and switch to a new branch",
+      "command": "git switch -c <new_branch_name>",
+      "description": "Creates and switches to a new branch with the specified name.",
+      "example": "git switch -c new_feature_branch"
+    },
+    {
+      "name": "Force switch to branch",
+      "command": "git switch -C <branch_name>",
+      "description": "Forces switching to the specified branch, discarding local changes.",
+      "example": "git switch -C feature_branch"
     }
   ]
 }

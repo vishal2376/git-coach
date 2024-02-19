@@ -251,6 +251,24 @@
       "command": "git checkout [commit]",
       "description": "切换到以前的提交并恢复存储库状态",
       "example": "git checkout abc123"
+    },
+    {
+      "name": "切换到分支",
+      "command": "git switch <branch_name>",
+      "description": "切换到指定的分支。",
+      "example": "git switch feature_branch"
+    },
+    {
+      "name": "创建并切换到新分支",
+      "command": "git switch -c <new_branch_name>",
+      "description": "创建并切换到具有指定名称的新分支。",
+      "example": "git switch -c new_feature_branch"
+    },
+    {
+      "name": "强制切换到分支",
+      "command": "git switch -C <branch_name>",
+      "description": "强制切换到指定分支，放弃本地更改。",
+      "example": "git switch -C feature_branch"
     }
   ]
 }

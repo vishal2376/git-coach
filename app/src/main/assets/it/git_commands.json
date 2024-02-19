@@ -112,19 +112,19 @@
       "name": "Applica Modifiche In Recesso",
       "command": "git stash apply",
       "description": "Applica i cambiamenti che sono stati recessi nel repository Git.",
-      "example": "git stash apply"
+      "example": "applicazione git stash"
     },
     {
       "name": "Elenco Modifiche In Recesso",
       "command": "git stash list",
       "description": "Elenca tutte le modifiche di recesso nel repository Git.",
-      "example": "git stash list"
+      "example": "lista di recesso git"
     },
     {
       "name": "Rimuovi Modifiche In Recesso",
       "command": "git stash drop",
       "description": "Rimuovere le modifiche di recesso dal repository Git.",
-      "example": "git stash drop"
+      "example": "git recesso"
     },
     {
       "name": "Mostra Registro Di Commit",
@@ -251,6 +251,24 @@
       "command": "git checkout [commit]",
       "description": "Passa a un commit precedente e ripristina lo stato del repository",
       "example": "git checkout abc123"
+    },
+    {
+      "name": "Passa al ramo",
+      "command": "interruttore git <branch_name>",
+      "description": "Passa al ramo specificato.",
+      "example": "git switch feature_branch"
+    },
+    {
+      "name": "Crea e passa a un nuovo ramo",
+      "command": "git switch -c <new_branch_name>",
+      "description": "Crea e passa a un nuovo ramo con il nome specificato.",
+      "example": "git switch -c new_feature_branch"
+    },
+    {
+      "name": "Forza il passaggio al ramo",
+      "command": "interruttore git -C <branch_name>",
+      "description": "Forza il passaggio alla filiale specificata, eliminando le modifiche locali.",
+      "example": "git switch -C feature_branch"
     }
   ]
 }
