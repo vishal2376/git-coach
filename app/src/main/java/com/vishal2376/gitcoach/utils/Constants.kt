@@ -5,6 +5,7 @@ object Constants {
     var shareMessage =
         "Become a Git expert with Git Coach! Learn Git and GitHub commands with ease. Download now\n"
 
+    const val GOOGLE_PLAY_DEV_LINK = "https://play.google.com/store/apps/dev?id=8204011415367950940"
     const val SOURCE_CODE_LINK = "https://github.com/vishal2376/git-coach"
     const val GITHUB_LINK = "https://github.com/vishal2376/"
     const val LINKEDIN_LINK = "https://www.linkedin.com/in/vishal2376/"

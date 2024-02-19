@@ -59,6 +59,10 @@ class MainActivity : AppCompatActivity() {
                     sourceCode()
                 }
 
+                R.id.itemMoreApps -> {
+                    moreApps()
+                }
+
                 R.id.itemDeveloper -> {
                     developerProfile()
                 }
@@ -86,6 +90,15 @@ class MainActivity : AppCompatActivity() {
 
     private fun handleNavDrawer() {
         binding.drawerLayout.openDrawer(GravityCompat.START)
+    }
+
+    private fun moreApps() {
+        val intent = Intent(
+            Intent.ACTION_VIEW,
+            Uri.parse(Constants.GOOGLE_PLAY_DEV_LINK)
+        )
+        startActivity(intent)
+
     }
 
     private fun shareApp() {
