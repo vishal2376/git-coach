@@ -25,7 +25,7 @@
     <string name="example">示例</string>
     <string name="daily_notification">每日通知(%1$s)</string>
     <string name="source_code">源代码</string>
-    <string name="developer">About Developer</string>
+    <string name="developer">关于开发者</string>
     <string name="dialog_text">Sorry, An unexpected error occurred.\n\nDo you want to send a crash report to the developer?</string>
     <string name="dialog_title">崩溃报告</string>
     <string name="dialog_positive">发送</string>
@@ -54,13 +54,13 @@
     <string name="next_question">下一个问题</string>
     <string name="finish">完成</string>
     <string name="remaining_questions">%1$d/%2$d</string>
-    <string name="chinese_simplified">Chinese-Simplified</string>
-    <string name="turkish">Turkish</string>
-    <string name="about_developer">About Developer</string>
-    <string name="vishal_singh">Vishal Singh</string>
-    <string name="bio">A passionate developer from India with 3+ years experience in Android Development.Also skilled in Rust and Go for backend development</string>
-    <string name="follow_me">Follow Me</string>
-    <string name="credits">Credits</string>
-    <string name="last_quiz_result">Last Quiz Result</string>
+    <string name="chinese_simplified">简体中文</string>
+    <string name="turkish">土耳其语</string>
+    <string name="about_developer">关于开发者</string>
+    <string name="vishal_singh">维沙尔·辛德</string>
+    <string name="bio">一个来自印度的激情开发者，拥有3年以上的 Android 开发经验。同时熟练掌握Rust 和后端开发</string>
+    <string name="follow_me">跟随我</string>
+    <string name="credits">致谢</string>
+    <string name="last_quiz_result">上次测验结果</string>
     <string name="_10">10</string>
 </resources>
