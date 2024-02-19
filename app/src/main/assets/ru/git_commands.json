@@ -46,7 +46,7 @@
       "name": "Просмотр истории изменений",
       "command": "git log",
       "description": "Просмотр истории коммитов в Git репозитории.",
-      "example": "git log"
+      "example": "журнал git"
     },
     {
       "name": "Создать ветку",
@@ -112,25 +112,25 @@
       "name": "Применить изменения с тайником",
       "command": "git stash apply",
       "description": "Применить изменения, которые были закрыты в Git-репозитории.",
-      "example": "git stash apply"
+      "example": "Применение git stash"
     },
     {
       "name": "Список с тайником изменений",
       "command": "git stash list",
       "description": "Список всех устаревших изменений в Git репозитории.",
-      "example": "git stash list"
+      "example": "список тайников git"
     },
     {
       "name": "Удалить кэшированные изменения",
       "command": "git stash drop",
       "description": "Удалить устаревшие изменения из Git репозитория.",
-      "example": "git stash drop"
+      "example": "капля сгиба"
     },
     {
       "name": "Показать журнал коммитов",
-      "command": "git log",
+      "command": "журнал git",
       "description": "Показать историю фиксации репозитория Git.",
-      "example": "git log"
+      "example": "журнал git"
     },
     {
       "name": "Показать коммиты",
@@ -142,7 +142,7 @@
       "name": "Получить удаленные изменения",
       "command": "git fetch",
       "description": "Получить обновления из удаленного репозитория в локальный репозиторий.",
-      "example": "git fetch"
+      "example": "загрузить git"
     },
     {
       "name": "Пульт Пульт изменений",
@@ -253,21 +253,21 @@
       "example": "git checkout abc123"
     },
     {
-      "name": "Switch to branch",
+      "name": "Переключиться на ветку",
       "command": "git switch <branch_name>",
-      "description": "Switches to the specified branch.",
+      "description": "Переключает в указанную ветку.",
       "example": "git switch feature_branch"
     },
     {
-      "name": "Create and switch to a new branch",
+      "name": "Создать и переключиться на новую ветку",
       "command": "git switch -c <new_branch_name>",
-      "description": "Creates and switches to a new branch with the specified name.",
+      "description": "Создает и переключает на новую ветку с указанным именем.",
       "example": "git switch -c new_feature_branch"
     },
     {
-      "name": "Force switch to branch",
-      "command": "git switch -C <branch_name>",
-      "description": "Forces switching to the specified branch, discarding local changes.",
+      "name": "Принудительно переключиться на ветку",
+      "command": "переключатель git -C <branch_name>",
+      "description": "Переключение на указанную ветку, отмена локальных изменений.",
       "example": "git switch -C feature_branch"
     }
   ]
