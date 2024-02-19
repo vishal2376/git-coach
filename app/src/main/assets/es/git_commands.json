@@ -112,13 +112,13 @@
       "name": "Aplicar cambios almacenados",
       "command": "git stash apply",
       "description": "Aplicar cambios que fueron almacenados en el repositorio Git.",
-      "example": "git stash apply"
+      "example": "git stash aplicar"
     },
     {
       "name": "Lista de Cambios Escondidos",
       "command": "git stash list",
       "description": "Listar todos los cambios almacenados en el repositorio Git.",
-      "example": "git stash list"
+      "example": "lista de almacenamiento git"
     },
     {
       "name": "Eliminar Cambios Escondidos",
@@ -142,7 +142,7 @@
       "name": "Obtener Cambios Remotos",
       "command": "git fetch",
       "description": "Obtener actualizaciones de un repositorio remoto al repositorio local.",
-      "example": "git fetch"
+      "example": "obtener git"
     },
     {
       "name": "Cambios remotos de Pull",
@@ -253,21 +253,21 @@
       "example": "git checkout abc123"
     },
     {
-      "name": "Switch to branch",
+      "name": "Cambiar a rama",
       "command": "git switch <branch_name>",
-      "description": "Switches to the specified branch.",
+      "description": "Cambia a la rama especificada.",
       "example": "git switch feature_branch"
     },
     {
-      "name": "Create and switch to a new branch",
+      "name": "Crear y cambiar a una nueva rama",
       "command": "git switch -c <new_branch_name>",
-      "description": "Creates and switches to a new branch with the specified name.",
+      "description": "Crea y cambia a una nueva rama con el nombre especificado.",
       "example": "git switch -c new_feature_branch"
     },
     {
-      "name": "Force switch to branch",
+      "name": "Forzar cambiar a la rama",
       "command": "git switch -C <branch_name>",
-      "description": "Forces switching to the specified branch, discarding local changes.",
+      "description": "Fuerza que cambia a la rama especificada, descartando los cambios locales.",
       "example": "git switch -C feature_branch"
     }
   ]
