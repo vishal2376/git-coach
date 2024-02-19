@@ -112,7 +112,7 @@
       "name": "Aplicar alterações ocultas",
       "command": "aplicar stash do git",
       "description": "Aplicar alterações ocultas no repositório Git.",
-      "example": "git stash apply"
+      "example": "aplicar stash do git"
     },
     {
       "name": "Listar alterações ocultas",
@@ -142,7 +142,7 @@
       "name": "Buscar Alterações Remotas",
       "command": "git buscar",
       "description": "Obter atualizações de um repositório remoto para o repositório local.",
-      "example": "git fetch"
+      "example": "git buscar"
     },
     {
       "name": "Puxar Alterações Remotas",
@@ -253,21 +253,21 @@
       "example": "git checkout abc123"
     },
     {
-      "name": "Switch to branch",
+      "name": "Alternar para branch",
       "command": "git switch <branch_name>",
-      "description": "Switches to the specified branch.",
+      "description": "Alterna para o branch especificado.",
       "example": "git switch feature_branch"
     },
     {
-      "name": "Create and switch to a new branch",
+      "name": "Criar e alternar para um novo branch",
       "command": "git switch -c <new_branch_name>",
-      "description": "Creates and switches to a new branch with the specified name.",
-      "example": "git switch -c new_feature_branch"
+      "description": "Cria e alterna para um novo branch com o nome especificado.",
+      "example": "git switch -c nova_feature_branch"
     },
     {
-      "name": "Force switch to branch",
+      "name": "Forçar alternador para branch",
       "command": "git switch -C <branch_name>",
-      "description": "Forces switching to the specified branch, discarding local changes.",
+      "description": "Força a mudança para o branch especificado, descartando alterações locais.",
       "example": "git switch -C feature_branch"
     }
   ]
