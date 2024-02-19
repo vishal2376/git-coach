@@ -37,7 +37,7 @@
     <string name="description">Описание</string>
     <string name="save">Сохранить</string>
     <string name="reset_to_default">Reset to default</string>
-    <string name="english_default">Английский (по умолчанию)</string>
+    <string name="english_default">English (Default)</string>
     <string name="italian">Итальянский</string>
     <string name="language_setting">Языковые настройки</string>
     <string name="russian">Русский</string>
