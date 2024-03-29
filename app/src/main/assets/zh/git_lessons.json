@@ -5,7 +5,7 @@
       "Steps": [
         {
           "StepNumber": 1,
-          "Description": "什么是G？",
+          "Description": "什么是Git？",
           "Example": "",
           "Explanation": "Git是一种称为版本控制系统的计算机软件。 它有助于人们随时跟踪对计算机代码或其他文本文件所作的更改。\n\n就像你的文件的历史书，这样你可以看到谁做了更改、做了什么以及什么时候做了修改。"
         },
