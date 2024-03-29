@@ -5,7 +5,7 @@
       "Steps": [
         {
           "StepNumber": 1,
-          "Description": "什么是G？",
+          "Description": "什么是Git？",
           "Example": "",
           "Explanation": "Git是一种称为版本控制系统的计算机软件。 它有助于人们随时跟踪对计算机代码或其他文本文件所作的更改。\n\n就像你的文件的历史书，这样你可以看到谁做了更改、做了什么以及什么时候做了修改。"
         },
@@ -17,9 +17,9 @@
         },
         {
           "StepNumber": 3,
-          "Description": "Installing Git",
+          "Description": "安装 Git",
           "Example": "git --version",
-          "Explanation": "Go to the official Git website (https://git-scm.com/) and find the download section.\n\nChoose the version of Git that matches your computer's operating system (like Windows, macOS, or Linux).\n\nOnce the download is complete, open the downloaded file and follow the installation instructions.\n\nAfter the installation is done, you can verify that Git is installed by opening a terminal or command prompt and typing"
+          "Explanation": "转到 Git 官方网站 (https://git-scm.com/)并找到下载部分。\n\n选择与你的计算机操作系统（例如 Windows、macOS 或 Linux）匹配的 Git 版本。\n\n下载完成后，打开下载的文件并按照安装说明进行操作。\n\n安装完成后，您可以通过打开终端或命令提示符并键入来验证 Git 是否已安装"
         },
         {
           "StepNumber": 4,
@@ -77,7 +77,7 @@
       ]
     },
     {
-      "LessonTitle": "吉特分支",
+      "LessonTitle": "Git分支",
       "Steps": [
         {
           "StepNumber": 1,
@@ -118,13 +118,13 @@
       ]
     },
     {
-      "LessonTitle": "Git Staging",
+      "LessonTitle": "Git 暂存区",
       "Steps": [
         {
           "StepNumber": 1,
-          "Description": "什么是Git Staging",
+          "Description": "什么是Git 暂存区",
           "Example": "",
-          "Explanation": "Git Staging是准备对Git 存储库进行一系列更改的过程。\n\n允许您只选择您想要在下次提交中包含的更改， 而不是承诺对仓库所作的所有更改。"
+          "Explanation": "Git 暂存区是对Git 存储库进行一系列更改的过程。\n\n允许您只选择您想要在下次提交中包含的更改， 而不是承诺对仓库所作的所有更改。"
         },
         {
           "StepNumber": 2,
@@ -171,7 +171,7 @@
           "StepNumber": 3,
           "Description": "创建新的 GitHub 仓库",
           "Example": "",
-          "Explanation": "1. Log in to your GitHub account.\n\n2. Click the \"+\" icon in the top-right corner and select \"New repository\"\n\n3. Provide a name for your repository, a brief description, and choose whether it's public (visible to anyone) or private (visible only to collaborators)\n\n4. Select additional options if needed, such as initializing the repository with a README file\n\n5. Click \"Create repository\""
+          "Explanation": "登录您的 GitHub 帐户。\n\n2. 点击 \"+\" 右上角的图标并选择 \"新存储库\"\n\n3. 提供存储库的名称、简短描述，然后选择它是公共的（任何人都可见）还是私有的（仅对协作者可见）\n\n4. 如果需要，选择其他选项，例如使用README文件初始化存储库\n\n5. 点击 \"创建存储库\""
         },
         {
           "StepNumber": 4,
