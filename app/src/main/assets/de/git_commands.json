@@ -25,9 +25,9 @@
       "example": "git commit -m 'Hinzufügen wichtiger Dateien'"
     },
     {
-      "name": "Push-Änderungen",
+      "name": "Änderungen pushen",
       "command": "git push [remote_name] [branch_name]",
-      "description": "Push übertragene Änderungen in ein entferntes Repository.",
+      "description": "Änderungen in ein entferntes Repository übertragen.",
       "example": "git push origin master"
     },
     {
@@ -39,7 +39,7 @@
     {
       "name": "Status prüfen",
       "command": "git status",
-      "description": "Überprüfen Sie den Status des Git-Projektarchivs und sehen Sie Änderungen an, die noch nicht durchgeführt wurden.",
+      "description": "Den Status des Git-Projektarchivs überprüfen und Änderungen ansehen, die noch nicht durchgeführt wurden.",
       "example": "git status"
     },
     {
@@ -49,27 +49,27 @@
       "example": "git Log"
     },
     {
-      "name": "Einen Zweig erstellen",
-      "command": "git branch [Drang_name]",
-      "description": "Erstellen Sie einen neuen Zweig im Git-Repository.",
+      "name": "Einen Branch erstellen",
+      "command": "git branch [branch_name]",
+      "description": "Einen neuen Branch im Git-Repository erstellen.",
       "example": "git branch new_feature"
     },
     {
-      "name": "Zu einem Zweig wechseln",
+      "name": "Zu einem Branch wechseln",
       "command": "git checkout [branch_name]",
-      "description": "Wechseln Sie zu einem anderen Zweig im Git-Repository.",
+      "description": "Zu einem anderen Branch im Git-Repository wechseln.",
       "example": "git checkout new_feature"
     },
     {
-      "name": "Zweige vergleichen",
+      "name": "Branche vergleichen",
       "command": "git diff [branch1] [branch2]",
-      "description": "Vergleichen Sie die Unterschiede zwischen zwei Zweigen im Git-Repository.",
+      "description": "Unterschiede zwischen zwei Branchen im Git-Repository vergleichen.",
       "example": "git diff master new_feature"
     },
     {
-      "name": "Zweige zusammenführen",
+      "name": "Branche zusammenführen",
       "command": "git merge [branch_name]",
-      "description": "Änderungen eines bestimmten Zweiges in den aktuellen Zweig im Git-Repository zusammenführen.",
+      "description": "Änderungen eines bestimmten Branchs in den aktuellen Zweig im Git-Repository zusammenführen.",
       "example": "git merge new_feature"
     },
     {
@@ -97,43 +97,43 @@
       "example": "git revert abc123"
     },
     {
-      "name": "Ein Commit markieren",
+      "name": "Einen Commit markieren",
       "command": "git tag [tag_name] [commit_hash]",
       "description": "Fügen Sie einen Tag einem bestimmten Commit im Git-Repository hinzu.",
       "example": "git tag v1.0 abc123"
     },
     {
-      "name": "Stacheländerungen",
+      "name": "Änderungen speichern",
       "command": "git stash",
-      "description": "Speichern Sie temporär Änderungen am Git-Repository ohne diese zu übergeben.",
+      "description": "Änderungen im Git-Repository speichern, ohne diese zu übergeben.",
       "example": "git stash"
     },
     {
-      "name": "Abgestaute Änderungen anwenden",
-      "command": "git stash anwenden",
+      "name": "Gespeicherte Änderungen anwenden",
+      "command": "git stash apply",
       "description": "Änderungen anwenden, die im Git-Repository gestaucht wurden.",
-      "example": "git stash anwenden"
+      "example": "git stash apply"
     },
     {
       "name": "Gesperrte Änderungen auflisten",
       "command": "git stash list",
       "description": "Listet alle eingelesenen Änderungen im Git-Repository auf.",
-      "example": "git stash-Liste"
+      "example": "git stash list"
     },
     {
-      "name": "Stachelte Änderungen entfernen",
+      "name": "Gespeicherte Änderungen entfernen",
       "command": "git stash drop",
-      "description": "Stachelte Änderungen aus dem Git-Repository entfernen.",
-      "example": "git Strümpfe"
+      "description": "Gespicherte Änderungen aus dem Git-Repository entfernen.",
+      "example": "git stash drop"
     },
     {
       "name": "Commit-Log anzeigen",
-      "command": "git Log",
+      "command": "git log",
       "description": "Zeigt den Commit-Verlauf des Git-Repositorys an.",
-      "example": "git Log"
+      "example": "git log"
     },
     {
-      "name": "Zeige Übertragungsunterschiede",
+      "name": "Commit-Unterschiede anzeigen",
       "command": "git show [commit_hash]",
       "description": "Zeigt die Unterschiede eines bestimmten Commits im Git-Repository an.",
       "example": "git show abc123"
@@ -195,7 +195,7 @@
     {
       "name": "Vorübergehend speichern",
       "command": "git stash [save | push] [-p|--patch] [-k|--keep-index] [-u|--include-untracked] [-a|--all] [-q|--quiet] [<message>]",
-      "description": "Speichern Sie temporär Änderungen, die noch nicht übertragen werden können.",
+      "description": "Änderungen temporär speichern, die noch nicht übertragen werden können.",
       "example": "git stash save \"work in progress\""
     },
     {
@@ -207,7 +207,7 @@
     {
       "name": "Referenzprotokoll",
       "command": "git reflog [options] [show]",
-      "description": "Sehen Sie sich ein Log aller Git-Referenzen in Ihrem Projektarchiv an, auch wenn diese gelöscht oder verloren wurden.",
+      "description": "Einen Log aller Git-Referenzen im Projektarchiv ansehen, auch wenn diese gelöscht oder verloren wurden.",
       "example": "git reflog show HEAD"
     },
     {
