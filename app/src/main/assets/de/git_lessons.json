@@ -17,14 +17,14 @@
         },
         {
           "StepNumber": 3,
-          "Description": "Installing Git",
+          "Description": "Git installieren",
           "Example": "git --version",
           "Explanation": "Gehen Sie zur offiziellen Git Website (https://git-scm.com/) und finden Sie den Download-Bereich.\n\nWählen Sie die Version von Git, die zum Betriebssystem Ihres Computers passt (wie Windows, macOS oder Linux).\n\nSobald der Download abgeschlossen ist, öffnen Sie die heruntergeladene Datei und folgen Sie den Installationsanweisungen.\n\nNach der Installation können Sie überprüfen, ob Git installiert ist, indem Sie ein Terminal oder eine Eingabeaufforderung öffnen und eingeben"
         },
         {
           "StepNumber": 4,
           "Description": "Git auf Ihrem Computer einrichten",
-          "Example": "git config --global user.name 'Your Name'\ngit config --global user.email 'Your email ID'",
+          "Example": "git config --global user.name 'Your Name'\ngit config --global user.email 'Your email'",
           "Explanation": "Um Git nutzen zu können, müssen Sie es zuerst auf Ihrem Computer konfigurieren, indem Sie Ihren Benutzernamen und Ihre E-Mail-Adresse festlegen. Diese Informationen werden jedem Commit in Git angehängt."
         },
         {
