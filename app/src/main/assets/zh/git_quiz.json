@@ -1,0 +1,1654 @@
+{
+  "quiz": [
+    {
+      "id": 1,
+      "question": "如何查看特定文件的提交历史记录？",
+      "choices": [
+        "git log",
+        "git history",
+        "git show",
+        "git file-history"
+      ],
+      "correctAnswer": "git log"
+    },
+    {
+      "id": 2,
+      "question": "如何撤销最后一次还未推送到远程仓库的提交？",
+      "choices": [
+        "git reset",
+        "git revert",
+        "git undo",
+        "git rollback"
+      ],
+      "correctAnswer": "git reset"
+    },
+    {
+      "id": 3,
+      "question": "'git pull' 命令的作用是什么？",
+      "choices": [
+        "上传更改到远程",
+        "从远程下载更改",
+        "合并远程更改",
+        "删除远程更改"
+      ],
+      "correctAnswer": "从远程下载更改"
+    },
+    {
+      "id": 4,
+      "question": "如何解决Git中的合并冲突？",
+      "choices": [
+        "git accept",
+        "git merge-conflict",
+        "git resolve",
+        "git mergetool"
+      ],
+      "correctAnswer": "git mergetool"
+    },
+    {
+      "id": 5,
+      "question": "'git stash' 命令的作用是什么？",
+      "choices": [
+        "删除更改",
+        "临时保存更改",
+        "重命名分支",
+        "创建新分支"
+      ],
+      "correctAnswer": "临时保存更改"
+    },
+    {
+      "id": 6,
+      "question": "如何重命名本地Git分支？",
+      "choices": [
+        "git mv",
+        "git branch-rename",
+        "git rename-branch",
+        "git branch -m"
+      ],
+      "correctAnswer": "git branch -m"
+    },
+    {
+      "id": 7,
+      "question": "在Git和GitHub中，'fork'（复刻）是什么意思？",
+      "choices": [
+        "创建新分支",
+        "复制仓库到你的GitHub账号",
+        "合并两个分支",
+        "删除分支"
+      ],
+      "correctAnswer": "复制仓库到你的GitHub账号"
+    },
+    {
+      "id": 8,
+      "question": "如何查看两个Git分支之间的差异？",
+      "choices": [
+        "git diff",
+        "git changes",
+        "git compare",
+        "git branch-diff"
+      ],
+      "correctAnswer": "git diff"
+    },
+    {
+      "id": 9,
+      "question": "'.gitattributes' 文件的作用是什么？",
+      "choices": [
+        "指定合并策略",
+        "定义仓库设置",
+        "配置每个路径的行尾和属性",
+        "存储Git凭证"
+      ],
+      "correctAnswer": "配置每个路径的行尾和属性"
+    },
+    {
+      "id": 10,
+      "question": "如何创建Git标签？",
+      "choices": [
+        "git create-tag",
+        "git tag -a",
+        "git tag-create",
+        "git new-tag"
+      ],
+      "correctAnswer": "git tag -a"
+    },
+    {
+      "id": 11,
+      "question": "'.gitkeep' 文件的作用是什么？",
+      "choices": [
+        "标记一个空目录",
+        "排除文件不被跟踪",
+        "在Git中保留空目录",
+        "定义仓库设置"
+      ],
+      "correctAnswer": "标记一个空目录"
+    },
+    {
+      "id": 12,
+      "question": "如何查看与本地仓库关联的远程仓库列表？",
+      "choices": [
+        "git list-remotes",
+        "git remotes",
+        "git remote -v",
+        "git show-remotes"
+      ],
+      "correctAnswer": "git remote -v"
+    },
+    {
+      "id": 13,
+      "question": "'git bisect' 命令的作用是什么？",
+      "choices": [
+        "查看提交历史",
+        "用于查找有问题提交的调试工具",
+        "创建新分支",
+        "撤销最后一次提交"
+      ],
+      "correctAnswer": "用于查找有问题提交的调试工具"
+    },
+    {
+      "id": 14,
+      "question": "如何从Git中移除文件但不从工作目录中删除它？",
+      "choices": [
+        "git delete",
+        "git rm --cached",
+        "git remove",
+        "git exclude"
+      ],
+      "correctAnswer": "git rm --cached"
+    },
+    {
+      "id": 15,
+      "question": "'git cherry-pick' 命令的作用是什么？",
+      "choices": [
+        "将一个分支的更改合并到另一个分支",
+        "创建新分支",
+        "撤销最后一次提交",
+        "删除分支"
+      ],
+      "correctAnswer": "将一个分支的更改合并到另一个分支"
+    },
+    {
+      "id": 16,
+      "question": "如何查看Git中特定提交的详细信息？",
+      "choices": [
+        "git show",
+        "git info",
+        "git commit-info",
+        "git details"
+      ],
+      "correctAnswer": "git show"
+    },
+    {
+      "id": 17,
+      "question": "'git rebase' 命令的作用是什么？",
+      "choices": [
+        "将一个分支的更改合并到另一个分支",
+        "将一系列提交移动或合并到新的基础提交",
+        "删除分支",
+        "创建新分支"
+      ],
+      "correctAnswer": "将一系列提交移动或合并到新的基础提交"
+    },
+    {
+      "id": 18,
+      "question": "如何显示最后一次提交引入的更改？",
+      "choices": [
+        "git changes",
+        "git diff HEAD^",
+        "git show last",
+        "git commit-changes"
+      ],
+      "correctAnswer": "git diff HEAD^"
+    },
+    {
+      "id": 19,
+      "question": "什么是Git钩子（Git hook）？",
+      "choices": [
+        "一种分支类型",
+        "托管Git仓库的服务器",
+        "由Git事件触发的程序",
+        "一种特殊的提交"
+      ],
+      "correctAnswer": "由Git事件触发的程序"
+    },
+    {
+      "id": 20,
+      "question": "如何用一个命令创建并切换到新分支？",
+      "choices": [
+        "git branch -c",
+        "git new-branch",
+        "git checkout -b",
+        "git switch"
+      ],
+      "correctAnswer": "git checkout -b"
+    },
+    {
+      "id": 21,
+      "question": "'.gitkeep' 文件的作用是什么？",
+      "choices": [
+        "标记一个空目录",
+        "排除文件不被跟踪",
+        "在Git中保留空目录",
+        "定义仓库设置"
+      ],
+      "correctAnswer": "标记一个空目录"
+    },
+    {
+      "id": 22,
+      "question": "如何删除Git中的远程分支？",
+      "choices": [
+        "git branch -d remote-branch",
+        "git delete-remote-branch",
+        "git remove-remote-branch",
+        "git push origin --delete remote-branch"
+      ],
+      "correctAnswer": "git push origin --delete remote-branch"
+    },
+    {
+      "id": 23,
+      "question": "'git log --graph' 显示什么？",
+      "choices": [
+        "提交历史的图形化表示",
+        "远程分支列表",
+        "更改摘要",
+        "所有提交的日志"
+      ],
+      "correctAnswer": "提交历史的图形化表示"
+    },
+    {
+      "id": 24,
+      "question": "如何修改最后一次提交的消息？",
+      "choices": [
+        "git commit --amend",
+        "git amend-commit",
+        "git edit-commit",
+        "git change-commit"
+      ],
+      "correctAnswer": "git commit --amend"
+    },
+    {
+      "id": 25,
+      "question": "'git branch' 命令的作用是什么？",
+      "choices": [
+        "创建新分支",
+        "删除分支",
+        "显示分支列表",
+        "合并分支"
+      ],
+      "correctAnswer": "显示分支列表"
+    },
+    {
+      "id": 26,
+      "question": "如何查看所有分支，包括远程分支？",
+      "choices": [
+        "git branches -a",
+        "git list-branches",
+        "git remote-branches",
+        "git branch -a"
+      ],
+      "correctAnswer": "git branch -a"
+    },
+    {
+      "id": 27,
+      "question": "'git reflog' 命令的作用是什么？",
+      "choices": [
+        "列出所有远程引用",
+        "显示引用变更的日志",
+        "删除远程引用",
+        "创建新的引用"
+      ],
+      "correctAnswer": "显示引用变更的日志"
+    },
+    {
+      "id": 28,
+      "question": "如何查看两个Git提交之间的差异？",
+      "choices": [
+        "git diff",
+        "git changes",
+        "git compare",
+        "git commit-diff"
+      ],
+      "correctAnswer": "git diff"
+    },
+    {
+      "id": 29,
+      "question": "'git submodule' 命令的作用是什么？",
+      "choices": [
+        "更新所有子模块",
+        "向仓库添加子模块",
+        "删除子模块",
+        "列出所有子模块"
+      ],
+      "correctAnswer": "向仓库添加子模块"
+    },
+    {
+      "id": 30,
+      "question": "如何取消Git中的更改？",
+      "choices": [
+        "git unstage",
+        "git reset",
+        "git remove",
+        "git revert"
+      ],
+      "correctAnswer": "git reset"
+    },
+    {
+      "id": 31,
+      "question": "什么是Git中的快速前进合并？",
+      "choices": [
+        "只考虑目标分支的更改的合并",
+        "快速合并",
+        "删除分支的合并",
+        "需要批准的合并"
+      ],
+      "correctAnswer": "只考虑目标分支的更改的合并"
+    },
+    {
+      "id": 32,
+      "question": "如何查看特定提交的更改？",
+      "choices": [
+        "git changes",
+        "git diff",
+        "git show",
+        "git commit-files"
+      ],
+      "correctAnswer": "git show"
+    },
+    {
+      "id": 33,
+      "question": "'git log --oneline' 命令的作用是什么？",
+      "choices": [
+        "每个提交显示在一行的简洁日志",
+        "每个提交显示在多行的详细日志",
+        "只显示提交信息的第一行",
+        "只显示提交信息的最后一行"
+      ],
+      "correctAnswer": "每个提交显示在一行的简洁日志"
+    },
+    {
+      "id": 34,
+      "question": "如何创建Git别名？",
+      "choices": [
+        "git add-alias",
+        "git alias",
+        "git create-alias",
+        "git config --global alias"
+      ],
+      "correctAnswer": "git config --global alias"
+    },
+    {
+      "id": 35,
+      "question": "'git rebase -i' 命令的作用是什么？",
+      "choices": [
+        "交互式变基, 允许修改提交",
+        "强制推送更改到远程分支",
+        "使用远程最新更改进行变基",
+        "不需确认的变基"
+      ],
+      "correctAnswer": "交互式变, 允许修改提交"
+    },
+    {
+      "id": 36,
+      "question": "如何查看特定文件的提交历史记录，包括重命名？",
+      "choices": [
+        "git log --follow",
+        "git log --changes",
+        "git history --follow",
+        "git file-history"
+      ],
+      "correctAnswer": "git log --follow"
+    },
+    {
+      "id": 37,
+      "question": "'git push --force' 命令的作用是什么？",
+      "choices": [
+        "推送更改到远程分支",
+        "强制推送更改到远程分支",
+        "删除远程分支",
+        "更新本地分支"
+      ],
+      "correctAnswer": "强制推送更改到远程分支"
+    },
+    {
+      "id": 38,
+      "question": "如何删除本地Git分支？",
+      "choices": [
+        "git remove-branch",
+        "git branch -d branch-name",
+        "git delete-branch",
+        "git branch -D branch-name"
+      ],
+      "correctAnswer": "git branch -d branch-name"
+    },
+    {
+      "id": 39,
+      "question": "'git log --since' 命令的作用是什么？",
+      "choices": [
+        "显示特定日期之后的提交",
+        "显示特定文件的提交历史",
+        "每个提交显示在一行的简洁日志",
+        "显示特定分支的提交历史"
+      ],
+      "correctAnswer": "显示特定日期之后的提交"
+    },
+    {
+      "id": 40,
+      "question": "如何撤销最后一次提交，而不丢失工作目录中的更改？",
+      "choices": [
+        "git revert",
+        "git reset --soft",
+        "git undo",
+        "git rollback"
+      ],
+      "correctAnswer": "git reset --soft"
+    },
+    {
+      "id": 41,
+      "question": "'git log --grep' 命令的作用是什么？",
+      "choices": [
+        "在提交信息中搜索字符串",
+        "列出所有分支",
+        "显示每个提交在多行的详细日志",
+        "只显示提交信息的第一行"
+      ],
+      "correctAnswer": "在提交信息中搜索字符串"
+    },
+    {
+      "id": 42,
+      "question": "如何重命名Git中的文件并保留其历史记录？",
+      "choices": [
+        "git move",
+        "git rename",
+        "git mv",
+        "git change"
+      ],
+      "correctAnswer": "git mv"
+    },
+    {
+      "id": 43,
+      "question": "'git log --author' 命令的作用是什么？",
+      "choices": [
+        "显示特定作者的提交",
+        "每个提交显示在一行的简洁日志",
+        "显示特定分支的提交历史",
+        "只显示提交信息的最后一行"
+      ],
+      "correctAnswer": "显示特定作者的提交"
+    },
+    {
+      "id": 44,
+      "question": "如何查看特定提交引入的更改？",
+      "choices": [
+        "git diff commit-hash",
+        "git show commit-hash",
+        "git changes commit-hash",
+        "git commit-diff commit-hash"
+      ],
+      "correctAnswer": "git show commit-hash"
+    },
+    {
+      "id": 45,
+      "question": "'git log --decorate' 命令的作用是什么？",
+      "choices": [
+        "显示带有附加信息的装饰日志",
+        "每个提交显示在一行的简洁日志",
+        "只显示提交信息的第一行",
+        "每个提交显示在多行的详细日志"
+      ],
+      "correctAnswer": "显示带有附加信息的装饰日志"
+    },
+    {
+      "id": 46,
+      "question": "如何将多个Git提交压缩为一个提交？",
+      "choices": [
+        "git merge --squash",
+        "git rebase --squash",
+        "git squash-commits",
+        "git combine-commits"
+      ],
+      "correctAnswer": "git rebase --squash"
+    },
+    {
+      "id": 47,
+      "question": "'git log --oneline --graph' 命令的作用是什么？",
+      "choices": [
+        "显示每个提交在一行的简洁日志和图形化表示",
+        "显示每个提交在多行的详细日志",
+        "只显示提交信息的最后一行",
+        "只显示提交信息的第一行"
+      ],
+      "correctAnswer": "显示每个提交在一行的简洁日志和图形化表示"
+    },
+    {
+      "id": 48,
+      "question": "如何查看特定分支的提交历史记录？",
+      "choices": [
+        "git log branch-name",
+        "git branch-log branch-name",
+        "git history branch-name",
+        "git show branch-name"
+      ],
+      "correctAnswer": "git log branch-name"
+    },
+    {
+      "id": 49,
+      "question": "'git clean' 命令的作用是什么？",
+      "choices": [
+        "从工作目录中删除未跟踪的文件",
+        "清理提交历史",
+        "删除分支",
+        "从暂存区移除更改"
+      ],
+      "correctAnswer": "从工作目录中删除未跟踪的文件"
+    },
+    {
+      "id": 50,
+      "question": "如何在Git中创建新分支并切换到它？",
+      "choices": [
+        "git branch new-branch",
+        "git create-branch new-branch",
+        "git checkout -b new-branch",
+        "git switch new-branch"
+      ],
+      "correctAnswer": "git checkout -b new-branch"
+    },
+    {
+      "id": 51,
+      "question": "在Git中如何检查工作目录的状态？",
+      "choices": [
+        "git check",
+        "git status",
+        "git info",
+        "git show"
+      ],
+      "correctAnswer": "git status"
+    },
+    {
+      "id": 52,
+      "question": "如何在GitHub上创建新的远程仓库？",
+      "choices": [
+        "git create-repo",
+        "git remote-create",
+        "git init",
+        "git new-remote"
+      ],
+      "correctAnswer": "git create-repo"
+    },
+    {
+      "id": 53,
+      "question": "'git add' 命令的作用是什么？",
+      "choices": [
+        "提交更改",
+        "将更改添加到暂存区",
+        "创建新分支",
+        "在仓库中删除文件"
+      ],
+      "correctAnswer": "将更改添加到暂存区"
+    },
+    {
+      "id": 54,
+      "question": "如何查看Git中两个分支之间的更改？",
+      "choices": [
+        "git branch-diff",
+        "git diff-branches",
+        "git changes",
+        "git diff branch1 branch2"
+      ],
+      "correctAnswer": "git diff branch1 branch2"
+    },
+    {
+      "id": 55,
+      "question": "'git branch' 命令的作用是什么？",
+      "choices": [
+        "创建新分支",
+        "删除分支",
+        "显示分支列表",
+        "合并分支"
+      ],
+      "correctAnswer": "显示分支列表"
+    },
+    {
+      "id": 56,
+      "question": "如何在Git中重命名远程？",
+      "choices": [
+        "git remote-rename",
+        "git remote -mv",
+        "git remote rename",
+        "git rename-remote"
+      ],
+      "correctAnswer": "git remote rename"
+    },
+    {
+      "id": 57,
+      "question": "'git log -n' 命令的作用是什么？",
+      "choices": [
+        "显示最后n个提交",
+        "显示详细的提交信息",
+        "显示简洁日志",
+        "显示特定日期以来的提交"
+      ],
+      "correctAnswer": "显示最后n个提交"
+    },
+    {
+      "id": 58,
+      "question": "如何丢弃工作目录中特定文件的更改？",
+      "choices": [
+        "git remove",
+        "git discard",
+        "git reset",
+        "git checkout -- file"
+      ],
+      "correctAnswer": "git checkout -- file"
+    },
+    {
+      "id": 59,
+      "question": "'.gitignore' 文件的作用是什么？",
+      "choices": [
+        "列出要被Git忽略的文件",
+        "将文件包含在仓库中",
+        "跟踪仓库中的所有文件",
+        "备份仓库历史"
+      ],
+      "correctAnswer": "列出要被Git忽略的文件"
+    },
+    {
+      "id": 60,
+      "question": "如何在Git中创建新分支并切换到它？",
+      "choices": [
+        "git branch new-branch",
+        "git create-branch new-branch",
+        "git checkout -b new-branch",
+        "git switch new-branch"
+      ],
+      "correctAnswer": "git checkout -b new-branch"
+    },
+    {
+      "id": 61,
+      "question": "'git pull origin main' 的作用是什么？",
+      "choices": [
+        "将更改推送到主分支",
+        "从主分支获取并合并更改",
+        "删除主分支",
+        "创建一个名为'main'的新分支"
+      ],
+      "correctAnswer": "从主分支获取并合并更改"
+    },
+    {
+      "id": 62,
+      "question": "如何在Git中创建并应用补丁？",
+      "choices": [
+        "git create-patch",
+        "git patch-create",
+        "git diff > patchfile",
+        "git apply-patch"
+      ],
+      "correctAnswer": "git diff > patchfile"
+    },
+    {
+      "id": 63,
+      "question": "'git fetch' 命令的作用是什么？",
+      "choices": [
+        "将更改上传到远程",
+        "从远程下载更改",
+        "合并远程更改",
+        "删除远程更改"
+      ],
+      "correctAnswer": "从远程下载更改"
+    },
+    {
+      "id": 64,
+      "question": "如何全局配置Git中的用户名和电子邮件？",
+      "choices": [
+        "git config --global user.name/email",
+        "git set-username/email",
+        "git username/email",
+        "git configure user.name/email"
+      ],
+      "correctAnswer": "git config --global user.name/email"
+    },
+    {
+      "id": 65,
+      "question": "'git tag -l' 显示什么？",
+      "choices": [
+        "列出所有标签",
+        "创建新标签",
+        "删除标签",
+        "显示详细标签信息"
+      ],
+      "correctAnswer": "列出所有标签"
+    },
+    {
+      "id": 66,
+      "question": "如何查看最后一次提交引入的更改？",
+      "choices": [
+        "git changes",
+        "git diff HEAD^",
+        "git show last",
+        "git commit-changes"
+      ],
+      "correctAnswer": "git diff HEAD^"
+    },
+    {
+      "id": 67,
+      "question": "'git remote show' 命令的作用是什么？",
+      "choices": [
+        "列出远程分支",
+        "显示有关远程的详细信息",
+        "删除远程",
+        "显示远程更改"
+      ],
+      "correctAnswer": "显示有关远程的详细信息"
+    },
+    {
+      "id": 68,
+      "question": "如何创建Git分支而不切换到它？",
+      "choices": [
+        "git create-branch",
+        "git branch -c",
+        "git checkout -b",
+        "git branch new-branch"
+      ],
+      "correctAnswer": "git branch new-branch"
+    },
+    {
+      "id": 69,
+      "question": "'git merge --no-ff' 命令的作用是什么？",
+      "choices": [
+        "强制快进合并",
+        "防止快进合并",
+        "仅合并非快进分支",
+        "合并后删除分支"
+      ],
+      "correctAnswer": "防止快进合并"
+    },
+    {
+      "id": 70,
+      "question": "如何撤销已推送到远程仓库的Git提交？",
+      "choices": [
+        "git reset",
+        "git revert",
+        "git rollback",
+        "git undo"
+      ],
+      "correctAnswer": "git revert"
+    },
+    {
+      "id": 71,
+      "question": "'git log --since' 的作用是什么？",
+      "choices": [
+        "显示特定日期之后的提交",
+        "显示特定文件的提交历史",
+        "显示每个提交在一行的简洁日志",
+        "显示特定分支的提交历史"
+      ],
+      "correctAnswer": "显示特定日期之后的提交"
+    },
+    {
+      "id": 72,
+      "question": "如何在不更改提交信息的情况下修改最后一次提交？",
+      "choices": [
+        "git commit --amend",
+        "git amend-commit",
+        "git edit-commit",
+        "git change-commit"
+      ],
+      "correctAnswer": "git commit --amend"
+    },
+    {
+      "id": 73,
+      "question": "'git log --grep' 命令的作用是什么？",
+      "choices": [
+        "在提交信息中搜索字符串",
+        "列出所有分支",
+        "显示每个提交在多行的详细日志",
+        "只显示提交信息的第一行"
+      ],
+      "correctAnswer": "在提交信息中搜索字符串"
+    },
+    {
+      "id": 74,
+      "question": "如何同时从工作目录和Git仓库删除文件？",
+      "choices": [
+        "git delete-file",
+        "git remove-file",
+        "git rm file",
+        "git exclude-file"
+      ],
+      "correctAnswer": "git rm file"
+    },
+    {
+      "id": 75,
+      "question": "'git log --graph' 命令的作用是什么？",
+      "choices": [
+        "显示提交历史的图形化表示",
+        "显示每个提交在一行的简洁日志",
+        "只显示提交信息的最后一行",
+        "显示特定分支的提交历史"
+      ],
+      "correctAnswer": "显示提交历史的图形化表示"
+    },
+    {
+      "id": 76,
+      "question": "如何基于特定提交创建Git分支？",
+      "choices": [
+        "git branch new-branch commit-hash",
+        "git create-branch new-branch commit-hash",
+        "git checkout -b new-branch commit-hash",
+        "git switch new-branch commit-hash"
+      ],
+      "correctAnswer": "git branch new-branch commit-hash"
+    },
+    {
+      "id": 77,
+      "question": "'git cherry-pick -n' 命令的作用是什么？",
+      "choices": [
+        "将更改从提交应用到工作目录而不提交",
+        "将更改从提交应用到工作目录并提交",
+        "创建一个带有樱桃挑选更改的新分支",
+        "从提交中删除更改"
+      ],
+      "correctAnswer": "将更改从提交应用到工作目录而不提交"
+    },
+    {
+      "id": 78,
+      "question": "如何查看特定文件的提交历史记录，包括重命名后的更改？",
+      "choices": [
+        "git log --follow",
+        "git log --changes",
+        "git history --follow",
+        "git file-history"
+      ],
+      "correctAnswer": "git log --follow"
+    },
+    {
+      "id": 79,
+      "question": "'git log --oneline --graph' 命令的作用是什么？",
+      "choices": [
+        "在单行中显示每个提交的简洁日志和图形化表示",
+        "在多行中显示每个提交的详细日志",
+        "只显示提交信息的最后一行",
+        "只显示提交信息的第一行"
+      ],
+      "correctAnswer": "在单行中显示每个提交的简洁日志和图形化表示"
+    },
+    {
+      "id": 80,
+      "question": "如何撤销尚未推送到远程仓库的Git提交？",
+      "choices": [
+        "git reset",
+        "git revert",
+        "git rollback",
+        "git undo"
+      ],
+      "correctAnswer": "git reset"
+    },
+    {
+      "id": 81,
+      "question": "如何克隆远程仓库到本地机器？",
+      "choices": [
+        "git clone",
+        "git fetch",
+        "git pull",
+        "git copy"
+      ],
+      "correctAnswer": "git clone"
+    },
+    {
+      "id": 82,
+      "question": "如何创建一个新分支？",
+      "choices": [
+        "git new-branch",
+        "git branch -n",
+        "git branch new-branch",
+        "git create-branch"
+      ],
+      "correctAnswer": "git branch new-branch"
+    },
+    {
+      "id": 83,
+      "question": "在Git中使用什么命令来暂存要提交的更改？",
+      "choices": [
+        "git add",
+        "git commit",
+        "git stage",
+        "git modify"
+      ],
+      "correctAnswer": "git add"
+    },
+    {
+      "id": 84,
+      "question": "如何取消Git中的更改？",
+      "choices": [
+        "git reset",
+        "git unstage",
+        "git revert",
+        "git discard"
+      ],
+      "correctAnswer": "git reset"
+    },
+    {
+      "id": 85,
+      "question": "'git pull' 命令的作用是什么？",
+      "choices": [
+        "将本地更改推送到远程仓库",
+        "从远程仓库获取并合并更改",
+        "克隆远程仓库",
+        "删除远程仓库"
+      ],
+      "correctAnswer": "从远程仓库获取并合并更改"
+    },
+    {
+      "id": 86,
+      "question": "在Git中查看提交历史的命令是什么？",
+      "choices": [
+        "git history",
+        "git show",
+        "git log",
+        "git commits"
+      ],
+      "correctAnswer": "git log"
+    },
+    {
+      "id": 87,
+      "question": "如何在Git中创建新标签？",
+      "choices": [
+        "git tag -a",
+        "git create-tag",
+        "git new-tag",
+        "git tag-create"
+      ],
+      "correctAnswer": "git tag -a"
+    },
+    {
+      "id": 88,
+      "question": "'git push' 命令的作用是什么？",
+      "choices": [
+        "从远程下载更改",
+        "将本地更改推送到远程仓库",
+        "合并远程更改",
+        "删除远程更改"
+      ],
+      "correctAnswer": "将本地更改推送到远程仓库"
+    },
+    {
+      "id": 89,
+      "question": "如何查看两个提交之间的差异？",
+      "choices": [
+        "git compare",
+        "git changes",
+        "git diff",
+        "git commit-diff"
+      ],
+      "correctAnswer": "git diff"
+    },
+    {
+      "id": 90,
+      "question": "'.gitignore' 文件的作用是什么？",
+      "choices": [
+        "指定合并策略",
+        "定义仓库设置",
+        "配置每个路径的行尾和属性",
+        "列出要被Git忽略的文件"
+      ],
+      "correctAnswer": "列出要被Git忽略的文件"
+    },
+    {
+      "id": 91,
+      "question": "如何丢弃工作目录中的更改？",
+      "choices": [
+        "git remove",
+        "git discard",
+        "git reset",
+        "git checkout -- file"
+      ],
+      "correctAnswer": "git checkout -- file"
+    },
+    {
+      "id": 92,
+      "question": "在Git中使用什么命令来创建并切换到新分支？",
+      "choices": [
+        "git branch -c",
+        "git new-branch",
+        "git checkout -b",
+        "git switch"
+      ],
+      "correctAnswer": "git checkout -b"
+    },
+    {
+      "id": 93,
+      "question": "如何查看特定提交的详细信息？",
+      "choices": [
+        "git details",
+        "git show",
+        "git info",
+        "git commit-info"
+      ],
+      "correctAnswer": "git show"
+    },
+    {
+      "id": 94,
+      "question": "'git branch -d' 命令的作用是什么？",
+      "choices": [
+        "创建新分支",
+        "删除分支",
+        "重命名分支",
+        "合并分支"
+      ],
+      "correctAnswer": "删除分支"
+    },
+    {
+      "id": 95,
+      "question": "如何重命名本地分支？",
+      "choices": [
+        "git branch -m",
+        "git mv",
+        "git rename-branch",
+        "git move-branch"
+      ],
+      "correctAnswer": "git branch -m"
+    },
+    {
+      "id": 96,
+      "question": "'git remote add' 命令的作用是什么？",
+      "choices": [
+        "添加新的远程仓库",
+        "删除远程仓库",
+        "重命名远程仓库",
+        "显示远程仓库信息"
+      ],
+      "correctAnswer": "添加新的远程仓库"
+    },
+    {
+      "id": 97,
+      "question": "如何查看最后一次提交引入的更改？",
+      "choices": [
+        "git changes",
+        "git diff HEAD^",
+        "git show last",
+        "git commit-changes"
+      ],
+      "correctAnswer": "git diff HEAD^"
+    },
+    {
+      "id": 98,
+      "question": "'git rebase' 命令的作用是什么？",
+      "choices": [
+        "将一个分支的更改合并到另一个分支",
+        "移动或合并一系列提交到新的基础提交",
+        "删除分支",
+        "创建新分支"
+      ],
+      "correctAnswer": "移动或合并一系列提交到新的基础提交"
+    },
+    {
+      "id": 99,
+      "question": "如何删除Git中的远程仓库引用？",
+      "choices": [
+        "git remote -d",
+        "git remove-remote",
+        "git delete-remote",
+        "git remote-delete"
+      ],
+      "correctAnswer": "git remote -d"
+    },
+    {
+      "id": 100,
+      "question": "'git log --oneline' 命令的作用是什么？",
+      "choices": [
+        "在单行中显示每个提交的简洁日志",
+        "在多行中显示每个提交的详细日志",
+        "只显示提交信息的第一行",
+        "只显示提交信息的最后一行"
+      ],
+      "correctAnswer": "在单行中显示每个提交的简洁日志"
+    },
+    {
+      "id": 101,
+      "question": "如何创建一个新分支而不切换到它？",
+      "choices": [
+        "git branch -c",
+        "git new-branch",
+        "git checkout -b",
+        "git switch"
+      ],
+      "correctAnswer": "git branch -c new-branch"
+    },
+    {
+      "id": 102,
+      "question": "'git log --graph' 显示什么？",
+      "choices": [
+        "提交历史的图形化表示",
+        "远程分支列表",
+        "更改摘要",
+        "所有提交的日志"
+      ],
+      "correctAnswer": "提交历史的图形化表示"
+    },
+    {
+      "id": 103,
+      "question": "如何查看两个Git分支之间的差异？",
+      "choices": [
+        "git diff",
+        "git changes",
+        "git compare",
+        "git branch-diff"
+      ],
+      "correctAnswer": "git diff"
+    },
+    {
+      "id": 104,
+      "question": "'git stash' 命令的作用是什么？",
+      "choices": [
+        "删除更改",
+        "临时保存更改",
+        "重命名分支",
+        "创建新分支"
+      ],
+      "correctAnswer": "临时保存更改"
+    },
+    {
+      "id": 105,
+      "question": "如何基于特定提交创建一个新分支？",
+      "choices": [
+        "git checkout -b new-branch commit-hash",
+        "git branch new-branch commit-hash",
+        "git create-branch new-branch commit-hash",
+        "git switch new-branch commit-hash"
+      ],
+      "correctAnswer": "git branch new-branch commit-hash"
+    },
+    {
+      "id": 106,
+      "question": "'git log --grep' 命令的作用是什么？",
+      "choices": [
+        "在提交信息中搜索字符串",
+        "列出所有分支",
+        "显示每个提交的详细日志",
+        "只显示提交信息的第一行"
+      ],
+      "correctAnswer": "在提交信息中搜索字符串"
+    },
+    {
+      "id": 107,
+      "question": "如何从Git中删除文件而不从工作目录中删除它？",
+      "choices": [
+        "git delete",
+        "git rm --cached",
+        "git remove",
+        "git exclude"
+      ],
+      "correctAnswer": "git rm --cached"
+    },
+    {
+      "id": 108,
+      "question": "'git log --graph --oneline' 命令的作用是什么？",
+      "choices": [
+        "在单行中显示每个提交的简洁日志和图形化表示",
+        "在多行中显示每个提交的详细日志",
+        "只显示提交信息的第一行",
+        "只显示提交信息的最后一行"
+      ],
+      "correctAnswer": "在单行中显示每个提交的简洁日志和图形化表示"
+    },
+    {
+      "id": 109,
+      "question": "如何将多个Git提交压缩为一个提交？",
+      "choices": [
+        "git combine",
+        "git squash",
+        "git merge --squash",
+        "git condense"
+      ],
+      "correctAnswer": "git squash"
+    },
+    {
+      "id": 110,
+      "question": "'git log --since' 命令的作用是什么？",
+      "choices": [
+        "显示特定日期之后的提交",
+        "显示特定文件的提交历史",
+        "在单行中显示每个提交的简洁日志",
+        "显示特定分支的提交历史"
+      ],
+      "correctAnswer": "显示特定日期之后的提交"
+    },
+    {
+      "id": 111,
+      "question": "如何撤销最后一次提交而不创建新提交？",
+      "choices": [
+        "git undo",
+        "git rollback",
+        "git revert -n",
+        "git reset --soft"
+      ],
+      "correctAnswer": "git reset --soft HEAD^"
+    },
+    {
+      "id": 112,
+      "question": "'git log --author' 命令的作用是什么？",
+      "choices": [
+        "显示特定作者的提交",
+        "在单行中显示每个提交的简洁日志",
+        "显示特定分支的提交历史",
+        "只显示提交信息的最后一行"
+      ],
+      "correctAnswer": "显示特定作者的提交"
+    },
+    {
+      "id": 113,
+      "question": "如何在Git中列出所有远程分支？",
+      "choices": [
+        "git remote-branches",
+        "git list-remotes",
+        "git branches -r",
+        "git remote -v"
+      ],
+      "correctAnswer": "git branches -r"
+    },
+    {
+      "id": 114,
+      "question": "'git cherry-pick' 命令的作用是什么？",
+      "choices": [
+        "将一个分支的更改合并到另一个分支",
+        "创建新分支",
+        "撤销最后一次提交",
+        "删除分支"
+      ],
+      "correctAnswer": "将一个分支的更改合并到另一个分支"
+    },
+    {
+      "id": 115,
+      "question": "如何查看特定文件的提交历史记录，包括重命名？",
+      "choices": [
+        "git log --follow",
+        "git log --changes",
+        "git history --follow",
+        "git file-history"
+      ],
+      "correctAnswer": "git log --follow"
+    },
+    {
+      "id": 116,
+      "question": "'git log --oneline --graph' 命令的作用是什么？",
+      "choices": [
+        "在单行中显示每个提交的简洁日志和图形化表示",
+        "在多行中显示每个提交的详细日志",
+        "只显示提交信息的最后一行",
+        "只显示提交信息的第一行"
+      ],
+      "correctAnswer": "在单行中显示每个提交的简洁日志和图形化表示"
+    },
+    {
+      "id": 117,
+      "question": "如何修改最后一次提交的消息？",
+      "choices": [
+        "git commit --message",
+        "git change-message",
+        "git commit --amend -m",
+        "git edit-commit-message"
+      ],
+      "correctAnswer": "git commit --amend -m"
+    },
+    {
+      "id": 118,
+      "question": "'git reflog' 命令的作用是什么？",
+      "choices": [
+        "列出所有远程引用",
+        "显示引用变更的日志",
+        "删除远程引用",
+        "创建新的引用"
+      ],
+      "correctAnswer": "显示引用变更的日志"
+    },
+    {
+      "id": 119,
+      "question": "如何在 Git 中显示两次提交之间的更改，包括文件名和内容？",
+      "choices": [
+        "git diff --name-only",
+        "git changes --full",
+        "git log --details",
+        "git diff --full-index"
+      ],
+      "correctAnswer": "git diff --full-index"
+    },
+    {
+      "id": 120,
+      "question": "'git submodule' 命令的作用是什么？",
+      "choices": [
+        "合并子模块",
+        "添加新的子模块",
+        "删除子模块",
+        "管理外部项目引用"
+      ],
+      "correctAnswer": "管理外部项目引用"
+    },
+    {
+      "id": 121,
+      "question": "如何选择特定提交范围的Git cherry-pick？",
+      "choices": [
+        "git cherry-pick range",
+        "git cherry-pick --range",
+        "git cherry-pick -r",
+        "git cherry-pick commit1^..commit2"
+      ],
+      "correctAnswer": "git cherry-pick commit1^..commit2"
+    },
+    {
+      "id": 122,
+      "question": "'git log --since=2.weeks' 显示什么？",
+      "choices": [
+        "显示最近2周的提交",
+        "显示2周前的提交",
+        "显示最近2周的日志",
+        "显示2周以来的提交"
+      ],
+      "correctAnswer": "显示2周以来的提交"
+    },
+    {
+      "id": 123,
+      "question": "如何删除远程分支？",
+      "choices": [
+        "git delete-remote-branch",
+        "git remove-branch -r",
+        "git push origin --delete branch-name",
+        "git remote-delete-branch"
+      ],
+      "correctAnswer": "git push origin --delete branch-name"
+    },
+    {
+      "id": 124,
+      "question": "'git bisect' 命令的作用是什么？",
+      "choices": [
+        "查找两个分支之间的差异",
+        "在提交之间导航",
+        "查找引入bug的提交",
+        "创建仓库的二分副本"
+      ],
+      "correctAnswer": "查找引入bug的提交"
+    },
+    {
+      "id": 125,
+      "question": "如何创建Git别名？",
+      "choices": [
+        "git alias",
+        "git config --alias",
+        "git alias add",
+        "git config --global alias"
+      ],
+      "correctAnswer": "git config --global alias"
+    },
+    {
+      "id": 126,
+      "question": "'git log --stat' 显示什么？",
+      "choices": [
+        "在单行中显示每个提交的简洁日志",
+        "在多行中显示每个提交的详细日志",
+        "显示特定分支的提交历史",
+        "显示每个提交的文件更改和插入/删除统计"
+      ],
+      "correctAnswer": "显示每个提交的文件更改和插入/删除统计"
+    },
+    {
+      "id": 127,
+      "question": "如何重命名Git中的文件并保留其历史记录？",
+      "choices": [
+        "git move",
+        "git rename",
+        "git mv",
+        "git file-rename"
+      ],
+      "correctAnswer": "git mv"
+    },
+    {
+      "id": 128,
+      "question": "'git clean' 命令的作用是什么？",
+      "choices": [
+        "清理工作目录中未跟踪的文件",
+        "从仓库中删除所有提交",
+        "清理被忽略的文件",
+        "删除远程分支"
+      ],
+      "correctAnswer": "清理工作目录中未跟踪的文件"
+    },
+    {
+      "id": 129,
+      "question": "如何应用Git补丁的特定部分？",
+      "choices": [
+        "git apply --hunks",
+        "git patch-apply",
+        "git apply --selective",
+        "git apply --check"
+      ],
+      "correctAnswer": "git apply --selective"
+    },
+    {
+      "id": 130,
+      "question": "'git log --oneline --decorate' 命令的作用是什么？",
+      "choices": [
+        "在单行中显示每个提交的简洁日志和装饰信息",
+        "在多行中显示每个提交的详细日志",
+        "只显示提交信息的最后一行",
+        "只显示提交信息的第一行"
+      ],
+      "correctAnswer": "在单行中显示每个提交的简洁日志和装饰信息"
+    },
+    {
+      "id": 131,
+      "question": "如何修改最后一次提交的消息？",
+      "choices": [
+        "git commit --message",
+        "git change-message",
+        "git commit --amend -m",
+        "git edit-commit-message"
+      ],
+      "correctAnswer": "git commit --amend -m"
+    },
+    {
+      "id": 132,
+      "question": "'git log --cherry-pick' 命令的作用是什么？",
+      "choices": [
+        "只显示被cherry-pick的提交",
+        "cherry-pick最后一次提交",
+        "创建带有cherry-pick更改的新分支",
+        "将更改从一个分支合并到另一个分支"
+      ],
+      "correctAnswer": "只显示被cherry-pick的提交"
+    },
+    {
+      "id": 133,
+      "question": "如何查看特定提交引入的更改，包括文件名和内容？",
+      "choices": [
+        "git show commit",
+        "git diff commit",
+        "git changes commit",
+        "git log commit"
+      ],
+      "correctAnswer": "git show commit"
+    },
+    {
+      "id": 134,
+      "question": "'git log --before' 命令的作用是什么？",
+      "choices": [
+        "显示特定日期之前的提交",
+        "显示特定文件的提交历史",
+        "在单行中显示每个提交的简洁日志",
+        "显示特定日期之后的提交"
+      ],
+      "correctAnswer": "显示特定日期之前的提交"
+    },
+    {
+      "id": 135,
+      "question": "如何保存更改？",
+      "choices": [
+        "git stash save",
+        "git save-stash",
+        "git stash",
+        "git stash push"
+      ],
+      "correctAnswer": "git stash"
+    },
+    {
+      "id": 136,
+      "question": "'git log --merges' 命令的作用是什么？",
+      "choices": [
+        "只显示合并提交",
+        "只显示非合并提交",
+        "将更改从一个分支合并到另一个分支",
+        "创建带有合并更改的新分支"
+      ],
+      "correctAnswer": "只显示合并提交"
+    },
+    {
+      "id": 137,
+      "question": "如何撤销最后一次提交，保留更改？",
+      "choices": [
+        "git commit --undo",
+        "git rollback",
+        "git reset --soft HEAD^",
+        "git revert --no-commit"
+      ],
+      "correctAnswer": "git reset --soft HEAD^"
+    },
+    {
+      "id": 138,
+      "question": "'git remote -v' 显示什么？",
+      "choices": [
+        "显示远程分支的详细输出",
+        "列出所有带URL的远程仓库",
+        "验证远程仓库URL",
+        "只显示远程分支名称"
+      ],
+      "correctAnswer": "列出所有带URL的远程仓库"
+    },
+    {
+      "id": 139,
+      "question": "如何查看Git所有标签？",
+      "choices": [
+        "git list-tags",
+        "git tags",
+        "git show-tags",
+        "git tag -l"
+      ],
+      "correctAnswer": "git tag -l"
+    },
+    {
+      "id": 140,
+      "question": "'git log --pretty' 命令的作用是什么？",
+      "choices": [
+        "显示可自定义格式的美化日志",
+        "显示每个提交在一行的简洁日志",
+        "只显示提交信息的最后一行",
+        "显示每个提交在多行的详细日志"
+      ],
+      "correctAnswer": "显示可自定义格式的美化日志"
+    },
+    {
+      "id": 141,
+      "question": "如何在Git中删除远程分支？",
+      "choices": [
+        "git push origin --delete branch-name",
+        "git branch -d branch-name",
+        "git remote remove branch-name",
+        "git delete-remote branch-name"
+      ],
+      "correctAnswer": "git push origin --delete branch-name"
+    },
+    {
+      "id": 142,
+      "question": "'git log --invert-grep' 命令的作用是什么？",
+      "choices": [
+        "反转grep模式的匹配",
+        "显示带有grep模式的提交",
+        "排除带有grep模式的提交",
+        "在单行中显示每个提交的简洁日志"
+      ],
+      "correctAnswer": "反转grep模式的匹配"
+    },
+    {
+      "id": 143,
+      "question": "如何修改一次提交而不更改其消息？",
+      "choices": [
+        "git amend --no-edit",
+        "git commit --amend --no-edit",
+        "git edit-commit --no-change",
+        "git modify --no-message"
+      ],
+      "correctAnswer": "git commit --amend --no-edit"
+    },
+    {
+      "id": 144,
+      "question": "'git log --branches' 命令的作用是什么？",
+      "choices": [
+        "显示所有分支的提交",
+        "只显示分支名称",
+        "在单行中显示每个提交的简洁日志",
+        "显示最后一个分支以来的提交"
+      ],
+      "correctAnswer": "显示所有分支的提交"
+    },
+    {
+      "id": 145,
+      "question": "如何查看特定提交引入的更改，包括文件名和内容？",
+      "choices": [
+        "git diff commit --side-by-side",
+        "git show commit --side-by-side",
+        "git changes commit --side-by-side",
+        "git log commit --side-by-side"
+      ],
+      "correctAnswer": "git show commit --side-by-side"
+    },
+    {
+      "id": 146,
+      "question": "如何创建一个Git分支并切换到它？",
+      "choices": [
+        "git branch -s new-branch",
+        "git switch -b new-branch",
+        "git checkout --branch new-branch",
+        "git create-switch new-branch"
+      ],
+      "correctAnswer": "git switch -b new-branch"
+    },
+    {
+      "id": 147,
+      "question": "'git log --grep -i' 命令的作用是什么？",
+      "choices": [
+        "在提交信息中进行区分大小写的字符串搜索",
+        "在提交信息中进行不区分大小写的字符串搜索",
+        "在单行中显示每个提交的简洁日志",
+        "排除带有指定模式的提交"
+      ],
+      "correctAnswer": "在提交信息中进行不区分大小写的字符串搜索"
+    },
+    {
+      "id": 148,
+      "question": "如何删除跟踪的文件和目录？",
+      "choices": [
+        "git clean -d -f",
+        "git remove-untracked",
+        "git delete-files",
+        "git purge"
+      ],
+      "correctAnswer": "git clean -d -f"
+    },
+    {
+      "id": 149,
+      "question": "'git log --graph --all' 命令的作用是什么？",
+      "choices": [
+        "显示所有分支的提交历史的图形化表示",
+        "在多行中显示每个提交的详细日志",
+        "只显示提交信息的最后一行",
+        "为所有分支在单行中显示每个提交的简洁日志"
+      ],
+      "correctAnswer": "显示所有分支的提交历史的图形化表示"
+    },
+    {
+      "id": 150,
+      "question": "如何标记特定提交？",
+      "choices": [
+        "git create-tag commit-hash",
+        "git tag -m 'tag message'",
+        "git tag -a tag-name commit-hash",
+        "git commit --tag tag-name"
+      ],
+      "correctAnswer": "git tag -a tag-name commit-hash"
+    }
+  ]
+}

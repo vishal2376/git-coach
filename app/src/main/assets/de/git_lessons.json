@@ -25,6 +25,7 @@
           "StepNumber": 4,
           "Description": "Git auf Ihrem Computer einrichten",
           "Example": "git config --global user.name 'Dein Name'\ngit config --global user.email 'Deine E-Mail'",
+
           "Explanation": "Um Git nutzen zu können, müssen Sie es zuerst auf Ihrem Computer konfigurieren, indem Sie Ihren Benutzernamen und Ihre E-Mail-Adresse festlegen. Diese Informationen werden jedem Commit in Git angehängt."
         },
         {

@@ -19,9 +19,8 @@ Git+ Coach is a free education app designed to help users learn Git and its comm
 <br/>
 <br/>
 
-<a href='https://play.google.com/store/apps/details?id=com.vishal2376.gitcoach&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' style="width:200px"></a>
-
 <a href='https://apt.izzysoft.de/fdroid/index/apk/com.vishal2376.gitcoach'><img alt='Get it on IzzyOnDroid' src='https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png' style="width:200px"></a>
+<a href='https://github.com/vishal2376/git-coach/releases/latest'><img alt='Get it on Github' src='https://github.com/vishal2376/git-coach/assets/38159691/5ef593bb-d8fc-4dec-b052-045a827ea088' style="width:200px"></a>
 
 </div>
 

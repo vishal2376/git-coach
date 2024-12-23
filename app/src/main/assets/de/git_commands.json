@@ -40,6 +40,7 @@
       "name": "Status prüfen",
       "command": "git status",
       "description": "Den Status des Git-Projektarchives überprüfen und Änderungen ansehen, die noch nicht durchgeführt wurden.",
+
       "example": "git status"
     },
     {
@@ -50,6 +51,7 @@
     },
     {
       "name": "Neuen Branch erstellen",
+
       "command": "git branch [branch_name]",
       "description": "Einen neuen Branch im Git-Repository erstellen.",
       "example": "git branch new_feature"
@@ -70,6 +72,7 @@
       "name": "Branche zusammenführen",
       "command": "git merge [branch_name]",
       "description": "Änderungen eines bestimmten Branchs in den aktuellen Branch im Git-Repository zusammenführen.",
+
       "example": "git merge new_feature"
     },
     {
@@ -112,12 +115,14 @@
       "name": "Gespeicherte Änderungen anwenden",
       "command": "git stash apply",
       "description": "Änderungen anwenden, die im Git-Staging-Bereich vorgemerkt wurden.",
+
       "example": "git stash apply"
     },
     {
       "name": "Gesperrte Änderungen auflisten",
       "command": "git stash list",
       "description": "Listet alle vorgemerkten Änderungen im Git-Repository auf.",
+
       "example": "git stash list"
     },
     {
