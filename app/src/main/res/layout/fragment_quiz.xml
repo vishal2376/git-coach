@@ -61,79 +61,86 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view" />
 
-    <LinearLayout
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="@dimen/_30sdp"
+        android:fillViewport="true"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvQuestionTitle">
 
-        <RadioGroup
-            android:id="@+id/rgQuizChoice"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingHorizontal="@dimen/_30sdp">
+            android:layout_height="wrap_content">
 
-            <RadioButton
-                android:id="@+id/rbChoice1"
+            <RadioGroup
+                android:id="@+id/rgQuizChoice"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:background="@drawable/radio_bg_selector"
-                android:button="@null"
-                android:paddingVertical="@dimen/_12sdp"
-                android:paddingStart="@dimen/_20sdp"
-                android:paddingEnd="@dimen/_25sdp"
-                android:text="@string/quiz_choice1"
-                android:textColor="@color/colorWhite"
-                android:textSize="@dimen/_12sdp" />
+                android:paddingHorizontal="@dimen/_30sdp">
 
-            <RadioButton
-                android:id="@+id/rbChoice2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:background="@drawable/radio_bg_selector"
-                android:button="@null"
-                android:paddingVertical="@dimen/_12sdp"
-                android:paddingStart="@dimen/_20sdp"
-                android:paddingEnd="@dimen/_25sdp"
-                android:text="@string/quiz_choice1"
-                android:textColor="@color/colorWhite"
-                android:textSize="@dimen/_12sdp" />
+                <RadioButton
+                    android:id="@+id/rbChoice1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/radio_bg_selector"
+                    android:button="@null"
+                    android:paddingVertical="@dimen/_12sdp"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:paddingEnd="@dimen/_25sdp"
+                    android:text="@string/quiz_choice1"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
 
-            <RadioButton
-                android:id="@+id/rbChoice3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:background="@drawable/radio_bg_selector"
-                android:button="@null"
-                android:paddingVertical="@dimen/_12sdp"
-                android:paddingStart="@dimen/_20sdp"
-                android:paddingEnd="@dimen/_25sdp"
-                android:text="@string/quiz_choice1"
-                android:textColor="@color/colorWhite"
-                android:textSize="@dimen/_12sdp" />
+                <RadioButton
+                    android:id="@+id/rbChoice2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/radio_bg_selector"
+                    android:button="@null"
+                    android:paddingVertical="@dimen/_12sdp"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:paddingEnd="@dimen/_25sdp"
+                    android:text="@string/quiz_choice1"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
 
-            <RadioButton
-                android:id="@+id/rbChoice4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:background="@drawable/radio_bg_selector"
-                android:button="@null"
-                android:paddingVertical="@dimen/_12sdp"
-                android:paddingStart="@dimen/_20sdp"
-                android:paddingEnd="@dimen/_25sdp"
-                android:text="@string/quiz_choice1"
-                android:textColor="@color/colorWhite"
-                android:textSize="@dimen/_12sdp" />
+                <RadioButton
+                    android:id="@+id/rbChoice3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/radio_bg_selector"
+                    android:button="@null"
+                    android:paddingVertical="@dimen/_12sdp"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:paddingEnd="@dimen/_25sdp"
+                    android:text="@string/quiz_choice1"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
 
-        </RadioGroup>
+                <RadioButton
+                    android:id="@+id/rbChoice4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/radio_bg_selector"
+                    android:button="@null"
+                    android:paddingVertical="@dimen/_12sdp"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:paddingEnd="@dimen/_25sdp"
+                    android:text="@string/quiz_choice1"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
 
-    </LinearLayout>
+            </RadioGroup>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 
     <Button
         android:id="@+id/btnCheckAnswer"
