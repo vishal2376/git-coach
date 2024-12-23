@@ -7,140 +7,140 @@
           "StepNumber": 1,
           "Description": "Git Nedir?",
           "Example": "",
-          "Explanation": "Git, sürüm kontrol sistemi olarak bilinir. İnsanların kodlarında veya diğer metin tabanlı dosyalarında zaman içinde yapılan değişiklikleri takip etmelerine yardımcı olur.\n\nDosyalarınız için bir kayıt defteri ya da günlük gibidir, kimin değişiklik yaptığını, hangi değişikliklerin yapıldığını ve ne zaman gerçekleştiğini görmenizi sağlar."
+          "Explanation": "Git, sürüm kontrol sistemi olarak bilinen bir bilgisayar yazılımı türüdür. İnsanların bilgisayar kodlarında veya diğer metin tabanlı dosyalarında zaman içinde yapılan değişiklikleri takip etmelerine yardımcı olur.\n\nDosyalarınız için bir tarih kitabı gibidir, kimin değişiklik yaptığını, hangi değişikliklerin yapıldığını ve ne zaman yapıldığını görmenizi sağlar."
         },
         {
           "StepNumber": 2,
-          "Description": "Peki Neden Kullanılır?",
+          "Description": "Neden Kullanılır?",
           "Example": "",
-          "Explanation": "Git, diğer insanlarla birlikte projeler üzerinde çalışmayı çok daha kolay hale getirmek için kullanılır. Birden fazla kişinin yanlışlıkla birbirlerinin çalışmalarının üzerine yazmadan aynı dosyalar üzerinde işbirliği yapmasına yardımcı olur.\n\nAyrıca, daha önce yaptıklarınızı mahvetme, batırma endişesi olmadan yeni fikirler denemenize olanak tanır.\n\nBu sistem yedekleri tutmak ve dosyalarınızın farklı sürümlerini yönetmek için harikadır, böylece gerektiğinde her zaman önceki bir haline geri dönebilirsiniz."
+          "Explanation": "Git, diğer insanlarla projeler üzerinde çalışmayı çok daha kolay hale getirmek için kullanılır. Birden fazla kişinin yanlışlıkla birbirlerinin çalışmalarının üzerine yazmadan aynı dosyalar üzerinde işbirliği yapmasına yardımcı olur.\n\nAyrıca, daha önce yaptıklarınızı mahvetme endişesi duymadan yeni fikirleri denemenizi sağlar.\n\nEk olarak, Git yedekleri tutmak ve dosyalarınızın farklı sürümlerini yönetmek için mükemmeldir, böylece gerekirse her zaman önceki bir duruma geri dönebilirsiniz"
         },
         {
           "StepNumber": 3,
-          "Description": "Git Kurulumu",
-          "Example": "git --version",
+          "Description": "Git Kuruluyor",
+          "Example": "git -- version",
           "Explanation": "Resmi Git web sitesine (https://git-scm.com/) gidin ve indirme bölümünü bulun.\n\nBilgisayarınızın işletim sistemine uygun Git sürümünü seçin (Windows, macOS veya Linux gibi).\n\nİndirme işlemi tamamlandıktan sonra, indirilen dosyayı açın ve kurulum talimatlarını izleyin.\n\nKurulum tamamlandıktan sonra, bir terminal veya komut istemi açıp şunları yazarak Git'in yüklendiğini doğrulayabilirsiniz."
         },
         {
           "StepNumber": 4,
-          "Description": "Setting up Git on your computer",
-          "Example": "git config --global user.name 'Your Name'\ngit config --global user.email 'Your Email ID'",
-          "Explanation": "To use Git, you first need to configure it on your computer by setting your username and email address. This information will be attached to every commit you make in Git."
+          "Description": "Git'i bilgisayarınıza kurma",
+          "Example": "git config -- global user.name 'Adınız'\ngit config -- global user.email 'E - posta Kimliğiniz'",
+          "Explanation": "Git'i kullanmak için önce kullanıcı adınızı ve e - posta adresinizi belirleyerek bilgisayarınızda yapılandırmanız gerekir. Bu bilgiler, Git'te yaptığınız her işleme eklenecektir."
         },
         {
           "StepNumber": 5,
-          "Description": "😕 Are Git and Github same?",
+          "Description": "😕 Git ve Github aynı mı?",
           "Example": "",
-          "Explanation": "No, Git and GitHub are not the same, but they are related concepts \n\nGit is the core technology that manages version control locally.\n\nGitHub is a platform that makes it easy to store, share, and collaborate on Git repositories over the internet. Other similar platforms include GitLab and Bitbucket."
+          "Explanation": "Hayır, Git ve GitHub aynı değildir, ancak ilgili kavramlardır \n\nGit, sürüm kontrolünü yerel olarak yöneten temel teknolojidir.\n\nGitHub, internet üzerinden Git depolarında depolamayı, paylaşmayı ve işbirliği yapmayı kolaylaştıran bir platformdur. Diğer benzer platformlar GitLab ve Bitbucket'tir."
         }
       ]
     },
     {
-      "LessonTitle": "Git Basics",
+      "LessonTitle": "Git Temel Bilgileri",
       "Steps": [
         {
           "StepNumber": 1,
-          "Description": "Initializing a Project",
+          "Description": "Bir Projeyi Başlatma",
           "Example": "git init",
-          "Explanation": "After installing Git, the first step is to set up version control for your project.\n\nOpen your command-line terminal or Git Bash (if you're on Windows) and navigate to the directory where you want to start your project.\n\nUse the following command to initialize a new Git repository"
+          "Explanation": "Git'i kurduktan sonra ilk adım projeniz için sürüm kontrolü kurmaktır.\n\nKomut satırı terminalinizi veya Git Bash'inizi açın (Windows kullanıyorsanız) ve projenizi başlatmak istediğiniz dizine gidin.\n\nYeni bir Git deposunu başlatmak için aşağıdaki komutu kullanın"
         },
         {
           "StepNumber": 2,
-          "Description": "Creating Files and Adding Text",
-          "Example": "Hello, This is my first file",
-          "Explanation": "You can use any text editor you prefer, such as Notepad,Vim,Sublime or Visual Studio Code\n\nCreate a new file 'hello.txt' and then write the following text and save the file"
+          "Description": "Dosya Oluşturma ve Metin Ekleme",
+          "Example": "Merhaba, Bu benim ilk dosyam",
+          "Explanation": "Not Defteri, Vim,Sublime veya Visual Studio Code gibi tercih ettiğiniz herhangi bir metin düzenleyiciyi kullanabilirsiniz\n\nYeni bir 'hello.txt' dosyası oluşturun ve ardından aşağıdaki metni yazın ve dosyayı kaydedin"
         },
         {
           "StepNumber": 3,
-          "Description": "Adding and Tracking Files",
+          "Description": "Dosya Ekleme ve İzleme",
           "Example": "git add hello.txt",
-          "Explanation": "Once you've created and edited your file, it's time to start tracking it with Git.\n\nTo do this, use the 'git add <file name>' command."
+          "Explanation": "Dosyanızı oluşturduktan ve düzenledikten sonra, Git ile izlemeye başlama zamanı gelmiştir.\n\nBunu yapmak için 'git add <file name>' komutunu kullanın."
         },
         {
           "StepNumber": 4,
-          "Description": "Checking Status",
-          "Example": "git status",
-          "Explanation": "At any point, you can check the status of your repository to see which files are tracked, modified, or staged for the next commit.\n\nThe 'git status' command provides you with this information."
+          "Description": "Durum Kontrol Ediliyor",
+          "Example": "git durumu",
+          "Explanation": "Herhangi bir noktada, bir sonraki işlem için hangi dosyaların izlendiğini, değiştirildiğini veya hazırlandığını görmek için havuzunuzun durumunu kontrol edebilirsiniz.\n\n'git status' komutu size bu bilgileri sağlar."
         },
         {
           "StepNumber": 5,
-          "Description": "Making Commits",
-          "Example": "git commit -m \"my first commit\"",
-          "Explanation": "A commit in Git represents a snapshot of your project at a certain point in time.\n\nIt's a way to record your changes and provide a meaningful description of what you've done.\n\nTo make a commit, you use the following command"
+          "Description": "İşlemler Yapma",
+          "Example": "git commit - m \"ilk işlemim\"",
+          "Explanation": "Git'teki bir işlem, projenizin belirli bir zamandaki anlık görüntüsünü temsil eder.\n\nDeğişikliklerinizi kaydetmenin ve yaptıklarınızın anlamlı bir açıklamasını sunmanın bir yoludur.\n\nBir taahhütte bulunmak için aşağıdaki komutu kullanırsınız"
         },
         {
           "StepNumber": 6,
-          "Description": "What Next?",
+          "Description": "Sırada ne var?",
           "Example": "",
-          "Explanation": "🎉 Congratulations! You've covered the basics of Git.\n\nAs you continue your journey with Git, you'll learn more about branching, merging,etc.\n\nAnd don't forget that the Git documentation and online tutorials are excellent resources to deepen your understanding."
+          "Explanation": "🎉 Tebrikler! Git'in temellerini ele aldınız.\n\nGit ile yolculuğunuza devam ederken, dallanma, birleşme vb. hakkında daha fazla bilgi edineceksiniz.\n\nVe gıt belgelerinin ve çevrimiçi eğitimlerin anlayışınızı derinleştirmek için mükemmel kaynaklar olduğunu unutmayın."
         }
       ]
     },
     {
-      "LessonTitle": "Git Branches",
+      "LessonTitle": "Git Şubeleri",
       "Steps": [
         {
           "StepNumber": 1,
-          "Description": "What is a Git Branch?",
+          "Description": "Git Şubesi Nedir?",
           "Example": "",
-          "Explanation": "A Git branch is a separate line of development that allows you to work on different parts of your project without affecting the main codebase.\n\nThis is particularly useful for collaboration and managing multiple features, bug fixes, or experiments simultaneously.\n\nBranches help isolate changes, making it easier to review, test, and integrate them back into the main codebase."
+          "Explanation": "Git dalı, ana kod tabanını etkilemeden projenizin farklı bölümleri üzerinde çalışmanıza izin veren ayrı bir geliştirme satırıdır.\n\nBu, özellikle işbirliği yapmak ve birden fazla özelliği, hata düzeltmesini veya deneyi aynı anda yönetmek için kullanışlıdır.\n\nŞubeler, değişiklikleri izole etmeye yardımcı olarak bunları gözden geçirmeyi, test etmeyi ve ana kod tabanına yeniden entegre etmeyi kolaylaştırır."
         },
         {
           "StepNumber": 2,
-          "Description": "Creating a Branch",
-          "Example": "git branch feature-login",
-          "Explanation": "To create a new branch, use the `git branch` command followed by the name of the branch you want to create."
+          "Description": "Şube Oluşturma",
+          "Example": "git branch feature - login",
+          "Explanation": "Yeni bir dal oluşturmak için `git branch` komutunu ve ardından oluşturmak istediğiniz dalın adını kullanın."
         },
         {
           "StepNumber": 3,
-          "Description": "Switching Branch",
-          "Example": "git checkout feature-login",
-          "Explanation": "To switch to the new branch, use the `git checkout` or `git switch` command followed by the name of the branch."
+          "Description": "Şube Değiştirme",
+          "Example": "git ödeme özelliği - giriş",
+          "Explanation": "Yeni şubeye geçmek için `git checkout` veya `git switch` komutunu ve ardından şubenin adını kullanın."
         },
         {
           "StepNumber": 4,
-          "Description": "[Shortcut] Create and Switch Branch",
-          "Example": "git checkout -b feature-signup",
-          "Explanation": "To create and switch to the new branch in one command, use the `git checkout -b <branch-name>`."
+          "Description": "[Kısayol] Şube Oluştur ve Değiştir",
+          "Example": "git checkout - b feature - signup",
+          "Explanation": "Tek bir komutla yeni dal oluşturmak ve yeni dala geçmek için `git checkout - b <branch - name >' komutunu kullanın."
         },
         {
           "StepNumber": 5,
-          "Description": "Merging Branch",
-          "Example": "git checkout main\ngit merge feature-login",
-          "Explanation": "Once you're satisfied with the changes you've made on your branch, it's time to merge those changes back into the main codebase.\n\nTo do this, switch to the main/master branch and use the `git merge` command."
+          "Description": "Birleştirme Şubesi",
+          "Example": "git ödeme ana\ngit merge feature - login",
+          "Explanation": "Şubenizde yaptığınız değişikliklerden memnun kaldığınızda, bu değişiklikleri ana kod tabanında birleştirmenin zamanı gelmiştir.\n\nBunu yapmak için main/master branch'e geçin ve `git merge` komutunu kullanın."
         },
         {
           "StepNumber": 6,
-          "Description": "Deleting a Branch",
-          "Example": "git branch -d feature-login",
-          "Explanation": "Make sure you have merged all the changes from the branch you want to delete before running this command.\n\nTo delete a branch, use the `git branch` command followed by the `-d` option .\n\nIf you need to forcefully delete a branch, use the `-D` flag instead of `-d`."
+          "Description": "Şube Silme",
+          "Example": "git branch - d feature - login",
+          "Explanation": "Bu komutu çalıştırmadan önce silmek istediğiniz daldaki tüm değişiklikleri birleştirdiğinizden emin olun.\n\nBir dalı silmek için `git branch` komutunu ve ardından '- d `seçeneğini kullanın.\n\nBir dalı zorla silmeniz gerekiyorsa, '- d 'yerine '- D` işaretini kullanın."
         }
       ]
     },
     {
-      "LessonTitle": "Git Staging",
+      "LessonTitle": "Git Evreleme",
       "Steps": [
         {
           "StepNumber": 1,
-          "Description": "What is Git Staging",
+          "Description": "Git Evreleme Nedir?",
           "Example": "",
-          "Explanation": "Git staging is the process of preparing a set of changes to be committed to the Git repository.\n\nIt allows you to select only the changes you want to include in the next commit, rather than committing all changes made to the repository."
+          "Explanation": "Git hazırlama, Git havuzuna işlenecek bir dizi değişiklik hazırlama sürecidir.\n\nDepoda yapılan tüm değişiklikleri yapmak yerine yalnızca bir sonraki işleme dahil etmek istediğiniz değişiklikleri seçmenize olanak tanır."
         },
         {
           "StepNumber": 2,
-          "Description": "Adding changes to the Git Staging Area",
+          "Description": "Git Hazırlama Alanına değişiklik ekleme",
           "Example": "git add file1.txt file2.txt",
-          "Explanation": "To add changes to the Git Staging Area, use the `git add` command followed by the names of the files you want to add.\n\nThis will stage the changes, which means they will be included in the next commit."
+          "Explanation": "Git Evreleme Alanına değişiklik eklemek için `git add` komutunu ve ardından eklemek istediğiniz dosyaların adlarını kullanın.\n\nBu, değişiklikleri aşamalandıracaktır, bu da bir sonraki işleme dahil edilecekleri anlamına gelir."
         },
         {
           "StepNumber": 3,
-          "Description": "Viewing Staged and Unstaged Changes",
-          "Example": "git diff\ngit diff --staged",
-          "Explanation": "To view the changes you have made to the Git repository, use the `git diff` command.\n\nTo view only the staged changes, use the `git diff --staged` command. This will display a list of the changes that have been staged and are ready to be committed."
+          "Description": "Aşamalı ve Aşamasız Değişiklikleri Görüntüleme",
+          "Example": "git diff\ngit diff -- stage",
+          "Explanation": "Git deposunda yaptığınız değişiklikleri görüntülemek için `git diff` komutunu kullanın.\n\nYalnızca aşamalı değişiklikleri görüntülemek için `git diff -- staged` komutunu kullanın. Bu, gerçekleştirilen ve gerçekleştirilmeye hazır olan değişikliklerin bir listesini görüntüleyecektir."
         },
         {
           "StepNumber": 4,
-          "Description": "Removing Changes from the Staging Area",
+          "Description": "Evreleme Alanından Değişikliklerin Kaldırılması",
           "Example": "git reset file1.txt",
           "Explanation": "To remove changes from the Git Staging Area, use the `git reset` command followed by the name of the file you want to remove.\n\nThis will remove the changes from the Staging Area, but they will still exist in the working tree."
         },

@@ -16,12 +16,12 @@
       "name": "Dateien hinzufügen",
       "command": "git add [file(s)]",
       "description": "Fügen Sie Dateien zum Git-Staging-Bereich hinzu, bereit für einen Commit.",
-      "example": "git fügt file1.txt file2.txt hinzu"
+      "example": "git add file1.txt file2.txt"
     },
     {
       "name": "Änderungen übertragen",
       "command": "git commit -m [message]",
-      "description": "Änderungen am Git-Repository in der Historie mit einer angegebenen Commit-Nachricht speichern.",
+      "description": "Änderungen am Git-Repository in der History mit einer angegebener Commit-Nachricht speichern.",
       "example": "git commit -m 'Hinzufügen wichtiger Dateien'"
     },
     {
@@ -31,7 +31,7 @@
       "example": "git push origin master"
     },
     {
-      "name": "Änderungen ziehen",
+      "name": "Remote Änderungen abrufen",
       "command": "git pull [remote_name] [branch_name]",
       "description": "Änderungen aus einem entfernten Repository abrufen und mit dem lokalen Repository zusammenführen.",
       "example": "git pull origin master"
@@ -39,17 +39,19 @@
     {
       "name": "Status prüfen",
       "command": "git status",
-      "description": "Den Status des Git-Projektarchivs überprüfen und Änderungen ansehen, die noch nicht durchgeführt wurden.",
+      "description": "Den Status des Git-Projektarchives überprüfen und Änderungen ansehen, die noch nicht durchgeführt wurden.",
+
       "example": "git status"
     },
     {
       "name": "Commit History anzeigen",
       "command": "git log",
-      "description": "Zeigt die Historie der Commits im Git-Repository an.",
+      "description": "Zeigt die History der Commits im Git-Repository an.",
       "example": "git Log"
     },
     {
-      "name": "Einen Branch erstellen",
+      "name": "Neuen Branch erstellen",
+
       "command": "git branch [branch_name]",
       "description": "Einen neuen Branch im Git-Repository erstellen.",
       "example": "git branch new_feature"
@@ -69,7 +71,8 @@
     {
       "name": "Branche zusammenführen",
       "command": "git merge [branch_name]",
-      "description": "Änderungen eines bestimmten Branchs in den aktuellen Zweig im Git-Repository zusammenführen.",
+      "description": "Änderungen eines bestimmten Branchs in den aktuellen Branch im Git-Repository zusammenführen.",
+
       "example": "git merge new_feature"
     },
     {
@@ -87,19 +90,19 @@
     {
       "name": "Änderungen zurücksetzen",
       "command": "git reset [file]",
-      "description": "Änderungen an einer Datei im Git-Repository zurücksetzen.",
+      "description": "Änderungen an einer Datei im Git-Repository zu vorherigen Commit zurücksetzen.",
       "example": "git reset file1.txt"
     },
     {
       "name": "Commit zurücknehmen",
       "command": "git revert [commit_hash]",
       "description": "Einen bestimmten Commit im Git-Repository rückgängig machen.",
-      "example": "git revert abc123"
+      "example": "git revert bad_feature"
     },
     {
       "name": "Einen Commit markieren",
       "command": "git tag [tag_name] [commit_hash]",
-      "description": "Fügen Sie einen Tag einem bestimmten Commit im Git-Repository hinzu.",
+      "description": "Fügen Sie einen Tag zu einem bestimmten Commit im Git-Repository hinzu.",
       "example": "git tag v1.0 abc123"
     },
     {
@@ -111,13 +114,15 @@
     {
       "name": "Gespeicherte Änderungen anwenden",
       "command": "git stash apply",
-      "description": "Änderungen anwenden, die im Git-Repository gestaucht wurden.",
+      "description": "Änderungen anwenden, die im Git-Staging-Bereich vorgemerkt wurden.",
+
       "example": "git stash apply"
     },
     {
       "name": "Gesperrte Änderungen auflisten",
       "command": "git stash list",
-      "description": "Listet alle eingelesenen Änderungen im Git-Repository auf.",
+      "description": "Listet alle vorgemerkten Änderungen im Git-Repository auf.",
+
       "example": "git stash list"
     },
     {
@@ -136,13 +141,13 @@
       "name": "Commit-Unterschiede anzeigen",
       "command": "git show [commit_hash]",
       "description": "Zeigt die Unterschiede eines bestimmten Commits im Git-Repository an.",
-      "example": "git show abc123"
+      "example": "git show ac123"
     },
     {
       "name": "Entfernte Änderungen abrufen",
       "command": "git fetch",
       "description": "Holen Sie Aktualisierungen von einem Remote-Repository in das lokale Repository.",
-      "example": "git holen"
+      "example": "git fetch"
     },
     {
       "name": "Entfernte Änderungen ziehen",
@@ -153,7 +158,7 @@
     {
       "name": "Lokale Änderungen pushen",
       "command": "git push [remote_name] [branch_name]",
-      "description": "Lokale Änderungen in ein entferntes Repository schieben.",
+      "description": "Lokale Änderungen in ein entferntes Repository speichern.",
       "example": "git push origin new_feature"
     },
     {
@@ -169,7 +174,7 @@
       "example": "git remote remove upstream"
     },
     {
-      "name": "Remote-Repositories anzeigen",
+      "name": "Remote-Repositorys anzeigen",
       "command": "git remote show [remote_name]",
       "description": "Informationen über ein entferntes Repository im lokalen Repository anzeigen.",
       "example": "git remote show origin"
@@ -184,10 +189,10 @@
       "name": "Git Cherry-pick",
       "command": "git cherry-pick [options] <commit>",
       "description": "Änderungen übernehmen, die durch einige bestehende Commits eingeführt wurden.",
-      "example": "git cherry-pick abcd123"
+      "example": "git cherry-pick abc123"
     },
     {
-      "name": "Git Bisect",
+      "name": "Git Binärsuche",
       "command": "git bisect [start] [end]",
       "description": "Finden Sie heraus, welcher Commit in einer Reihe einen Fehler eingeführt hat, indem Sie eine Binärsuche durchführen.",
       "example": "git bisect Start HEAD HEAD~10"
@@ -199,15 +204,15 @@
       "example": "git stash save \"work in progress\""
     },
     {
-      "name": "Git Untermodul",
+      "name": "Git Untermodule",
       "command": "git submodule [options] [submodule]",
-      "description": "Verwalten Sie Sub-Repositories innerhalb Ihres Git-Projektarchivs.",
+      "description": "Verwalten Sie Sub-Repositorys innerhalb Ihres Git-Repositorys.",
       "example": "git submodule update --init"
     },
     {
       "name": "Referenzprotokoll",
       "command": "git reflog [options] [show]",
-      "description": "Einen Log aller Git-Referenzen im Projektarchiv ansehen, auch wenn diese gelöscht oder verloren wurden.",
+      "description": "Einen Log aller Git-Referenzen im Projektarchiv ansehen, auch wenn diese gelöscht oder verloren gingen.",
       "example": "git reflog show HEAD"
     },
     {
@@ -255,19 +260,19 @@
     {
       "name": "Zu Branch wechseln",
       "command": "git Switch <branch_name>",
-      "description": "Wechselt zum angegebenen Zweig.",
+      "description": "Wechselt zum angegebenen Branch.",
       "example": "git switch feature_branch"
     },
     {
-      "name": "Erstellen und zu einem neuen Branch wechseln",
+      "name": "Neuen Branch erstellen und dorthin wechseln",
       "command": "git switch -c <new_branch_name>",
-      "description": "Erstellt und wechselt zu einem neuen Zweig mit dem angegebenen Namen.",
-      "example": "git switch -c new_feature_branch"
+      "description": "Erstellt und wechselt zu einem neuen Branch mit dem angegebenen Namen.",
+      "example": "git switch -c new_feature"
     },
     {
       "name": "Zum Branch wechseln erzwingen",
       "command": "git switch -C <branch_name>",
-      "description": "Erzwingt den Wechsel zum angegebenen Zweig, verwirft lokale Änderungen.",
+      "description": "Erzwingt den Wechsel zum angegebenen Branch, verwirft lokale Änderungen.",
       "example": "git switch -C feature_Branch"
     }
   ]
