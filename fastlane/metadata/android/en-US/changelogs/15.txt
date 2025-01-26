@@ -1,0 +1,1 @@
+To upgrade from a prior version, you'll need to uninstall and re-install the app as the signing key was changed.
