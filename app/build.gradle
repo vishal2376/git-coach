@@ -11,6 +11,15 @@ android {
 
     kotlinOptions { jvmTarget = "17" }
 
+    // disable PNG crunching:
+    aaptOptions {
+        cruncherEnabled = false
+    }
+    // disable generating PNGs from vector drawables:
+    defaultConfig {
+        vectorDrawables.generatedDensities = []
+    }
+
     defaultConfig {
         applicationId "com.vishal2376.gitcoach"
         minSdk 24
