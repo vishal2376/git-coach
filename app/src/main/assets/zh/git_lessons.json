@@ -5,33 +5,33 @@
       "Steps": [
         {
           "StepNumber": 1,
-          "Description": "什麼是Git？",
+          "Description": "什麼是 Git？",
           "Example": "",
-          "Explanation": "Git是屬於一種版本控制系統（電腦軟件）。 它帮助我們跟蹤和與控制電腦代碼或其他文本文件的任何更改。\n\n它就像文件版本的歷史書，就可以簡易地看到誰做了更改、做了什麼以及什麼時候做了修改。"
+          "Explanation": "Git 是屬於一種版本控制系統（電腦軟體）。 它帮助我們跟蹤與控制電腦程式碼或其他文本檔案的任何更改。\n\n它就像檔案版本的歷史書，就可以簡易地看到誰做了更改、做了什麼以及什麼時候做了修改。"
         },
         {
           "StepNumber": 2,
-          "Description": "為何使用Git？",
+          "Description": "為何使用 Git？",
           "Example": "",
-          "Explanation": "Git把合作程序的過程變得更加容易。當有多人合作時不怕會意外地覆蓋別人所作的更改。\n\n使用Git時還可以安全地嘗試新想法。\n\nGit也可以保留備份，用來管理不同的文件版本，隨時都可以輕易地回到以前的狀態。"
+          "Explanation": "Git 把合作程序的過程變得更加容易。當有多人合作時不怕會意外地覆蓋別人所作的更改。\n\n使用 Git 時還可以安全地嘗試新想法。\n\nGit也可以存儲備份，用來管理不同的檔案版本，隨時都可以輕易地回到以前的狀態。"
         },
         {
           "StepNumber": 3,
-          "Description": "Installing Git",
+          "Description": "下載 Git",
           "Example": "git --version",
-          "Explanation": "Go to the official Git website (https://git-scm.com/) and find the download section.\n\nChoose the version of Git that matches your computer's operating system (like Windows, macOS, or Linux).\n\nOnce the download is complete, open the downloaded file and follow the installation instructions.\n\nAfter the installation is done, you can verify that Git is installed by opening a terminal or command prompt and typing"
+          "Explanation": "從 Git 的官方網站(https://git-scm.com/)的下載網頁中選出您電腦操作系統的 Git 版本（例如 Windows、macOS、Linux)。\n\n把下載完畢的檔案打開，然後根據具有的 Git 安裝步驟。\n\n安裝完畢後，檢查 Git 是否安裝成功。在您的終端或命令提示符裡輸入"
         },
         {
           "StepNumber": 4,
-          "Description": "在您的电脑上设置 Git",
-          "Example": "git config --global user.name '你的名称'\ngit config --global user.email '你的电子邮件ID'",
-          "Explanation": "要使用 Git，您首先需要通过设置您的用户名和电子邮件地址，在您的计算机上配置它。 此信息将附加到您在Git中做出的每一项承诺。"
+          "Description": "在您的電腦設置 Git",
+          "Example": "git config --global user.name '您的用戶名稱'\ngit config --global user.email '您的電郵地址'",
+          "Explanation": "使用 Git 前，首先要把它設置好。輸入您的用戶名稱與電郵地址，這兩份資料將會在您的每一個更改中出現（commit 備註信息）。"
         },
         {
           "StepNumber": 5,
-          "Description": "😕 Git 和 Github 同样的",
+          "Description": "😕 Git 和 Github 是一樣的東西嗎",
           "Example": "",
-          "Explanation": "不，Git 和 GitHub 不一样，但它们是相关的概念 \n\nGit 是管理本地版本控制的核心技术。\n\nGitHub 是一个方便存储、分享和在互联网上协作的 Git 仓库的平台。 其他类似的平台包括GitLab 和 Bitbucket 。"
+          "Explanation": "不對，Git 和 GitHub 雖然有相關的概念，但是他們是不一樣的東西。\n\nGit 是一款版本控制的軟體。\n\n而 GitHub 是一個可以方便存儲、分享和在網絡上協作的 Git 倉庫平臺。除了 GitHub 意以外還有其他類似的平臺，例如 GitLab 和 Bitbucket。"
         }
       ]
     },
