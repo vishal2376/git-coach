@@ -42,37 +42,37 @@
           "StepNumber": 1,
           "Description": "開始項目",
           "Example": "git init",
-          "Explanation": "安裝了 Git 後就可以開始設置您項目的版本控制系統。\n\n先打開您的電腦終端、命令提示符或 Git Bash（Windows 而已），然後去到您要使用 Git 的檔案目錄。\n\n利用一下的指令來初始化一個新的 Git 倉庫。"
+          "Explanation": "安裝了 Git 後就可以開始設置您項目的版本控制系統。\n\n先打開您的電腦終端、命令提示符或 Git Bash（Windows 方面），然後去到您要使用 Git 的檔案目錄。\n\n利用以下的指令來初始化一個新的 Git 倉庫（Repository）"
         },
         {
           "StepNumber": 2,
           "Description": "創建檔案，添加文本",
           "Example": "您好。這是我第一個檔案。",
-          "Explanation": "在您剛初始化的倉庫裡創建一個叫’hello.txt‘的新檔案。\n\n利用 Notepad、Vim、Sublime、VS Code 等類似的文本編輯器，輸入一下的文字，然後保存檔案。"
+          "Explanation": "在您剛初始化的倉庫裡創建一個叫’hello.txt‘的新檔案。\n\n利用 Notepad、Vim、Sublime、VS Code 等類似的文本編輯器，輸入以下的文字，然後保存檔案"
         },
         {
           "StepNumber": 3,
           "Description": "添加與追蹤檔案",
           "Example": "git add hello.txt",
-          "Explanation": "檔案創建後，就可以開始用 Git 追蹤了。 一旦你创建并编辑了你的文件，现在是用Git了。\n\n利用以下的 ’git add <檔案名稱>‘ 指令，Git 就會開始記錄跟追蹤您的檔案了。"
+          "Explanation": "檔案創建後，就可以開始用 Git 追蹤了。\n\n利用以下的 ’git add <檔案名稱>‘ 指令，Git 就會開始記錄跟追蹤您的檔案了。"
         },
         {
           "StepNumber": 4,
           "Description": "檢查 Git 狀態",
           "Example": "git status",
-          "Explanation": "您可以隨時查看您倉庫的狀態，檢查看看有哪一些檔案有在被追蹤、被更改或被 在任何时候，您都可以检查您的存储库的状态，以查看哪些文件被跟踪、修改或分期提交到下一次提交中。\n\n“git status”命令为您提供了此信息。"
+          "Explanation": "您可以隨時查看您倉庫的狀態，檢查看看有哪一些檔案有在被追蹤、被更改或被暫存（stage）到下一個提交裡。\n\n使用“git status”指令就可以看到這些資料了。"
         },
         {
           "StepNumber": 5,
-          "Description": "作出提交",
+          "Description": "提交所作的更改",
           "Example": "git commit -m \"my first commit\"",
-          "Explanation": "在Git中的提交代表了您项目在某个时间点的快照。\n\n是一种记录您的更改并提供您所做工作的有意义描述的方法。\n\n要做出承诺，您需要使用以下命令"
+          "Explanation": "Git 提交就是指您項目在某個時候的快照，就像之前提到的歷史書。\n\n它可以輕易地記錄下您所作過的更改還有一段備註信息來描述所作的更改\n\n使用以下的指令來作出提交"
         },
         {
           "StepNumber": 6,
-          "Description": "下一步是什么？",
+          "Description": "下一步呢？",
           "Example": "",
-          "Explanation": "🎉 恭喜！您已经覆盖了Git的基础知识。\n\n当您继续使用Git进行旅程时，您将会了解更多关于分支、合并等的信息。\n\n并且不要忘记Git文档和在线教程是深化您理解的极好资源。"
+          "Explanation": "🎉 恭喜！您現在已經學會了 Git 的基礎知識。\n\n您繼續使用 Git 的過程是將會遇到分支、合併等的其他 Git 服務。\n\nGit 的官方文檔和其他網上的教程可以深化您對 Git 的瞭解和知識。"
         }
       ]
     },
