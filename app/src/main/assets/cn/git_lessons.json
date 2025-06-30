@@ -1,78 +1,78 @@
 {
   "gitLessons": [
     {
-      "LessonTitle": "Git簡介",
+      "LessonTitle": "Git 简介",
       "Steps": [
         {
           "StepNumber": 1,
-          "Description": "什麼是 Git？",
+          "Description": "什么是 Git？",
           "Example": "",
-          "Explanation": "Git 是屬於一種版本控制系統（電腦軟體）。 它帮助我們跟蹤與控制電腦程式碼或其他文本檔案的任何更改。\n\n它就像檔案版本的歷史書，就可以簡易地看到誰做了更改、做了什麼以及什麼時候做了修改。"
+          "Explanation": "Git 是属于一种版本控制系统（电脑软件）。 它帮助我们追踪、记录与控制电脑代码或其他文本文件的任何更改。\n\n它就像文件版本的历史书，就可以简易地看到谁做了更改、做了什么以及什么时候做了修改。"
         },
         {
           "StepNumber": 2,
-          "Description": "為何使用 Git？",
+          "Description": "为何使用 Git？",
           "Example": "",
-          "Explanation": "Git 把合作程序的過程變得更加容易。當有多人合作時不怕會意外地覆蓋別人所作的更改。\n\n使用 Git 時還可以安全地嘗試新想法。\n\nGit也可以存儲備份，用來管理不同的檔案版本，隨時都可以輕易地回到以前的狀態。"
+          "Explanation": "Git 把合作进程的过程变得更加容易。当有多人合作时不怕会意外地覆盖别人所作的更改。\n\n使用 Git 时还可以安全地尝试新想法。\n\nGit也可以存储备份，用来管理不同的文件版本，随时都可以轻易地回到以前的状态。"
         },
         {
           "StepNumber": 3,
-          "Description": "下載 Git",
+          "Description": "下载 Git",
           "Example": "git --version",
-          "Explanation": "從 Git 的官方網站(https://git-scm.com/)的下載網頁中選出您電腦操作系統的 Git 版本（例如 Windows、macOS、Linux)。\n\n把下載完畢的檔案打開，然後根據具有的 Git 安裝步驟。\n\n安裝完畢後，檢查 Git 是否安裝成功。在您的終端或命令提示符裡輸入"
+          "Explanation": "从 Git 的官方网站(https://git-scm.com/)的下载网页中选出您电脑操作系统的 Git 版本（例如 Windows、macOS、Linux)。\n\n把下载完毕的文件打开，然后根据具有的 Git 安装步骤。\n\n安装完毕后，检查 Git 是否安装成功。在您的终端或命令提示符里输入"
         },
         {
           "StepNumber": 4,
-          "Description": "在您的電腦設置 Git",
+          "Description": "在您的电脑设置 Git",
           "Example": "git config --global user.name '您的用戶名稱'\ngit config --global user.email '您的電郵地址'",
-          "Explanation": "使用 Git 前，首先要把它設置好。輸入您的用戶名稱與電郵地址，這兩份資料將會在您的每一個更改中出現（commit 備註信息）。"
+          "Explanation": "使用 Git 前，首先要把它设置好。输入您的用户名称与电邮地址，这两份数据将会在您的每一个更改提交（commit）中出现（commit 备注信息）。"
         },
         {
           "StepNumber": 5,
-          "Description": "😕 Git 和 Github 是一樣的東西嗎",
+          "Description": "😕 Git 和 Github 是一样的东西吗？",
           "Example": "",
-          "Explanation": "不對，Git 和 GitHub 雖然有相關的概念，但是他們是不一樣的東西。\n\nGit 是一款版本控制的軟體。\n\n而 GitHub 是一個可以方便存儲、分享和在網絡上協作的 Git 倉庫平臺。除了 GitHub 意以外還有其他類似的平臺，例如 GitLab 和 Bitbucket。"
+          "Explanation": "不对，Git 和 GitHub 虽然有相关的概念，但是他们是不一样的东西。\n\nGit 是一款版本控制的软件。\n\n而 GitHub 是一个可以方便存储、分享和在网络上协作的 Git 仓库平台。除了 GitHub 意以外还有其他类似的平台，例如 GitLab 和 Bitbucket。"
         }
       ]
     },
     {
-      "LessonTitle": "Git 基础知识",
+      "LessonTitle": "Git 的基础",
       "Steps": [
         {
           "StepNumber": 1,
-          "Description": "正在初始化项目",
+          "Description": "开始项目",
           "Example": "git init",
-          "Explanation": "安装Git后，第一步是为您的项目设置版本控制。\n\n打开您的命令行终端或 Git Bash (如果您在Windows上)，并导航到您想要启动项目的目录。\n\n使用以下命令初始化一个新的 Git 仓库"
+          "Explanation": "安装了 Git 后就可以开始设置您项目的版本控制系统。\n\n先打开您的电脑终端、命令提示符或 Git Bash（Windows 方面），然后去到您要使用 Git 的文件目录。\n\n利用以下的指令来初始化一个新的 Git 仓库（Repository）"
         },
         {
           "StepNumber": 2,
-          "Description": "创建文件并添加文本",
-          "Example": "您好。这是我的第一个文件",
-          "Explanation": "您可以使用您喜欢的任何文本编辑器，如Notepad、Vim、Sublime 或 Visual Studio 代码\n\n创建一个新文件 'hello'。 xt' 然后写下以下文字并保存文件"
+          "Description": "创建文件，添加文本",
+          "Example": "您好。这是我第一个文件",
+          "Explanation": "在您刚初始化的仓库里创建一个叫’hello.txt‘的新文件。\n\n利用 Notepad、Vim、Sublime、VS Code 等类似的文本编辑器，输入以下的文本，然后保存文件"
         },
         {
           "StepNumber": 3,
-          "Description": "添加和跟踪文件",
+          "Description": "添加与追踪文件",
           "Example": "git add hello.txt",
-          "Explanation": "一旦你创建并编辑了你的文件，现在是用Git开始跟踪它的时候了。\n\n要做到这一点，请使用“git 添加 <file name>”命令。"
+          "Explanation": "文件创建后，就可以开始用 Git 追踪了。\n\n利用以下的 ’git add <文件名称>‘ 指令，Git 就会开始记录跟追踪您的文件了。"
         },
         {
           "StepNumber": 4,
-          "Description": "检查状态",
+          "Description": "检查 Git 状态",
           "Example": "git status",
-          "Explanation": "在任何时候，您都可以检查您的存储库的状态，以查看哪些文件被跟踪、修改或分期提交到下一次提交中。\n\n“git status”命令为您提供了此信息。"
+          "Explanation": "您可以随时查看您仓库的状态，检查看看有哪一些文件有在被追踪、被更改或被暂存（stage）到下一个提交里。\n\n使用“git status”指令就可以看到这些数据了。"
         },
         {
           "StepNumber": 5,
-          "Description": "作出提交",
+          "Description": "提交所作的更改",
           "Example": "git commit -m \"my first commit\"",
-          "Explanation": "在Git中的提交代表了您项目在某个时间点的快照。\n\n是一种记录您的更改并提供您所做工作的有意义描述的方法。\n\n要做出承诺，您需要使用以下命令"
+          "Explanation": "Git 提交就是指您项目在某个时候的快照，就像之前提到的历史书。\n\n它可以轻易地记录下您所作过的更改还有一段备注信息来描述所作的更改\n\n使用以下的指令来作出提交"
         },
         {
           "StepNumber": 6,
-          "Description": "下一步是什么？",
+          "Description": "下一步呢？",
           "Example": "",
-          "Explanation": "🎉 恭喜！您已经覆盖了Git的基础知识。\n\n当您继续使用Git进行旅程时，您将会了解更多关于分支、合并等的信息。\n\n并且不要忘记Git文档和在线教程是深化您理解的极好资源。"
+          "Explanation": "🎉 恭喜！您现在已经学会了 Git 的基础知识。\n\n您继续使用 Git 的过程是将会遇到分支、合并等的其他 Git 服务。\n\nGit 的官方文档和其他网上的教程可以深化您对 Git 的了解和知识。"
         }
       ]
     },
