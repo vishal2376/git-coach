@@ -54,7 +54,7 @@
           "StepNumber": 3,
           "Description": "添加與追蹤檔案",
           "Example": "git add hello.txt",
-          "Explanation": "檔案創建後，就可以開始用 Git 追蹤了。 一旦你创建并编辑了你的文件，现在是用Git了。\n\n利用一下的 ’git add <檔案名稱>‘ 指令，Git 就會開始記錄跟追蹤您的檔案了。"
+          "Explanation": "檔案創建後，就可以開始用 Git 追蹤了。 一旦你创建并编辑了你的文件，现在是用Git了。\n\n利用以下的 ’git add <檔案名稱>‘ 指令，Git 就會開始記錄跟追蹤您的檔案了。"
         },
         {
           "StepNumber": 4,
