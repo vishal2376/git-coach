@@ -1,0 +1,274 @@
+{
+  "gitCommands": [
+    {
+      "name": "初始化仓库",
+      "command": "git init [directory]",
+      "description": "初始化当前或指定目录中的 Git 存储库。",
+      "example": "git init my_project"
+    },
+    {
+      "name": "克隆仓库",
+      "command": "git clone [repository_url] [directory]",
+      "description": "克隆一个现有的 Git 仓库到本地机器上的新目录。",
+      "example": "git clone https://github.com/user/repo.git my_repo"
+    },
+    {
+      "name": "添加文件",
+      "command": "git add [file(s)]",
+      "description": "将文件添加到 Git 暂存区域，准备进行提交。",
+      "example": "git add file1.txt file2.txt"
+    },
+    {
+      "name": "提交更改",
+      "command": "git commit -m [message]",
+      "description": "使用指定的提交消息将对 Git 仓库的更改保存到历史记录。",
+      "example": "git commit -m 'Adding important files'"
+    },
+    {
+      "name": "推送更改",
+      "command": "git push [remote_name] [branch_name]",
+      "description": "推送提交的更改到远程存储库。",
+      "example": "git push origin master"
+    },
+    {
+      "name": "拉取更改",
+      "command": "git pull [remote_name] [branch_name]",
+      "description": "从远程存储库中获取更改并将其与本地存储库合并。",
+      "example": "git pull origin master"
+    },
+    {
+      "name": "检查状态",
+      "command": "git status",
+      "description": "检查Git 仓库的状态并查看尚未执行的更改。",
+      "example": "git status"
+    },
+    {
+      "name": "查看提交历史",
+      "command": "git log",
+      "description": "查看 Git 仓库中提交的历史记录。",
+      "example": "git log"
+    },
+    {
+      "name": "创建分支",
+      "command": "git branch [branch_name]",
+      "description": "在 Git 仓库中创建一个新分支。",
+      "example": "git branch new_feature"
+    },
+    {
+      "name": "切换到分支",
+      "command": "git checkout [branch_name]",
+      "description": "切换到 Git 仓库中不同的分支。",
+      "example": "git checkout new_feature"
+    },
+    {
+      "name": "比较分支",
+      "command": "git diff [branch1] [branch2]",
+      "description": "比较Git 仓库中两个分支之间的差异。",
+      "example": "git diff master new_feature"
+    },
+    {
+      "name": "合并分支",
+      "command": "git merge [branch_name]",
+      "description": "将指定分支的更改合并到 Git 仓库中的当前分支。",
+      "example": "git merge new_feature"
+    },
+    {
+      "name": "重命名分支",
+      "command": "git branch -m [new_branch_name]",
+      "description": "在 Git 仓库中重命名当前分支。",
+      "example": "git branch -m updated_feature"
+    },
+    {
+      "name": "删除分支",
+      "command": "git branch -d [branch_name]",
+      "description": "删除 Git 仓库中的分支。",
+      "example": "git branch -d outdated_feature"
+    },
+    {
+      "name": "重置更改",
+      "command": "git reset [file]",
+      "description": "重置对 Git 仓库中文件的更改。",
+      "example": "git reset file1.txt"
+    },
+    {
+      "name": "撤销提交",
+      "command": "git revert [commit_hash]",
+      "description": "撤销在 Git 仓库中的特定提交。",
+      "example": "git revert abc123"
+    },
+    {
+      "name": "标记提交",
+      "command": "git tag [tag_name] [commit_hash]",
+      "description": "在 Git 仓库中添加标签到特定提交。",
+      "example": "git tag v1.0 abc123"
+    },
+    {
+      "name": "暂存更改",
+      "command": "git stash",
+      "description": "临时保存对 Git 存储库的更改，而无需提交。",
+      "example": "git stash"
+    },
+    {
+      "name": "应用分区更改",
+      "command": "git stash apply",
+      "description": "应用在 Git 仓库中分阶段的更改。",
+      "example": "git stash apply"
+    },
+    {
+      "name": "列表分阶段更改",
+      "command": "git stash list",
+      "description": "列出Git 仓库中的所有分阶段更改。",
+      "example": "git stash list"
+    },
+    {
+      "name": "删除分区更改",
+      "command": "git stash drop",
+      "description": "从 Git 仓库删除分阶段更改。",
+      "example": "git stash drop"
+    },
+    {
+      "name": "显示提交日志",
+      "command": "git log",
+      "description": "显示 Git 仓库的提交历史记录。",
+      "example": "git log"
+    },
+    {
+      "name": "显示提交差异",
+      "command": "git show [commit_hash]",
+      "description": "在 Git 仓库中显示特定提交的差异。",
+      "example": "git show abc123"
+    },
+    {
+      "name": "获取远程更改",
+      "command": "git fetch",
+      "description": "从远程存储库获取更新到本地存储库。",
+      "example": "git fetch"
+    },
+    {
+      "name": "拉取远程更改",
+      "command": "git pull",
+      "description": "从远程存储库获取并合并更新到本地存储库。",
+      "example": "git pull"
+    },
+    {
+      "name": "推送本地更改",
+      "command": "git push [remote_name] [branch_name]",
+      "description": "将本地更改推送到远程存储库。",
+      "example": "git push origin new_feature"
+    },
+    {
+      "name": "添加远程仓库",
+      "command": "git remote add [remote_name] [remote_url]",
+      "description": "添加远程存储库到本地存储库。",
+      "example": "git 远程添加上游的https://github.com/upstream_repo.git"
+    },
+    {
+      "name": "删除远程仓库",
+      "command": "git remote remove [remote_name]",
+      "description": "从本地仓库删除远程存储库。",
+      "example": "git remote remove upstream"
+    },
+    {
+      "name": "显示远程仓库",
+      "command": "git remote show [remote_name]",
+      "description": "在本地资源库中显示远程资源库的信息。",
+      "example": "git remote show origin"
+    },
+    {
+      "name": "Git Rebase",
+      "command": "git 重建基础 [options] [--to newbase] [上行 [branch]]",
+      "description": "通过从一个分支移动提交到另一个分支重写提交历史。",
+      "example": "git rebase master"
+    },
+    {
+      "name": "Git Cherry-self",
+      "command": "git cherry-self [options] <commit>",
+      "description": "应用一些现有提交的更改。",
+      "example": "git cherry-self abcd123"
+    },
+    {
+      "name": "Git Bisect",
+      "command": "git bisect [start] [end]",
+      "description": "通过执行二进制搜索查找在一个范围内提交的错误信息。",
+      "example": "git bisect start HEAD HEAD~10"
+    },
+    {
+      "name": "临时保存",
+      "command": "git 暂存[保存|推送] [-p|--patch] [-k|--keep-index] [-u|--include-untrack] [-a|--all] [-q|--quiet] [<message>]",
+      "description": "暂时保存尚未准备就绪的更改。",
+      "example": "git stash save \"work in progress\""
+    },
+    {
+      "name": "Git 子模块",
+      "command": "git submodule [options] [submodule]",
+      "description": "在你的主Git仓库中管理子仓库.",
+      "example": "git submodule update --init"
+    },
+    {
+      "name": "参考日志",
+      "command": "git reflog [options] [show]",
+      "description": "查看您仓库中所有Git引用的日志，即使它们已被删除或丢失。",
+      "example": "git reflog show HEAD"
+    },
+    {
+      "name": "合并提交",
+      "command": "git rebase -i HEAD~[number of commits to squash]",
+      "description": "将多次提交合并为单次提交",
+      "example": "git rebase -i HEAD~3"
+    },
+    {
+      "name": "显示更改日志",
+      "command": "git reflog",
+      "description": "显示对资源库HEAD 的更改日志",
+      "example": "git reflog"
+    },
+    {
+      "name": "比较提交",
+      "command": "git diff [commit A]..[commit B]",
+      "description": "显示两次提交之间的差异",
+      "example": "git diff abc123..def456"
+    },
+    {
+      "name": "Git 配置",
+      "command": "git config [option]",
+      "description": "配置 Git 设置",
+      "example": "git config --global user.name 'Your Name'"
+    },
+    {
+      "name": "删除文件",
+      "command": "git rm [file]",
+      "description": "从资源库中删除文件",
+      "example": "git rm example.txt"
+    },
+    {
+      "name": "标签提交",
+      "command": "git tag [tag name]",
+      "description": "将标签添加到特定提交",
+      "example": "git tag v1.0.0"
+    },
+    {
+      "name": "恢复以前的提交",
+      "command": "git checkout [commit]",
+      "description": "切换到以前的提交并恢复存储库状态",
+      "example": "git checkout abc123"
+    },
+    {
+      "name": "切换到分支",
+      "command": "git switch <branch_name>",
+      "description": "切换到指定的分支。",
+      "example": "git switch feature_branch"
+    },
+    {
+      "name": "创建并切换到新分支",
+      "command": "git switch -c <new_branch_name>",
+      "description": "创建并切换到具有指定名称的新分支。",
+      "example": "git switch -c new_feature_branch"
+    },
+    {
+      "name": "强制切换到分支",
+      "command": "git switch -C <branch_name>",
+      "description": "强制切换到指定分支，放弃本地更改。",
+      "example": "git switch -C feature_branch"
+    }
+  ]
+}

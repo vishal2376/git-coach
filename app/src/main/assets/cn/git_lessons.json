@@ -1,0 +1,226 @@
+{
+  "gitLessons": [
+    {
+      "LessonTitle": "Git簡介",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "什麼是 Git？",
+          "Example": "",
+          "Explanation": "Git 是屬於一種版本控制系統（電腦軟體）。 它帮助我們跟蹤與控制電腦程式碼或其他文本檔案的任何更改。\n\n它就像檔案版本的歷史書，就可以簡易地看到誰做了更改、做了什麼以及什麼時候做了修改。"
+        },
+        {
+          "StepNumber": 2,
+          "Description": "為何使用 Git？",
+          "Example": "",
+          "Explanation": "Git 把合作程序的過程變得更加容易。當有多人合作時不怕會意外地覆蓋別人所作的更改。\n\n使用 Git 時還可以安全地嘗試新想法。\n\nGit也可以存儲備份，用來管理不同的檔案版本，隨時都可以輕易地回到以前的狀態。"
+        },
+        {
+          "StepNumber": 3,
+          "Description": "下載 Git",
+          "Example": "git --version",
+          "Explanation": "從 Git 的官方網站(https://git-scm.com/)的下載網頁中選出您電腦操作系統的 Git 版本（例如 Windows、macOS、Linux)。\n\n把下載完畢的檔案打開，然後根據具有的 Git 安裝步驟。\n\n安裝完畢後，檢查 Git 是否安裝成功。在您的終端或命令提示符裡輸入"
+        },
+        {
+          "StepNumber": 4,
+          "Description": "在您的電腦設置 Git",
+          "Example": "git config --global user.name '您的用戶名稱'\ngit config --global user.email '您的電郵地址'",
+          "Explanation": "使用 Git 前，首先要把它設置好。輸入您的用戶名稱與電郵地址，這兩份資料將會在您的每一個更改中出現（commit 備註信息）。"
+        },
+        {
+          "StepNumber": 5,
+          "Description": "😕 Git 和 Github 是一樣的東西嗎",
+          "Example": "",
+          "Explanation": "不對，Git 和 GitHub 雖然有相關的概念，但是他們是不一樣的東西。\n\nGit 是一款版本控制的軟體。\n\n而 GitHub 是一個可以方便存儲、分享和在網絡上協作的 Git 倉庫平臺。除了 GitHub 意以外還有其他類似的平臺，例如 GitLab 和 Bitbucket。"
+        }
+      ]
+    },
+    {
+      "LessonTitle": "Git 基础知识",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "正在初始化项目",
+          "Example": "git init",
+          "Explanation": "安装Git后，第一步是为您的项目设置版本控制。\n\n打开您的命令行终端或 Git Bash (如果您在Windows上)，并导航到您想要启动项目的目录。\n\n使用以下命令初始化一个新的 Git 仓库"
+        },
+        {
+          "StepNumber": 2,
+          "Description": "创建文件并添加文本",
+          "Example": "您好。这是我的第一个文件",
+          "Explanation": "您可以使用您喜欢的任何文本编辑器，如Notepad、Vim、Sublime 或 Visual Studio 代码\n\n创建一个新文件 'hello'。 xt' 然后写下以下文字并保存文件"
+        },
+        {
+          "StepNumber": 3,
+          "Description": "添加和跟踪文件",
+          "Example": "git add hello.txt",
+          "Explanation": "一旦你创建并编辑了你的文件，现在是用Git开始跟踪它的时候了。\n\n要做到这一点，请使用“git 添加 <file name>”命令。"
+        },
+        {
+          "StepNumber": 4,
+          "Description": "检查状态",
+          "Example": "git status",
+          "Explanation": "在任何时候，您都可以检查您的存储库的状态，以查看哪些文件被跟踪、修改或分期提交到下一次提交中。\n\n“git status”命令为您提供了此信息。"
+        },
+        {
+          "StepNumber": 5,
+          "Description": "作出提交",
+          "Example": "git commit -m \"my first commit\"",
+          "Explanation": "在Git中的提交代表了您项目在某个时间点的快照。\n\n是一种记录您的更改并提供您所做工作的有意义描述的方法。\n\n要做出承诺，您需要使用以下命令"
+        },
+        {
+          "StepNumber": 6,
+          "Description": "下一步是什么？",
+          "Example": "",
+          "Explanation": "🎉 恭喜！您已经覆盖了Git的基础知识。\n\n当您继续使用Git进行旅程时，您将会了解更多关于分支、合并等的信息。\n\n并且不要忘记Git文档和在线教程是深化您理解的极好资源。"
+        }
+      ]
+    },
+    {
+      "LessonTitle": "吉特分支",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "什么是Git分支？",
+          "Example": "",
+          "Explanation": "Git分支是一个单独的开发线路，您可以在不影响主代码库的情况下在项目的不同部分工作。\n\n这对于协作和管理多个功能、错误修复或实验特别有用。\n\n分支帮助隔离更改，使其更容易审查、测试和整合到主代码库中。"
+        },
+        {
+          "StepNumber": 2,
+          "Description": "创建分支",
+          "Example": "git branch feature-login",
+          "Explanation": "若要创建一个新分支，请使用你想要创建的分支的名称后面的“git分支”命令。"
+        },
+        {
+          "StepNumber": 3,
+          "Description": "切换分支",
+          "Example": "git checkout feature-login",
+          "Explanation": "要切换到新分支，请使用git checkout”或“git switch”命令，然后使用分支的名称。"
+        },
+        {
+          "StepNumber": 4,
+          "Description": "[Shortcut] 创建并切换分支",
+          "Example": "git checkout -b feature-signup",
+          "Explanation": "若要在一个命令中创建并切换到新分支，请使用 \"git 结帐-b <branch-name>\"。"
+        },
+        {
+          "StepNumber": 5,
+          "Description": "合并分支",
+          "Example": "git 结帐主\ngit 合并功能——登录",
+          "Explanation": "一旦你对你的分支所做的更改感到满意，现在是将这些更改合并到主代码库的时候了。\n\n要做到这一点，请切换到主分支并使用“git合并”命令。"
+        },
+        {
+          "StepNumber": 6,
+          "Description": "删除分支",
+          "Example": "git branch -d feature-login",
+          "Explanation": "在运行此命令之前，请确保您已经合并了您想要删除的分支的所有更改。\n\n若要删除一个分支，请使用 `git branch` 命令，然后使用 `-d` 选项。\n\n如果您需要强制删除分支，请使用 \"-D\" 旗帜而不是 \"-d\"。"
+        }
+      ]
+    },
+    {
+      "LessonTitle": "Git Staging",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "什么是Git Staging",
+          "Example": "",
+          "Explanation": "Git Staging是准备对Git 存储库进行一系列更改的过程。\n\n允许您只选择您想要在下次提交中包含的更改， 而不是承诺对仓库所作的所有更改。"
+        },
+        {
+          "StepNumber": 2,
+          "Description": "添加Git暂存区的更改",
+          "Example": "git add file1.txt file2.txt",
+          "Explanation": "要添加对 Git Staging 区域的更改，请使用 `git add` 命令，然后是您想要添加的文件的名称。\n\n这将进行更改，这意味着它们将被包含在下一个承诺中。"
+        },
+        {
+          "StepNumber": 3,
+          "Description": "查看分阶段和未分阶段的更改",
+          "Example": "git diff\ngit diff --staged",
+          "Explanation": "要查看您对 Git 仓库所作的更改，请使用 \"git diff\" 命令。\n\n要只查看已分阶段更改，请使用 `git diff --staged` 命令。 这将显示已经进行并准备就绪的更改列表。"
+        },
+        {
+          "StepNumber": 4,
+          "Description": "从暂存区移除更改",
+          "Example": "git reset file1.txt",
+          "Explanation": "要移除Git Staging区域中的更改，请使用`git reset`命令，然后是您想要移除的文件的名称。\n\n这将移除暂存区的更改，但它们仍然存在于工作树中。"
+        },
+        {
+          "StepNumber": 5,
+          "Description": "正在提交分期更改",
+          "Example": "git commit -m 'Commit message'",
+          "Explanation": "若要将 Git 暂存区中的更改提交到 Git 仓库，请使用 `git commit` 命令然后提交消息。\n\n这将在Git日志中创建一个新的提交，并且您已经进行了修改。"
+        }
+      ]
+    },
+    {
+      "LessonTitle": "GitHub",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "什么是 GitHub？",
+          "Example": "",
+          "Explanation": "GitHub 是一个使用Git的版本控制和协作网络平台。\n\n提供一个集中的项目仓库，使团队更容易在代码和跟踪更改方面进行合作。"
+        },
+        {
+          "StepNumber": 2,
+          "Description": "创建 GitHub 帐户",
+          "Example": "",
+          "Explanation": "要开始使用 GitHub，您需要访问GitHub 网站并跟随注册过程，创建一个 GitHub 帐户。 您将被要求提供您的用户名、电子邮件地址和密码。"
+        },
+        {
+          "StepNumber": 3,
+          "Description": "创建新的 GitHub 仓库",
+          "Example": "",
+          "Explanation": "1. Log in to your GitHub account.\n\n2. Click the \"+\" icon in the top-right corner and select \"New repository\"\n\n3. Provide a name for your repository, a brief description, and choose whether it's public (visible to anyone) or private (visible only to collaborators)\n\n4. Select additional options if needed, such as initializing the repository with a README file\n\n5. Click \"Create repository\""
+        },
+        {
+          "StepNumber": 4,
+          "Description": "克隆一个 GitHub 仓库",
+          "Example": "git clone <repository_link>",
+          "Explanation": "克隆仓库意味着将其内容复制到您的本地机器。\n\n允许您进行更改，用Git跟踪它们，并将这些更改推回到仓库中。\n\n要克隆一个 GitHub 仓库到您的本地机器，请使用 `git clone` 命令，然后使用 GitHub 仓库的 URL。\n\n 示例：“git clone https://github.com/firstcontributions/first contributions.git”"
+        },
+        {
+          "StepNumber": 5,
+          "Description": "进行更改并推送到 GitHub",
+          "Example": "git 添加。\ngit 提交-m \"message\"\n\ngit 推送原始主",
+          "Explanation": "一旦你克隆了一个仓库，你可以像其他Git仓库一样对文件进行修改。\n\n在进行更改后，按照这些步骤将您的更改推送到 GitHub\n\n然后使用你想要推送更改的分支名称后面的“git pus”命令。 这将上传到GitHub 仓库的更改。"
+        }
+      ]
+    },
+    {
+      "LessonTitle": "使用终端Git 到 GitHub 工作流",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "在本地创建一个新的 Git 仓库",
+          "Example": "git init init my-new-project",
+          "Explanation": "要开始使用 Git 进行新的项目，您需要创建一个新的 Git 存储库。 您可以通过导航到您在终端中的项目目录并运行 `git init` 命令来做到这一点。"
+        },
+        {
+          "StepNumber": 2,
+          "Description": "将文件添加到 Git 仓库",
+          "Example": "git 添加。\ngit commit -m '初始提交'",
+          "Explanation": "要将文件添加到 Git 仓库，请使用 `git add` 命令，然后是文件名或 `。 添加目录中的所有文件。 然后使用 \"git commit\" 命令创建一个新的提交，包含描述您已经做出的更改的消息。"
+        },
+        {
+          "StepNumber": 3,
+          "Description": "创建新的 GitHub 仓库",
+          "Example": "",
+          "Explanation": "要创建一个新的 GitHub 仓库，请登录到您的 GitHub 帐户并点击“新仓库”按钮。 您将被要求提供仓库名称、描述，并选择仓库的可见性 (公开或私有)。"
+        },
+        {
+          "StepNumber": 4,
+          "Description": "将GitHub 存储库添加为远程",
+          "Example": "git 远程添加来源 https://github.com/user/repo.git",
+          "Explanation": "要将本地的 Git 仓库与 GitHub 仓库链接，您需要将GitHub 仓库添加为远程的 Git。 您可以使用 `git 远程add` 命令来做到这一点，然后是您想要给这个远程 (通常是 `origin` ) 和 GitHub 仓库的 URL 的名称。"
+        },
+        {
+          "StepNumber": 5,
+          "Description": "将更改推送到 GitHub 仓库",
+          "Example": "git push -u origin master",
+          "Explanation": "将本地Git仓库中的更改推送到 GitHub 仓库， 使用 `git 推送' 命令，然后使用远程 (`origin`) 的名称和你想要将更改推送到 (`master`) 的分支。 \"-u\" 选项将远程分支设置为将来的 \"git 推送\" 命令的默认值。"
+        }
+      ]
+    }
+  ]
+}
