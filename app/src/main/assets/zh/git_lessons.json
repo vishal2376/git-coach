@@ -25,7 +25,7 @@
           "StepNumber": 4,
           "Description": "在您的電腦設置 Git",
           "Example": "git config --global user.name '您的用戶名稱'\ngit config --global user.email '您的電郵地址'",
-          "Explanation": "使用 Git 前，首先要把它設置好。輸入您的用戶名稱與電郵地址，這兩份資料將會在您的每一個更改提交<S-D-F4>中出現（commit 備註信息）。"
+          "Explanation": "使用 Git 前，首先要把它設置好。輸入您的用戶名稱與電郵地址，這兩份資料將會在您的每一個更改提交（commit）中出現（commit 備註信息）。"
         },
         {
           "StepNumber": 5,
