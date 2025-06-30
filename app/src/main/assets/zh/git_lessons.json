@@ -7,7 +7,7 @@
           "StepNumber": 1,
           "Description": "什麼是 Git？",
           "Example": "",
-          "Explanation": "Git 是屬於一種版本控制系統（電腦軟體）。 它帮助我們跟蹤與控制電腦程式碼或其他文本檔案的任何更改。\n\n它就像檔案版本的歷史書，就可以簡易地看到誰做了更改、做了什麼以及什麼時候做了修改。"
+          "Explanation": "Git 是屬於一種版本控制系統（電腦軟體）。 它帮助我們追蹤、記錄與控制電腦程式碼或其他文本檔案的任何更改。\n\n它就像檔案版本的歷史書，就可以簡易地看到誰做了更改、做了什麼以及什麼時候做了修改。"
         },
         {
           "StepNumber": 2,
@@ -25,42 +25,42 @@
           "StepNumber": 4,
           "Description": "在您的電腦設置 Git",
           "Example": "git config --global user.name '您的用戶名稱'\ngit config --global user.email '您的電郵地址'",
-          "Explanation": "使用 Git 前，首先要把它設置好。輸入您的用戶名稱與電郵地址，這兩份資料將會在您的每一個更改中出現（commit 備註信息）。"
+          "Explanation": "使用 Git 前，首先要把它設置好。輸入您的用戶名稱與電郵地址，這兩份資料將會在您的每一個更改提交<S-D-F4>中出現（commit 備註信息）。"
         },
         {
           "StepNumber": 5,
-          "Description": "😕 Git 和 Github 是一樣的東西嗎",
+          "Description": "😕 Git 和 Github 是一樣的東西嗎？",
           "Example": "",
           "Explanation": "不對，Git 和 GitHub 雖然有相關的概念，但是他們是不一樣的東西。\n\nGit 是一款版本控制的軟體。\n\n而 GitHub 是一個可以方便存儲、分享和在網絡上協作的 Git 倉庫平臺。除了 GitHub 意以外還有其他類似的平臺，例如 GitLab 和 Bitbucket。"
         }
       ]
     },
     {
-      "LessonTitle": "Git 基础知识",
+      "LessonTitle": "Git 的基礎",
       "Steps": [
         {
           "StepNumber": 1,
-          "Description": "正在初始化项目",
+          "Description": "開始項目",
           "Example": "git init",
-          "Explanation": "安装Git后，第一步是为您的项目设置版本控制。\n\n打开您的命令行终端或 Git Bash (如果您在Windows上)，并导航到您想要启动项目的目录。\n\n使用以下命令初始化一个新的 Git 仓库"
+          "Explanation": "安裝了 Git 後就可以開始設置您項目的版本控制系統。\n\n先打開您的電腦終端、命令提示符或 Git Bash（Windows 而已），然後去到您要使用 Git 的檔案目錄。\n\n利用一下的指令來初始化一個新的 Git 倉庫。"
         },
         {
           "StepNumber": 2,
-          "Description": "创建文件并添加文本",
-          "Example": "您好。这是我的第一个文件",
-          "Explanation": "您可以使用您喜欢的任何文本编辑器，如Notepad、Vim、Sublime 或 Visual Studio 代码\n\n创建一个新文件 'hello'。 xt' 然后写下以下文字并保存文件"
+          "Description": "創建檔案，添加文本",
+          "Example": "您好。這是我第一個檔案。",
+          "Explanation": "在您剛初始化的倉庫裡創建一個叫’hello.txt‘的新檔案。\n\n利用 Notepad、Vim、Sublime、VS Code 等類似的文本編輯器，輸入一下的文字，然後保存檔案。"
         },
         {
           "StepNumber": 3,
-          "Description": "添加和跟踪文件",
+          "Description": "添加與追蹤檔案",
           "Example": "git add hello.txt",
-          "Explanation": "一旦你创建并编辑了你的文件，现在是用Git开始跟踪它的时候了。\n\n要做到这一点，请使用“git 添加 <file name>”命令。"
+          "Explanation": "檔案創建後，就可以開始用 Git 追蹤了。 一旦你创建并编辑了你的文件，现在是用Git了。\n\n利用一下的 ’git add <檔案名稱>‘ 指令，Git 就會開始記錄跟追蹤您的檔案了。"
         },
         {
           "StepNumber": 4,
-          "Description": "检查状态",
+          "Description": "檢查 Git 狀態",
           "Example": "git status",
-          "Explanation": "在任何时候，您都可以检查您的存储库的状态，以查看哪些文件被跟踪、修改或分期提交到下一次提交中。\n\n“git status”命令为您提供了此信息。"
+          "Explanation": "您可以隨時查看您倉庫的狀態，檢查看看有哪一些檔案有在被追蹤、被更改或被 在任何时候，您都可以检查您的存储库的状态，以查看哪些文件被跟踪、修改或分期提交到下一次提交中。\n\n“git status”命令为您提供了此信息。"
         },
         {
           "StepNumber": 5,
