@@ -77,43 +77,43 @@
       ]
     },
     {
-      "LessonTitle": "吉特分支",
+      "LessonTitle": "Git 分支",
       "Steps": [
         {
           "StepNumber": 1,
           "Description": "什麼是分支（branch）？",
           "Example": "",
-          "Explanation": "Git分支是一個從主線（main/master）分離出來的開發路線。這一條單獨的路線跟主線分離了之後就可以安全地在這裡做不同部分的工作，不怕會影響到主線的內容。\n\n//協作工程時 这对于协作和管理多个功能、错误修复或实验特别有用。\n\n分支帮助隔离更改，使其更容易审查、测试和整合到主代码库中。//"
+          "Explanation": "Git分支是一個從主線（main/master）分離出來的開發路線。這一條單獨的路線跟主線分離了之後就可以安全地在這裡做不同部分的工作，不怕會影響到主線的內容。\n\n這對每次協作工程非常地有用處，大家可以同時做錯誤修改、管理各種功能或實驗新功能。\n\n分支能幫助隔離不同的更改，讓您可以容易地審查與修改，然後加入主線裡。"
         },
         {
           "StepNumber": 2,
-          "Description": "创建分支",
+          "Description": "創造分支",
           "Example": "git branch feature-login",
-          "Explanation": "若要创建一个新分支，请使用你想要创建的分支的名称后面的“git分支”命令。"
+          "Explanation": "使用以下的“git branch”指令來創造一個新的分支，然後在後面加上您要的名稱。"
         },
         {
           "StepNumber": 3,
-          "Description": "切换分支",
+          "Description": "切換分支",
           "Example": "git checkout feature-login",
-          "Explanation": "要切换到新分支，请使用git checkout”或“git switch”命令，然后使用分支的名称。"
+          "Explanation": "使用以下的“git checkout”或“git switch”指令，加上您的分支名稱來切換到另一個分支。"
         },
         {
           "StepNumber": 4,
-          "Description": "[Shortcut] 创建并切换分支",
+          "Description": "[快捷] 創造了直接切換分支",
           "Example": "git checkout -b feature-signup",
-          "Explanation": "若要在一个命令中创建并切换到新分支，请使用 \"git 结帐-b <branch-name>\"。"
+          "Explanation": "有個快捷可以讓您用一個指令來創造然後字節切換到新的分支裡。利用以下的“git checkout -b <分支名稱>”指令："
         },
         {
           "StepNumber": 5,
-          "Description": "合并分支",
-          "Example": "git 结帐主\ngit 合并功能——登录",
-          "Explanation": "一旦你对你的分支所做的更改感到满意，现在是将这些更改合并到主代码库的时候了。\n\n要做到这一点，请切换到主分支并使用“git合并”命令。"
+          "Description": "合併分支",
+          "Example": "git checkout main\ngit merge feature—login",
+          "Explanation": "當您已經做完您要的更改，您就可以把這個分支合併到主線了。\n\n先切換到主線然後使用以下的“git merge”指令就可以把分支合併到主線了。"
         },
         {
           "StepNumber": 6,
-          "Description": "删除分支",
+          "Description": "刪除分支",
           "Example": "git branch -d feature-login",
-          "Explanation": "在运行此命令之前，请确保您已经合并了您想要删除的分支的所有更改。\n\n若要删除一个分支，请使用 `git branch` 命令，然后使用 `-d` 选项。\n\n如果您需要强制删除分支，请使用 \"-D\" 旗帜而不是 \"-d\"。"
+          "Explanation": "當你已經完全地把更改都合併如入主線後，您就可以把分支刪除掉。請確保您已經把全部更改都合併了。\n\n使用“git branch”指令，再加上“-d”旗標。\n\n如果您需要強制刪除分支，請使用“-D”旗標而不是 “-d”。"
         }
       ]
     },
