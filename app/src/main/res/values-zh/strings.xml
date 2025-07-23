@@ -4,17 +4,17 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">你好空白片段</string>
     <string name="intialize_git">非化Git</string>
-    <string name="git_desc">初始化当前或指定目录中的 Git 存储库。</string>
+    <string name="git_desc">初始化當前或指定目錄中的 Git 存儲庫。</string>
     <string name="git_init">git init</string>
-    <string name="search_command">搜索命令...</string>
-    <string name="tagline">增加您的 Git 知识</string>
+    <string name="search_command">搜索指令…</string>
+    <string name="tagline">提高您的 Git 知識</string>
     <string name="one">1</string>
-    <string name="lesson_description">什么是 Git 及其使用原因</string>
-    <string name="lesson_explanation">Git 是一个分布式版本控制系统，用于管理和跟踪源代码的更改。 它帮助开发者在项目上进行合作，并保持代码所有更改的历史。</string>
+    <string name="lesson_description">什麼是 Git 及其使用原因</string>
+    <string name="lesson_explanation">Git 是一種分佈式版本控制系統，用於管理和跟蹤源代碼的更改。 他幫助工程師在項目上進行合作，並保持代碼所有更改的歷史。</string>
     <string name="lesson_example">git config --global user.name \'John Doe\'\ngit config --global user.email \'johndoe@example.com\'</string>
-    <string name="git_progress">Git 进度</string>
-    <string name="tagline2">变换你的Git技能</string>
-    <string name="complete_lesson">完成课程</string>
+    <string name="git_progress">Git 進度</string>
+    <string name="tagline2">提高您的 Git 技能</string>
+    <string name="complete_lesson">完成課程</string>
     <string name="report_bug">报告错误</string>
     <string name="suggestions">建议</string>
     <string name="rate_us">给我们评分</string>
