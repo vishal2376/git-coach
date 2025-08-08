@@ -100,7 +100,7 @@
         {
           "StepNumber": 4,
           "Description": "[Shortcut] Criar e alternar a branch",
-          "Example": "git check-b inscrição de recursos",
+          "Example": "git checkout -b inscricao-de-recursos",
           "Explanation": "Para criar e mudar para o novo branch em um comando, use o `git checkout -b <branch-name>`."
         },
         {
